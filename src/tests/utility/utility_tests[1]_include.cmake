@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/utility/utility_tests[1]_tests.cmake")
+  include("C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/utility/utility_tests[1]_tests.cmake")
+else()
+  add_test(utility_tests_NOT_BUILT utility_tests_NOT_BUILT)
+endif()

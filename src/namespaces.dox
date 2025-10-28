@@ -18,8 +18,8 @@
  */
 
  /**
- * @namespace Coruh::Calculator
- * @brief Namespace for calculator functions and classes.
+ * @namespace Coruh::LocalSports
+ * @brief Namespace for LocalSports functions and classes.
  *
- * This namespace contains a collection of calculator functions and classes that provide commonly-used functionality.
+ * This namespace contains a collection of LocalSports functions and classes that provide commonly-used functionality.
  */

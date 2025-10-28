@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BAA9DE33-50C7-3945-AC22-81AB257C3898}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>LocalSports_tests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LocalSports_tests.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LocalSports_tests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LocalSports_tests.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LocalSports_tests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\..\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\..\..\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/googletest/googletest/include" /external:I "C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/googletest/googletest"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ENABLE_UTILITY_TEST;ENABLE_LocalSports_TEST;ENABLE_UTILITY_LOGGER;ENABLE_LocalSports_LOGGER;MSVC_ENV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ENABLE_UTILITY_TEST;ENABLE_LocalSports_TEST;ENABLE_UTILITY_LOGGER;ENABLE_LocalSports_LOGGER;MSVC_ENV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\..\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\..\..\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\googletest\googletest\include;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\..\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\..\..\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\googletest\googletest\include;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=LocalSports_tests -D TEST_EXECUTABLE=C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/build/Debug/LocalSports_tests.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/LocalSports -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=LocalSports_tests_TESTS -D CTEST_FILE=C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/LocalSports/LocalSports_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-4.1/Modules/GoogleTestAddTests.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\LocalSports\Debug\LocalSports.lib;..\..\utility\Debug\utility.lib;..\..\..\lib\Debug\gtest.lib;..\..\..\lib\Debug\gtest_main.lib;..\..\..\lib\Debug\gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/LocalSports/Debug/LocalSports_tests.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/build/Debug/LocalSports_tests.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\..\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\..\..\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/googletest/googletest/include" /external:I "C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/googletest/googletest"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ENABLE_UTILITY_TEST;ENABLE_LocalSports_TEST;ENABLE_UTILITY_LOGGER;ENABLE_LocalSports_LOGGER;MSVC_ENV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ENABLE_UTILITY_TEST;ENABLE_LocalSports_TEST;ENABLE_UTILITY_LOGGER;ENABLE_LocalSports_LOGGER;MSVC_ENV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\..\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\..\..\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\googletest\googletest\include;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\..\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\..\..\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\googletest\googletest\include;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=LocalSports_tests -D TEST_EXECUTABLE=C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/build/Release/LocalSports_tests.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/LocalSports -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=LocalSports_tests_TESTS -D CTEST_FILE=C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/LocalSports/LocalSports_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-4.1/Modules/GoogleTestAddTests.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\LocalSports\Release\LocalSports.lib;..\..\utility\Release\utility.lib;..\..\..\lib\Release\gtest.lib;..\..\..\lib\Release\gtest_main.lib;..\..\..\lib\Release\gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/LocalSports/Release/LocalSports_tests.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/build/Release/LocalSports_tests.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/LocalSports/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp -BC:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp --check-stamp-file C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/LocalSports/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\GoogleTest.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/LocalSports/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp -BC:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp --check-stamp-file C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/LocalSports/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\GoogleTest.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\LocalSports\localsports_test.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\ZERO_CHECK.vcxproj">
+      <Project>{DC334A51-52A3-3914-8CAC-C416DC9245C7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\LocalSports.vcxproj">
+      <Project>{4784C224-B7AE-3480-9E05-83DE3791664B}</Project>
+      <Name>LocalSports</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\googletest-build\googletest\gtest.vcxproj">
+      <Project>{87820DE3-0F6A-3D95-B74E-45F62F22BDC3}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\tests\googletest-build\googletest\gtest_main.vcxproj">
+      <Project>{C78FF6E7-C89B-38A1-94CF-0C052E579AA0}</Project>
+      <Name>gtest_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\utility.vcxproj">
+      <Project>{C4551B43-88B0-3A73-8D50-CAE37CDD297F}</Project>
+      <Name>utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

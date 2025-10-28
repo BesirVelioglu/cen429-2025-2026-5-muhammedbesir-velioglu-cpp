@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AA48B7E7-ED76-3DA4-9EFF-4831312CD70D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>LocalSportsapp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LocalSportsapp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LocalSportsapp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LocalSportsapp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LocalSportsapp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\..\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ENABLE_UTILITY_TEST;ENABLE_LocalSports_TEST;ENABLE_UTILITY_LOGGER;ENABLE_LocalSports_LOGGER;MSVC_ENV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ENABLE_UTILITY_TEST;ENABLE_LocalSports_TEST;ENABLE_UTILITY_LOGGER;ENABLE_LocalSports_LOGGER;MSVC_ENV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\..\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\..\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\LocalSports\Debug\LocalSports.lib;..\utility\Debug\utility.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSportsapp/Debug/LocalSportsapp.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/build/Debug/LocalSportsapp.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\..\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ENABLE_UTILITY_TEST;ENABLE_LocalSports_TEST;ENABLE_UTILITY_LOGGER;ENABLE_LocalSports_LOGGER;MSVC_ENV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ENABLE_UTILITY_TEST;ENABLE_LocalSports_TEST;ENABLE_UTILITY_LOGGER;ENABLE_LocalSports_LOGGER;MSVC_ENV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\..\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\..\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\..\utility\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\header;C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\LocalSports\Release\LocalSports.lib;..\utility\Release\utility.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSportsapp/Release/LocalSportsapp.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/build/Release/LocalSportsapp.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSportsapp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp -BC:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp --check-stamp-file C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSportsapp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSportsapp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp -BC:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp --check-stamp-file C:/Users/PC/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSportsapp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\header\localsportsapp.h" />
+    <ClCompile Include="C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSportsapp\src\localsportsapp.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\ZERO_CHECK.vcxproj">
+      <Project>{DC334A51-52A3-3914-8CAC-C416DC9245C7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\LocalSports\LocalSports.vcxproj">
+      <Project>{4784C224-B7AE-3480-9E05-83DE3791664B}</Project>
+      <Name>LocalSports</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\PC\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\utility.vcxproj">
+      <Project>{C4551B43-88B0-3A73-8D50-CAE37CDD297F}</Project>
+      <Name>utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

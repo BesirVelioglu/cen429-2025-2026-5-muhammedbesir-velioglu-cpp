@@ -1,0 +1,11 @@
+/**
+ * @file LocalSportsapp.h
+ * @brief LocalSports Application header file
+ *
+ */
+
+#ifndef LocalSports_APP_H
+#define LocalSports_APP_H
+
+
+#endif // LocalSports_APP_H

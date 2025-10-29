@@ -54,3 +54,5 @@ install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/header/localsports.h
   DESTINATION include)
 
 message(STATUS "[${ROOT}/${LIBNAME}] Added library target: ${LIBNAME}")
+
+

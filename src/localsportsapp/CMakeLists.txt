@@ -64,3 +64,8 @@ elseif(EXISTS "${SQLITE_RELEASE_DLL}")
 else()
     message(WARNING "sqlite3.dll not found in vcpkg paths — skipping DLL copy.")
 endif()
+
+# EXE her zaman kendi klasörünü çalışma dizini olarak kullansın
+set_target_properties(${APPNAME} PROPERTIES
+  VS_DEBUGGER_WORKING_DIRECTORY "$<TARGET_FILE_DIR:${APPNAME}>")
+

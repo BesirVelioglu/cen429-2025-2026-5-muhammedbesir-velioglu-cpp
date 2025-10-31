@@ -24,7 +24,6 @@ static void banner() {
     std::cout
         << "\n###############################################################\n"
         << "#                     LOCAL SPORTS MANAGER                    #\n"
-        << "#            roster • games • stats • communication           #\n"
         << "###############################################################\n";
     if (LS_IsAuthenticated()) {
         std::cout << "# Oturum: " << (LS_CurrentUsername() ? LS_CurrentUsername() : "(yok)") << "\n";

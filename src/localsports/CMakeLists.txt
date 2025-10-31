@@ -38,6 +38,10 @@ target_link_libraries(${LIBNAME} PRIVATE utility)
 find_package(unofficial-sqlite3 CONFIG REQUIRED)
 target_link_libraries(${LIBNAME} PRIVATE unofficial::sqlite3::sqlite3)
 
+# ✅ OpenSSL bağlantısı (security_layer için)
+find_package(OpenSSL REQUIRED)
+target_link_libraries(${LIBNAME} PRIVATE OpenSSL::SSL OpenSSL::Crypto)
+
 # Preprocessor definition (export)
 add_compile_definitions("CORUH_LocalSports_LIB_EXPORTS")
 
@@ -51,6 +55,7 @@ install(TARGETS ${LIBNAME}
 
 # Header kopyalama (kütüphane kullanımı için)
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/header/localsports.h
+              ${CMAKE_CURRENT_SOURCE_DIR}/header/security_layer.h
   DESTINATION include)
 
 message(STATUS "[${ROOT}/${LIBNAME}] Added library target: ${LIBNAME}")

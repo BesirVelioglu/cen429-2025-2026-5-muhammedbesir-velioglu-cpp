@@ -6,9 +6,11 @@
 #include <string>
 #include <iomanip>
 #include <cstring>
+#include <cstdio>
 #include <algorithm>
 #include <ctime>
 #include <climits>
+#include <cstdint>
 
 #if defined(_MSC_VER)
 #pragma warning(disable : 4996)
@@ -18,12 +20,23 @@
 #include <sqlite3.h>
 static sqlite3* g_db = nullptr;
 
-// Veritabaný dosyasý (çalýþma klasöründe oluþturulur)
+// Veritabanï¿½ dosyasï¿½ (ï¿½alï¿½ï¿½ma klasï¿½rï¿½nde oluï¿½turulur)
 static const char* DB_PATH = "localsports.db";
 
 // ---- Auth session (in-memory) ----
 static bool g_isAuthed = false;
 static char g_currentUser[32] = { 0 };
+
+// =================== Gï¿½venlik Katmanï¿½ ===================
+#include "security_layer.h"
+#include <openssl/crypto.h>  // CRYPTO_memcmp
+#include <openssl/rand.h>    // RAND_bytes
+
+using teamcore::SecureBuffer;
+using teamcore::read_password_secure;
+using teamcore::AppKey_InitFromEnvOrPrompt;
+using teamcore::AppKey_Get;
+namespace crypto = teamcore::crypto;
 
 // ---- Small utilities ----
 static std::string readLine(const std::string& prompt) {
@@ -68,7 +81,7 @@ static std::string nowDateTime() {
     return std::string(buf);
 }
 
-// ---- FNV-1a 64 (for simple passHash placeholder) ----
+// ---- FNV-1a 64 (legacy passhash iï¿½in) ----
 static uint64_t fnv1a64(const std::string& s) {
     const uint64_t FNV_OFFSET = 1469598103934665603ULL;
     const uint64_t FNV_PRIME = 1099511628211ULL;
@@ -101,30 +114,98 @@ static bool db_prepare(sqlite3_stmt** out, const char* sql) {
     return true;
 }
 
+// ---- Gï¿½venlik yardï¿½mcï¿½larï¿½ ----
+static bool gen_salt(unsigned char* out16) {
+    return RAND_bytes(out16, 16) == 1;
+}
+
+static bool ct_equal(const unsigned char* a, const unsigned char* b, size_t n) {
+    return CRYPTO_memcmp(a, b, n) == 0;
+}
+
+static void secure_clear_string(std::string& s) {
+    if (!s.empty()) {
+#if __cplusplus >= 201703L
+        teamcore::SecureBuffer::secure_bzero(s.data(), s.size());
+#else
+        // C++11/14: data() const char* dï¿½ndï¿½rï¿½r, yazï¿½labilir bellek alï¿½n:
+        teamcore::SecureBuffer::secure_bzero(&s[0], s.size());
+        // Alternatif: const_cast<char*>(s.data())
+        // teamcore::SecureBuffer::secure_bzero(const_cast<char*>(s.data()), s.size());
+#endif
+        s.clear();
+    }
+}
+
+// ï¿½ifreli gï¿½rï¿½nï¿½yor ise ï¿½ï¿½z, deï¿½ilse aynen dï¿½ndï¿½r (geï¿½iï¿½ uyumluluï¿½u)
+static std::string decryptMaybe(const std::string& val) {
+    if (val.rfind("GCM1:", 0) == 0) {
+        const unsigned char* k = AppKey_Get().data();
+        try {
+            return crypto::DecryptFromDB(val, k, /*aad*/"");
+        }
+        catch (...) {
+            return "[DECRYPT-ERROR]";
+        }
+    }
+    return val;
+}
+
+// Dï¿½z metni AES-256-GCM ile ï¿½ifrele
+static std::string encryptIfNeeded(const std::string& val) {
+    const unsigned char* k = AppKey_Get().data();
+    try {
+        return crypto::EncryptForDB(val, k, /*aad*/"");
+    }
+    catch (...) {
+        return "";
+    }
+}
+
 // =================== INIT ===================
 void LS_Init() {
-    if (sqlite3_open(DB_PATH, &g_db) != SQLITE_OK) {
+
+
+    // Uygulama anahtarï¿½nï¿½ baï¿½lat (AES-GCM iï¿½in)
+    if (!AppKey_InitFromEnvOrPrompt()) {
+        std::cerr << "AppKey baslatilamadi.\n";
+        std::exit(1);
+    }
+
+    if (sqlite3_open_v2(DB_PATH, &g_db, SQLITE_OPEN_READWRITE | SQLITE_OPEN_CREATE | SQLITE_OPEN_FULLMUTEX, nullptr) != SQLITE_OK) {
         std::cerr << "DB acilamadi: " << sqlite3_errmsg(g_db) << "\n";
         std::exit(1);
     }
 
-    // Tablolar
+    // PRAGMA'lar
     db_exec("PRAGMA journal_mode=WAL;");
+    db_exec("PRAGMA synchronous=NORMAL;");
+    db_exec("PRAGMA foreign_keys=ON;");
+    db_exec("PRAGMA secure_delete=ON;");
+    db_exec("PRAGMA temp_store=MEMORY;");
+    sqlite3_busy_timeout(g_db, 3000);
+
+    // USERS (gï¿½venli ï¿½ema + legacy sï¿½tunu)
     db_exec("CREATE TABLE IF NOT EXISTS users ("
         "id INTEGER PRIMARY KEY AUTOINCREMENT,"
         "username TEXT UNIQUE NOT NULL,"
-        "passhash INTEGER NOT NULL,"
-        "role TEXT NOT NULL,"
+        "pass_salt BLOB,"
+        "pass_hash BLOB,"
+        "pass_iters INTEGER,"
+        "passhash INTEGER,"                       /* legacy */
+        "role TEXT NOT NULL DEFAULT 'member',"
         "active INTEGER NOT NULL DEFAULT 1);");
 
+    // PLAYERS (PII alanlarï¿½ ï¿½ifreli TEXT olarak saklanï¿½r)
     db_exec("CREATE TABLE IF NOT EXISTS players ("
         "id INTEGER PRIMARY KEY AUTOINCREMENT,"
         "name TEXT NOT NULL,"
         "position TEXT NOT NULL,"
-        "phone TEXT NOT NULL,"
-        "email TEXT NOT NULL,"
+        "phone TEXT NOT NULL,"    /* GCM1:... */
+        "email TEXT NOT NULL,"    /* GCM1:... */
         "active INTEGER NOT NULL DEFAULT 1);");
 
+    // GAMES
     db_exec("CREATE TABLE IF NOT EXISTS games ("
         "id INTEGER PRIMARY KEY AUTOINCREMENT,"
         "date TEXT NOT NULL,"
@@ -134,6 +215,7 @@ void LS_Init() {
         "played INTEGER NOT NULL DEFAULT 0,"
         "result TEXT NOT NULL DEFAULT '');");
 
+    // STATS
     db_exec("CREATE TABLE IF NOT EXISTS stats ("
         "id INTEGER PRIMARY KEY AUTOINCREMENT,"
         "gameId INTEGER NOT NULL,"
@@ -146,33 +228,46 @@ void LS_Init() {
         "FOREIGN KEY(gameId) REFERENCES games(id),"
         "FOREIGN KEY(playerId) REFERENCES players(id));");
 
+    // MESSAGES (metin ï¿½ifreli saklanï¿½r)
     db_exec("CREATE TABLE IF NOT EXISTS messages ("
         "id INTEGER PRIMARY KEY AUTOINCREMENT,"
         "datetime TEXT NOT NULL,"
-        "text TEXT NOT NULL);");
+        "text TEXT NOT NULL);");  /* GCM1:... */
 
-    // Varsayýlan admin (admin/admin)
+    // Varsayï¿½lan admin (admin/admin) - modern PBKDF2 ile
     sqlite3_stmt* st = nullptr;
-    if (db_prepare(&st, "SELECT COUNT(*) FROM users;")) {
+    if (db_prepare(&st, "SELECT COUNT(*) FROM users WHERE active=1;")) {
+        int cnt = 0;
         if (sqlite3_step(st) == SQLITE_ROW) {
-            int cnt = sqlite3_column_int(st, 0);
-            sqlite3_finalize(st);
-            if (cnt == 0) {
-                sqlite3_stmt* ins = nullptr;
-                if (db_prepare(&ins, "INSERT INTO users(username, passhash, role, active) VALUES(?, ?, 'admin', 1);")) {
-                    const char* defUser = "admin";
-                    uint64_t h = fnv1a64("admin");
-                    sqlite3_bind_text(ins, 1, defUser, -1, SQLITE_TRANSIENT);
-                    sqlite3_bind_int64(ins, 2, (sqlite3_int64)h);
-                    if (sqlite3_step(ins) != SQLITE_DONE) {
-                        std::cerr << "admin eklenemedi: " << sqlite3_errmsg(g_db) << "\n";
+            cnt = sqlite3_column_int(st, 0);
+        }
+        sqlite3_finalize(st);
+        if (cnt == 0) {
+            unsigned char salt[16];
+            if (!gen_salt(salt)) {
+                std::cerr << "Salt uretilemedi.\n";
+            }
+            else {
+                unsigned char hash32[32];
+                const int iters = 150000;
+                if (!crypto::DeriveKeyFromPassphrase("admin", salt, 16, iters, hash32)) {
+                    std::cerr << "KDF hatasi (admin).\n";
+                }
+                else {
+                    sqlite3_stmt* ins = nullptr;
+                    if (db_prepare(&ins, "INSERT INTO users(username, pass_salt, pass_hash, pass_iters, role, active) VALUES(?, ?, ?, ?, 'admin', 1);")) {
+                        sqlite3_bind_text(ins, 1, "admin", -1, SQLITE_TRANSIENT);
+                        sqlite3_bind_blob(ins, 2, salt, 16, SQLITE_TRANSIENT);
+                        sqlite3_bind_blob(ins, 3, hash32, 32, SQLITE_TRANSIENT);
+                        sqlite3_bind_int(ins, 4, iters);
+                        if (sqlite3_step(ins) != SQLITE_DONE) {
+                            std::cerr << "admin eklenemedi: " << sqlite3_errmsg(g_db) << "\n";
+                        }
+                        sqlite3_finalize(ins);
                     }
-                    sqlite3_finalize(ins);
+                    SecureBuffer::secure_bzero(hash32, sizeof(hash32));
                 }
             }
-        }
-        else {
-            sqlite3_finalize(st);
         }
     }
 }
@@ -180,57 +275,133 @@ void LS_Init() {
 // =================== AUTH ===================
 bool LS_AuthLoginInteractive() {
     std::string uname = readLine("Kullanici adi: ");
-    std::string pwd = readLine("Sifre: ");
-    uint64_t h = fnv1a64(pwd);
+    std::string pwd = read_password_secure("Sifre: ");
 
     sqlite3_stmt* st = nullptr;
-    if (!db_prepare(&st, "SELECT username FROM users WHERE active=1 AND username=? AND passhash=?;"))
+    if (!db_prepare(&st,
+        "SELECT id, pass_salt, pass_hash, pass_iters, passhash "
+        "FROM users WHERE active=1 AND username=?;"))
+    {
+        secure_clear_string(pwd);
         return false;
-
+    }
     sqlite3_bind_text(st, 1, uname.c_str(), -1, SQLITE_TRANSIENT);
-    sqlite3_bind_int64(st, 2, (sqlite3_int64)h);
 
     bool ok = false;
+
     if (sqlite3_step(st) == SQLITE_ROW) {
-        ok = true;
+        const int uid = sqlite3_column_int(st, 0);
+
+        unsigned char salt[16];  int saltLen = 0;
+        unsigned char hash[32];  int hashLen = 0;
+
+        const void* saltp = sqlite3_column_blob(st, 1);
+        saltLen = sqlite3_column_bytes(st, 1);
+        if (saltp && saltLen == 16) std::memcpy(salt, saltp, 16);
+
+        const void* hashp = sqlite3_column_blob(st, 2);
+        hashLen = sqlite3_column_bytes(st, 2);
+        if (hashp && hashLen == 32) std::memcpy(hash, hashp, 32);
+
+        const int iters = sqlite3_column_int(st, 3);
+        const bool hasLegacy = (sqlite3_column_type(st, 4) != SQLITE_NULL);
+        const sqlite3_int64 legacyVal = hasLegacy ? sqlite3_column_int64(st, 4) : 0;
+
+        // finalize etmeden Ã¶nce bitirme
+        sqlite3_finalize(st);
+        st = nullptr;
+
+        if (saltLen == 16 && hashLen == 32 && iters > 0) {
+            unsigned char calc[32];
+            if (crypto::DeriveKeyFromPassphrase(pwd, salt, 16, iters, calc)) {
+                ok = ct_equal(hash, calc, 32);
+            }
+            SecureBuffer::secure_bzero(calc, sizeof(calc));
+        }
+        else if (hasLegacy) {
+            uint64_t h = fnv1a64(pwd);
+            ok = (h == static_cast<uint64_t>(legacyVal));
+        }
+
+        SecureBuffer::secure_bzero(salt, sizeof(salt));
+        SecureBuffer::secure_bzero(hash, sizeof(hash));
+    }
+    else {
+        sqlite3_finalize(st);
+    }
+
+    secure_clear_string(pwd);
+
+    if (ok) {
         g_isAuthed = true;
-        std::snprintf(g_currentUser, sizeof(g_currentUser), "%s", (const char*)sqlite3_column_text(st, 0));
+        std::snprintf(g_currentUser, sizeof(g_currentUser), "%s", uname.c_str());
         std::cout << "Giris basarili. Hos geldin, " << g_currentUser << "!\n";
     }
     else {
         std::cout << "Hatali kullanici adi ya da sifre.\n";
     }
-    sqlite3_finalize(st);
+
     return ok;
 }
+
+
+
 
 void LS_AuthRegisterInteractive() {
     std::string uname;
     while (true) {
         uname = readLine("Yeni kullanici adi (3-31): ");
-        if (uname.size() < 3 || uname.size() > 31) { std::cout << "Uzunluk hatasi.\n"; continue; }
+        if (uname.size() < 3 || uname.size() > 31) {
+            std::cout << "Uzunluk hatasi.\n";
+            continue;
+        }
 
         sqlite3_stmt* chk = nullptr;
-        if (!db_prepare(&chk, "SELECT 1 FROM users WHERE username=? AND active=1;")) return;
+        if (!db_prepare(&chk, "SELECT 1 FROM users WHERE username=? AND active=1;"))
+            return;
+
         sqlite3_bind_text(chk, 1, uname.c_str(), -1, SQLITE_TRANSIENT);
         bool exists = (sqlite3_step(chk) == SQLITE_ROW);
         sqlite3_finalize(chk);
 
-        if (exists) { std::cout << "Bu kullanici adi zaten var.\n"; continue; }
+        if (exists) {
+            std::cout << "Bu kullanici adi zaten var.\n";
+            continue;
+        }
         break;
     }
 
-    std::string pwd1 = readLine("Sifre: ");
-    std::string pwd2 = readLine("Sifre (tekrar): ");
-    if (pwd1 != pwd2) { std::cout << "Sifreler eslesmiyor.\n"; return; }
+    std::string pwd1 = read_password_secure("Sifre: ");
+    std::string pwd2 = read_password_secure("Sifre (tekrar): ");
+    if (pwd1 != pwd2) {
+        std::cout << "Sifreler eslesmiyor.\n";
+        return;
+    }
+
+    unsigned char salt[16];
+    if (!gen_salt(salt)) {
+        std::cout << "Salt uretilemedi.\n";
+        return;
+    }
+
+    unsigned char hash32[32];
+    const int iters = 150000;
+    if (!crypto::DeriveKeyFromPassphrase(pwd1, salt, 16, iters, hash32)) {
+        std::cout << "KDF hatasi.\n";
+        return;
+    }
+
+    secure_clear_string(pwd1);
+    secure_clear_string(pwd2);
 
     sqlite3_stmt* ins = nullptr;
-    if (!db_prepare(&ins, "INSERT INTO users(username, passhash, role, active) VALUES(?, ?, 'member', 1);"))
+    if (!db_prepare(&ins, "INSERT INTO users(username, pass_salt, pass_hash, pass_iters, role, active) VALUES(?, ?, ?, ?, 'member', 1);"))
         return;
 
-    uint64_t h = fnv1a64(pwd1);
     sqlite3_bind_text(ins, 1, uname.c_str(), -1, SQLITE_TRANSIENT);
-    sqlite3_bind_int64(ins, 2, (sqlite3_int64)h);
+    sqlite3_bind_blob(ins, 2, salt, 16, SQLITE_TRANSIENT);
+    sqlite3_bind_blob(ins, 3, hash32, 32, SQLITE_TRANSIENT);
+    sqlite3_bind_int(ins, 4, iters);
 
     if (sqlite3_step(ins) == SQLITE_DONE) {
         std::cout << "Kayit olusturuldu. ID=" << (int)sqlite3_last_insert_rowid(g_db) << "\n";
@@ -238,8 +409,11 @@ void LS_AuthRegisterInteractive() {
     else {
         std::cout << "HATA: Kaydedilemedi.\n";
     }
+
     sqlite3_finalize(ins);
+    SecureBuffer::secure_bzero(hash32, sizeof(hash32));
 }
+
 
 void LS_AuthLogout() {
     g_isAuthed = false;
@@ -270,12 +444,16 @@ void LS_ListPlayersInteractive() {
         const char* phone = (const char*)sqlite3_column_text(st, 3);
         const char* email = (const char*)sqlite3_column_text(st, 4);
         int active = sqlite3_column_int(st, 5);
+
+        std::string phoneDec = decryptMaybe(phone ? phone : "");
+        std::string emailDec = decryptMaybe(email ? email : "");
+
         std::cout << std::left
             << std::setw(4) << id
             << std::setw(22) << (name ? name : "")
             << std::setw(12) << (pos ? pos : "")
-            << std::setw(16) << (phone ? phone : "")
-            << std::setw(26) << (email ? email : "")
+            << std::setw(16) << phoneDec
+            << std::setw(26) << emailDec
             << (active ? "Yes" : "No") << "\n";
     }
     sqlite3_finalize(st);
@@ -287,14 +465,20 @@ void LS_AddPlayerInteractive() {
     std::string phone = readLine("Telefon: ");
     std::string email = readLine("Email: ");
 
+    std::string phoneEnc = encryptIfNeeded(phone);
+    std::string emailEnc = encryptIfNeeded(email);
+    if (phoneEnc.empty() || emailEnc.empty()) {
+        std::cout << "Sifreleme hatasi.\n"; return;
+    }
+
     sqlite3_stmt* ins = nullptr;
     if (!db_prepare(&ins, "INSERT INTO players(name,position,phone,email,active) VALUES(?,?,?,?,1);"))
         return;
 
     sqlite3_bind_text(ins, 1, name.c_str(), -1, SQLITE_TRANSIENT);
     sqlite3_bind_text(ins, 2, position.c_str(), -1, SQLITE_TRANSIENT);
-    sqlite3_bind_text(ins, 3, phone.c_str(), -1, SQLITE_TRANSIENT);
-    sqlite3_bind_text(ins, 4, email.c_str(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_text(ins, 3, phoneEnc.c_str(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_text(ins, 4, emailEnc.c_str(), -1, SQLITE_TRANSIENT);
 
     if (sqlite3_step(ins) == SQLITE_DONE) {
         std::cout << "Player eklendi. ID=" << (int)sqlite3_last_insert_rowid(g_db) << "\n";
@@ -309,7 +493,7 @@ void LS_EditPlayerInteractive() {
     LS_ListPlayersInteractive();
     int id = readInt("Duzenlenecek Player ID: ");
 
-    // Var mý kontrol
+    // Var mï¿½ kontrol
     sqlite3_stmt* chk = nullptr;
     if (!db_prepare(&chk, "SELECT 1 FROM players WHERE id=? AND active=1;")) return;
     sqlite3_bind_int(chk, 1, id);
@@ -339,18 +523,20 @@ void LS_EditPlayerInteractive() {
 
     v = readLine("Telefon (bos = ayni): ");
     if (!v.empty()) {
+        std::string enc = encryptIfNeeded(v);
         sqlite3_stmt* st = nullptr;
         db_prepare(&st, "UPDATE players SET phone=? WHERE id=?;");
-        sqlite3_bind_text(st, 1, v.c_str(), -1, SQLITE_TRANSIENT);
+        sqlite3_bind_text(st, 1, enc.c_str(), -1, SQLITE_TRANSIENT);
         sqlite3_bind_int(st, 2, id);
         sqlite3_step(st); sqlite3_finalize(st);
     }
 
     v = readLine("Email (bos = ayni): ");
     if (!v.empty()) {
+        std::string enc = encryptIfNeeded(v);
         sqlite3_stmt* st = nullptr;
         db_prepare(&st, "UPDATE players SET email=? WHERE id=?;");
-        sqlite3_bind_text(st, 1, v.c_str(), -1, SQLITE_TRANSIENT);
+        sqlite3_bind_text(st, 1, enc.c_str(), -1, SQLITE_TRANSIENT);
         sqlite3_bind_int(st, 2, id);
         sqlite3_step(st); sqlite3_finalize(st);
     }
@@ -462,7 +648,7 @@ void LS_RecordResultInteractive() {
 
 // =================== STATS ===================
 void LS_RecordStatsInteractive() {
-    // Oyun seçimi
+    // Oyun seï¿½imi
     sqlite3_stmt* gst = nullptr;
     if (!db_prepare(&gst, "SELECT id,date,time,opponent FROM games ORDER BY id;")) return;
     std::cout << "\nMaclar:\n";
@@ -476,7 +662,7 @@ void LS_RecordStatsInteractive() {
     sqlite3_finalize(gst);
     int gid = readInt("Hangi Game ID icin istatistik? ");
 
-    // Oyuncu seçimi
+    // Oyuncu seï¿½imi
     sqlite3_stmt* pst = nullptr;
     if (!db_prepare(&pst, "SELECT id,name,position FROM players WHERE active=1 ORDER BY id;")) return;
     std::cout << "\nOyuncular:\n";
@@ -495,6 +681,7 @@ void LS_RecordStatsInteractive() {
     int yellow = readInt("Yellow cards: ", 0, 10);
     int red = readInt("Red cards: ", 0, 10);
 
+    // Dï¿½ZELTME: burada nokta deï¿½il noktalï¿½ virgï¿½l olmalï¿½
     sqlite3_stmt* ins = nullptr;
     if (!db_prepare(&ins, "INSERT INTO stats(gameId,playerId,goals,assists,saves,yellow,red) VALUES(?,?,?,?,?,?,?);"))
         return;
@@ -577,10 +764,13 @@ void LS_ListMessagesInteractive() {
         int id = sqlite3_column_int(st, 0);
         const char* dt = (const char*)sqlite3_column_text(st, 1);
         const char* tx = (const char*)sqlite3_column_text(st, 2);
+
+        std::string dec = decryptMaybe(tx ? tx : "");
+
         std::cout << std::left
             << std::setw(4) << id
             << std::setw(18) << (dt ? dt : "")
-            << (tx ? tx : "") << "\n";
+            << dec << "\n";
     }
     sqlite3_finalize(st);
 }
@@ -592,13 +782,15 @@ void LS_AddMessageInteractive() {
     } while (text.empty() || text.size() > 150);
 
     std::string dt = nowDateTime();
+    std::string enc = encryptIfNeeded(text);
+    if (enc.empty()) { std::cout << "Sifreleme hatasi.\n"; return; }
 
     sqlite3_stmt* ins = nullptr;
     if (!db_prepare(&ins, "INSERT INTO messages(datetime,text) VALUES(?,?);"))
         return;
 
     sqlite3_bind_text(ins, 1, dt.c_str(), -1, SQLITE_TRANSIENT);
-    sqlite3_bind_text(ins, 2, text.c_str(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_text(ins, 2, enc.c_str(), -1, SQLITE_TRANSIENT);
 
     if (sqlite3_step(ins) == SQLITE_DONE) {
         std::cout << "Mesaj kaydedildi.\n";

@@ -105,7 +105,7 @@
         <name>EXPECTED_TEXT_CHECKSUM</name>
         <qualifiedname>teamcore::security::EXPECTED_TEXT_CHECKSUM</qualifiedname>
         <initializer>= 
-    &quot;408dcce0e9ee620bb44c0f017883a7cbac8087b1aeccc44196378fceb85f4a15&quot;</initializer>
+    &quot;d1918388fdfcb2ed043d5b4af528d156d84442e47a4c004cfb9ab091b30d6012&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -324,7 +324,7 @@
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Current<sp/>.text<sp/>section<sp/>checksum<sp/>(SHA-256)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Generated<sp/>during<sp/>build:<sp/>2025-11-01<sp/>15:31<sp/>(UPDATED<sp/>after<sp/>log<sp/>level<sp/>implementation)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15" refid="namespaceteamcore_1_1security_1a2b28e61dedae3065f32173d322b07477" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="namespaceteamcore_1_1security_1a2b28e61dedae3065f32173d322b07477" kindref="member">EXPECTED_TEXT_CHECKSUM</ref><sp/>=<sp/></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;408dcce0e9ee620bb44c0f017883a7cbac8087b1aeccc44196378fceb85f4a15&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;d1918388fdfcb2ed043d5b4af528d156d84442e47a4c004cfb9ab091b30d6012&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>===================<sp/>Security<sp/>Flags<sp/>===================</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Enable<sp/>runtime<sp/>debugger<sp/>monitoring<sp/>(checks<sp/>every<sp/>5<sp/>seconds)</highlight><highlight class="normal"></highlight></codeline>

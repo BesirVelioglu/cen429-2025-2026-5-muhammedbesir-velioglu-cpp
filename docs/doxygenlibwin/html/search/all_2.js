@@ -8,10 +8,17 @@ var searchData=
   ['checkpinnedspkifromfile_5',['CheckPinnedSpkiFromFile',['../namespaceteamcore_1_1tls.html#af10109327e2bd8ddf5f09ade66e495f4',1,'teamcore::tls']]],
   ['cleanse_6',['cleanse',['../classteamcore_1_1_secure_buffer.html#af1356c1427b9aec94234e26b752c4204',1,'teamcore::SecureBuffer']]],
   ['clearsecuritylog_7',['ClearSecurityLog',['../namespaceteamcore_1_1rasp.html#a07e65abc82f54ea47b0b9ce8cbf5050c',1,'teamcore::rasp']]],
-  ['commontypes_2eh_8',['commonTypes.h',['../common_types_8h.html',1,'']]],
-  ['comparedouble_9',['compareDouble',['../class_coruh_1_1_utility_1_1_math_utility.html#a8a30d3bb9945b043c861257596f17c30',1,'Coruh::Utility::MathUtility']]],
-  ['computespkisha256b64fromfile_10',['ComputeSpkiSha256B64FromFile',['../namespaceteamcore_1_1tls.html#a1cb27626c5ace28caefb7f7380288eb6',1,'teamcore::tls']]],
-  ['configurerasp_11',['ConfigureRASP',['../namespaceteamcore_1_1rasp.html#aa111f8946bff31b16ecaabbebfef6111',1,'teamcore::rasp']]],
-  ['coruh_12',['Coruh',['../namespace_coruh.html',1,'']]],
-  ['utility_13',['Utility',['../namespace_coruh_1_1_utility.html',1,'Coruh']]]
+  ['color_5fblue_8',['COLOR_BLUE',['../localsportsapp_8cpp.html#a23c70d699a5a775bc2e1ebeb8603f630',1,'localsportsapp.cpp']]],
+  ['color_5fcyan_9',['COLOR_CYAN',['../localsportsapp_8cpp.html#a82573859711fce56f1aa0a76b18a9b18',1,'localsportsapp.cpp']]],
+  ['color_5fgreen_10',['COLOR_GREEN',['../localsportsapp_8cpp.html#afc9149f5de51bd9ac4f5ebbfa153f018',1,'localsportsapp.cpp']]],
+  ['color_5fred_11',['COLOR_RED',['../localsportsapp_8cpp.html#ad86358bf19927183dd7b4ae215a29731',1,'localsportsapp.cpp']]],
+  ['color_5freset_12',['COLOR_RESET',['../localsportsapp_8cpp.html#a17f760256046df23dd0ab46602f04d02',1,'localsportsapp.cpp']]],
+  ['color_5fwhite_13',['COLOR_WHITE',['../localsportsapp_8cpp.html#a9b44987ffdc2af19b635206b94334b69',1,'localsportsapp.cpp']]],
+  ['color_5fyellow_14',['COLOR_YELLOW',['../localsportsapp_8cpp.html#a4534b577b74a58b0f4b7be027af664e0',1,'localsportsapp.cpp']]],
+  ['commontypes_2eh_15',['commonTypes.h',['../common_types_8h.html',1,'']]],
+  ['comparedouble_16',['compareDouble',['../class_coruh_1_1_utility_1_1_math_utility.html#a8a30d3bb9945b043c861257596f17c30',1,'Coruh::Utility::MathUtility']]],
+  ['computespkisha256b64fromfile_17',['ComputeSpkiSha256B64FromFile',['../namespaceteamcore_1_1tls.html#a1cb27626c5ace28caefb7f7380288eb6',1,'teamcore::tls']]],
+  ['configurerasp_18',['ConfigureRASP',['../namespaceteamcore_1_1rasp.html#aa111f8946bff31b16ecaabbebfef6111',1,'teamcore::rasp']]],
+  ['coruh_19',['Coruh',['../namespace_coruh.html',1,'']]],
+  ['utility_20',['Utility',['../namespace_coruh_1_1_utility.html',1,'Coruh']]]
 ];

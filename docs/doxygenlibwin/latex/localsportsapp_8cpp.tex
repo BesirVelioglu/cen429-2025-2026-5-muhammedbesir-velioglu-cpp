@@ -6,6 +6,10 @@
 {\ttfamily \#include \"{}security\+\_\+config.\+h\"{}}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
 Include dependency graph for localsportsapp.\+cpp\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -13,6 +17,23 @@ Include dependency graph for localsportsapp.\+cpp\+:\nopagebreak
 \includegraphics[width=350pt]{localsportsapp_8cpp__incl}
 \end{center}
 \end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{localsportsapp_8cpp_a17f760256046df23dd0ab46602f04d02}{COLOR\+\_\+\+RESET}}~\"{}\textbackslash{}033\mbox{[}0m\"{}
+\item 
+\#define \mbox{\hyperlink{localsportsapp_8cpp_a23c70d699a5a775bc2e1ebeb8603f630}{COLOR\+\_\+\+BLUE}}~\"{}\textbackslash{}033\mbox{[}1;34m\"{}
+\item 
+\#define \mbox{\hyperlink{localsportsapp_8cpp_afc9149f5de51bd9ac4f5ebbfa153f018}{COLOR\+\_\+\+GREEN}}~\"{}\textbackslash{}033\mbox{[}1;32m\"{}
+\item 
+\#define \mbox{\hyperlink{localsportsapp_8cpp_a82573859711fce56f1aa0a76b18a9b18}{COLOR\+\_\+\+CYAN}}~\"{}\textbackslash{}033\mbox{[}1;36m\"{}
+\item 
+\#define \mbox{\hyperlink{localsportsapp_8cpp_ad86358bf19927183dd7b4ae215a29731}{COLOR\+\_\+\+RED}}~\"{}\textbackslash{}033\mbox{[}1;31m\"{}
+\item 
+\#define \mbox{\hyperlink{localsportsapp_8cpp_a4534b577b74a58b0f4b7be027af664e0}{COLOR\+\_\+\+YELLOW}}~\"{}\textbackslash{}033\mbox{[}1;33m\"{}
+\item 
+\#define \mbox{\hyperlink{localsportsapp_8cpp_a9b44987ffdc2af19b635206b94334b69}{COLOR\+\_\+\+WHITE}}~\"{}\textbackslash{}033\mbox{[}1;37m\"{}
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -20,6 +41,51 @@ void \mbox{\hyperlink{localsportsapp_8cpp_a97fdd7815bac9ec7765dce579b889bc4}{LS\
 \item 
 int \mbox{\hyperlink{localsportsapp_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{localsportsapp_8cpp_a23c70d699a5a775bc2e1ebeb8603f630}\label{localsportsapp_8cpp_a23c70d699a5a775bc2e1ebeb8603f630} 
+\index{localsportsapp.cpp@{localsportsapp.cpp}!COLOR\_BLUE@{COLOR\_BLUE}}
+\index{COLOR\_BLUE@{COLOR\_BLUE}!localsportsapp.cpp@{localsportsapp.cpp}}
+\doxysubsubsection{\texorpdfstring{COLOR\_BLUE}{COLOR\_BLUE}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+BLUE~\"{}\textbackslash{}033\mbox{[}1;34m\"{}}
+
+\Hypertarget{localsportsapp_8cpp_a82573859711fce56f1aa0a76b18a9b18}\label{localsportsapp_8cpp_a82573859711fce56f1aa0a76b18a9b18} 
+\index{localsportsapp.cpp@{localsportsapp.cpp}!COLOR\_CYAN@{COLOR\_CYAN}}
+\index{COLOR\_CYAN@{COLOR\_CYAN}!localsportsapp.cpp@{localsportsapp.cpp}}
+\doxysubsubsection{\texorpdfstring{COLOR\_CYAN}{COLOR\_CYAN}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+CYAN~\"{}\textbackslash{}033\mbox{[}1;36m\"{}}
+
+\Hypertarget{localsportsapp_8cpp_afc9149f5de51bd9ac4f5ebbfa153f018}\label{localsportsapp_8cpp_afc9149f5de51bd9ac4f5ebbfa153f018} 
+\index{localsportsapp.cpp@{localsportsapp.cpp}!COLOR\_GREEN@{COLOR\_GREEN}}
+\index{COLOR\_GREEN@{COLOR\_GREEN}!localsportsapp.cpp@{localsportsapp.cpp}}
+\doxysubsubsection{\texorpdfstring{COLOR\_GREEN}{COLOR\_GREEN}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+GREEN~\"{}\textbackslash{}033\mbox{[}1;32m\"{}}
+
+\Hypertarget{localsportsapp_8cpp_ad86358bf19927183dd7b4ae215a29731}\label{localsportsapp_8cpp_ad86358bf19927183dd7b4ae215a29731} 
+\index{localsportsapp.cpp@{localsportsapp.cpp}!COLOR\_RED@{COLOR\_RED}}
+\index{COLOR\_RED@{COLOR\_RED}!localsportsapp.cpp@{localsportsapp.cpp}}
+\doxysubsubsection{\texorpdfstring{COLOR\_RED}{COLOR\_RED}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+RED~\"{}\textbackslash{}033\mbox{[}1;31m\"{}}
+
+\Hypertarget{localsportsapp_8cpp_a17f760256046df23dd0ab46602f04d02}\label{localsportsapp_8cpp_a17f760256046df23dd0ab46602f04d02} 
+\index{localsportsapp.cpp@{localsportsapp.cpp}!COLOR\_RESET@{COLOR\_RESET}}
+\index{COLOR\_RESET@{COLOR\_RESET}!localsportsapp.cpp@{localsportsapp.cpp}}
+\doxysubsubsection{\texorpdfstring{COLOR\_RESET}{COLOR\_RESET}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+RESET~\"{}\textbackslash{}033\mbox{[}0m\"{}}
+
+\Hypertarget{localsportsapp_8cpp_a9b44987ffdc2af19b635206b94334b69}\label{localsportsapp_8cpp_a9b44987ffdc2af19b635206b94334b69} 
+\index{localsportsapp.cpp@{localsportsapp.cpp}!COLOR\_WHITE@{COLOR\_WHITE}}
+\index{COLOR\_WHITE@{COLOR\_WHITE}!localsportsapp.cpp@{localsportsapp.cpp}}
+\doxysubsubsection{\texorpdfstring{COLOR\_WHITE}{COLOR\_WHITE}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+WHITE~\"{}\textbackslash{}033\mbox{[}1;37m\"{}}
+
+\Hypertarget{localsportsapp_8cpp_a4534b577b74a58b0f4b7be027af664e0}\label{localsportsapp_8cpp_a4534b577b74a58b0f4b7be027af664e0} 
+\index{localsportsapp.cpp@{localsportsapp.cpp}!COLOR\_YELLOW@{COLOR\_YELLOW}}
+\index{COLOR\_YELLOW@{COLOR\_YELLOW}!localsportsapp.cpp@{localsportsapp.cpp}}
+\doxysubsubsection{\texorpdfstring{COLOR\_YELLOW}{COLOR\_YELLOW}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+YELLOW~\"{}\textbackslash{}033\mbox{[}1;33m\"{}}
+
 
 
 \doxysubsection{Function Documentation}

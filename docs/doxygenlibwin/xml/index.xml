@@ -415,6 +415,16 @@
     <member refid="localsportsapp_8h_1a97fdd7815bac9ec7765dce579b889bc4" kind="function"><name>LS_AppStart</name></member>
   </compound>
   <compound refid="localsportsapp_8cpp" kind="file"><name>localsportsapp.cpp</name>
+    <member refid="localsportsapp_8cpp_1a17f760256046df23dd0ab46602f04d02" kind="define"><name>COLOR_RESET</name></member>
+    <member refid="localsportsapp_8cpp_1a23c70d699a5a775bc2e1ebeb8603f630" kind="define"><name>COLOR_BLUE</name></member>
+    <member refid="localsportsapp_8cpp_1afc9149f5de51bd9ac4f5ebbfa153f018" kind="define"><name>COLOR_GREEN</name></member>
+    <member refid="localsportsapp_8cpp_1a82573859711fce56f1aa0a76b18a9b18" kind="define"><name>COLOR_CYAN</name></member>
+    <member refid="localsportsapp_8cpp_1ad86358bf19927183dd7b4ae215a29731" kind="define"><name>COLOR_RED</name></member>
+    <member refid="localsportsapp_8cpp_1a4534b577b74a58b0f4b7be027af664e0" kind="define"><name>COLOR_YELLOW</name></member>
+    <member refid="localsportsapp_8cpp_1a9b44987ffdc2af19b635206b94334b69" kind="define"><name>COLOR_WHITE</name></member>
+    <member refid="localsportsapp_8cpp_1ad2b4ff75171cbab2521a8a7e5876b2ca" kind="function"><name>setColor</name></member>
+    <member refid="localsportsapp_8cpp_1a2e84f72b2bca5e443fb31b67852c6ad1" kind="function"><name>clearScreen</name></member>
+    <member refid="localsportsapp_8cpp_1a5af0d03495d9920acf8b4dbe9aaba134" kind="function"><name>waitForEnter</name></member>
     <member refid="localsportsapp_8cpp_1ab1b3f5a7caf14a33d3ffb3e4e35f485d" kind="function"><name>readInt</name></member>
     <member refid="localsportsapp_8cpp_1a96dcaaea252c5db7ad9013ddc807f8da" kind="function"><name>banner</name></member>
     <member refid="localsportsapp_8cpp_1a13372ca37c9846af265fc0fcb98572c5" kind="function"><name>rosterMenu</name></member>

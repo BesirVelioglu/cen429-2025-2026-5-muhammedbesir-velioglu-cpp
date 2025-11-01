@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespaceteamcore_1_1tls" kind="namespace" language="C++">
+    <compoundname>teamcore::tls</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceteamcore_1_1tls_1a566cba99b03a233b20f0b89139e22a31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * teamcore::tls::MakeTls13ClientCtxWithMTLS</definition>
+        <argsstring>(const char *caPem, const char *certPem, const char *keyPem)</argsstring>
+        <name>MakeTls13ClientCtxWithMTLS</name>
+        <qualifiedname>teamcore::tls::MakeTls13ClientCtxWithMTLS</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>caPem</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>certPem</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>keyPem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="51" column="14" declfile="src/LocalSports/header/security_layer.h" declline="51" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1tls_1a1cb27626c5ace28caefb7f7380288eb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string teamcore::tls::ComputeSpkiSha256B64FromFile</definition>
+        <argsstring>(const std::string &amp;certPemPath)</argsstring>
+        <name>ComputeSpkiSha256B64FromFile</name>
+        <qualifiedname>teamcore::tls::ComputeSpkiSha256B64FromFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>certPemPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="55" column="21" declfile="src/LocalSports/header/security_layer.h" declline="55" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1tls_1af10109327e2bd8ddf5f09ade66e495f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::tls::CheckPinnedSpkiFromFile</definition>
+        <argsstring>(const std::string &amp;certPemPath, const std::string &amp;expectedHash, bool throwOnMismatch)</argsstring>
+        <name>CheckPinnedSpkiFromFile</name>
+        <qualifiedname>teamcore::tls::CheckPinnedSpkiFromFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>certPemPath</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>expectedHash</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>throwOnMismatch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="57" column="14" declfile="src/LocalSports/header/security_layer.h" declline="57" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/LocalSports/header/security_layer.h" line="50" column="5"/>
+  </compounddef>
+</doxygen>

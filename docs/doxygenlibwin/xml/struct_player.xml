@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="struct_player" kind="struct" language="C++" prot="public">
+    <compoundname>Player</compoundname>
+    <includes refid="localsports_8h" local="no">localsports.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_player_1a370e8ae6120f85b601d7b0dcc372cdb9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Player::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>Player::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="17" column="14" bodyfile="src/LocalSports/header/localsports.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_player_1aa1b57c638d18ebdc69a09ff873cb6684" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Player::name[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>name</name>
+        <qualifiedname>Player::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="18" column="10" bodyfile="src/LocalSports/header/localsports.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_player_1a9091b1c10c883cea0c83db80674b2fc5" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Player::position[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>position</name>
+        <qualifiedname>Player::position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="19" column="10" bodyfile="src/LocalSports/header/localsports.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_player_1aea29095afc42b44e9194b4b43eb87557" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Player::phone[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>phone</name>
+        <qualifiedname>Player::phone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="20" column="10" bodyfile="src/LocalSports/header/localsports.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_player_1a415560bf066e5e1937c850e533a00eed" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Player::email[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>email</name>
+        <qualifiedname>Player::email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="21" column="10" bodyfile="src/LocalSports/header/localsports.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_player_1aad404d23f26988b43b95e61f28045346" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Player::active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <qualifiedname>Player::active</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="22" column="13" bodyfile="src/LocalSports/header/localsports.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Player</label>
+        <link refid="struct_player"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/LocalSports/header/localsports.h" line="16" column="1" bodyfile="src/LocalSports/header/localsports.h" bodystart="16" bodyend="23"/>
+    <listofallmembers>
+      <member refid="struct_player_1aad404d23f26988b43b95e61f28045346" prot="public" virt="non-virtual"><scope>Player</scope><name>active</name></member>
+      <member refid="struct_player_1a415560bf066e5e1937c850e533a00eed" prot="public" virt="non-virtual"><scope>Player</scope><name>email</name></member>
+      <member refid="struct_player_1a370e8ae6120f85b601d7b0dcc372cdb9" prot="public" virt="non-virtual"><scope>Player</scope><name>id</name></member>
+      <member refid="struct_player_1aa1b57c638d18ebdc69a09ff873cb6684" prot="public" virt="non-virtual"><scope>Player</scope><name>name</name></member>
+      <member refid="struct_player_1aea29095afc42b44e9194b4b43eb87557" prot="public" virt="non-virtual"><scope>Player</scope><name>phone</name></member>
+      <member refid="struct_player_1a9091b1c10c883cea0c83db80674b2fc5" prot="public" virt="non-virtual"><scope>Player</scope><name>position</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

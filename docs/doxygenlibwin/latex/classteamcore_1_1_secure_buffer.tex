@@ -1,0 +1,151 @@
+\doxysection{teamcore\+::Secure\+Buffer Class Reference}
+\hypertarget{classteamcore_1_1_secure_buffer}{}\label{classteamcore_1_1_secure_buffer}\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+
+
+{\ttfamily \#include $<$security\+\_\+layer.\+h$>$}
+
+
+
+Collaboration diagram for teamcore\+::Secure\+Buffer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classteamcore_1_1_secure_buffer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classteamcore_1_1_secure_buffer_a5bd1370b310cb3710e675d4625d127f3}{Secure\+Buffer}} (std\+::size\+\_\+t \mbox{\hyperlink{classteamcore_1_1_secure_buffer_aafc6096600ca854c389d8657995cc16c}{size}}=0)
+\item 
+\mbox{\hyperlink{classteamcore_1_1_secure_buffer_ad0a9a71faa59e928136c7c76e3fa7b84}{Secure\+Buffer}} (const \mbox{\hyperlink{classteamcore_1_1_secure_buffer}{Secure\+Buffer}} \&)=delete
+\item 
+\mbox{\hyperlink{classteamcore_1_1_secure_buffer}{Secure\+Buffer}} \& \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a5d879ea26db10d9b52f99d437218f79b}{operator=}} (const \mbox{\hyperlink{classteamcore_1_1_secure_buffer}{Secure\+Buffer}} \&)=delete
+\item 
+\mbox{\hyperlink{classteamcore_1_1_secure_buffer_ad64f7dcaa553969828cd694a01699460}{Secure\+Buffer}} (\mbox{\hyperlink{classteamcore_1_1_secure_buffer}{Secure\+Buffer}} \&\&other) noexcept
+\item 
+\mbox{\hyperlink{classteamcore_1_1_secure_buffer}{Secure\+Buffer}} \& \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a8eccf617f81f19304325a48256f0ccdf}{operator=}} (\mbox{\hyperlink{classteamcore_1_1_secure_buffer}{Secure\+Buffer}} \&\&other) noexcept
+\item 
+\mbox{\hyperlink{classteamcore_1_1_secure_buffer_a2842cc2dc1200da58a3a06ffa5efe0e9}{\texorpdfstring{$\sim$}{\string~}\+Secure\+Buffer}} ()
+\item 
+void \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a3ce07c6dee8c02bf69e5bcbd5eb985ce}{resize}} (std\+::size\+\_\+t new\+Size)
+\item 
+void \mbox{\hyperlink{classteamcore_1_1_secure_buffer_af1356c1427b9aec94234e26b752c4204}{cleanse}} ()
+\item 
+unsigned char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a66ee099f8a381c3734be9675ede9f8cb}{data}} ()
+\item 
+const unsigned char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a0259d36795f60424390f8655491bcc3e}{data}} () const
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classteamcore_1_1_secure_buffer_aafc6096600ca854c389d8657995cc16c}{size}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a336a0b71b8c24a65895fe9b246f75906}{secure\+\_\+bzero}} (void \texorpdfstring{$\ast$}{*}ptr, std\+::size\+\_\+t len)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a0bac1998738fc0c9b57718153984aea8}{data\+\_\+}} \{ nullptr \}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classteamcore_1_1_secure_buffer_ae16e51c9b857eeb8ec769c79dcd4a9f3}{size\+\_\+}} \{ 0 \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classteamcore_1_1_secure_buffer_a5bd1370b310cb3710e675d4625d127f3}\label{classteamcore_1_1_secure_buffer_a5bd1370b310cb3710e675d4625d127f3} 
+\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}!SecureBuffer@{SecureBuffer}}
+\index{SecureBuffer@{SecureBuffer}!teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+\doxysubsubsection{\texorpdfstring{SecureBuffer()}{SecureBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily teamcore\+::\+Secure\+Buffer\+::\+Secure\+Buffer (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{size = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\Hypertarget{classteamcore_1_1_secure_buffer_ad0a9a71faa59e928136c7c76e3fa7b84}\label{classteamcore_1_1_secure_buffer_ad0a9a71faa59e928136c7c76e3fa7b84} 
+\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}!SecureBuffer@{SecureBuffer}}
+\index{SecureBuffer@{SecureBuffer}!teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+\doxysubsubsection{\texorpdfstring{SecureBuffer()}{SecureBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily teamcore\+::\+Secure\+Buffer\+::\+Secure\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classteamcore_1_1_secure_buffer}{Secure\+Buffer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classteamcore_1_1_secure_buffer_ad64f7dcaa553969828cd694a01699460}\label{classteamcore_1_1_secure_buffer_ad64f7dcaa553969828cd694a01699460} 
+\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}!SecureBuffer@{SecureBuffer}}
+\index{SecureBuffer@{SecureBuffer}!teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+\doxysubsubsection{\texorpdfstring{SecureBuffer()}{SecureBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily teamcore\+::\+Secure\+Buffer\+::\+Secure\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classteamcore_1_1_secure_buffer}{Secure\+Buffer}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{classteamcore_1_1_secure_buffer_a2842cc2dc1200da58a3a06ffa5efe0e9}\label{classteamcore_1_1_secure_buffer_a2842cc2dc1200da58a3a06ffa5efe0e9} 
+\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}!````~SecureBuffer@{\texorpdfstring{$\sim$}{\string~}SecureBuffer}}
+\index{````~SecureBuffer@{\texorpdfstring{$\sim$}{\string~}SecureBuffer}!teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SecureBuffer()}{\string~SecureBuffer()}}
+{\footnotesize\ttfamily teamcore\+::\+Secure\+Buffer\+::\texorpdfstring{$\sim$}{\string~}\+Secure\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classteamcore_1_1_secure_buffer_af1356c1427b9aec94234e26b752c4204}\label{classteamcore_1_1_secure_buffer_af1356c1427b9aec94234e26b752c4204} 
+\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}!cleanse@{cleanse}}
+\index{cleanse@{cleanse}!teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+\doxysubsubsection{\texorpdfstring{cleanse()}{cleanse()}}
+{\footnotesize\ttfamily void teamcore\+::\+Secure\+Buffer\+::cleanse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classteamcore_1_1_secure_buffer_a66ee099f8a381c3734be9675ede9f8cb}\label{classteamcore_1_1_secure_buffer_a66ee099f8a381c3734be9675ede9f8cb} 
+\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}!data@{data}}
+\index{data@{data}!teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily unsigned char \texorpdfstring{$\ast$}{*} teamcore\+::\+Secure\+Buffer\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classteamcore_1_1_secure_buffer_a0259d36795f60424390f8655491bcc3e}\label{classteamcore_1_1_secure_buffer_a0259d36795f60424390f8655491bcc3e} 
+\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}!data@{data}}
+\index{data@{data}!teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const unsigned char \texorpdfstring{$\ast$}{*} teamcore\+::\+Secure\+Buffer\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classteamcore_1_1_secure_buffer_a5d879ea26db10d9b52f99d437218f79b}\label{classteamcore_1_1_secure_buffer_a5d879ea26db10d9b52f99d437218f79b} 
+\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}!operator=@{operator=}}
+\index{operator=@{operator=}!teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classteamcore_1_1_secure_buffer}{Secure\+Buffer}} \& teamcore\+::\+Secure\+Buffer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classteamcore_1_1_secure_buffer}{Secure\+Buffer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classteamcore_1_1_secure_buffer_a8eccf617f81f19304325a48256f0ccdf}\label{classteamcore_1_1_secure_buffer_a8eccf617f81f19304325a48256f0ccdf} 
+\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}!operator=@{operator=}}
+\index{operator=@{operator=}!teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classteamcore_1_1_secure_buffer}{Secure\+Buffer}} \& teamcore\+::\+Secure\+Buffer\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classteamcore_1_1_secure_buffer}{Secure\+Buffer}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{classteamcore_1_1_secure_buffer_a3ce07c6dee8c02bf69e5bcbd5eb985ce}\label{classteamcore_1_1_secure_buffer_a3ce07c6dee8c02bf69e5bcbd5eb985ce} 
+\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}!resize@{resize}}
+\index{resize@{resize}!teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void teamcore\+::\+Secure\+Buffer\+::resize (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{new\+Size }\end{DoxyParamCaption})}
+
+\Hypertarget{classteamcore_1_1_secure_buffer_a336a0b71b8c24a65895fe9b246f75906}\label{classteamcore_1_1_secure_buffer_a336a0b71b8c24a65895fe9b246f75906} 
+\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}!secure\_bzero@{secure\_bzero}}
+\index{secure\_bzero@{secure\_bzero}!teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+\doxysubsubsection{\texorpdfstring{secure\_bzero()}{secure\_bzero()}}
+{\footnotesize\ttfamily void teamcore\+::\+Secure\+Buffer\+::secure\+\_\+bzero (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{ptr,  }\item[{std\+::size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classteamcore_1_1_secure_buffer_aafc6096600ca854c389d8657995cc16c}\label{classteamcore_1_1_secure_buffer_aafc6096600ca854c389d8657995cc16c} 
+\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}!size@{size}}
+\index{size@{size}!teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t teamcore\+::\+Secure\+Buffer\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classteamcore_1_1_secure_buffer_a0bac1998738fc0c9b57718153984aea8}\label{classteamcore_1_1_secure_buffer_a0bac1998738fc0c9b57718153984aea8} 
+\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}!data\_@{data\_}}
+\index{data\_@{data\_}!teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+\doxysubsubsection{\texorpdfstring{data\_}{data\_}}
+{\footnotesize\ttfamily unsigned char\texorpdfstring{$\ast$}{*} teamcore\+::\+Secure\+Buffer\+::data\+\_\+ \{ nullptr \}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classteamcore_1_1_secure_buffer_ae16e51c9b857eeb8ec769c79dcd4a9f3}\label{classteamcore_1_1_secure_buffer_ae16e51c9b857eeb8ec769c79dcd4a9f3} 
+\index{teamcore::SecureBuffer@{teamcore::SecureBuffer}!size\_@{size\_}}
+\index{size\_@{size\_}!teamcore::SecureBuffer@{teamcore::SecureBuffer}}
+\doxysubsubsection{\texorpdfstring{size\_}{size\_}}
+{\footnotesize\ttfamily std\+::size\+\_\+t teamcore\+::\+Secure\+Buffer\+::size\+\_\+ \{ 0 \}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Local\+Sports/header/\mbox{\hyperlink{security__layer_8h}{security\+\_\+layer.\+h}}\item 
+src/\+Local\+Sports/src/\mbox{\hyperlink{security__layer_8cpp}{security\+\_\+layer.\+cpp}}\end{DoxyCompactItemize}

@@ -29,6 +29,7 @@ static char g_currentUser[32] = { 0 };
 
 // =================== G�venlik Katman� ===================
 #include "security_layer.h"
+#include "security_hardening.h"
 #include <openssl/crypto.h>  // CRYPTO_memcmp
 #include <openssl/rand.h>    // RAND_bytes
 
@@ -37,6 +38,7 @@ using teamcore::read_password_secure;
 using teamcore::AppKey_InitFromEnvOrPrompt;
 using teamcore::AppKey_Get;
 namespace crypto = teamcore::crypto;
+namespace hardening = teamcore::hardening;
 
 // ---- Small utilities ----
 static std::string readLine(const std::string& prompt) {
@@ -164,7 +166,27 @@ static std::string encryptIfNeeded(const std::string& val) {
 
 // =================== INIT ===================
 void LS_Init() {
+    // =================== SESSIZ GÜVENLİK KONTROLLERİ ===================
+    // Saldırgana bilgi VERME - Sessizce kontrol et
+    
+    // 1. Güvenlik kontrolleri (sessiz mod)
+    if (!hardening::PerformSecurityChecks()) {
+        // Debugger tespit edildi - sessizce kapan
+        std::exit(EXIT_FAILURE);
+    }
 
+    // 2. Anti-debug monitoring (arka plan - sessiz)
+    hardening::StartAntiDebugMonitor();
+
+    // 3. Kontrol akışını karmaşıklaştır (sessiz)
+    if (hardening::OpaquePredicateAlwaysTrue()) {
+        hardening::OpaqueLoop(50);
+    }
+
+    // 4. Sahte güvenlik kontrolleri (sessiz)
+    hardening::FakeSecurityCheck();
+
+    // GÜVENLİK KONTROL EDİLDİ - ARTIK NORMAL İŞLEMLERE DEVAM
 
     // Uygulama anahtar�n� ba�lat (AES-GCM i�in)
     if (!AppKey_InitFromEnvOrPrompt()) {
@@ -250,13 +272,18 @@ void LS_Init() {
             else {
                 unsigned char hash32[32];
                 const int iters = 150000;
-                if (!crypto::DeriveKeyFromPassphrase("admin", salt, 16, iters, hash32)) {
+                
+                // String obfuscation kullanarak "admin" stringini gizle
+                std::string obfuscatedAdmin = hardening::ObfuscateString("admin");
+                std::string adminUsername = hardening::DeobfuscateString(obfuscatedAdmin);
+                
+                if (!crypto::DeriveKeyFromPassphrase(adminUsername, salt, 16, iters, hash32)) {
                     std::cerr << "KDF hatasi (admin).\n";
                 }
                 else {
                     sqlite3_stmt* ins = nullptr;
                     if (db_prepare(&ins, "INSERT INTO users(username, pass_salt, pass_hash, pass_iters, role, active) VALUES(?, ?, ?, ?, 'admin', 1);")) {
-                        sqlite3_bind_text(ins, 1, "admin", -1, SQLITE_TRANSIENT);
+                        sqlite3_bind_text(ins, 1, adminUsername.c_str(), -1, SQLITE_TRANSIENT);
                         sqlite3_bind_blob(ins, 2, salt, 16, SQLITE_TRANSIENT);
                         sqlite3_bind_blob(ins, 3, hash32, 32, SQLITE_TRANSIENT);
                         sqlite3_bind_int(ins, 4, iters);
@@ -274,8 +301,16 @@ void LS_Init() {
 
 // =================== AUTH ===================
 bool LS_AuthLoginInteractive() {
+    // Opaque loop ile timing attack koruması
+    hardening::OpaqueLoop(50);
+    
     std::string uname = readLine("Kullanici adi: ");
     std::string pwd = read_password_secure("Sifre: ");
+
+    // Anti-debug kontrolü (her login denemesinde)
+    if (hardening::IsDebuggerPresent()) {
+        hardening::TerminateOnThreat("Debugger detected during authentication");
+    }
 
     sqlite3_stmt* st = nullptr;
     if (!db_prepare(&st,
@@ -332,13 +367,16 @@ bool LS_AuthLoginInteractive() {
 
     secure_clear_string(pwd);
 
-    if (ok) {
-        g_isAuthed = true;
-        std::snprintf(g_currentUser, sizeof(g_currentUser), "%s", uname.c_str());
-        std::cout << "Giris basarili. Hos geldin, " << g_currentUser << "!\n";
-    }
-    else {
-        std::cout << "Hatali kullanici adi ya da sifre.\n";
+    // Opaque predicate ile kontrol akışını gizle
+    if (hardening::OpaquePredicateAlwaysTrue()) {
+        if (ok) {
+            g_isAuthed = true;
+            std::snprintf(g_currentUser, sizeof(g_currentUser), "%s", uname.c_str());
+            std::cout << "Giris basarili. Hos geldin, " << g_currentUser << "!\n";
+        }
+        else {
+            std::cout << "Hatali kullanici adi ya da sifre.\n";
+        }
     }
 
     return ok;

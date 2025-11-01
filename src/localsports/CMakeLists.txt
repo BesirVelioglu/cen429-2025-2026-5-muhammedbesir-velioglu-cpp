@@ -56,6 +56,7 @@ install(TARGETS ${LIBNAME}
 # Header kopyalama (kütüphane kullanımı için)
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/header/localsports.h
               ${CMAKE_CURRENT_SOURCE_DIR}/header/security_layer.h
+              ${CMAKE_CURRENT_SOURCE_DIR}/header/security_hardening.h
   DESTINATION include)
 
 message(STATUS "[${ROOT}/${LIBNAME}] Added library target: ${LIBNAME}")

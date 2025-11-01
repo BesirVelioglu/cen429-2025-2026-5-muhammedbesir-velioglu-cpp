@@ -1,0 +1,76 @@
+\doxysection{security\+\_\+layer.\+h}
+\hypertarget{security__layer_8h_source}{}\label{security__layer_8h_source}\index{src/LocalSports/header/security\_layer.h@{src/LocalSports/header/security\_layer.h}}
+\mbox{\hyperlink{security__layer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceteamcore}{teamcore}}\ \{}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{comment}{//\ ===================\ SecureBuffer\ ===================}}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classteamcore_1_1_secure_buffer}{SecureBuffer}}\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Dýþarýdan\ da\ kullanýlabilsin\ diye\ public\ yaptýk}}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a336a0b71b8c24a65895fe9b246f75906}{secure\_bzero}}(\textcolor{keywordtype}{void}*\ ptr,\ std::size\_t\ len);}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer}{SecureBuffer}}(std::size\_t\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_aafc6096600ca854c389d8657995cc16c}{size}}\ =\ 0);}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_ad0a9a71faa59e928136c7c76e3fa7b84}{SecureBuffer}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer}{SecureBuffer}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classteamcore_1_1_secure_buffer}{SecureBuffer}}\&\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a5d879ea26db10d9b52f99d437218f79b}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer}{SecureBuffer}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classteamcore_1_1_secure_buffer}{SecureBuffer}}(\mbox{\hyperlink{classteamcore_1_1_secure_buffer}{SecureBuffer}}\&\&\ other)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classteamcore_1_1_secure_buffer}{SecureBuffer}}\&\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a5d879ea26db10d9b52f99d437218f79b}{operator=}}(\mbox{\hyperlink{classteamcore_1_1_secure_buffer}{SecureBuffer}}\&\&\ other)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a2842cc2dc1200da58a3a06ffa5efe0e9}{\string~SecureBuffer}}();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a3ce07c6dee8c02bf69e5bcbd5eb985ce}{resize}}(std::size\_t\ newSize);}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_af1356c1427b9aec94234e26b752c4204}{cleanse}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a66ee099f8a381c3734be9675ede9f8cb}{data}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a0bac1998738fc0c9b57718153984aea8}{data\_}};\ \}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a0259d36795f60424390f8655491bcc3e}{data}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a0bac1998738fc0c9b57718153984aea8}{data\_}};\ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ std::size\_t\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_aafc6096600ca854c389d8657995cc16c}{size}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_ae16e51c9b857eeb8ec769c79dcd4a9f3}{size\_}};\ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_a0bac1998738fc0c9b57718153984aea8}{data\_}}\{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ std::size\_t\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer_ae16e51c9b857eeb8ec769c79dcd4a9f3}{size\_}}\{\ 0\ \};}
+\DoxyCodeLine{00030\ \ \ \ \ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ ===================\ Crypto\ ===================}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceteamcore_1_1crypto}{crypto}}\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1crypto_aaafb270455cdaf5c51ed9746d0028ce3}{DeriveKeyFromPassphrase}}(\textcolor{keyword}{const}\ std::string\&\ passphrase,}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*\ salt,}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ std::size\_t\ saltLen,}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ iterations,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*\ outKey32);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{namespaceteamcore_1_1crypto_a10a7ec9cb587579f78ae1a692d76c2ad}{EncryptForDB}}(\textcolor{keyword}{const}\ std::string\&\ plaintext,}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*\ key32,}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ aad);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{namespaceteamcore_1_1crypto_a4d9f3d43cf284e430a275cfbf374da89}{DecryptFromDB}}(\textcolor{keyword}{const}\ std::string\&\ sealed,}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*\ key32,}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ aad);}
+\DoxyCodeLine{00047\ \ \ \ \ \}\ \textcolor{comment}{//\ namespace\ crypto}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{//\ ===================\ TLS\ ===================}}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{namespace\ }tls\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}*\ \mbox{\hyperlink{namespaceteamcore_1_1tls_a566cba99b03a233b20f0b89139e22a31}{MakeTls13ClientCtxWithMTLS}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ caPem,}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ certPem,}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ keyPem);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{namespaceteamcore_1_1tls_a1cb27626c5ace28caefb7f7380288eb6}{ComputeSpkiSha256B64FromFile}}(\textcolor{keyword}{const}\ std::string\&\ certPemPath);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1tls_af10109327e2bd8ddf5f09ade66e495f4}{CheckPinnedSpkiFromFile}}(\textcolor{keyword}{const}\ std::string\&\ certPemPath,}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ expectedHash,}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ throwOnMismatch);}
+\DoxyCodeLine{00060\ \ \ \ \ \}\ \textcolor{comment}{//\ namespace\ tls}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{//\ ===================\ AppKey\ (bildirimleri\ ekledik)\ ===================}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_a93c962251af36fbaa80abf0e8b5ba8f6}{AppKey\_InitFromEnvOrPrompt}}();}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classteamcore_1_1_secure_buffer}{SecureBuffer}}\&\ \mbox{\hyperlink{namespaceteamcore_af20ee911948fa779641624875aa3ea57}{AppKey\_Get}}();}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_aab0d6b6fe3a3dd4194fe96a5d110659d}{AppKey\_IsReady}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{comment}{//\ ===================\ Güvenli\ parola\ giriþi\ (bildirim)\ ===================}}
+\DoxyCodeLine{00068\ \ \ \ \ std::string\ \mbox{\hyperlink{namespaceteamcore_a1d7ee6f2e73ff6cba98568d5c1213eca}{read\_password\_secure}}(\textcolor{keyword}{const}\ std::string\&\ prompt);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \}\ \textcolor{comment}{//\ namespace\ teamcore}}
+
+\end{DoxyCode}

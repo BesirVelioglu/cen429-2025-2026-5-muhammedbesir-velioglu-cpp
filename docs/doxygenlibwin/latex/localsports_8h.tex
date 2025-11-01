@@ -1,0 +1,218 @@
+\doxysection{src/\+Local\+Sports/header/localsports.h File Reference}
+\hypertarget{localsports_8h}{}\label{localsports_8h}\index{src/LocalSports/header/localsports.h@{src/LocalSports/header/localsports.h}}
+{\ttfamily \#include $<$cstdint$>$}\newline
+Include dependency graph for localsports.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{localsports_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{localsports_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_player}{Player}}
+\item 
+struct \mbox{\hyperlink{struct_game}{Game}}
+\item 
+struct \mbox{\hyperlink{struct_stat}{Stat}}
+\item 
+struct \mbox{\hyperlink{struct_message}{Message}}
+\item 
+struct \mbox{\hyperlink{struct_user}{User}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{localsports_8h_aff7350ba4ddaca323e3660f8d4eedb2a}{LS\+\_\+\+Init}} ()
+\item 
+void \mbox{\hyperlink{localsports_8h_a850907ca73190c6841e5204ba07b880a}{LS\+\_\+\+List\+Players\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8h_a6941a85dbd59a6326bdaebce0c855cee}{LS\+\_\+\+Add\+Player\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8h_a150377dbd6fd02d895815280e64b43bd}{LS\+\_\+\+Edit\+Player\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8h_a9af01eaf1cfc99b151a6bd53ec0f47dc}{LS\+\_\+\+Remove\+Player\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8h_ac65e0ec07dac8fec7a853d91f790a211}{LS\+\_\+\+List\+Games\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8h_ad57732a13ddc48c64c6aa545717c72b9}{LS\+\_\+\+Add\+Game\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8h_aed2b2fa736d2060bdb8d9bea3821473a}{LS\+\_\+\+Record\+Result\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8h_a04c27fb1a31321f28f13772d75046246}{LS\+\_\+\+Record\+Stats\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8h_aaff947fb9d3c2530ca58838200be9110}{LS\+\_\+\+View\+Player\+Totals\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8h_a85337b1fb4b0c0bb2e1ea5eb8b095898}{LS\+\_\+\+List\+Messages\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8h_a1668116b9386e1dd49cf0fa0ead92778}{LS\+\_\+\+Add\+Message\+Interactive}} ()
+\item 
+bool \mbox{\hyperlink{localsports_8h_ab117fdaf97f25d42c4292e1ae98ed094}{LS\+\_\+\+Auth\+Login\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8h_adbdbe18a3db5835cb46b3d3b6a8dd2a4}{LS\+\_\+\+Auth\+Register\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8h_af43cfb1a0908a075adc94295e31c28dd}{LS\+\_\+\+Auth\+Logout}} ()
+\item 
+bool \mbox{\hyperlink{localsports_8h_a1dd63114fbf33716846bf01944427350}{LS\+\_\+\+Is\+Authenticated}} ()
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{localsports_8h_abd8904e57f1a157e10414411c1d8ab37}{LS\+\_\+\+Current\+Username}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{localsports_8h_ad8d5437bed8662e72cdec2b479cc25d3}{FILE\+\_\+\+PLAYERS}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{localsports_8h_a8e8794db27e1eb1ffa03d07b8ee71a08}{FILE\+\_\+\+GAMES}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{localsports_8h_a96cb4f3bc0c427a5185a29cb31fa82e7}{FILE\+\_\+\+STATS}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{localsports_8h_a3b93840b5053aa7d0574cdd98986cf77}{FILE\+\_\+\+MESSAGES}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{localsports_8h_a71a48f6fd8a4047e914be0cc7a74cfad}{FILE\+\_\+\+USERS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{localsports_8h_ad57732a13ddc48c64c6aa545717c72b9}\label{localsports_8h_ad57732a13ddc48c64c6aa545717c72b9} 
+\index{localsports.h@{localsports.h}!LS\_AddGameInteractive@{LS\_AddGameInteractive}}
+\index{LS\_AddGameInteractive@{LS\_AddGameInteractive}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_AddGameInteractive()}{LS\_AddGameInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Add\+Game\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_a1668116b9386e1dd49cf0fa0ead92778}\label{localsports_8h_a1668116b9386e1dd49cf0fa0ead92778} 
+\index{localsports.h@{localsports.h}!LS\_AddMessageInteractive@{LS\_AddMessageInteractive}}
+\index{LS\_AddMessageInteractive@{LS\_AddMessageInteractive}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_AddMessageInteractive()}{LS\_AddMessageInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Add\+Message\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_a6941a85dbd59a6326bdaebce0c855cee}\label{localsports_8h_a6941a85dbd59a6326bdaebce0c855cee} 
+\index{localsports.h@{localsports.h}!LS\_AddPlayerInteractive@{LS\_AddPlayerInteractive}}
+\index{LS\_AddPlayerInteractive@{LS\_AddPlayerInteractive}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_AddPlayerInteractive()}{LS\_AddPlayerInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Add\+Player\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_ab117fdaf97f25d42c4292e1ae98ed094}\label{localsports_8h_ab117fdaf97f25d42c4292e1ae98ed094} 
+\index{localsports.h@{localsports.h}!LS\_AuthLoginInteractive@{LS\_AuthLoginInteractive}}
+\index{LS\_AuthLoginInteractive@{LS\_AuthLoginInteractive}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_AuthLoginInteractive()}{LS\_AuthLoginInteractive()}}
+{\footnotesize\ttfamily bool LS\+\_\+\+Auth\+Login\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_af43cfb1a0908a075adc94295e31c28dd}\label{localsports_8h_af43cfb1a0908a075adc94295e31c28dd} 
+\index{localsports.h@{localsports.h}!LS\_AuthLogout@{LS\_AuthLogout}}
+\index{LS\_AuthLogout@{LS\_AuthLogout}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_AuthLogout()}{LS\_AuthLogout()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Auth\+Logout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_adbdbe18a3db5835cb46b3d3b6a8dd2a4}\label{localsports_8h_adbdbe18a3db5835cb46b3d3b6a8dd2a4} 
+\index{localsports.h@{localsports.h}!LS\_AuthRegisterInteractive@{LS\_AuthRegisterInteractive}}
+\index{LS\_AuthRegisterInteractive@{LS\_AuthRegisterInteractive}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_AuthRegisterInteractive()}{LS\_AuthRegisterInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Auth\+Register\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_abd8904e57f1a157e10414411c1d8ab37}\label{localsports_8h_abd8904e57f1a157e10414411c1d8ab37} 
+\index{localsports.h@{localsports.h}!LS\_CurrentUsername@{LS\_CurrentUsername}}
+\index{LS\_CurrentUsername@{LS\_CurrentUsername}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_CurrentUsername()}{LS\_CurrentUsername()}}
+{\footnotesize\ttfamily const char \texorpdfstring{$\ast$}{*} LS\+\_\+\+Current\+Username (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_a150377dbd6fd02d895815280e64b43bd}\label{localsports_8h_a150377dbd6fd02d895815280e64b43bd} 
+\index{localsports.h@{localsports.h}!LS\_EditPlayerInteractive@{LS\_EditPlayerInteractive}}
+\index{LS\_EditPlayerInteractive@{LS\_EditPlayerInteractive}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_EditPlayerInteractive()}{LS\_EditPlayerInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Edit\+Player\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_aff7350ba4ddaca323e3660f8d4eedb2a}\label{localsports_8h_aff7350ba4ddaca323e3660f8d4eedb2a} 
+\index{localsports.h@{localsports.h}!LS\_Init@{LS\_Init}}
+\index{LS\_Init@{LS\_Init}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_Init()}{LS\_Init()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_a1dd63114fbf33716846bf01944427350}\label{localsports_8h_a1dd63114fbf33716846bf01944427350} 
+\index{localsports.h@{localsports.h}!LS\_IsAuthenticated@{LS\_IsAuthenticated}}
+\index{LS\_IsAuthenticated@{LS\_IsAuthenticated}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_IsAuthenticated()}{LS\_IsAuthenticated()}}
+{\footnotesize\ttfamily bool LS\+\_\+\+Is\+Authenticated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_ac65e0ec07dac8fec7a853d91f790a211}\label{localsports_8h_ac65e0ec07dac8fec7a853d91f790a211} 
+\index{localsports.h@{localsports.h}!LS\_ListGamesInteractive@{LS\_ListGamesInteractive}}
+\index{LS\_ListGamesInteractive@{LS\_ListGamesInteractive}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_ListGamesInteractive()}{LS\_ListGamesInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+List\+Games\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_a85337b1fb4b0c0bb2e1ea5eb8b095898}\label{localsports_8h_a85337b1fb4b0c0bb2e1ea5eb8b095898} 
+\index{localsports.h@{localsports.h}!LS\_ListMessagesInteractive@{LS\_ListMessagesInteractive}}
+\index{LS\_ListMessagesInteractive@{LS\_ListMessagesInteractive}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_ListMessagesInteractive()}{LS\_ListMessagesInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+List\+Messages\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_a850907ca73190c6841e5204ba07b880a}\label{localsports_8h_a850907ca73190c6841e5204ba07b880a} 
+\index{localsports.h@{localsports.h}!LS\_ListPlayersInteractive@{LS\_ListPlayersInteractive}}
+\index{LS\_ListPlayersInteractive@{LS\_ListPlayersInteractive}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_ListPlayersInteractive()}{LS\_ListPlayersInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+List\+Players\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_aed2b2fa736d2060bdb8d9bea3821473a}\label{localsports_8h_aed2b2fa736d2060bdb8d9bea3821473a} 
+\index{localsports.h@{localsports.h}!LS\_RecordResultInteractive@{LS\_RecordResultInteractive}}
+\index{LS\_RecordResultInteractive@{LS\_RecordResultInteractive}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_RecordResultInteractive()}{LS\_RecordResultInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Record\+Result\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_a04c27fb1a31321f28f13772d75046246}\label{localsports_8h_a04c27fb1a31321f28f13772d75046246} 
+\index{localsports.h@{localsports.h}!LS\_RecordStatsInteractive@{LS\_RecordStatsInteractive}}
+\index{LS\_RecordStatsInteractive@{LS\_RecordStatsInteractive}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_RecordStatsInteractive()}{LS\_RecordStatsInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Record\+Stats\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_a9af01eaf1cfc99b151a6bd53ec0f47dc}\label{localsports_8h_a9af01eaf1cfc99b151a6bd53ec0f47dc} 
+\index{localsports.h@{localsports.h}!LS\_RemovePlayerInteractive@{LS\_RemovePlayerInteractive}}
+\index{LS\_RemovePlayerInteractive@{LS\_RemovePlayerInteractive}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_RemovePlayerInteractive()}{LS\_RemovePlayerInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Remove\+Player\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8h_aaff947fb9d3c2530ca58838200be9110}\label{localsports_8h_aaff947fb9d3c2530ca58838200be9110} 
+\index{localsports.h@{localsports.h}!LS\_ViewPlayerTotalsInteractive@{LS\_ViewPlayerTotalsInteractive}}
+\index{LS\_ViewPlayerTotalsInteractive@{LS\_ViewPlayerTotalsInteractive}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{LS\_ViewPlayerTotalsInteractive()}{LS\_ViewPlayerTotalsInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+View\+Player\+Totals\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{localsports_8h_a8e8794db27e1eb1ffa03d07b8ee71a08}\label{localsports_8h_a8e8794db27e1eb1ffa03d07b8ee71a08} 
+\index{localsports.h@{localsports.h}!FILE\_GAMES@{FILE\_GAMES}}
+\index{FILE\_GAMES@{FILE\_GAMES}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{FILE\_GAMES}{FILE\_GAMES}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} FILE\+\_\+\+GAMES\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{localsports_8h_a3b93840b5053aa7d0574cdd98986cf77}\label{localsports_8h_a3b93840b5053aa7d0574cdd98986cf77} 
+\index{localsports.h@{localsports.h}!FILE\_MESSAGES@{FILE\_MESSAGES}}
+\index{FILE\_MESSAGES@{FILE\_MESSAGES}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{FILE\_MESSAGES}{FILE\_MESSAGES}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} FILE\+\_\+\+MESSAGES\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{localsports_8h_ad8d5437bed8662e72cdec2b479cc25d3}\label{localsports_8h_ad8d5437bed8662e72cdec2b479cc25d3} 
+\index{localsports.h@{localsports.h}!FILE\_PLAYERS@{FILE\_PLAYERS}}
+\index{FILE\_PLAYERS@{FILE\_PLAYERS}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{FILE\_PLAYERS}{FILE\_PLAYERS}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} FILE\+\_\+\+PLAYERS\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{localsports_8h_a96cb4f3bc0c427a5185a29cb31fa82e7}\label{localsports_8h_a96cb4f3bc0c427a5185a29cb31fa82e7} 
+\index{localsports.h@{localsports.h}!FILE\_STATS@{FILE\_STATS}}
+\index{FILE\_STATS@{FILE\_STATS}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{FILE\_STATS}{FILE\_STATS}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} FILE\+\_\+\+STATS\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{localsports_8h_a71a48f6fd8a4047e914be0cc7a74cfad}\label{localsports_8h_a71a48f6fd8a4047e914be0cc7a74cfad} 
+\index{localsports.h@{localsports.h}!FILE\_USERS@{FILE\_USERS}}
+\index{FILE\_USERS@{FILE\_USERS}!localsports.h@{localsports.h}}
+\doxysubsubsection{\texorpdfstring{FILE\_USERS}{FILE\_USERS}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} FILE\+\_\+\+USERS\hspace{0.3cm}{\ttfamily [extern]}}
+

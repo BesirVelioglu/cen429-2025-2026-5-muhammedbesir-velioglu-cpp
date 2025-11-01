@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespaceteamcore" kind="namespace" language="C++">
+    <compoundname>teamcore</compoundname>
+    <innerclass refid="classteamcore_1_1_secure_buffer" prot="public">teamcore::SecureBuffer</innerclass>
+    <innernamespace refid="namespaceteamcore_1_1crypto">teamcore::crypto</innernamespace>
+    <innernamespace refid="namespaceteamcore_1_1hardening">teamcore::hardening</innernamespace>
+    <innernamespace refid="namespaceteamcore_1_1tls">teamcore::tls</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceteamcore_1a726715870310e2950f3a9599dcb397f9" prot="public" static="yes" mutable="no">
+        <type><ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref></type>
+        <definition>SecureBuffer teamcore::g_appKey</definition>
+        <argsstring></argsstring>
+        <name>g_appKey</name>
+        <qualifiedname>teamcore::g_appKey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_layer.cpp" line="292" column="25" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1ae6986177aad8b6cf11a95cc938701225" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool teamcore::g_appKeyInitialized</definition>
+        <argsstring></argsstring>
+        <name>g_appKeyInitialized</name>
+        <qualifiedname>teamcore::g_appKeyInitialized</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_layer.cpp" line="293" column="17" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceteamcore_1a93c962251af36fbaa80abf0e8b5ba8f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::AppKey_InitFromEnvOrPrompt</definition>
+        <argsstring>()</argsstring>
+        <name>AppKey_InitFromEnvOrPrompt</name>
+        <qualifiedname>teamcore::AppKey_InitFromEnvOrPrompt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_layer.cpp" line="331" column="10" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="331" bodyend="361" declfile="src/LocalSports/header/security_layer.h" declline="63" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1af20ee911948fa779641624875aa3ea57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref> &amp;</type>
+        <definition>const SecureBuffer &amp; teamcore::AppKey_Get</definition>
+        <argsstring>()</argsstring>
+        <name>AppKey_Get</name>
+        <qualifiedname>teamcore::AppKey_Get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_layer.cpp" line="363" column="24" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="363" bodyend="367" declfile="src/LocalSports/header/security_layer.h" declline="64" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1aab0d6b6fe3a3dd4194fe96a5d110659d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::AppKey_IsReady</definition>
+        <argsstring>()</argsstring>
+        <name>AppKey_IsReady</name>
+        <qualifiedname>teamcore::AppKey_IsReady</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_layer.cpp" line="369" column="10" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="369" bodyend="371" declfile="src/LocalSports/header/security_layer.h" declline="65" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1a1d7ee6f2e73ff6cba98568d5c1213eca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string teamcore::read_password_secure</definition>
+        <argsstring>(const std::string &amp;prompt)</argsstring>
+        <name>read_password_secure</name>
+        <qualifiedname>teamcore::read_password_secure</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prompt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_layer.cpp" line="295" column="17" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="295" bodyend="329" declfile="src/LocalSports/header/security_layer.h" declline="68" declcolumn="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/LocalSports/header/security_hardening.h" line="7" column="1"/>
+  </compounddef>
+</doxygen>

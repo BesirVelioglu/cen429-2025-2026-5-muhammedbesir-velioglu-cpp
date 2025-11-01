@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_local_sports_test" kind="class" language="C++" prot="public">
+    <compoundname>LocalSportsTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">testing::Test</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_local_sports_test_1aeae2f6f9c7af18a72cd4e01218b6d15d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LocalSportsTest::SetUp</definition>
+        <argsstring>() override</argsstring>
+        <name>SetUp</name>
+        <qualifiedname>LocalSportsTest::SetUp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/LocalSports/localsports_test.cpp" line="10" column="8" bodyfile="src/tests/LocalSports/localsports_test.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_local_sports_test_1a57a48519a121a6e273ce849cb1126e11" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LocalSportsTest::TearDown</definition>
+        <argsstring>() override</argsstring>
+        <name>TearDown</name>
+        <qualifiedname>LocalSportsTest::TearDown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/LocalSports/localsports_test.cpp" line="14" column="8" bodyfile="src/tests/LocalSports/localsports_test.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>LocalSportsTest</label>
+        <link refid="class_local_sports_test"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>testing::Test</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>LocalSportsTest</label>
+        <link refid="class_local_sports_test"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>testing::Test</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/tests/LocalSports/localsports_test.cpp" line="8" column="1" bodyfile="src/tests/LocalSports/localsports_test.cpp" bodystart="8" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_local_sports_test_1aeae2f6f9c7af18a72cd4e01218b6d15d" prot="protected" virt="non-virtual"><scope>LocalSportsTest</scope><name>SetUp</name></member>
+      <member refid="class_local_sports_test_1a57a48519a121a6e273ce849cb1126e11" prot="protected" virt="non-virtual"><scope>LocalSportsTest</scope><name>TearDown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

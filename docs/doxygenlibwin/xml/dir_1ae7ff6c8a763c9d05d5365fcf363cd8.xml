@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_1ae7ff6c8a763c9d05d5365fcf363cd8" kind="dir">
+    <compoundname>src/LocalSports/header</compoundname>
+    <innerfile refid="localsports_8h">localsports.h</innerfile>
+    <innerfile refid="security__hardening_8h">security_hardening.h</innerfile>
+    <innerfile refid="security__layer_8h">security_layer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/LocalSports/header/"/>
+  </compounddef>
+</doxygen>

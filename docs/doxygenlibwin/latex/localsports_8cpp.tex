@@ -1,0 +1,167 @@
+\doxysection{src/\+Local\+Sports/src/localsports.cpp File Reference}
+\hypertarget{localsports_8cpp}{}\label{localsports_8cpp}\index{src/LocalSports/src/localsports.cpp@{src/LocalSports/src/localsports.cpp}}
+{\ttfamily \#include \"{}localsports.\+h\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$climits$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$sqlite3.\+h$>$}\newline
+{\ttfamily \#include \"{}security\+\_\+layer.\+h\"{}}\newline
+{\ttfamily \#include \"{}security\+\_\+hardening.\+h\"{}}\newline
+{\ttfamily \#include $<$openssl/crypto.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/rand.\+h$>$}\newline
+Include dependency graph for localsports.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{localsports_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{localsports_8cpp_aff7350ba4ddaca323e3660f8d4eedb2a}{LS\+\_\+\+Init}} ()
+\item 
+bool \mbox{\hyperlink{localsports_8cpp_ab117fdaf97f25d42c4292e1ae98ed094}{LS\+\_\+\+Auth\+Login\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8cpp_adbdbe18a3db5835cb46b3d3b6a8dd2a4}{LS\+\_\+\+Auth\+Register\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8cpp_af43cfb1a0908a075adc94295e31c28dd}{LS\+\_\+\+Auth\+Logout}} ()
+\item 
+bool \mbox{\hyperlink{localsports_8cpp_a1dd63114fbf33716846bf01944427350}{LS\+\_\+\+Is\+Authenticated}} ()
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{localsports_8cpp_abd8904e57f1a157e10414411c1d8ab37}{LS\+\_\+\+Current\+Username}} ()
+\item 
+void \mbox{\hyperlink{localsports_8cpp_a850907ca73190c6841e5204ba07b880a}{LS\+\_\+\+List\+Players\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8cpp_a6941a85dbd59a6326bdaebce0c855cee}{LS\+\_\+\+Add\+Player\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8cpp_a150377dbd6fd02d895815280e64b43bd}{LS\+\_\+\+Edit\+Player\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8cpp_a9af01eaf1cfc99b151a6bd53ec0f47dc}{LS\+\_\+\+Remove\+Player\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8cpp_ac65e0ec07dac8fec7a853d91f790a211}{LS\+\_\+\+List\+Games\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8cpp_ad57732a13ddc48c64c6aa545717c72b9}{LS\+\_\+\+Add\+Game\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8cpp_aed2b2fa736d2060bdb8d9bea3821473a}{LS\+\_\+\+Record\+Result\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8cpp_a04c27fb1a31321f28f13772d75046246}{LS\+\_\+\+Record\+Stats\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8cpp_aaff947fb9d3c2530ca58838200be9110}{LS\+\_\+\+View\+Player\+Totals\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8cpp_a85337b1fb4b0c0bb2e1ea5eb8b095898}{LS\+\_\+\+List\+Messages\+Interactive}} ()
+\item 
+void \mbox{\hyperlink{localsports_8cpp_a1668116b9386e1dd49cf0fa0ead92778}{LS\+\_\+\+Add\+Message\+Interactive}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{localsports_8cpp_ad57732a13ddc48c64c6aa545717c72b9}\label{localsports_8cpp_ad57732a13ddc48c64c6aa545717c72b9} 
+\index{localsports.cpp@{localsports.cpp}!LS\_AddGameInteractive@{LS\_AddGameInteractive}}
+\index{LS\_AddGameInteractive@{LS\_AddGameInteractive}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_AddGameInteractive()}{LS\_AddGameInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Add\+Game\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_a1668116b9386e1dd49cf0fa0ead92778}\label{localsports_8cpp_a1668116b9386e1dd49cf0fa0ead92778} 
+\index{localsports.cpp@{localsports.cpp}!LS\_AddMessageInteractive@{LS\_AddMessageInteractive}}
+\index{LS\_AddMessageInteractive@{LS\_AddMessageInteractive}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_AddMessageInteractive()}{LS\_AddMessageInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Add\+Message\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_a6941a85dbd59a6326bdaebce0c855cee}\label{localsports_8cpp_a6941a85dbd59a6326bdaebce0c855cee} 
+\index{localsports.cpp@{localsports.cpp}!LS\_AddPlayerInteractive@{LS\_AddPlayerInteractive}}
+\index{LS\_AddPlayerInteractive@{LS\_AddPlayerInteractive}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_AddPlayerInteractive()}{LS\_AddPlayerInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Add\+Player\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_ab117fdaf97f25d42c4292e1ae98ed094}\label{localsports_8cpp_ab117fdaf97f25d42c4292e1ae98ed094} 
+\index{localsports.cpp@{localsports.cpp}!LS\_AuthLoginInteractive@{LS\_AuthLoginInteractive}}
+\index{LS\_AuthLoginInteractive@{LS\_AuthLoginInteractive}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_AuthLoginInteractive()}{LS\_AuthLoginInteractive()}}
+{\footnotesize\ttfamily bool LS\+\_\+\+Auth\+Login\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_af43cfb1a0908a075adc94295e31c28dd}\label{localsports_8cpp_af43cfb1a0908a075adc94295e31c28dd} 
+\index{localsports.cpp@{localsports.cpp}!LS\_AuthLogout@{LS\_AuthLogout}}
+\index{LS\_AuthLogout@{LS\_AuthLogout}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_AuthLogout()}{LS\_AuthLogout()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Auth\+Logout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_adbdbe18a3db5835cb46b3d3b6a8dd2a4}\label{localsports_8cpp_adbdbe18a3db5835cb46b3d3b6a8dd2a4} 
+\index{localsports.cpp@{localsports.cpp}!LS\_AuthRegisterInteractive@{LS\_AuthRegisterInteractive}}
+\index{LS\_AuthRegisterInteractive@{LS\_AuthRegisterInteractive}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_AuthRegisterInteractive()}{LS\_AuthRegisterInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Auth\+Register\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_abd8904e57f1a157e10414411c1d8ab37}\label{localsports_8cpp_abd8904e57f1a157e10414411c1d8ab37} 
+\index{localsports.cpp@{localsports.cpp}!LS\_CurrentUsername@{LS\_CurrentUsername}}
+\index{LS\_CurrentUsername@{LS\_CurrentUsername}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_CurrentUsername()}{LS\_CurrentUsername()}}
+{\footnotesize\ttfamily const char \texorpdfstring{$\ast$}{*} LS\+\_\+\+Current\+Username (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_a150377dbd6fd02d895815280e64b43bd}\label{localsports_8cpp_a150377dbd6fd02d895815280e64b43bd} 
+\index{localsports.cpp@{localsports.cpp}!LS\_EditPlayerInteractive@{LS\_EditPlayerInteractive}}
+\index{LS\_EditPlayerInteractive@{LS\_EditPlayerInteractive}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_EditPlayerInteractive()}{LS\_EditPlayerInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Edit\+Player\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_aff7350ba4ddaca323e3660f8d4eedb2a}\label{localsports_8cpp_aff7350ba4ddaca323e3660f8d4eedb2a} 
+\index{localsports.cpp@{localsports.cpp}!LS\_Init@{LS\_Init}}
+\index{LS\_Init@{LS\_Init}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_Init()}{LS\_Init()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_a1dd63114fbf33716846bf01944427350}\label{localsports_8cpp_a1dd63114fbf33716846bf01944427350} 
+\index{localsports.cpp@{localsports.cpp}!LS\_IsAuthenticated@{LS\_IsAuthenticated}}
+\index{LS\_IsAuthenticated@{LS\_IsAuthenticated}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_IsAuthenticated()}{LS\_IsAuthenticated()}}
+{\footnotesize\ttfamily bool LS\+\_\+\+Is\+Authenticated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_ac65e0ec07dac8fec7a853d91f790a211}\label{localsports_8cpp_ac65e0ec07dac8fec7a853d91f790a211} 
+\index{localsports.cpp@{localsports.cpp}!LS\_ListGamesInteractive@{LS\_ListGamesInteractive}}
+\index{LS\_ListGamesInteractive@{LS\_ListGamesInteractive}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_ListGamesInteractive()}{LS\_ListGamesInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+List\+Games\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_a85337b1fb4b0c0bb2e1ea5eb8b095898}\label{localsports_8cpp_a85337b1fb4b0c0bb2e1ea5eb8b095898} 
+\index{localsports.cpp@{localsports.cpp}!LS\_ListMessagesInteractive@{LS\_ListMessagesInteractive}}
+\index{LS\_ListMessagesInteractive@{LS\_ListMessagesInteractive}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_ListMessagesInteractive()}{LS\_ListMessagesInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+List\+Messages\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_a850907ca73190c6841e5204ba07b880a}\label{localsports_8cpp_a850907ca73190c6841e5204ba07b880a} 
+\index{localsports.cpp@{localsports.cpp}!LS\_ListPlayersInteractive@{LS\_ListPlayersInteractive}}
+\index{LS\_ListPlayersInteractive@{LS\_ListPlayersInteractive}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_ListPlayersInteractive()}{LS\_ListPlayersInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+List\+Players\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_aed2b2fa736d2060bdb8d9bea3821473a}\label{localsports_8cpp_aed2b2fa736d2060bdb8d9bea3821473a} 
+\index{localsports.cpp@{localsports.cpp}!LS\_RecordResultInteractive@{LS\_RecordResultInteractive}}
+\index{LS\_RecordResultInteractive@{LS\_RecordResultInteractive}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_RecordResultInteractive()}{LS\_RecordResultInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Record\+Result\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_a04c27fb1a31321f28f13772d75046246}\label{localsports_8cpp_a04c27fb1a31321f28f13772d75046246} 
+\index{localsports.cpp@{localsports.cpp}!LS\_RecordStatsInteractive@{LS\_RecordStatsInteractive}}
+\index{LS\_RecordStatsInteractive@{LS\_RecordStatsInteractive}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_RecordStatsInteractive()}{LS\_RecordStatsInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Record\+Stats\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_a9af01eaf1cfc99b151a6bd53ec0f47dc}\label{localsports_8cpp_a9af01eaf1cfc99b151a6bd53ec0f47dc} 
+\index{localsports.cpp@{localsports.cpp}!LS\_RemovePlayerInteractive@{LS\_RemovePlayerInteractive}}
+\index{LS\_RemovePlayerInteractive@{LS\_RemovePlayerInteractive}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_RemovePlayerInteractive()}{LS\_RemovePlayerInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+Remove\+Player\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{localsports_8cpp_aaff947fb9d3c2530ca58838200be9110}\label{localsports_8cpp_aaff947fb9d3c2530ca58838200be9110} 
+\index{localsports.cpp@{localsports.cpp}!LS\_ViewPlayerTotalsInteractive@{LS\_ViewPlayerTotalsInteractive}}
+\index{LS\_ViewPlayerTotalsInteractive@{LS\_ViewPlayerTotalsInteractive}!localsports.cpp@{localsports.cpp}}
+\doxysubsubsection{\texorpdfstring{LS\_ViewPlayerTotalsInteractive()}{LS\_ViewPlayerTotalsInteractive()}}
+{\footnotesize\ttfamily void LS\+\_\+\+View\+Player\+Totals\+Interactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,81 @@
+\doxysection{src/\+Local\+Sports/header/security\+\_\+hardening.h File Reference}
+\hypertarget{security__hardening_8h}{}\label{security__hardening_8h}\index{src/LocalSports/header/security\_hardening.h@{src/LocalSports/header/security\_hardening.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+Include dependency graph for security\+\_\+hardening.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{security__hardening_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{security__hardening_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceteamcore}{teamcore}}
+\item 
+namespace \mbox{\hyperlink{namespaceteamcore_1_1hardening}{teamcore\+::hardening}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a4ccea0ed29b104587db03d54bc960bf0}{teamcore\+::hardening\+::\+Is\+Debugger\+Present}} ()
+\begin{DoxyCompactList}\small\item\em Debugger tespiti (Windows ve Linux) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_ae209c51a81263aa5bc74da4b642f10b9}{teamcore\+::hardening\+::\+Start\+Anti\+Debug\+Monitor}} ()
+\begin{DoxyCompactList}\small\item\em Anti-\/debug kontrolünü başlat (arka planda izleme thread) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_a37c56ba459b67d0eb1b860d5b6731706}{teamcore\+::hardening\+::\+Stop\+Anti\+Debug\+Monitor}} ()
+\begin{DoxyCompactList}\small\item\em Anti-\/debug monitoring thread\textquotesingle{}ini durdur. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespaceteamcore_1_1hardening_a8c5fc8254a61b0540a7dd0d37b83f996}{teamcore\+::hardening\+::\+Get\+Executable\+Hash}} ()
+\begin{DoxyCompactList}\small\item\em Executable\textquotesingle{}ın SHA256 hash değerini hesapla. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a9847be046f4689a1108adb22ebdb2dd3}{teamcore\+::hardening\+::\+Verify\+Integrity}} (const std\+::string \&expected\+Hash)
+\begin{DoxyCompactList}\small\item\em Kodun değiştirilip değiştirilmediğini kontrol et. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_ae3cee1714e401ddec13be459d2d61d32}{teamcore\+::hardening\+::\+Is\+Running\+In\+VM}} ()
+\begin{DoxyCompactList}\small\item\em Sanal makina veya emulator tespiti. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_ae4bd5f482bf7729d5e890edca9dde1a9}{teamcore\+::hardening\+::\+Is\+Rooted\+Or\+Jailbroken}} ()
+\begin{DoxyCompactList}\small\item\em Windows\+: Admin yetkileri kontrolü, Linux\+: Root user kontrolü \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a06e6d5cbec776da17c8579b240572990}{teamcore\+::hardening\+::\+Perform\+Security\+Checks}} ()
+\begin{DoxyCompactList}\small\item\em Güvenlik ortamı kontrollerini başlat. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a746ff56ebc94e9f1bfcbd31887870cba}{teamcore\+::hardening\+::\+Opaque\+Predicate\+Always\+True}} ()
+\begin{DoxyCompactList}\small\item\em Opaque predicate (her zaman true dönen karmaşık koşul) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a4b3b5932836fd13c7ac69145c6e7cd78}{teamcore\+::hardening\+::\+Opaque\+Predicate\+Always\+False}} ()
+\begin{DoxyCompactList}\small\item\em Opaque predicate (her zaman false dönen karmaşık koşul) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a43750c108316d92f81a039ffd3cd9c1c}{teamcore\+::hardening\+::\+Opaque\+Math\+Predicate}} (int x)
+\begin{DoxyCompactList}\small\item\em Karmaşık matematiksel opaque predicate. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespaceteamcore_1_1hardening_aee2e27250f691bc7176519b136fae105}{teamcore\+::hardening\+::\+Obfuscate\+String}} (const char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Compile-\/time string obfuscation (XOR ile) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespaceteamcore_1_1hardening_a6df62925f350fd8146306e930b661bfd}{teamcore\+::hardening\+::\+Deobfuscate\+String}} (const std\+::string \&obfuscated)
+\begin{DoxyCompactList}\small\item\em Obfuscate edilmiş string\textquotesingle{}i decode et. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{namespaceteamcore_1_1hardening_acb446a1528d7f51891b2da13b22bdf7c}{teamcore\+::hardening\+::\+Obfuscate\+Value}} (uint64\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Magic number obfuscation. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{namespaceteamcore_1_1hardening_adfa9292737ac992d8f81b45b86520b23}{teamcore\+::hardening\+::\+Deobfuscate\+Value}} (uint64\+\_\+t obfuscated)
+\begin{DoxyCompactList}\small\item\em Obfuscate edilmiş değeri decode et. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_a4941e511e83aec7e1fc772cb3d845d53}{teamcore\+::hardening\+::\+Opaque\+Loop}} (int iterations)
+\begin{DoxyCompactList}\small\item\em Kontrol akışını karmaşıklaştıran opaque loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_a88d593c2f98785d64c913d47e781c7ae}{teamcore\+::hardening\+::\+Call\+Obfuscated}} (void(\texorpdfstring{$\ast$}{*}func)())
+\begin{DoxyCompactList}\small\item\em İndirect function call (fonksiyon pointer gizleme) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a3238760d705163dba235cf8cf72cca3a}{teamcore\+::hardening\+::\+Obfuscate\+Boolean\+Condition}} (bool condition)
+\begin{DoxyCompactList}\small\item\em Boolean değişkenler için obfuscation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_adf6349975e561b1958f1cf8ac269b50a}{teamcore\+::hardening\+::\+Fake\+Security\+Check}} ()
+\begin{DoxyCompactList}\small\item\em Sahte fonksiyon (reverse engineer\textquotesingle{}ı yanıltmak için) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceteamcore_1_1hardening_a65f152a453d8b0eafeca0c51cdca071e}{teamcore\+::hardening\+::\+Obfuscate\+Add}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Aritmetik işlemleri karmaşıklaştırma. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceteamcore_1_1hardening_a918ede4de28911a4c161501433774f44}{teamcore\+::hardening\+::\+Obfuscate\+Multiply}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Aritmetik işlemleri karmaşıklaştırma (çarpma) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_a754b280336bc789a7e1a486ab6c9e197}{teamcore\+::hardening\+::\+Random\+Exit\+Point}} (bool checks\+Passed)
+\begin{DoxyCompactList}\small\item\em Rastgele çıkış noktaları (kontrol akışını gizleme) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_ad005cebc9299a5eb73e8eb219ab6752b}{teamcore\+::hardening\+::\+Terminate\+On\+Threat}} (const char \texorpdfstring{$\ast$}{*}reason)
+\begin{DoxyCompactList}\small\item\em Güvenlik ihlali durumunda uygulamayı sonlandır. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_a11c0b4e108d9e1d907cf060c6d800bf6}{teamcore\+::hardening\+::\+Secure\+Terminate}} ()
+\begin{DoxyCompactList}\small\item\em Belleği temizle ve uygulamayı kapat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_a17e48f5adaec0be70a63a8c27d15bf93}{teamcore\+::hardening\+::\+Secure\+Log}} (const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Release modunda debug loglarını kaldır. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a4f2f30369ecf9f3549c4535a07940d7f}{teamcore\+::hardening\+::\+Is\+Debug\+Build}} ()
+\begin{DoxyCompactList}\small\item\em Build configuration kontrolü \end{DoxyCompactList}\end{DoxyCompactItemize}

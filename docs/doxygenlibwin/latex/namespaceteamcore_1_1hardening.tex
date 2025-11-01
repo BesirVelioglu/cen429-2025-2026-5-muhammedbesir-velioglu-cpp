@@ -1,0 +1,445 @@
+\doxysection{teamcore\+::hardening Namespace Reference}
+\hypertarget{namespaceteamcore_1_1hardening}{}\label{namespaceteamcore_1_1hardening}\index{teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a4ccea0ed29b104587db03d54bc960bf0}{Is\+Debugger\+Present}} ()
+\begin{DoxyCompactList}\small\item\em Debugger tespiti (Windows ve Linux) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_ae209c51a81263aa5bc74da4b642f10b9}{Start\+Anti\+Debug\+Monitor}} ()
+\begin{DoxyCompactList}\small\item\em Anti-\/debug kontrolünü başlat (arka planda izleme thread) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_a37c56ba459b67d0eb1b860d5b6731706}{Stop\+Anti\+Debug\+Monitor}} ()
+\begin{DoxyCompactList}\small\item\em Anti-\/debug monitoring thread\textquotesingle{}ini durdur. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespaceteamcore_1_1hardening_a8c5fc8254a61b0540a7dd0d37b83f996}{Get\+Executable\+Hash}} ()
+\begin{DoxyCompactList}\small\item\em Executable\textquotesingle{}ın SHA256 hash değerini hesapla. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a9847be046f4689a1108adb22ebdb2dd3}{Verify\+Integrity}} (const std\+::string \&expected\+Hash)
+\begin{DoxyCompactList}\small\item\em Kodun değiştirilip değiştirilmediğini kontrol et. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_ae3cee1714e401ddec13be459d2d61d32}{Is\+Running\+In\+VM}} ()
+\begin{DoxyCompactList}\small\item\em Sanal makina veya emulator tespiti. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_ae4bd5f482bf7729d5e890edca9dde1a9}{Is\+Rooted\+Or\+Jailbroken}} ()
+\begin{DoxyCompactList}\small\item\em Windows\+: Admin yetkileri kontrolü, Linux\+: Root user kontrolü \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a06e6d5cbec776da17c8579b240572990}{Perform\+Security\+Checks}} ()
+\begin{DoxyCompactList}\small\item\em Güvenlik ortamı kontrollerini başlat. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a746ff56ebc94e9f1bfcbd31887870cba}{Opaque\+Predicate\+Always\+True}} ()
+\begin{DoxyCompactList}\small\item\em Opaque predicate (her zaman true dönen karmaşık koşul) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a4b3b5932836fd13c7ac69145c6e7cd78}{Opaque\+Predicate\+Always\+False}} ()
+\begin{DoxyCompactList}\small\item\em Opaque predicate (her zaman false dönen karmaşık koşul) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a43750c108316d92f81a039ffd3cd9c1c}{Opaque\+Math\+Predicate}} (int x)
+\begin{DoxyCompactList}\small\item\em Karmaşık matematiksel opaque predicate. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespaceteamcore_1_1hardening_aee2e27250f691bc7176519b136fae105}{Obfuscate\+String}} (const char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Compile-\/time string obfuscation (XOR ile) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespaceteamcore_1_1hardening_a6df62925f350fd8146306e930b661bfd}{Deobfuscate\+String}} (const std\+::string \&obfuscated)
+\begin{DoxyCompactList}\small\item\em Obfuscate edilmiş string\textquotesingle{}i decode et. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{namespaceteamcore_1_1hardening_acb446a1528d7f51891b2da13b22bdf7c}{Obfuscate\+Value}} (uint64\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Magic number obfuscation. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{namespaceteamcore_1_1hardening_adfa9292737ac992d8f81b45b86520b23}{Deobfuscate\+Value}} (uint64\+\_\+t obfuscated)
+\begin{DoxyCompactList}\small\item\em Obfuscate edilmiş değeri decode et. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_a4941e511e83aec7e1fc772cb3d845d53}{Opaque\+Loop}} (int iterations)
+\begin{DoxyCompactList}\small\item\em Kontrol akışını karmaşıklaştıran opaque loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_a88d593c2f98785d64c913d47e781c7ae}{Call\+Obfuscated}} (void(\texorpdfstring{$\ast$}{*}func)())
+\begin{DoxyCompactList}\small\item\em İndirect function call (fonksiyon pointer gizleme) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a3238760d705163dba235cf8cf72cca3a}{Obfuscate\+Boolean\+Condition}} (bool condition)
+\begin{DoxyCompactList}\small\item\em Boolean değişkenler için obfuscation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_adf6349975e561b1958f1cf8ac269b50a}{Fake\+Security\+Check}} ()
+\begin{DoxyCompactList}\small\item\em Sahte fonksiyon (reverse engineer\textquotesingle{}ı yanıltmak için) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceteamcore_1_1hardening_a65f152a453d8b0eafeca0c51cdca071e}{Obfuscate\+Add}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Aritmetik işlemleri karmaşıklaştırma. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceteamcore_1_1hardening_a918ede4de28911a4c161501433774f44}{Obfuscate\+Multiply}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Aritmetik işlemleri karmaşıklaştırma (çarpma) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_a754b280336bc789a7e1a486ab6c9e197}{Random\+Exit\+Point}} (bool checks\+Passed)
+\begin{DoxyCompactList}\small\item\em Rastgele çıkış noktaları (kontrol akışını gizleme) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_ad005cebc9299a5eb73e8eb219ab6752b}{Terminate\+On\+Threat}} (const char \texorpdfstring{$\ast$}{*}reason)
+\begin{DoxyCompactList}\small\item\em Güvenlik ihlali durumunda uygulamayı sonlandır. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_a11c0b4e108d9e1d907cf060c6d800bf6}{Secure\+Terminate}} ()
+\begin{DoxyCompactList}\small\item\em Belleği temizle ve uygulamayı kapat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1hardening_a17e48f5adaec0be70a63a8c27d15bf93}{Secure\+Log}} (const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Release modunda debug loglarını kaldır. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1hardening_a4f2f30369ecf9f3549c4535a07940d7f}{Is\+Debug\+Build}} ()
+\begin{DoxyCompactList}\small\item\em Build configuration kontrolü \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceteamcore_1_1hardening_a88d593c2f98785d64c913d47e781c7ae}\label{namespaceteamcore_1_1hardening_a88d593c2f98785d64c913d47e781c7ae} 
+\index{teamcore::hardening@{teamcore::hardening}!CallObfuscated@{CallObfuscated}}
+\index{CallObfuscated@{CallObfuscated}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{CallObfuscated()}{CallObfuscated()}}
+{\footnotesize\ttfamily void teamcore\+::hardening\+::\+Call\+Obfuscated (\begin{DoxyParamCaption}\item[{void(\texorpdfstring{$\ast$}{*})()}]{func }\end{DoxyParamCaption})}
+
+
+
+İndirect function call (fonksiyon pointer gizleme) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & Çağrılacak fonksiyon \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespaceteamcore_1_1hardening_a6df62925f350fd8146306e930b661bfd}\label{namespaceteamcore_1_1hardening_a6df62925f350fd8146306e930b661bfd} 
+\index{teamcore::hardening@{teamcore::hardening}!DeobfuscateString@{DeobfuscateString}}
+\index{DeobfuscateString@{DeobfuscateString}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{DeobfuscateString()}{DeobfuscateString()}}
+{\footnotesize\ttfamily std\+::string teamcore\+::hardening\+::\+Deobfuscate\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{obfuscated }\end{DoxyParamCaption})}
+
+
+
+Obfuscate edilmiş string\textquotesingle{}i decode et. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obfuscated} & Obfuscate edilmiş string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Orijinal string 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_adfa9292737ac992d8f81b45b86520b23}\label{namespaceteamcore_1_1hardening_adfa9292737ac992d8f81b45b86520b23} 
+\index{teamcore::hardening@{teamcore::hardening}!DeobfuscateValue@{DeobfuscateValue}}
+\index{DeobfuscateValue@{DeobfuscateValue}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{DeobfuscateValue()}{DeobfuscateValue()}}
+{\footnotesize\ttfamily uint64\+\_\+t teamcore\+::hardening\+::\+Deobfuscate\+Value (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{obfuscated }\end{DoxyParamCaption})}
+
+
+
+Obfuscate edilmiş değeri decode et. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obfuscated} & Obfuscate edilmiş değer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Orijinal değer 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_adf6349975e561b1958f1cf8ac269b50a}\label{namespaceteamcore_1_1hardening_adf6349975e561b1958f1cf8ac269b50a} 
+\index{teamcore::hardening@{teamcore::hardening}!FakeSecurityCheck@{FakeSecurityCheck}}
+\index{FakeSecurityCheck@{FakeSecurityCheck}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{FakeSecurityCheck()}{FakeSecurityCheck()}}
+{\footnotesize\ttfamily void teamcore\+::hardening\+::\+Fake\+Security\+Check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sahte fonksiyon (reverse engineer\textquotesingle{}ı yanıltmak için) 
+
+Gerçekte hiçbir işe yaramaz ama önemli gibi görünür \Hypertarget{namespaceteamcore_1_1hardening_a8c5fc8254a61b0540a7dd0d37b83f996}\label{namespaceteamcore_1_1hardening_a8c5fc8254a61b0540a7dd0d37b83f996} 
+\index{teamcore::hardening@{teamcore::hardening}!GetExecutableHash@{GetExecutableHash}}
+\index{GetExecutableHash@{GetExecutableHash}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{GetExecutableHash()}{GetExecutableHash()}}
+{\footnotesize\ttfamily std\+::string teamcore\+::hardening\+::\+Get\+Executable\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Executable\textquotesingle{}ın SHA256 hash değerini hesapla. 
+
+\begin{DoxyReturn}{Returns}
+Hex string (64 karakter) 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_a4f2f30369ecf9f3549c4535a07940d7f}\label{namespaceteamcore_1_1hardening_a4f2f30369ecf9f3549c4535a07940d7f} 
+\index{teamcore::hardening@{teamcore::hardening}!IsDebugBuild@{IsDebugBuild}}
+\index{IsDebugBuild@{IsDebugBuild}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{IsDebugBuild()}{IsDebugBuild()}}
+{\footnotesize\ttfamily bool teamcore\+::hardening\+::\+Is\+Debug\+Build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Build configuration kontrolü 
+
+\begin{DoxyReturn}{Returns}
+true ise debug build, false ise release build 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_a4ccea0ed29b104587db03d54bc960bf0}\label{namespaceteamcore_1_1hardening_a4ccea0ed29b104587db03d54bc960bf0} 
+\index{teamcore::hardening@{teamcore::hardening}!IsDebuggerPresent@{IsDebuggerPresent}}
+\index{IsDebuggerPresent@{IsDebuggerPresent}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{IsDebuggerPresent()}{IsDebuggerPresent()}}
+{\footnotesize\ttfamily bool teamcore\+::hardening\+::\+Is\+Debugger\+Present (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Debugger tespiti (Windows ve Linux) 
+
+\begin{DoxyReturn}{Returns}
+true ise debugger algılandı 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_ae4bd5f482bf7729d5e890edca9dde1a9}\label{namespaceteamcore_1_1hardening_ae4bd5f482bf7729d5e890edca9dde1a9} 
+\index{teamcore::hardening@{teamcore::hardening}!IsRootedOrJailbroken@{IsRootedOrJailbroken}}
+\index{IsRootedOrJailbroken@{IsRootedOrJailbroken}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{IsRootedOrJailbroken()}{IsRootedOrJailbroken()}}
+{\footnotesize\ttfamily bool teamcore\+::hardening\+::\+Is\+Rooted\+Or\+Jailbroken (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Windows\+: Admin yetkileri kontrolü, Linux\+: Root user kontrolü 
+
+\begin{DoxyReturn}{Returns}
+true ise root/admin yetkisi var 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_ae3cee1714e401ddec13be459d2d61d32}\label{namespaceteamcore_1_1hardening_ae3cee1714e401ddec13be459d2d61d32} 
+\index{teamcore::hardening@{teamcore::hardening}!IsRunningInVM@{IsRunningInVM}}
+\index{IsRunningInVM@{IsRunningInVM}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{IsRunningInVM()}{IsRunningInVM()}}
+{\footnotesize\ttfamily bool teamcore\+::hardening\+::\+Is\+Running\+In\+VM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sanal makina veya emulator tespiti. 
+
+\begin{DoxyReturn}{Returns}
+true ise VM/emulator algılandı 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_a65f152a453d8b0eafeca0c51cdca071e}\label{namespaceteamcore_1_1hardening_a65f152a453d8b0eafeca0c51cdca071e} 
+\index{teamcore::hardening@{teamcore::hardening}!ObfuscateAdd@{ObfuscateAdd}}
+\index{ObfuscateAdd@{ObfuscateAdd}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{ObfuscateAdd()}{ObfuscateAdd()}}
+{\footnotesize\ttfamily int teamcore\+::hardening\+::\+Obfuscate\+Add (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Aritmetik işlemleri karmaşıklaştırma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & İlk değer \\
+\hline
+{\em b} & İkinci değer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a + b (ama karmaşık hesaplama ile) 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_a3238760d705163dba235cf8cf72cca3a}\label{namespaceteamcore_1_1hardening_a3238760d705163dba235cf8cf72cca3a} 
+\index{teamcore::hardening@{teamcore::hardening}!ObfuscateBooleanCondition@{ObfuscateBooleanCondition}}
+\index{ObfuscateBooleanCondition@{ObfuscateBooleanCondition}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{ObfuscateBooleanCondition()}{ObfuscateBooleanCondition()}}
+{\footnotesize\ttfamily bool teamcore\+::hardening\+::\+Obfuscate\+Boolean\+Condition (\begin{DoxyParamCaption}\item[{bool}]{condition }\end{DoxyParamCaption})}
+
+
+
+Boolean değişkenler için obfuscation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em condition} & Koşul \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aynı koşul ama karmaşık hesaplama ile 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_a918ede4de28911a4c161501433774f44}\label{namespaceteamcore_1_1hardening_a918ede4de28911a4c161501433774f44} 
+\index{teamcore::hardening@{teamcore::hardening}!ObfuscateMultiply@{ObfuscateMultiply}}
+\index{ObfuscateMultiply@{ObfuscateMultiply}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{ObfuscateMultiply()}{ObfuscateMultiply()}}
+{\footnotesize\ttfamily int teamcore\+::hardening\+::\+Obfuscate\+Multiply (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Aritmetik işlemleri karmaşıklaştırma (çarpma) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & İlk değer \\
+\hline
+{\em b} & İkinci değer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \texorpdfstring{$\ast$}{*} b (ama karmaşık hesaplama ile) 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_aee2e27250f691bc7176519b136fae105}\label{namespaceteamcore_1_1hardening_aee2e27250f691bc7176519b136fae105} 
+\index{teamcore::hardening@{teamcore::hardening}!ObfuscateString@{ObfuscateString}}
+\index{ObfuscateString@{ObfuscateString}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{ObfuscateString()}{ObfuscateString()}}
+{\footnotesize\ttfamily std\+::string teamcore\+::hardening\+::\+Obfuscate\+String (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+
+
+Compile-\/time string obfuscation (XOR ile) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Şifrelenecek string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Obfuscate edilmiş string (runtime\textquotesingle{}da decode edilir) 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_acb446a1528d7f51891b2da13b22bdf7c}\label{namespaceteamcore_1_1hardening_acb446a1528d7f51891b2da13b22bdf7c} 
+\index{teamcore::hardening@{teamcore::hardening}!ObfuscateValue@{ObfuscateValue}}
+\index{ObfuscateValue@{ObfuscateValue}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{ObfuscateValue()}{ObfuscateValue()}}
+{\footnotesize\ttfamily uint64\+\_\+t teamcore\+::hardening\+::\+Obfuscate\+Value (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Magic number obfuscation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Saklanacak değer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Obfuscate edilmiş değer 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_a4941e511e83aec7e1fc772cb3d845d53}\label{namespaceteamcore_1_1hardening_a4941e511e83aec7e1fc772cb3d845d53} 
+\index{teamcore::hardening@{teamcore::hardening}!OpaqueLoop@{OpaqueLoop}}
+\index{OpaqueLoop@{OpaqueLoop}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{OpaqueLoop()}{OpaqueLoop()}}
+{\footnotesize\ttfamily void teamcore\+::hardening\+::\+Opaque\+Loop (\begin{DoxyParamCaption}\item[{int}]{iterations }\end{DoxyParamCaption})}
+
+
+
+Kontrol akışını karmaşıklaştıran opaque loop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterations} & İterasyon sayısı\\
+\hline
+\end{DoxyParams}
+Dummy hesaplamalar ile kod analizi zorlaştırır \Hypertarget{namespaceteamcore_1_1hardening_a43750c108316d92f81a039ffd3cd9c1c}\label{namespaceteamcore_1_1hardening_a43750c108316d92f81a039ffd3cd9c1c} 
+\index{teamcore::hardening@{teamcore::hardening}!OpaqueMathPredicate@{OpaqueMathPredicate}}
+\index{OpaqueMathPredicate@{OpaqueMathPredicate}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{OpaqueMathPredicate()}{OpaqueMathPredicate()}}
+{\footnotesize\ttfamily bool teamcore\+::hardening\+::\+Opaque\+Math\+Predicate (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Karmaşık matematiksel opaque predicate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Input değeri \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Her zaman true (x\texorpdfstring{$\ast$}{*}x \texorpdfstring{$>$}{>}= 0) 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_a4b3b5932836fd13c7ac69145c6e7cd78}\label{namespaceteamcore_1_1hardening_a4b3b5932836fd13c7ac69145c6e7cd78} 
+\index{teamcore::hardening@{teamcore::hardening}!OpaquePredicateAlwaysFalse@{OpaquePredicateAlwaysFalse}}
+\index{OpaquePredicateAlwaysFalse@{OpaquePredicateAlwaysFalse}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{OpaquePredicateAlwaysFalse()}{OpaquePredicateAlwaysFalse()}}
+{\footnotesize\ttfamily bool teamcore\+::hardening\+::\+Opaque\+Predicate\+Always\+False (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Opaque predicate (her zaman false dönen karmaşık koşul) 
+
+\begin{DoxyReturn}{Returns}
+Her zaman false 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_a746ff56ebc94e9f1bfcbd31887870cba}\label{namespaceteamcore_1_1hardening_a746ff56ebc94e9f1bfcbd31887870cba} 
+\index{teamcore::hardening@{teamcore::hardening}!OpaquePredicateAlwaysTrue@{OpaquePredicateAlwaysTrue}}
+\index{OpaquePredicateAlwaysTrue@{OpaquePredicateAlwaysTrue}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{OpaquePredicateAlwaysTrue()}{OpaquePredicateAlwaysTrue()}}
+{\footnotesize\ttfamily bool teamcore\+::hardening\+::\+Opaque\+Predicate\+Always\+True (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Opaque predicate (her zaman true dönen karmaşık koşul) 
+
+Kontrol akışını karmaşıklaştırmak için kullanılır \begin{DoxyReturn}{Returns}
+Her zaman true 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_a06e6d5cbec776da17c8579b240572990}\label{namespaceteamcore_1_1hardening_a06e6d5cbec776da17c8579b240572990} 
+\index{teamcore::hardening@{teamcore::hardening}!PerformSecurityChecks@{PerformSecurityChecks}}
+\index{PerformSecurityChecks@{PerformSecurityChecks}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{PerformSecurityChecks()}{PerformSecurityChecks()}}
+{\footnotesize\ttfamily bool teamcore\+::hardening\+::\+Perform\+Security\+Checks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Güvenlik ortamı kontrollerini başlat. 
+
+Debugger, VM tespitlerini bir arada yapar \begin{DoxyReturn}{Returns}
+true ise tüm kontroller geçti, false ise tehdit var 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1hardening_a754b280336bc789a7e1a486ab6c9e197}\label{namespaceteamcore_1_1hardening_a754b280336bc789a7e1a486ab6c9e197} 
+\index{teamcore::hardening@{teamcore::hardening}!RandomExitPoint@{RandomExitPoint}}
+\index{RandomExitPoint@{RandomExitPoint}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{RandomExitPoint()}{RandomExitPoint()}}
+{\footnotesize\ttfamily void teamcore\+::hardening\+::\+Random\+Exit\+Point (\begin{DoxyParamCaption}\item[{bool}]{checks\+Passed }\end{DoxyParamCaption})}
+
+
+
+Rastgele çıkış noktaları (kontrol akışını gizleme) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checks\+Passed} & Güvenlik kontrolleri geçti mi? \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespaceteamcore_1_1hardening_a17e48f5adaec0be70a63a8c27d15bf93}\label{namespaceteamcore_1_1hardening_a17e48f5adaec0be70a63a8c27d15bf93} 
+\index{teamcore::hardening@{teamcore::hardening}!SecureLog@{SecureLog}}
+\index{SecureLog@{SecureLog}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{SecureLog()}{SecureLog()}}
+{\footnotesize\ttfamily void teamcore\+::hardening\+::\+Secure\+Log (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+
+
+Release modunda debug loglarını kaldır. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Log mesajı \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespaceteamcore_1_1hardening_a11c0b4e108d9e1d907cf060c6d800bf6}\label{namespaceteamcore_1_1hardening_a11c0b4e108d9e1d907cf060c6d800bf6} 
+\index{teamcore::hardening@{teamcore::hardening}!SecureTerminate@{SecureTerminate}}
+\index{SecureTerminate@{SecureTerminate}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{SecureTerminate()}{SecureTerminate()}}
+{\footnotesize\ttfamily void teamcore\+::hardening\+::\+Secure\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Belleği temizle ve uygulamayı kapat. 
+
+\Hypertarget{namespaceteamcore_1_1hardening_ae209c51a81263aa5bc74da4b642f10b9}\label{namespaceteamcore_1_1hardening_ae209c51a81263aa5bc74da4b642f10b9} 
+\index{teamcore::hardening@{teamcore::hardening}!StartAntiDebugMonitor@{StartAntiDebugMonitor}}
+\index{StartAntiDebugMonitor@{StartAntiDebugMonitor}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{StartAntiDebugMonitor()}{StartAntiDebugMonitor()}}
+{\footnotesize\ttfamily void teamcore\+::hardening\+::\+Start\+Anti\+Debug\+Monitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Anti-\/debug kontrolünü başlat (arka planda izleme thread) 
+
+Her 5 saniyede bir debugger kontrolü yapar, tespit ederse uygulamayı sonlandırır \Hypertarget{namespaceteamcore_1_1hardening_a37c56ba459b67d0eb1b860d5b6731706}\label{namespaceteamcore_1_1hardening_a37c56ba459b67d0eb1b860d5b6731706} 
+\index{teamcore::hardening@{teamcore::hardening}!StopAntiDebugMonitor@{StopAntiDebugMonitor}}
+\index{StopAntiDebugMonitor@{StopAntiDebugMonitor}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{StopAntiDebugMonitor()}{StopAntiDebugMonitor()}}
+{\footnotesize\ttfamily void teamcore\+::hardening\+::\+Stop\+Anti\+Debug\+Monitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Anti-\/debug monitoring thread\textquotesingle{}ini durdur. 
+
+\Hypertarget{namespaceteamcore_1_1hardening_ad005cebc9299a5eb73e8eb219ab6752b}\label{namespaceteamcore_1_1hardening_ad005cebc9299a5eb73e8eb219ab6752b} 
+\index{teamcore::hardening@{teamcore::hardening}!TerminateOnThreat@{TerminateOnThreat}}
+\index{TerminateOnThreat@{TerminateOnThreat}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{TerminateOnThreat()}{TerminateOnThreat()}}
+{\footnotesize\ttfamily void teamcore\+::hardening\+::\+Terminate\+On\+Threat (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{reason }\end{DoxyParamCaption})}
+
+
+
+Güvenlik ihlali durumunda uygulamayı sonlandır. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reason} & Sonlandırma nedeni \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespaceteamcore_1_1hardening_a9847be046f4689a1108adb22ebdb2dd3}\label{namespaceteamcore_1_1hardening_a9847be046f4689a1108adb22ebdb2dd3} 
+\index{teamcore::hardening@{teamcore::hardening}!VerifyIntegrity@{VerifyIntegrity}}
+\index{VerifyIntegrity@{VerifyIntegrity}!teamcore::hardening@{teamcore::hardening}}
+\doxysubsubsection{\texorpdfstring{VerifyIntegrity()}{VerifyIntegrity()}}
+{\footnotesize\ttfamily bool teamcore\+::hardening\+::\+Verify\+Integrity (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{expected\+Hash }\end{DoxyParamCaption})}
+
+
+
+Kodun değiştirilip değiştirilmediğini kontrol et. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expected\+Hash} & Bilinen doğru hash (build time\textquotesingle{}da ayarlanır) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false ise tamper edilmiş 
+\end{DoxyReturn}

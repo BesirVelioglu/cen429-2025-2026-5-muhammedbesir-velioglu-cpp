@@ -1,0 +1,430 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="localsports_8h" kind="file" language="C++">
+    <compoundname>localsports.h</compoundname>
+    <includes local="no">cstdint</includes>
+    <includedby refid="localsports_8cpp" local="yes">src/LocalSports/src/localsports.cpp</includedby>
+    <includedby refid="localsportsapp_8cpp" local="yes">src/LocalSportsapp/src/localsportsapp.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/LocalSports/header/localsports.h</label>
+        <link refid="localsports_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>src/LocalSports/header/localsports.h</label>
+        <link refid="localsports_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/LocalSports/src/localsports.cpp</label>
+        <link refid="localsports_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/LocalSportsapp/src/localsportsapp.cpp</label>
+        <link refid="localsportsapp_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_player" prot="public">Player</innerclass>
+    <innerclass refid="struct_game" prot="public">Game</innerclass>
+    <innerclass refid="struct_stat" prot="public">Stat</innerclass>
+    <innerclass refid="struct_message" prot="public">Message</innerclass>
+    <innerclass refid="struct_user" prot="public">User</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="localsports_8h_1ad8d5437bed8662e72cdec2b479cc25d3" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* FILE_PLAYERS</definition>
+        <argsstring></argsstring>
+        <name>FILE_PLAYERS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="8" column="19" declfile="src/LocalSports/header/localsports.h" declline="8" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="variable" id="localsports_8h_1a8e8794db27e1eb1ffa03d07b8ee71a08" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* FILE_GAMES</definition>
+        <argsstring></argsstring>
+        <name>FILE_GAMES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="9" column="19" declfile="src/LocalSports/header/localsports.h" declline="9" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="variable" id="localsports_8h_1a96cb4f3bc0c427a5185a29cb31fa82e7" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* FILE_STATS</definition>
+        <argsstring></argsstring>
+        <name>FILE_STATS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="10" column="19" declfile="src/LocalSports/header/localsports.h" declline="10" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="variable" id="localsports_8h_1a3b93840b5053aa7d0574cdd98986cf77" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* FILE_MESSAGES</definition>
+        <argsstring></argsstring>
+        <name>FILE_MESSAGES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="11" column="19" declfile="src/LocalSports/header/localsports.h" declline="11" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="variable" id="localsports_8h_1a71a48f6fd8a4047e914be0cc7a74cfad" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* FILE_USERS</definition>
+        <argsstring></argsstring>
+        <name>FILE_USERS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="12" column="19" declfile="src/LocalSports/header/localsports.h" declline="12" declcolumn="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="localsports_8h_1aff7350ba4ddaca323e3660f8d4eedb2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_Init</definition>
+        <argsstring>()</argsstring>
+        <name>LS_Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="62" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="168" bodyend="300" declfile="src/LocalSports/header/localsports.h" declline="62" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1a850907ca73190c6841e5204ba07b880a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_ListPlayersInteractive</definition>
+        <argsstring>()</argsstring>
+        <name>LS_ListPlayersInteractive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="65" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="466" bodyend="498" declfile="src/LocalSports/header/localsports.h" declline="65" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1a6941a85dbd59a6326bdaebce0c855cee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_AddPlayerInteractive</definition>
+        <argsstring>()</argsstring>
+        <name>LS_AddPlayerInteractive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="66" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="500" bodyend="528" declfile="src/LocalSports/header/localsports.h" declline="66" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1a150377dbd6fd02d895815280e64b43bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_EditPlayerInteractive</definition>
+        <argsstring>()</argsstring>
+        <name>LS_EditPlayerInteractive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="67" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="530" bodyend="583" declfile="src/LocalSports/header/localsports.h" declline="67" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1a9af01eaf1cfc99b151a6bd53ec0f47dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_RemovePlayerInteractive</definition>
+        <argsstring>()</argsstring>
+        <name>LS_RemovePlayerInteractive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="68" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="585" bodyend="602" declfile="src/LocalSports/header/localsports.h" declline="68" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1ac65e0ec07dac8fec7a853d91f790a211" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_ListGamesInteractive</definition>
+        <argsstring>()</argsstring>
+        <name>LS_ListGamesInteractive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="71" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="605" bodyend="638" declfile="src/LocalSports/header/localsports.h" declline="71" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1ad57732a13ddc48c64c6aa545717c72b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_AddGameInteractive</definition>
+        <argsstring>()</argsstring>
+        <name>LS_AddGameInteractive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="72" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="640" bodyend="662" declfile="src/LocalSports/header/localsports.h" declline="72" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1aed2b2fa736d2060bdb8d9bea3821473a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_RecordResultInteractive</definition>
+        <argsstring>()</argsstring>
+        <name>LS_RecordResultInteractive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="73" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="664" bodyend="685" declfile="src/LocalSports/header/localsports.h" declline="73" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1a04c27fb1a31321f28f13772d75046246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_RecordStatsInteractive</definition>
+        <argsstring>()</argsstring>
+        <name>LS_RecordStatsInteractive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="76" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="688" bodyend="742" declfile="src/LocalSports/header/localsports.h" declline="76" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1aaff947fb9d3c2530ca58838200be9110" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_ViewPlayerTotalsInteractive</definition>
+        <argsstring>()</argsstring>
+        <name>LS_ViewPlayerTotalsInteractive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="77" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="744" bodyend="789" declfile="src/LocalSports/header/localsports.h" declline="77" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1a85337b1fb4b0c0bb2e1ea5eb8b095898" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_ListMessagesInteractive</definition>
+        <argsstring>()</argsstring>
+        <name>LS_ListMessagesInteractive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="80" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="792" bodyend="814" declfile="src/LocalSports/header/localsports.h" declline="80" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1a1668116b9386e1dd49cf0fa0ead92778" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_AddMessageInteractive</definition>
+        <argsstring>()</argsstring>
+        <name>LS_AddMessageInteractive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="81" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="816" bodyend="840" declfile="src/LocalSports/header/localsports.h" declline="81" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1ab117fdaf97f25d42c4292e1ae98ed094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LS_AuthLoginInteractive</definition>
+        <argsstring>()</argsstring>
+        <name>LS_AuthLoginInteractive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="84" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="303" bodyend="383" declfile="src/LocalSports/header/localsports.h" declline="84" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1adbdbe18a3db5835cb46b3d3b6a8dd2a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_AuthRegisterInteractive</definition>
+        <argsstring>()</argsstring>
+        <name>LS_AuthRegisterInteractive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="85" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="388" bodyend="453" declfile="src/LocalSports/header/localsports.h" declline="85" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1af43cfb1a0908a075adc94295e31c28dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_AuthLogout</definition>
+        <argsstring>()</argsstring>
+        <name>LS_AuthLogout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="86" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="456" bodyend="460" declfile="src/LocalSports/header/localsports.h" declline="86" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1a1dd63114fbf33716846bf01944427350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LS_IsAuthenticated</definition>
+        <argsstring>()</argsstring>
+        <name>LS_IsAuthenticated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="87" column="6" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="462" bodyend="462" declfile="src/LocalSports/header/localsports.h" declline="87" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="localsports_8h_1abd8904e57f1a157e10414411c1d8ab37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * LS_CurrentUsername</definition>
+        <argsstring>()</argsstring>
+        <name>LS_CurrentUsername</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="88" column="12" bodyfile="src/LocalSports/src/localsports.cpp" bodystart="463" bodyend="463" declfile="src/LocalSports/header/localsports.h" declline="88" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>header/localsports.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LOCALSPORTS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOCALSPORTS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------<sp/>Binary<sp/>file<sp/>names<sp/>(defined<sp/>in<sp/>.cpp)<sp/>----------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="localsports_8h_1ad8d5437bed8662e72cdec2b479cc25d3" kindref="member">FILE_PLAYERS</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="localsports_8h_1a8e8794db27e1eb1ffa03d07b8ee71a08" kindref="member">FILE_GAMES</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="localsports_8h_1a96cb4f3bc0c427a5185a29cb31fa82e7" kindref="member">FILE_STATS</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="localsports_8h_1a3b93840b5053aa7d0574cdd98986cf77" kindref="member">FILE_MESSAGES</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="localsports_8h_1a71a48f6fd8a4047e914be0cc7a74cfad" kindref="member">FILE_USERS</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------<sp/>Fixed-size<sp/>records<sp/>--------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push,<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="struct_player" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_player" kindref="compound">Player</ref><sp/>{</highlight></codeline>
+<codeline lineno="17" refid="struct_player_1a370e8ae6120f85b601d7b0dcc372cdb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_player_1a370e8ae6120f85b601d7b0dcc372cdb9" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="18" refid="struct_player_1aa1b57c638d18ebdc69a09ff873cb6684" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_player_1aa1b57c638d18ebdc69a09ff873cb6684" kindref="member">name</ref>[64];</highlight></codeline>
+<codeline lineno="19" refid="struct_player_1a9091b1c10c883cea0c83db80674b2fc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_player_1a9091b1c10c883cea0c83db80674b2fc5" kindref="member">position</ref>[32];</highlight></codeline>
+<codeline lineno="20" refid="struct_player_1aea29095afc42b44e9194b4b43eb87557" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_player_1aea29095afc42b44e9194b4b43eb87557" kindref="member">phone</ref>[32];</highlight></codeline>
+<codeline lineno="21" refid="struct_player_1a415560bf066e5e1937c850e533a00eed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_player_1a415560bf066e5e1937c850e533a00eed" kindref="member">email</ref>[64];</highlight></codeline>
+<codeline lineno="22" refid="struct_player_1aad404d23f26988b43b95e61f28045346" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_player_1aad404d23f26988b43b95e61f28045346" kindref="member">active</ref>;<sp/></highlight><highlight class="comment">//<sp/>1<sp/>=<sp/>active,<sp/>0<sp/>=<sp/>removed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="struct_game" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_game" kindref="compound">Game</ref><sp/>{</highlight></codeline>
+<codeline lineno="26" refid="struct_game_1a2500fd106b61de5e4e66311aea0f1b84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_game_1a2500fd106b61de5e4e66311aea0f1b84" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="27" refid="struct_game_1afa6ef985be85560f17c1e7cde695cf72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_game_1afa6ef985be85560f17c1e7cde695cf72" kindref="member">date</ref>[11];<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;YYYY-MM-DD&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="struct_game_1ac908e6efb126ab6638555249259c7916" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_game_1ac908e6efb126ab6638555249259c7916" kindref="member">time</ref>[6];<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;HH:MM&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="struct_game_1ae0cbf267ad79e3590425d07ef9b91d0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_game_1ae0cbf267ad79e3590425d07ef9b91d0c" kindref="member">opponent</ref>[64];</highlight></codeline>
+<codeline lineno="30" refid="struct_game_1a1bf4a00514ed2ba4ca0d2cd36760c953" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_game_1a1bf4a00514ed2ba4ca0d2cd36760c953" kindref="member">location</ref>[64];</highlight></codeline>
+<codeline lineno="31" refid="struct_game_1a0383dbecf6a728fe7ca78fd0d39d006c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_game_1a0383dbecf6a728fe7ca78fd0d39d006c" kindref="member">played</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>1=played</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="struct_game_1af80f2c9c9f9e14414ff01d22be822e9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_game_1af80f2c9c9f9e14414ff01d22be822e9f" kindref="member">result</ref>[16];<sp/></highlight><highlight class="comment">//<sp/>e.g.,<sp/>&quot;2-1<sp/>W&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="struct_stat" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_stat" kindref="compound">Stat</ref><sp/>{</highlight></codeline>
+<codeline lineno="36" refid="struct_stat_1af02a296d1cd4b7a608317b6336217ca1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_stat_1af02a296d1cd4b7a608317b6336217ca1" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="37" refid="struct_stat_1a2a759221669935df31616ca94d6bc0ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_stat_1a2a759221669935df31616ca94d6bc0ac" kindref="member">gameId</ref>;</highlight></codeline>
+<codeline lineno="38" refid="struct_stat_1a33dfd1e728ea3a82e2183b50142327ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_stat_1a33dfd1e728ea3a82e2183b50142327ec" kindref="member">playerId</ref>;</highlight></codeline>
+<codeline lineno="39" refid="struct_stat_1af825c20300493b9a8099a30b420fcf6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="struct_stat_1af825c20300493b9a8099a30b420fcf6a" kindref="member">goals</ref>;</highlight></codeline>
+<codeline lineno="40" refid="struct_stat_1aefc7fc350d0a3644d857de48d2fa69da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="struct_stat_1aefc7fc350d0a3644d857de48d2fa69da" kindref="member">assists</ref>;</highlight></codeline>
+<codeline lineno="41" refid="struct_stat_1a2a08d02c2fc8f2ad5ab17c80ef950d0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="struct_stat_1a2a08d02c2fc8f2ad5ab17c80ef950d0b" kindref="member">saves</ref>;</highlight></codeline>
+<codeline lineno="42" refid="struct_stat_1a46735d3427be98d1fd883dab4767a20c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="struct_stat_1a46735d3427be98d1fd883dab4767a20c" kindref="member">yellow</ref>;</highlight></codeline>
+<codeline lineno="43" refid="struct_stat_1a69ab1ac15f9c517185623730b7aefb71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="struct_stat_1a69ab1ac15f9c517185623730b7aefb71" kindref="member">red</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="struct_message" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_message" kindref="compound">Message</ref><sp/>{</highlight></codeline>
+<codeline lineno="47" refid="struct_message_1a4c34674ebe8e9ac6a62a5b7c9c3e4123" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_message_1a4c34674ebe8e9ac6a62a5b7c9c3e4123" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="48" refid="struct_message_1af3371a63f2d4057a2c028e090b2784e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_message_1af3371a63f2d4057a2c028e090b2784e6" kindref="member">datetime</ref>[20];<sp/></highlight><highlight class="comment">//<sp/>&quot;YYYY-MM-DD<sp/>HH:MM&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="struct_message_1a7607d71e48dd1203e6e8ff9fd43e85b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_message_1a7607d71e48dd1203e6e8ff9fd43e85b0" kindref="member">text</ref>[160];</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="struct_user" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_user" kindref="compound">User</ref><sp/>{</highlight></codeline>
+<codeline lineno="53" refid="struct_user_1ae4bd671c6f2b7cc7acf84f5e69ec96b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_user_1ae4bd671c6f2b7cc7acf84f5e69ec96b7" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="54" refid="struct_user_1a9f83d87e6e823657696f55f42c508bb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_user_1a9f83d87e6e823657696f55f42c508bb3" kindref="member">username</ref>[32];</highlight></codeline>
+<codeline lineno="55" refid="struct_user_1a035d767aca8d2671a2bbad060e068a80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct_user_1a035d767aca8d2671a2bbad060e068a80" kindref="member">passHash</ref>;<sp/></highlight><highlight class="comment">//<sp/>FNV-1a<sp/>64<sp/>(not<sp/>cryptographic;<sp/>security<sp/>layer<sp/>comes<sp/>later)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="struct_user_1aceff21dbfc8af69c95e8a2ce61890e1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_user_1aceff21dbfc8af69c95e8a2ce61890e1c" kindref="member">role</ref>[16];<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;admin&quot;<sp/>/<sp/>&quot;member&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="struct_user_1a8f0249657f76c2a5088dea81db9768cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_user_1a8f0249657f76c2a5088dea81db9768cc" kindref="member">active</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1=active</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------<sp/>Public<sp/>API<sp/>(used<sp/>by<sp/>app)<sp/>---------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1aff7350ba4ddaca323e3660f8d4eedb2a" kindref="member">LS_Init</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Roster</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1a850907ca73190c6841e5204ba07b880a" kindref="member">LS_ListPlayersInteractive</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1a6941a85dbd59a6326bdaebce0c855cee" kindref="member">LS_AddPlayerInteractive</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1a150377dbd6fd02d895815280e64b43bd" kindref="member">LS_EditPlayerInteractive</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1a9af01eaf1cfc99b151a6bd53ec0f47dc" kindref="member">LS_RemovePlayerInteractive</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Games</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1ac65e0ec07dac8fec7a853d91f790a211" kindref="member">LS_ListGamesInteractive</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1ad57732a13ddc48c64c6aa545717c72b9" kindref="member">LS_AddGameInteractive</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1aed2b2fa736d2060bdb8d9bea3821473a" kindref="member">LS_RecordResultInteractive</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Statistics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1a04c27fb1a31321f28f13772d75046246" kindref="member">LS_RecordStatsInteractive</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1aaff947fb9d3c2530ca58838200be9110" kindref="member">LS_ViewPlayerTotalsInteractive</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Communications</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1a85337b1fb4b0c0bb2e1ea5eb8b095898" kindref="member">LS_ListMessagesInteractive</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1a1668116b9386e1dd49cf0fa0ead92778" kindref="member">LS_AddMessageInteractive</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Authentication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1ab117fdaf97f25d42c4292e1ae98ed094" kindref="member">LS_AuthLoginInteractive</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1adbdbe18a3db5835cb46b3d3b6a8dd2a4" kindref="member">LS_AuthRegisterInteractive</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1af43cfb1a0908a075adc94295e31c28dd" kindref="member">LS_AuthLogout</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="localsports_8h_1a1dd63114fbf33716846bf01944427350" kindref="member">LS_IsAuthenticated</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="localsports_8h_1abd8904e57f1a157e10414411c1d8ab37" kindref="member">LS_CurrentUsername</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LOCALSPORTS_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/LocalSports/header/localsports.h"/>
+  </compounddef>
+</doxygen>

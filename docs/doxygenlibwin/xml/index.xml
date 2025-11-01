@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
+  <compound refid="struct_game" kind="struct"><name>Game</name>
+    <member refid="struct_game_1a2500fd106b61de5e4e66311aea0f1b84" kind="variable"><name>id</name></member>
+    <member refid="struct_game_1afa6ef985be85560f17c1e7cde695cf72" kind="variable"><name>date</name></member>
+    <member refid="struct_game_1ac908e6efb126ab6638555249259c7916" kind="variable"><name>time</name></member>
+    <member refid="struct_game_1ae0cbf267ad79e3590425d07ef9b91d0c" kind="variable"><name>opponent</name></member>
+    <member refid="struct_game_1a1bf4a00514ed2ba4ca0d2cd36760c953" kind="variable"><name>location</name></member>
+    <member refid="struct_game_1a0383dbecf6a728fe7ca78fd0d39d006c" kind="variable"><name>played</name></member>
+    <member refid="struct_game_1af80f2c9c9f9e14414ff01d22be822e9f" kind="variable"><name>result</name></member>
+  </compound>
+  <compound refid="class_coruh_1_1_utility_1_1_math_utility" kind="class"><name>Coruh::Utility::MathUtility</name>
+    <member refid="class_coruh_1_1_utility_1_1_math_utility_1abe3d63ed2737ae3c006bcc5732a3d01f" kind="function"><name>calculateMean</name></member>
+    <member refid="class_coruh_1_1_utility_1_1_math_utility_1aa5888ea1bef95e477a66c2dd8517b885" kind="function"><name>calculateMedian</name></member>
+    <member refid="class_coruh_1_1_utility_1_1_math_utility_1a8a30d3bb9945b043c861257596f17c30" kind="function"><name>compareDouble</name></member>
+    <member refid="class_coruh_1_1_utility_1_1_math_utility_1ac66a656b821b690761a1db545359508d" kind="function"><name>calculateMinMax</name></member>
+  </compound>
+  <compound refid="struct_message" kind="struct"><name>Message</name>
+    <member refid="struct_message_1a4c34674ebe8e9ac6a62a5b7c9c3e4123" kind="variable"><name>id</name></member>
+    <member refid="struct_message_1af3371a63f2d4057a2c028e090b2784e6" kind="variable"><name>datetime</name></member>
+    <member refid="struct_message_1a7607d71e48dd1203e6e8ff9fd43e85b0" kind="variable"><name>text</name></member>
+  </compound>
+  <compound refid="struct_player" kind="struct"><name>Player</name>
+    <member refid="struct_player_1a370e8ae6120f85b601d7b0dcc372cdb9" kind="variable"><name>id</name></member>
+    <member refid="struct_player_1aa1b57c638d18ebdc69a09ff873cb6684" kind="variable"><name>name</name></member>
+    <member refid="struct_player_1a9091b1c10c883cea0c83db80674b2fc5" kind="variable"><name>position</name></member>
+    <member refid="struct_player_1aea29095afc42b44e9194b4b43eb87557" kind="variable"><name>phone</name></member>
+    <member refid="struct_player_1a415560bf066e5e1937c850e533a00eed" kind="variable"><name>email</name></member>
+    <member refid="struct_player_1aad404d23f26988b43b95e61f28045346" kind="variable"><name>active</name></member>
+  </compound>
+  <compound refid="classteamcore_1_1_secure_buffer" kind="class"><name>teamcore::SecureBuffer</name>
+    <member refid="classteamcore_1_1_secure_buffer_1a0bac1998738fc0c9b57718153984aea8" kind="variable"><name>data_</name></member>
+    <member refid="classteamcore_1_1_secure_buffer_1ae16e51c9b857eeb8ec769c79dcd4a9f3" kind="variable"><name>size_</name></member>
+    <member refid="classteamcore_1_1_secure_buffer_1a336a0b71b8c24a65895fe9b246f75906" kind="function"><name>secure_bzero</name></member>
+    <member refid="classteamcore_1_1_secure_buffer_1a5bd1370b310cb3710e675d4625d127f3" kind="function"><name>SecureBuffer</name></member>
+    <member refid="classteamcore_1_1_secure_buffer_1ad0a9a71faa59e928136c7c76e3fa7b84" kind="function"><name>SecureBuffer</name></member>
+    <member refid="classteamcore_1_1_secure_buffer_1a5d879ea26db10d9b52f99d437218f79b" kind="function"><name>operator=</name></member>
+    <member refid="classteamcore_1_1_secure_buffer_1ad64f7dcaa553969828cd694a01699460" kind="function"><name>SecureBuffer</name></member>
+    <member refid="classteamcore_1_1_secure_buffer_1a8eccf617f81f19304325a48256f0ccdf" kind="function"><name>operator=</name></member>
+    <member refid="classteamcore_1_1_secure_buffer_1a2842cc2dc1200da58a3a06ffa5efe0e9" kind="function"><name>~SecureBuffer</name></member>
+    <member refid="classteamcore_1_1_secure_buffer_1a3ce07c6dee8c02bf69e5bcbd5eb985ce" kind="function"><name>resize</name></member>
+    <member refid="classteamcore_1_1_secure_buffer_1af1356c1427b9aec94234e26b752c4204" kind="function"><name>cleanse</name></member>
+    <member refid="classteamcore_1_1_secure_buffer_1a66ee099f8a381c3734be9675ede9f8cb" kind="function"><name>data</name></member>
+    <member refid="classteamcore_1_1_secure_buffer_1a0259d36795f60424390f8655491bcc3e" kind="function"><name>data</name></member>
+    <member refid="classteamcore_1_1_secure_buffer_1aafc6096600ca854c389d8657995cc16c" kind="function"><name>size</name></member>
+  </compound>
+  <compound refid="struct_stat" kind="struct"><name>Stat</name>
+    <member refid="struct_stat_1af02a296d1cd4b7a608317b6336217ca1" kind="variable"><name>id</name></member>
+    <member refid="struct_stat_1a2a759221669935df31616ca94d6bc0ac" kind="variable"><name>gameId</name></member>
+    <member refid="struct_stat_1a33dfd1e728ea3a82e2183b50142327ec" kind="variable"><name>playerId</name></member>
+    <member refid="struct_stat_1af825c20300493b9a8099a30b420fcf6a" kind="variable"><name>goals</name></member>
+    <member refid="struct_stat_1aefc7fc350d0a3644d857de48d2fa69da" kind="variable"><name>assists</name></member>
+    <member refid="struct_stat_1a2a08d02c2fc8f2ad5ab17c80ef950d0b" kind="variable"><name>saves</name></member>
+    <member refid="struct_stat_1a46735d3427be98d1fd883dab4767a20c" kind="variable"><name>yellow</name></member>
+    <member refid="struct_stat_1a69ab1ac15f9c517185623730b7aefb71" kind="variable"><name>red</name></member>
+  </compound>
+  <compound refid="struct_user" kind="struct"><name>User</name>
+    <member refid="struct_user_1ae4bd671c6f2b7cc7acf84f5e69ec96b7" kind="variable"><name>id</name></member>
+    <member refid="struct_user_1a9f83d87e6e823657696f55f42c508bb3" kind="variable"><name>username</name></member>
+    <member refid="struct_user_1a035d767aca8d2671a2bbad060e068a80" kind="variable"><name>passHash</name></member>
+    <member refid="struct_user_1aceff21dbfc8af69c95e8a2ce61890e1c" kind="variable"><name>role</name></member>
+    <member refid="struct_user_1a8f0249657f76c2a5088dea81db9768cc" kind="variable"><name>active</name></member>
+  </compound>
+  <compound refid="namespace_coruh" kind="namespace"><name>Coruh</name>
+  </compound>
+  <compound refid="namespace_coruh_1_1_utility" kind="namespace"><name>Coruh::Utility</name>
+  </compound>
+  <compound refid="namespaceteamcore" kind="namespace"><name>teamcore</name>
+    <member refid="namespaceteamcore_1a726715870310e2950f3a9599dcb397f9" kind="variable"><name>g_appKey</name></member>
+    <member refid="namespaceteamcore_1ae6986177aad8b6cf11a95cc938701225" kind="variable"><name>g_appKeyInitialized</name></member>
+    <member refid="namespaceteamcore_1a93c962251af36fbaa80abf0e8b5ba8f6" kind="function"><name>AppKey_InitFromEnvOrPrompt</name></member>
+    <member refid="namespaceteamcore_1af20ee911948fa779641624875aa3ea57" kind="function"><name>AppKey_Get</name></member>
+    <member refid="namespaceteamcore_1aab0d6b6fe3a3dd4194fe96a5d110659d" kind="function"><name>AppKey_IsReady</name></member>
+    <member refid="namespaceteamcore_1a1d7ee6f2e73ff6cba98568d5c1213eca" kind="function"><name>read_password_secure</name></member>
+  </compound>
+  <compound refid="namespaceteamcore_1_1crypto" kind="namespace"><name>teamcore::crypto</name>
+    <member refid="namespaceteamcore_1_1crypto_1aaafb270455cdaf5c51ed9746d0028ce3" kind="function"><name>DeriveKeyFromPassphrase</name></member>
+    <member refid="namespaceteamcore_1_1crypto_1a10a7ec9cb587579f78ae1a692d76c2ad" kind="function"><name>EncryptForDB</name></member>
+    <member refid="namespaceteamcore_1_1crypto_1a4d9f3d43cf284e430a275cfbf374da89" kind="function"><name>DecryptFromDB</name></member>
+  </compound>
+  <compound refid="namespaceteamcore_1_1hardening" kind="namespace"><name>teamcore::hardening</name>
+    <member refid="namespaceteamcore_1_1hardening_1a8699c2d622188c683dc2ee8bc0cd2f9f" kind="variable"><name>g_antiDebugRunning</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a910bfbebd4d79552ad42b152fa13461d" kind="variable"><name>g_antiDebugThread</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a229f8e65681df8c7b9b5c593f8530a68" kind="variable"><name>XOR_KEY</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a1d2c32a89d050feed96f11d448298e95" kind="variable"><name>VALUE_MASK</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a4ccea0ed29b104587db03d54bc960bf0" kind="function"><name>IsDebuggerPresent</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1ae209c51a81263aa5bc74da4b642f10b9" kind="function"><name>StartAntiDebugMonitor</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a37c56ba459b67d0eb1b860d5b6731706" kind="function"><name>StopAntiDebugMonitor</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a8c5fc8254a61b0540a7dd0d37b83f996" kind="function"><name>GetExecutableHash</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a9847be046f4689a1108adb22ebdb2dd3" kind="function"><name>VerifyIntegrity</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1ae3cee1714e401ddec13be459d2d61d32" kind="function"><name>IsRunningInVM</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1ae4bd5f482bf7729d5e890edca9dde1a9" kind="function"><name>IsRootedOrJailbroken</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a06e6d5cbec776da17c8579b240572990" kind="function"><name>PerformSecurityChecks</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a746ff56ebc94e9f1bfcbd31887870cba" kind="function"><name>OpaquePredicateAlwaysTrue</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a4b3b5932836fd13c7ac69145c6e7cd78" kind="function"><name>OpaquePredicateAlwaysFalse</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a43750c108316d92f81a039ffd3cd9c1c" kind="function"><name>OpaqueMathPredicate</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1aee2e27250f691bc7176519b136fae105" kind="function"><name>ObfuscateString</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a6df62925f350fd8146306e930b661bfd" kind="function"><name>DeobfuscateString</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1acb446a1528d7f51891b2da13b22bdf7c" kind="function"><name>ObfuscateValue</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1adfa9292737ac992d8f81b45b86520b23" kind="function"><name>DeobfuscateValue</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a4941e511e83aec7e1fc772cb3d845d53" kind="function"><name>OpaqueLoop</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a88d593c2f98785d64c913d47e781c7ae" kind="function"><name>CallObfuscated</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a3238760d705163dba235cf8cf72cca3a" kind="function"><name>ObfuscateBooleanCondition</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1adf6349975e561b1958f1cf8ac269b50a" kind="function"><name>FakeSecurityCheck</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a65f152a453d8b0eafeca0c51cdca071e" kind="function"><name>ObfuscateAdd</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a918ede4de28911a4c161501433774f44" kind="function"><name>ObfuscateMultiply</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a754b280336bc789a7e1a486ab6c9e197" kind="function"><name>RandomExitPoint</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1ad005cebc9299a5eb73e8eb219ab6752b" kind="function"><name>TerminateOnThreat</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a11c0b4e108d9e1d907cf060c6d800bf6" kind="function"><name>SecureTerminate</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a17e48f5adaec0be70a63a8c27d15bf93" kind="function"><name>SecureLog</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a4f2f30369ecf9f3549c4535a07940d7f" kind="function"><name>IsDebugBuild</name></member>
+  </compound>
+  <compound refid="namespaceteamcore_1_1tls" kind="namespace"><name>teamcore::tls</name>
+    <member refid="namespaceteamcore_1_1tls_1a566cba99b03a233b20f0b89139e22a31" kind="function"><name>MakeTls13ClientCtxWithMTLS</name></member>
+    <member refid="namespaceteamcore_1_1tls_1a1cb27626c5ace28caefb7f7380288eb6" kind="function"><name>ComputeSpkiSha256B64FromFile</name></member>
+    <member refid="namespaceteamcore_1_1tls_1af10109327e2bd8ddf5f09ade66e495f4" kind="function"><name>CheckPinnedSpkiFromFile</name></member>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="localsports_8h" kind="file"><name>localsports.h</name>
+    <member refid="localsports_8h_1ad8d5437bed8662e72cdec2b479cc25d3" kind="variable"><name>FILE_PLAYERS</name></member>
+    <member refid="localsports_8h_1a8e8794db27e1eb1ffa03d07b8ee71a08" kind="variable"><name>FILE_GAMES</name></member>
+    <member refid="localsports_8h_1a96cb4f3bc0c427a5185a29cb31fa82e7" kind="variable"><name>FILE_STATS</name></member>
+    <member refid="localsports_8h_1a3b93840b5053aa7d0574cdd98986cf77" kind="variable"><name>FILE_MESSAGES</name></member>
+    <member refid="localsports_8h_1a71a48f6fd8a4047e914be0cc7a74cfad" kind="variable"><name>FILE_USERS</name></member>
+    <member refid="localsports_8h_1aff7350ba4ddaca323e3660f8d4eedb2a" kind="function"><name>LS_Init</name></member>
+    <member refid="localsports_8h_1a850907ca73190c6841e5204ba07b880a" kind="function"><name>LS_ListPlayersInteractive</name></member>
+    <member refid="localsports_8h_1a6941a85dbd59a6326bdaebce0c855cee" kind="function"><name>LS_AddPlayerInteractive</name></member>
+    <member refid="localsports_8h_1a150377dbd6fd02d895815280e64b43bd" kind="function"><name>LS_EditPlayerInteractive</name></member>
+    <member refid="localsports_8h_1a9af01eaf1cfc99b151a6bd53ec0f47dc" kind="function"><name>LS_RemovePlayerInteractive</name></member>
+    <member refid="localsports_8h_1ac65e0ec07dac8fec7a853d91f790a211" kind="function"><name>LS_ListGamesInteractive</name></member>
+    <member refid="localsports_8h_1ad57732a13ddc48c64c6aa545717c72b9" kind="function"><name>LS_AddGameInteractive</name></member>
+    <member refid="localsports_8h_1aed2b2fa736d2060bdb8d9bea3821473a" kind="function"><name>LS_RecordResultInteractive</name></member>
+    <member refid="localsports_8h_1a04c27fb1a31321f28f13772d75046246" kind="function"><name>LS_RecordStatsInteractive</name></member>
+    <member refid="localsports_8h_1aaff947fb9d3c2530ca58838200be9110" kind="function"><name>LS_ViewPlayerTotalsInteractive</name></member>
+    <member refid="localsports_8h_1a85337b1fb4b0c0bb2e1ea5eb8b095898" kind="function"><name>LS_ListMessagesInteractive</name></member>
+    <member refid="localsports_8h_1a1668116b9386e1dd49cf0fa0ead92778" kind="function"><name>LS_AddMessageInteractive</name></member>
+    <member refid="localsports_8h_1ab117fdaf97f25d42c4292e1ae98ed094" kind="function"><name>LS_AuthLoginInteractive</name></member>
+    <member refid="localsports_8h_1adbdbe18a3db5835cb46b3d3b6a8dd2a4" kind="function"><name>LS_AuthRegisterInteractive</name></member>
+    <member refid="localsports_8h_1af43cfb1a0908a075adc94295e31c28dd" kind="function"><name>LS_AuthLogout</name></member>
+    <member refid="localsports_8h_1a1dd63114fbf33716846bf01944427350" kind="function"><name>LS_IsAuthenticated</name></member>
+    <member refid="localsports_8h_1abd8904e57f1a157e10414411c1d8ab37" kind="function"><name>LS_CurrentUsername</name></member>
+  </compound>
+  <compound refid="security__hardening_8h" kind="file"><name>security_hardening.h</name>
+    <member refid="namespaceteamcore_1_1hardening_1a4ccea0ed29b104587db03d54bc960bf0" kind="function"><name>IsDebuggerPresent</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1ae209c51a81263aa5bc74da4b642f10b9" kind="function"><name>StartAntiDebugMonitor</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a37c56ba459b67d0eb1b860d5b6731706" kind="function"><name>StopAntiDebugMonitor</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a8c5fc8254a61b0540a7dd0d37b83f996" kind="function"><name>GetExecutableHash</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a9847be046f4689a1108adb22ebdb2dd3" kind="function"><name>VerifyIntegrity</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1ae3cee1714e401ddec13be459d2d61d32" kind="function"><name>IsRunningInVM</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1ae4bd5f482bf7729d5e890edca9dde1a9" kind="function"><name>IsRootedOrJailbroken</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a06e6d5cbec776da17c8579b240572990" kind="function"><name>PerformSecurityChecks</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a746ff56ebc94e9f1bfcbd31887870cba" kind="function"><name>OpaquePredicateAlwaysTrue</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a4b3b5932836fd13c7ac69145c6e7cd78" kind="function"><name>OpaquePredicateAlwaysFalse</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a43750c108316d92f81a039ffd3cd9c1c" kind="function"><name>OpaqueMathPredicate</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1aee2e27250f691bc7176519b136fae105" kind="function"><name>ObfuscateString</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a6df62925f350fd8146306e930b661bfd" kind="function"><name>DeobfuscateString</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1acb446a1528d7f51891b2da13b22bdf7c" kind="function"><name>ObfuscateValue</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1adfa9292737ac992d8f81b45b86520b23" kind="function"><name>DeobfuscateValue</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a4941e511e83aec7e1fc772cb3d845d53" kind="function"><name>OpaqueLoop</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a88d593c2f98785d64c913d47e781c7ae" kind="function"><name>CallObfuscated</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a3238760d705163dba235cf8cf72cca3a" kind="function"><name>ObfuscateBooleanCondition</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1adf6349975e561b1958f1cf8ac269b50a" kind="function"><name>FakeSecurityCheck</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a65f152a453d8b0eafeca0c51cdca071e" kind="function"><name>ObfuscateAdd</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a918ede4de28911a4c161501433774f44" kind="function"><name>ObfuscateMultiply</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a754b280336bc789a7e1a486ab6c9e197" kind="function"><name>RandomExitPoint</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1ad005cebc9299a5eb73e8eb219ab6752b" kind="function"><name>TerminateOnThreat</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a11c0b4e108d9e1d907cf060c6d800bf6" kind="function"><name>SecureTerminate</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a17e48f5adaec0be70a63a8c27d15bf93" kind="function"><name>SecureLog</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a4f2f30369ecf9f3549c4535a07940d7f" kind="function"><name>IsDebugBuild</name></member>
+  </compound>
+  <compound refid="security__layer_8h" kind="file"><name>security_layer.h</name>
+    <member refid="namespaceteamcore_1_1crypto_1aaafb270455cdaf5c51ed9746d0028ce3" kind="function"><name>DeriveKeyFromPassphrase</name></member>
+    <member refid="namespaceteamcore_1_1crypto_1a10a7ec9cb587579f78ae1a692d76c2ad" kind="function"><name>EncryptForDB</name></member>
+    <member refid="namespaceteamcore_1_1crypto_1a4d9f3d43cf284e430a275cfbf374da89" kind="function"><name>DecryptFromDB</name></member>
+    <member refid="namespaceteamcore_1_1tls_1a566cba99b03a233b20f0b89139e22a31" kind="function"><name>MakeTls13ClientCtxWithMTLS</name></member>
+    <member refid="namespaceteamcore_1_1tls_1a1cb27626c5ace28caefb7f7380288eb6" kind="function"><name>ComputeSpkiSha256B64FromFile</name></member>
+    <member refid="namespaceteamcore_1_1tls_1af10109327e2bd8ddf5f09ade66e495f4" kind="function"><name>CheckPinnedSpkiFromFile</name></member>
+    <member refid="namespaceteamcore_1a93c962251af36fbaa80abf0e8b5ba8f6" kind="function"><name>AppKey_InitFromEnvOrPrompt</name></member>
+    <member refid="namespaceteamcore_1af20ee911948fa779641624875aa3ea57" kind="function"><name>AppKey_Get</name></member>
+    <member refid="namespaceteamcore_1aab0d6b6fe3a3dd4194fe96a5d110659d" kind="function"><name>AppKey_IsReady</name></member>
+    <member refid="namespaceteamcore_1a1d7ee6f2e73ff6cba98568d5c1213eca" kind="function"><name>read_password_secure</name></member>
+  </compound>
+  <compound refid="localsports_8cpp" kind="file"><name>localsports.cpp</name>
+    <member refid="localsports_8cpp_1a452fb05e95ce282242760ef11bba7295" kind="variable"><name>g_db</name></member>
+    <member refid="localsports_8cpp_1ad8d5b35f272e2aaa60507fffd3290a4a" kind="variable"><name>DB_PATH</name></member>
+    <member refid="localsports_8cpp_1affc283dee3200558a6e551504f75709a" kind="variable"><name>g_isAuthed</name></member>
+    <member refid="localsports_8cpp_1a011a6b578febc52a5727cb66a989540b" kind="variable"><name>g_currentUser</name></member>
+    <member refid="localsports_8cpp_1a7ee270854c52ffcaa1a0d3f5c317e4c9" kind="function"><name>readLine</name></member>
+    <member refid="localsports_8cpp_1a4791cb65f1b02db23e8da1fb22b04885" kind="function"><name>readInt</name></member>
+    <member refid="localsports_8cpp_1a8a83fce483bf952b511372a8ac758acf" kind="function"><name>copyTo</name></member>
+    <member refid="localsports_8cpp_1a7b1e310994c7383925cc2ce0a12e67cb" kind="function"><name>nowDateTime</name></member>
+    <member refid="localsports_8cpp_1a44730205571a483342ad56bdc5373f23" kind="function"><name>fnv1a64</name></member>
+    <member refid="localsports_8cpp_1a49c6c089e17ad847d4da52b6f4f29a10" kind="function"><name>db_exec</name></member>
+    <member refid="localsports_8cpp_1afa8952e953b7ef4a3ce4809538b283ad" kind="function"><name>db_prepare</name></member>
+    <member refid="localsports_8cpp_1af98bc7429137f782ca63b4d62fa42518" kind="function"><name>gen_salt</name></member>
+    <member refid="localsports_8cpp_1a0a18147ce4021485715ff50614ddd5d0" kind="function"><name>ct_equal</name></member>
+    <member refid="localsports_8cpp_1abe17429a673bd4e10a3de78c34372fa7" kind="function"><name>secure_clear_string</name></member>
+    <member refid="localsports_8cpp_1ab6a749493bf43b733e774e7072da840a" kind="function"><name>decryptMaybe</name></member>
+    <member refid="localsports_8cpp_1a4c930b92e7033f62b6b478b8766c8479" kind="function"><name>encryptIfNeeded</name></member>
+    <member refid="localsports_8cpp_1aff7350ba4ddaca323e3660f8d4eedb2a" kind="function"><name>LS_Init</name></member>
+    <member refid="localsports_8cpp_1ab117fdaf97f25d42c4292e1ae98ed094" kind="function"><name>LS_AuthLoginInteractive</name></member>
+    <member refid="localsports_8cpp_1adbdbe18a3db5835cb46b3d3b6a8dd2a4" kind="function"><name>LS_AuthRegisterInteractive</name></member>
+    <member refid="localsports_8cpp_1af43cfb1a0908a075adc94295e31c28dd" kind="function"><name>LS_AuthLogout</name></member>
+    <member refid="localsports_8cpp_1a1dd63114fbf33716846bf01944427350" kind="function"><name>LS_IsAuthenticated</name></member>
+    <member refid="localsports_8cpp_1abd8904e57f1a157e10414411c1d8ab37" kind="function"><name>LS_CurrentUsername</name></member>
+    <member refid="localsports_8cpp_1a850907ca73190c6841e5204ba07b880a" kind="function"><name>LS_ListPlayersInteractive</name></member>
+    <member refid="localsports_8cpp_1a6941a85dbd59a6326bdaebce0c855cee" kind="function"><name>LS_AddPlayerInteractive</name></member>
+    <member refid="localsports_8cpp_1a150377dbd6fd02d895815280e64b43bd" kind="function"><name>LS_EditPlayerInteractive</name></member>
+    <member refid="localsports_8cpp_1a9af01eaf1cfc99b151a6bd53ec0f47dc" kind="function"><name>LS_RemovePlayerInteractive</name></member>
+    <member refid="localsports_8cpp_1ac65e0ec07dac8fec7a853d91f790a211" kind="function"><name>LS_ListGamesInteractive</name></member>
+    <member refid="localsports_8cpp_1ad57732a13ddc48c64c6aa545717c72b9" kind="function"><name>LS_AddGameInteractive</name></member>
+    <member refid="localsports_8cpp_1aed2b2fa736d2060bdb8d9bea3821473a" kind="function"><name>LS_RecordResultInteractive</name></member>
+    <member refid="localsports_8cpp_1a04c27fb1a31321f28f13772d75046246" kind="function"><name>LS_RecordStatsInteractive</name></member>
+    <member refid="localsports_8cpp_1aaff947fb9d3c2530ca58838200be9110" kind="function"><name>LS_ViewPlayerTotalsInteractive</name></member>
+    <member refid="localsports_8cpp_1a85337b1fb4b0c0bb2e1ea5eb8b095898" kind="function"><name>LS_ListMessagesInteractive</name></member>
+    <member refid="localsports_8cpp_1a1668116b9386e1dd49cf0fa0ead92778" kind="function"><name>LS_AddMessageInteractive</name></member>
+  </compound>
+  <compound refid="security__hardening_8cpp" kind="file"><name>security_hardening.cpp</name>
+    <member refid="namespaceteamcore_1_1hardening_1a8699c2d622188c683dc2ee8bc0cd2f9f" kind="variable"><name>g_antiDebugRunning</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a910bfbebd4d79552ad42b152fa13461d" kind="variable"><name>g_antiDebugThread</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a229f8e65681df8c7b9b5c593f8530a68" kind="variable"><name>XOR_KEY</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a1d2c32a89d050feed96f11d448298e95" kind="variable"><name>VALUE_MASK</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a4ccea0ed29b104587db03d54bc960bf0" kind="function"><name>IsDebuggerPresent</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1ae209c51a81263aa5bc74da4b642f10b9" kind="function"><name>StartAntiDebugMonitor</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a37c56ba459b67d0eb1b860d5b6731706" kind="function"><name>StopAntiDebugMonitor</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a8c5fc8254a61b0540a7dd0d37b83f996" kind="function"><name>GetExecutableHash</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a9847be046f4689a1108adb22ebdb2dd3" kind="function"><name>VerifyIntegrity</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1ae3cee1714e401ddec13be459d2d61d32" kind="function"><name>IsRunningInVM</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1ae4bd5f482bf7729d5e890edca9dde1a9" kind="function"><name>IsRootedOrJailbroken</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a06e6d5cbec776da17c8579b240572990" kind="function"><name>PerformSecurityChecks</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a746ff56ebc94e9f1bfcbd31887870cba" kind="function"><name>OpaquePredicateAlwaysTrue</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a4b3b5932836fd13c7ac69145c6e7cd78" kind="function"><name>OpaquePredicateAlwaysFalse</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a43750c108316d92f81a039ffd3cd9c1c" kind="function"><name>OpaqueMathPredicate</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1aee2e27250f691bc7176519b136fae105" kind="function"><name>ObfuscateString</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a6df62925f350fd8146306e930b661bfd" kind="function"><name>DeobfuscateString</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1acb446a1528d7f51891b2da13b22bdf7c" kind="function"><name>ObfuscateValue</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1adfa9292737ac992d8f81b45b86520b23" kind="function"><name>DeobfuscateValue</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a4941e511e83aec7e1fc772cb3d845d53" kind="function"><name>OpaqueLoop</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a88d593c2f98785d64c913d47e781c7ae" kind="function"><name>CallObfuscated</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a3238760d705163dba235cf8cf72cca3a" kind="function"><name>ObfuscateBooleanCondition</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1adf6349975e561b1958f1cf8ac269b50a" kind="function"><name>FakeSecurityCheck</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a65f152a453d8b0eafeca0c51cdca071e" kind="function"><name>ObfuscateAdd</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a918ede4de28911a4c161501433774f44" kind="function"><name>ObfuscateMultiply</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a754b280336bc789a7e1a486ab6c9e197" kind="function"><name>RandomExitPoint</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1ad005cebc9299a5eb73e8eb219ab6752b" kind="function"><name>TerminateOnThreat</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a11c0b4e108d9e1d907cf060c6d800bf6" kind="function"><name>SecureTerminate</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a17e48f5adaec0be70a63a8c27d15bf93" kind="function"><name>SecureLog</name></member>
+    <member refid="namespaceteamcore_1_1hardening_1a4f2f30369ecf9f3549c4535a07940d7f" kind="function"><name>IsDebugBuild</name></member>
+  </compound>
+  <compound refid="security__layer_8cpp" kind="file"><name>security_layer.cpp</name>
+    <member refid="namespaceteamcore_1a726715870310e2950f3a9599dcb397f9" kind="variable"><name>g_appKey</name></member>
+    <member refid="namespaceteamcore_1ae6986177aad8b6cf11a95cc938701225" kind="variable"><name>g_appKeyInitialized</name></member>
+    <member refid="namespaceteamcore_1_1crypto_1aaafb270455cdaf5c51ed9746d0028ce3" kind="function"><name>DeriveKeyFromPassphrase</name></member>
+    <member refid="namespaceteamcore_1_1crypto_1a10a7ec9cb587579f78ae1a692d76c2ad" kind="function"><name>EncryptForDB</name></member>
+    <member refid="namespaceteamcore_1_1crypto_1a4d9f3d43cf284e430a275cfbf374da89" kind="function"><name>DecryptFromDB</name></member>
+    <member refid="namespaceteamcore_1a1d7ee6f2e73ff6cba98568d5c1213eca" kind="function"><name>read_password_secure</name></member>
+    <member refid="namespaceteamcore_1a93c962251af36fbaa80abf0e8b5ba8f6" kind="function"><name>AppKey_InitFromEnvOrPrompt</name></member>
+    <member refid="namespaceteamcore_1af20ee911948fa779641624875aa3ea57" kind="function"><name>AppKey_Get</name></member>
+    <member refid="namespaceteamcore_1aab0d6b6fe3a3dd4194fe96a5d110659d" kind="function"><name>AppKey_IsReady</name></member>
+  </compound>
+  <compound refid="localsportsapp_8h" kind="file"><name>localsportsapp.h</name>
+    <member refid="localsportsapp_8h_1a97fdd7815bac9ec7765dce579b889bc4" kind="function"><name>LS_AppStart</name></member>
+  </compound>
+  <compound refid="localsportsapp_8cpp" kind="file"><name>localsportsapp.cpp</name>
+    <member refid="localsportsapp_8cpp_1ab1b3f5a7caf14a33d3ffb3e4e35f485d" kind="function"><name>readInt</name></member>
+    <member refid="localsportsapp_8cpp_1a96dcaaea252c5db7ad9013ddc807f8da" kind="function"><name>banner</name></member>
+    <member refid="localsportsapp_8cpp_1a13372ca37c9846af265fc0fcb98572c5" kind="function"><name>rosterMenu</name></member>
+    <member refid="localsportsapp_8cpp_1a2ee90b67b870c9af105f1f30a6215831" kind="function"><name>gamesMenu</name></member>
+    <member refid="localsportsapp_8cpp_1a7c8799e395fc38e6a4fc8b12e0f128c8" kind="function"><name>statsMenu</name></member>
+    <member refid="localsportsapp_8cpp_1a95f5391149985669cf93d82e8ac837f0" kind="function"><name>commsMenu</name></member>
+    <member refid="localsportsapp_8cpp_1adc3eeac335d9b85c44be624d67ae6c86" kind="function"><name>authGate</name></member>
+    <member refid="localsportsapp_8cpp_1a97fdd7815bac9ec7765dce579b889bc4" kind="function"><name>LS_AppStart</name></member>
+    <member refid="localsportsapp_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="common_types_8h" kind="file"><name>commonTypes.h</name>
+  </compound>
+  <compound refid="math_utility_8h" kind="file"><name>mathUtility.h</name>
+  </compound>
+  <compound refid="math_utility_8cpp" kind="file"><name>mathUtility.cpp</name>
+  </compound>
+  <compound refid="dir_1ae7ff6c8a763c9d05d5365fcf363cd8" kind="dir"><name>src/LocalSports/header</name>
+  </compound>
+  <compound refid="dir_eeb2f57f068ff009d14363346e85d73c" kind="dir"><name>src/LocalSportsapp/header</name>
+  </compound>
+  <compound refid="dir_1a3b8499b331fe4e1564b1eb295a0893" kind="dir"><name>src/utility/header</name>
+  </compound>
+  <compound refid="dir_991e0a5c7a2b28a83e935c9c0ca3828a" kind="dir"><name>src/LocalSports</name>
+  </compound>
+  <compound refid="dir_b994550562b4ecbede8b48d55a19e91b" kind="dir"><name>src/LocalSportsapp</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_f320cfb6b6955889badda3df70c7b51c" kind="dir"><name>src/LocalSports/src</name>
+  </compound>
+  <compound refid="dir_a210ec4a9d6cdb1157380a0902d2cf9a" kind="dir"><name>src/LocalSportsapp/src</name>
+  </compound>
+  <compound refid="dir_e82d5b00f3064e3249317b7e44769fc6" kind="dir"><name>src/utility/src</name>
+  </compound>
+  <compound refid="dir_0619a8f54b4fad7043a6de45be8fde0b" kind="dir"><name>src/utility</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

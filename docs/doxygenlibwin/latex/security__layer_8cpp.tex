@@ -1,0 +1,54 @@
+\doxysection{src/\+Local\+Sports/src/security\+\_\+layer.cpp File Reference}
+\hypertarget{security__layer_8cpp}{}\label{security__layer_8cpp}\index{src/LocalSports/src/security\_layer.cpp@{src/LocalSports/src/security\_layer.cpp}}
+{\ttfamily \#include \"{}security\+\_\+layer.\+h\"{}}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$termios.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/evp.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/rand.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/sha.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/err.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/pem.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/x509.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/bio.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/ssl.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/pkcs12.\+h$>$}\newline
+Include dependency graph for security\+\_\+layer.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{security__layer_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceteamcore}{teamcore}}
+\item 
+namespace \mbox{\hyperlink{namespaceteamcore_1_1crypto}{teamcore\+::crypto}}
+\item 
+namespace \mbox{\hyperlink{namespaceteamcore_1_1tls}{teamcore\+::tls}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1crypto_aaafb270455cdaf5c51ed9746d0028ce3}{teamcore\+::crypto\+::\+Derive\+Key\+From\+Passphrase}} (const std\+::string \&passphrase, const unsigned char \texorpdfstring{$\ast$}{*}salt, std\+::size\+\_\+t salt\+Len, int iterations, unsigned char \texorpdfstring{$\ast$}{*}out\+Key32)
+\item 
+std\+::string \mbox{\hyperlink{namespaceteamcore_1_1crypto_a10a7ec9cb587579f78ae1a692d76c2ad}{teamcore\+::crypto\+::\+Encrypt\+For\+DB}} (const std\+::string \&plaintext, const unsigned char \texorpdfstring{$\ast$}{*}key32, const std\+::string \&aad)
+\item 
+std\+::string \mbox{\hyperlink{namespaceteamcore_1_1crypto_a4d9f3d43cf284e430a275cfbf374da89}{teamcore\+::crypto\+::\+Decrypt\+From\+DB}} (const std\+::string \&sealed, const unsigned char \texorpdfstring{$\ast$}{*}key32, const std\+::string \&aad)
+\item 
+std\+::string \mbox{\hyperlink{namespaceteamcore_a1d7ee6f2e73ff6cba98568d5c1213eca}{teamcore\+::read\+\_\+password\+\_\+secure}} (const std\+::string \&prompt)
+\item 
+bool \mbox{\hyperlink{namespaceteamcore_a93c962251af36fbaa80abf0e8b5ba8f6}{teamcore\+::\+App\+Key\+\_\+\+Init\+From\+Env\+Or\+Prompt}} ()
+\item 
+const \mbox{\hyperlink{classteamcore_1_1_secure_buffer}{Secure\+Buffer}} \& \mbox{\hyperlink{namespaceteamcore_af20ee911948fa779641624875aa3ea57}{teamcore\+::\+App\+Key\+\_\+\+Get}} ()
+\item 
+bool \mbox{\hyperlink{namespaceteamcore_aab0d6b6fe3a3dd4194fe96a5d110659d}{teamcore\+::\+App\+Key\+\_\+\+Is\+Ready}} ()
+\end{DoxyCompactItemize}

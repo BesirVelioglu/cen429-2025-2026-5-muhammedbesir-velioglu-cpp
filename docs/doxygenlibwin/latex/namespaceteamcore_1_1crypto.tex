@@ -1,0 +1,32 @@
+\doxysection{teamcore\+::crypto Namespace Reference}
+\hypertarget{namespaceteamcore_1_1crypto}{}\label{namespaceteamcore_1_1crypto}\index{teamcore::crypto@{teamcore::crypto}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1crypto_aaafb270455cdaf5c51ed9746d0028ce3}{Derive\+Key\+From\+Passphrase}} (const std\+::string \&passphrase, const unsigned char \texorpdfstring{$\ast$}{*}salt, std\+::size\+\_\+t salt\+Len, int iterations, unsigned char \texorpdfstring{$\ast$}{*}out\+Key32)
+\item 
+std\+::string \mbox{\hyperlink{namespaceteamcore_1_1crypto_a10a7ec9cb587579f78ae1a692d76c2ad}{Encrypt\+For\+DB}} (const std\+::string \&plaintext, const unsigned char \texorpdfstring{$\ast$}{*}key32, const std\+::string \&aad)
+\item 
+std\+::string \mbox{\hyperlink{namespaceteamcore_1_1crypto_a4d9f3d43cf284e430a275cfbf374da89}{Decrypt\+From\+DB}} (const std\+::string \&sealed, const unsigned char \texorpdfstring{$\ast$}{*}key32, const std\+::string \&aad)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceteamcore_1_1crypto_a4d9f3d43cf284e430a275cfbf374da89}\label{namespaceteamcore_1_1crypto_a4d9f3d43cf284e430a275cfbf374da89} 
+\index{teamcore::crypto@{teamcore::crypto}!DecryptFromDB@{DecryptFromDB}}
+\index{DecryptFromDB@{DecryptFromDB}!teamcore::crypto@{teamcore::crypto}}
+\doxysubsubsection{\texorpdfstring{DecryptFromDB()}{DecryptFromDB()}}
+{\footnotesize\ttfamily std\+::string teamcore\+::crypto\+::\+Decrypt\+From\+DB (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{sealed,  }\item[{const unsigned char \texorpdfstring{$\ast$}{*}}]{key32,  }\item[{const std\+::string \&}]{aad }\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceteamcore_1_1crypto_aaafb270455cdaf5c51ed9746d0028ce3}\label{namespaceteamcore_1_1crypto_aaafb270455cdaf5c51ed9746d0028ce3} 
+\index{teamcore::crypto@{teamcore::crypto}!DeriveKeyFromPassphrase@{DeriveKeyFromPassphrase}}
+\index{DeriveKeyFromPassphrase@{DeriveKeyFromPassphrase}!teamcore::crypto@{teamcore::crypto}}
+\doxysubsubsection{\texorpdfstring{DeriveKeyFromPassphrase()}{DeriveKeyFromPassphrase()}}
+{\footnotesize\ttfamily bool teamcore\+::crypto\+::\+Derive\+Key\+From\+Passphrase (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{passphrase,  }\item[{const unsigned char \texorpdfstring{$\ast$}{*}}]{salt,  }\item[{std\+::size\+\_\+t}]{salt\+Len,  }\item[{int}]{iterations,  }\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{out\+Key32 }\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceteamcore_1_1crypto_a10a7ec9cb587579f78ae1a692d76c2ad}\label{namespaceteamcore_1_1crypto_a10a7ec9cb587579f78ae1a692d76c2ad} 
+\index{teamcore::crypto@{teamcore::crypto}!EncryptForDB@{EncryptForDB}}
+\index{EncryptForDB@{EncryptForDB}!teamcore::crypto@{teamcore::crypto}}
+\doxysubsubsection{\texorpdfstring{EncryptForDB()}{EncryptForDB()}}
+{\footnotesize\ttfamily std\+::string teamcore\+::crypto\+::\+Encrypt\+For\+DB (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{plaintext,  }\item[{const unsigned char \texorpdfstring{$\ast$}{*}}]{key32,  }\item[{const std\+::string \&}]{aad }\end{DoxyParamCaption})}
+

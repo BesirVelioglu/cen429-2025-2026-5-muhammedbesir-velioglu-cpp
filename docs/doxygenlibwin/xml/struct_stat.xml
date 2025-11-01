@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="struct_stat" kind="struct" language="C++" prot="public">
+    <compoundname>Stat</compoundname>
+    <includes refid="localsports_8h" local="no">localsports.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_stat_1af02a296d1cd4b7a608317b6336217ca1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Stat::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>Stat::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="36" column="14" bodyfile="src/LocalSports/header/localsports.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stat_1a2a759221669935df31616ca94d6bc0ac" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Stat::gameId</definition>
+        <argsstring></argsstring>
+        <name>gameId</name>
+        <qualifiedname>Stat::gameId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="37" column="14" bodyfile="src/LocalSports/header/localsports.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stat_1a33dfd1e728ea3a82e2183b50142327ec" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Stat::playerId</definition>
+        <argsstring></argsstring>
+        <name>playerId</name>
+        <qualifiedname>Stat::playerId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="38" column="14" bodyfile="src/LocalSports/header/localsports.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stat_1af825c20300493b9a8099a30b420fcf6a" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Stat::goals</definition>
+        <argsstring></argsstring>
+        <name>goals</name>
+        <qualifiedname>Stat::goals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="39" column="13" bodyfile="src/LocalSports/header/localsports.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stat_1aefc7fc350d0a3644d857de48d2fa69da" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Stat::assists</definition>
+        <argsstring></argsstring>
+        <name>assists</name>
+        <qualifiedname>Stat::assists</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="40" column="13" bodyfile="src/LocalSports/header/localsports.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stat_1a2a08d02c2fc8f2ad5ab17c80ef950d0b" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Stat::saves</definition>
+        <argsstring></argsstring>
+        <name>saves</name>
+        <qualifiedname>Stat::saves</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="41" column="13" bodyfile="src/LocalSports/header/localsports.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stat_1a46735d3427be98d1fd883dab4767a20c" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Stat::yellow</definition>
+        <argsstring></argsstring>
+        <name>yellow</name>
+        <qualifiedname>Stat::yellow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="42" column="13" bodyfile="src/LocalSports/header/localsports.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stat_1a69ab1ac15f9c517185623730b7aefb71" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Stat::red</definition>
+        <argsstring></argsstring>
+        <name>red</name>
+        <qualifiedname>Stat::red</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/localsports.h" line="43" column="13" bodyfile="src/LocalSports/header/localsports.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Stat</label>
+        <link refid="struct_stat"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/LocalSports/header/localsports.h" line="35" column="1" bodyfile="src/LocalSports/header/localsports.h" bodystart="35" bodyend="44"/>
+    <listofallmembers>
+      <member refid="struct_stat_1aefc7fc350d0a3644d857de48d2fa69da" prot="public" virt="non-virtual"><scope>Stat</scope><name>assists</name></member>
+      <member refid="struct_stat_1a2a759221669935df31616ca94d6bc0ac" prot="public" virt="non-virtual"><scope>Stat</scope><name>gameId</name></member>
+      <member refid="struct_stat_1af825c20300493b9a8099a30b420fcf6a" prot="public" virt="non-virtual"><scope>Stat</scope><name>goals</name></member>
+      <member refid="struct_stat_1af02a296d1cd4b7a608317b6336217ca1" prot="public" virt="non-virtual"><scope>Stat</scope><name>id</name></member>
+      <member refid="struct_stat_1a33dfd1e728ea3a82e2183b50142327ec" prot="public" virt="non-virtual"><scope>Stat</scope><name>playerId</name></member>
+      <member refid="struct_stat_1a69ab1ac15f9c517185623730b7aefb71" prot="public" virt="non-virtual"><scope>Stat</scope><name>red</name></member>
+      <member refid="struct_stat_1a2a08d02c2fc8f2ad5ab17c80ef950d0b" prot="public" virt="non-virtual"><scope>Stat</scope><name>saves</name></member>
+      <member refid="struct_stat_1a46735d3427be98d1fd883dab4767a20c" prot="public" virt="non-virtual"><scope>Stat</scope><name>yellow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

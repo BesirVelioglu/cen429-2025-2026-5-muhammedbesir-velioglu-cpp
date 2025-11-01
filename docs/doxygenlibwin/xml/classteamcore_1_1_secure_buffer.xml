@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classteamcore_1_1_secure_buffer" kind="class" language="C++" prot="public">
+    <compoundname>teamcore::SecureBuffer</compoundname>
+    <includes refid="security__layer_8h" local="no">security_layer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classteamcore_1_1_secure_buffer_1a0bac1998738fc0c9b57718153984aea8" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* teamcore::SecureBuffer::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>teamcore::SecureBuffer::data_</qualifiedname>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="28" column="23" bodyfile="src/LocalSports/header/security_layer.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classteamcore_1_1_secure_buffer_1ae16e51c9b857eeb8ec769c79dcd4a9f3" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t teamcore::SecureBuffer::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <qualifiedname>teamcore::SecureBuffer::size_</qualifiedname>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="29" column="21" bodyfile="src/LocalSports/header/security_layer.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classteamcore_1_1_secure_buffer_1a336a0b71b8c24a65895fe9b246f75906" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::SecureBuffer::secure_bzero</definition>
+        <argsstring>(void *ptr, std::size_t len)</argsstring>
+        <name>secure_bzero</name>
+        <qualifiedname>teamcore::SecureBuffer::secure_bzero</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="11" column="21" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="37" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classteamcore_1_1_secure_buffer_1a5bd1370b310cb3710e675d4625d127f3" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>teamcore::SecureBuffer::SecureBuffer</definition>
+        <argsstring>(std::size_t size=0)</argsstring>
+        <name>SecureBuffer</name>
+        <qualifiedname>teamcore::SecureBuffer::SecureBuffer</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="13" column="18" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="54" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classteamcore_1_1_secure_buffer_1ad0a9a71faa59e928136c7c76e3fa7b84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>teamcore::SecureBuffer::SecureBuffer</definition>
+        <argsstring>(const SecureBuffer &amp;)=delete</argsstring>
+        <name>SecureBuffer</name>
+        <qualifiedname>teamcore::SecureBuffer::SecureBuffer</qualifiedname>
+        <param>
+          <type>const <ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="14" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classteamcore_1_1_secure_buffer_1a5d879ea26db10d9b52f99d437218f79b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref> &amp;</type>
+        <definition>SecureBuffer &amp; teamcore::SecureBuffer::operator=</definition>
+        <argsstring>(const SecureBuffer &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>teamcore::SecureBuffer::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="15" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classteamcore_1_1_secure_buffer_1ad64f7dcaa553969828cd694a01699460" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>teamcore::SecureBuffer::SecureBuffer</definition>
+        <argsstring>(SecureBuffer &amp;&amp;other) noexcept</argsstring>
+        <name>SecureBuffer</name>
+        <qualifiedname>teamcore::SecureBuffer::SecureBuffer</qualifiedname>
+        <param>
+          <type><ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="16" column="9" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="62" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classteamcore_1_1_secure_buffer_1a8eccf617f81f19304325a48256f0ccdf" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref> &amp;</type>
+        <definition>SecureBuffer &amp; teamcore::SecureBuffer::operator=</definition>
+        <argsstring>(SecureBuffer &amp;&amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>teamcore::SecureBuffer::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="17" column="22" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="68" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classteamcore_1_1_secure_buffer_1a2842cc2dc1200da58a3a06ffa5efe0e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>teamcore::SecureBuffer::~SecureBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>~SecureBuffer</name>
+        <qualifiedname>teamcore::SecureBuffer::~SecureBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="18" column="9" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classteamcore_1_1_secure_buffer_1a3ce07c6dee8c02bf69e5bcbd5eb985ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::SecureBuffer::resize</definition>
+        <argsstring>(std::size_t newSize)</argsstring>
+        <name>resize</name>
+        <qualifiedname>teamcore::SecureBuffer::resize</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="20" column="14" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="85" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classteamcore_1_1_secure_buffer_1af1356c1427b9aec94234e26b752c4204" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::SecureBuffer::cleanse</definition>
+        <argsstring>()</argsstring>
+        <name>cleanse</name>
+        <qualifiedname>teamcore::SecureBuffer::cleanse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="21" column="14" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classteamcore_1_1_secure_buffer_1a66ee099f8a381c3734be9675ede9f8cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char * teamcore::SecureBuffer::data</definition>
+        <argsstring>()</argsstring>
+        <name>data</name>
+        <qualifiedname>teamcore::SecureBuffer::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="23" column="23" bodyfile="src/LocalSports/header/security_layer.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classteamcore_1_1_secure_buffer_1a0259d36795f60424390f8655491bcc3e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const unsigned char *</type>
+        <definition>const unsigned char * teamcore::SecureBuffer::data</definition>
+        <argsstring>() const</argsstring>
+        <name>data</name>
+        <qualifiedname>teamcore::SecureBuffer::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="24" column="29" bodyfile="src/LocalSports/header/security_layer.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classteamcore_1_1_secure_buffer_1aafc6096600ca854c389d8657995cc16c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t teamcore::SecureBuffer::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>teamcore::SecureBuffer::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="25" column="21" bodyfile="src/LocalSports/header/security_layer.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>teamcore::SecureBuffer</label>
+        <link refid="classteamcore_1_1_secure_buffer"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/LocalSports/header/security_layer.h" line="8" column="5" bodyfile="src/LocalSports/header/security_layer.h" bodystart="8" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classteamcore_1_1_secure_buffer_1af1356c1427b9aec94234e26b752c4204" prot="public" virt="non-virtual"><scope>teamcore::SecureBuffer</scope><name>cleanse</name></member>
+      <member refid="classteamcore_1_1_secure_buffer_1a66ee099f8a381c3734be9675ede9f8cb" prot="public" virt="non-virtual"><scope>teamcore::SecureBuffer</scope><name>data</name></member>
+      <member refid="classteamcore_1_1_secure_buffer_1a0259d36795f60424390f8655491bcc3e" prot="public" virt="non-virtual"><scope>teamcore::SecureBuffer</scope><name>data</name></member>
+      <member refid="classteamcore_1_1_secure_buffer_1a0bac1998738fc0c9b57718153984aea8" prot="private" virt="non-virtual"><scope>teamcore::SecureBuffer</scope><name>data_</name></member>
+      <member refid="classteamcore_1_1_secure_buffer_1a5d879ea26db10d9b52f99d437218f79b" prot="public" virt="non-virtual"><scope>teamcore::SecureBuffer</scope><name>operator=</name></member>
+      <member refid="classteamcore_1_1_secure_buffer_1a8eccf617f81f19304325a48256f0ccdf" prot="public" virt="non-virtual"><scope>teamcore::SecureBuffer</scope><name>operator=</name></member>
+      <member refid="classteamcore_1_1_secure_buffer_1a3ce07c6dee8c02bf69e5bcbd5eb985ce" prot="public" virt="non-virtual"><scope>teamcore::SecureBuffer</scope><name>resize</name></member>
+      <member refid="classteamcore_1_1_secure_buffer_1a336a0b71b8c24a65895fe9b246f75906" prot="public" virt="non-virtual"><scope>teamcore::SecureBuffer</scope><name>secure_bzero</name></member>
+      <member refid="classteamcore_1_1_secure_buffer_1a5bd1370b310cb3710e675d4625d127f3" prot="public" virt="non-virtual"><scope>teamcore::SecureBuffer</scope><name>SecureBuffer</name></member>
+      <member refid="classteamcore_1_1_secure_buffer_1ad0a9a71faa59e928136c7c76e3fa7b84" prot="public" virt="non-virtual"><scope>teamcore::SecureBuffer</scope><name>SecureBuffer</name></member>
+      <member refid="classteamcore_1_1_secure_buffer_1ad64f7dcaa553969828cd694a01699460" prot="public" virt="non-virtual"><scope>teamcore::SecureBuffer</scope><name>SecureBuffer</name></member>
+      <member refid="classteamcore_1_1_secure_buffer_1aafc6096600ca854c389d8657995cc16c" prot="public" virt="non-virtual"><scope>teamcore::SecureBuffer</scope><name>size</name></member>
+      <member refid="classteamcore_1_1_secure_buffer_1ae16e51c9b857eeb8ec769c79dcd4a9f3" prot="private" virt="non-virtual"><scope>teamcore::SecureBuffer</scope><name>size_</name></member>
+      <member refid="classteamcore_1_1_secure_buffer_1a2842cc2dc1200da58a3a06ffa5efe0e9" prot="public" virt="non-virtual"><scope>teamcore::SecureBuffer</scope><name>~SecureBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

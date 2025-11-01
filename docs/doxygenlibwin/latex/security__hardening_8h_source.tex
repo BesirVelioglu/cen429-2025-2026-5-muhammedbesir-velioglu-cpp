@@ -1,0 +1,81 @@
+\doxysection{security\+\_\+hardening.\+h}
+\hypertarget{security__hardening_8h_source}{}\label{security__hardening_8h_source}\index{src/LocalSports/header/security\_hardening.h@{src/LocalSports/header/security\_hardening.h}}
+\mbox{\hyperlink{security__hardening_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceteamcore}{teamcore}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceteamcore_1_1hardening}{hardening}}\ \{}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//\ ===================\ Anti-\/Debug\ ===================}}
+\DoxyCodeLine{00015\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a4ccea0ed29b104587db03d54bc960bf0}{IsDebuggerPresent}}();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_ae209c51a81263aa5bc74da4b642f10b9}{StartAntiDebugMonitor}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a37c56ba459b67d0eb1b860d5b6731706}{StopAntiDebugMonitor}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ ===================\ Anti-\/Tamper\ ===================}}
+\DoxyCodeLine{00033\ \textcolor{comment}{}\ \ \ \ std::string\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a8c5fc8254a61b0540a7dd0d37b83f996}{GetExecutableHash}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a9847be046f4689a1108adb22ebdb2dd3}{VerifyIntegrity}}(\textcolor{keyword}{const}\ std::string\&\ expectedHash);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//\ ===================\ Emulator/VM\ Detection\ ===================}}
+\DoxyCodeLine{00047\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_ae3cee1714e401ddec13be459d2d61d32}{IsRunningInVM}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{//\ ===================\ Root/Jailbreak\ Detection\ ===================}}
+\DoxyCodeLine{00054\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_ae4bd5f482bf7729d5e890edca9dde1a9}{IsRootedOrJailbroken}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{comment}{//\ ===================\ Environment\ Checks\ ===================}}
+\DoxyCodeLine{00062\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a06e6d5cbec776da17c8579b240572990}{PerformSecurityChecks}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{comment}{//\ ===================\ Code\ Obfuscation\ -\/\ Opaque\ Predicates\ ===================}}
+\DoxyCodeLine{00070\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a746ff56ebc94e9f1bfcbd31887870cba}{OpaquePredicateAlwaysTrue}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a4b3b5932836fd13c7ac69145c6e7cd78}{OpaquePredicateAlwaysFalse}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a43750c108316d92f81a039ffd3cd9c1c}{OpaqueMathPredicate}}(\textcolor{keywordtype}{int}\ x);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{comment}{//\ ===================\ String\ Obfuscation\ ===================}}
+\DoxyCodeLine{00091\ \textcolor{comment}{}\ \ \ \ std::string\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_aee2e27250f691bc7176519b136fae105}{ObfuscateString}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00098\ \ \ \ \ std::string\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a6df62925f350fd8146306e930b661bfd}{DeobfuscateString}}(\textcolor{keyword}{const}\ std::string\&\ obfuscated);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00105\ \ \ \ \ uint64\_t\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_acb446a1528d7f51891b2da13b22bdf7c}{ObfuscateValue}}(uint64\_t\ value);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00112\ \ \ \ \ uint64\_t\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_adfa9292737ac992d8f81b45b86520b23}{DeobfuscateValue}}(uint64\_t\ obfuscated);}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{comment}{//\ ===================\ Control\ Flow\ Obfuscation\ ===================}}
+\DoxyCodeLine{00120\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a4941e511e83aec7e1fc772cb3d845d53}{OpaqueLoop}}(\textcolor{keywordtype}{int}\ iterations);}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a88d593c2f98785d64c913d47e781c7ae}{CallObfuscated}}(\textcolor{keywordtype}{void}\ (*func)());}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a3238760d705163dba235cf8cf72cca3a}{ObfuscateBooleanCondition}}(\textcolor{keywordtype}{bool}\ condition);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{comment}{//\ ===================\ Fake\ Function\ \&\ Arithmetic\ Obfuscation\ ===================}}
+\DoxyCodeLine{00140\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_adf6349975e561b1958f1cf8ac269b50a}{FakeSecurityCheck}}();}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a65f152a453d8b0eafeca0c51cdca071e}{ObfuscateAdd}}(\textcolor{keywordtype}{int}\ a,\ \textcolor{keywordtype}{int}\ b);}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a918ede4de28911a4c161501433774f44}{ObfuscateMultiply}}(\textcolor{keywordtype}{int}\ a,\ \textcolor{keywordtype}{int}\ b);}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{comment}{//\ ===================\ Random\ Exit\ Points\ ===================}}
+\DoxyCodeLine{00163\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a754b280336bc789a7e1a486ab6c9e197}{RandomExitPoint}}(\textcolor{keywordtype}{bool}\ checksPassed);}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{comment}{//\ ===================\ Fail-\/Safe\ Actions\ ===================}}
+\DoxyCodeLine{00170\ \textcolor{comment}{}\ \ \ \ [[noreturn]]\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_ad005cebc9299a5eb73e8eb219ab6752b}{TerminateOnThreat}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ reason);}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00175\ \ \ \ \ [[noreturn]]\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a11c0b4e108d9e1d907cf060c6d800bf6}{SecureTerminate}}();}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \ \ \ \ \textcolor{comment}{//\ ===================\ Debug\ Log\ Obfuscation\ ===================}}
+\DoxyCodeLine{00182\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a17e48f5adaec0be70a63a8c27d15bf93}{SecureLog}}(\textcolor{keyword}{const}\ std::string\&\ message);}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00188\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1hardening_a4f2f30369ecf9f3549c4535a07940d7f}{IsDebugBuild}}();}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \}\ \textcolor{comment}{//\ namespace\ hardening}}
+\DoxyCodeLine{00191\ \}\ \textcolor{comment}{//\ namespace\ teamcore}}
+
+\end{DoxyCode}

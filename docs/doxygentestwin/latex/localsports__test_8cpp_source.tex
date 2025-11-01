@@ -1,0 +1,56 @@
+\doxysection{localsports\+\_\+test.\+cpp}
+\hypertarget{localsports__test_8cpp_source}{}\label{localsports__test_8cpp_source}\index{src/tests/LocalSports/localsports\_test.cpp@{src/tests/LocalSports/localsports\_test.cpp}}
+\mbox{\hyperlink{localsports__test_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00001}00001\ \textcolor{comment}{//\#define\ ENABLE\_LocalSports\_TEST\ \ //\ Uncomment\ this\ line\ to\ enable\ the\ LocalSports\ tests}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}gtest/gtest.h"{}}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}../../LocalSports/header/LocalSports.h"{}}\ \ \textcolor{comment}{//\ Adjust\ this\ include\ path\ based\ on\ your\ project\ structure}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00006}00006\ \textcolor{keyword}{using\ namespace\ }Coruh::LocalSports;}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00008}\mbox{\hyperlink{class_local_sports_test}{00008}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_local_sports_test}{LocalSportsTest}}\ :\ \textcolor{keyword}{public}\ ::testing::Test\ \{}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00009}00009\ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00010}\mbox{\hyperlink{class_local_sports_test_aeae2f6f9c7af18a72cd4e01218b6d15d}{00010}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_local_sports_test_aeae2f6f9c7af18a72cd4e01218b6d15d}{SetUp}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00011}00011\ \ \ \ \ \textcolor{comment}{//\ Setup\ test\ data}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00012}00012\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00014}\mbox{\hyperlink{class_local_sports_test_a57a48519a121a6e273ce849cb1126e11}{00014}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_local_sports_test_a57a48519a121a6e273ce849cb1126e11}{TearDown}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00015}00015\ \ \ \ \ \textcolor{comment}{//\ Clean\ up\ test\ data}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00016}00016\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00017}00017\ \};}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00019}\mbox{\hyperlink{localsports__test_8cpp_aa03c9d9d88d35887fe80898cb67fb01e}{00019}}\ \mbox{\hyperlink{localsports__test_8cpp_aa03c9d9d88d35887fe80898cb67fb01e}{TEST\_F}}(\mbox{\hyperlink{class_local_sports_test}{LocalSportsTest}},\ TestAdd)\ \{}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00020}00020\ \ \ \textcolor{keywordtype}{double}\ result\ =\ LocalSports::add(5.0,\ 3.0);}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00021}00021\ \ \ EXPECT\_DOUBLE\_EQ(result,\ 8.0);}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00022}00022\ \}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00024}\mbox{\hyperlink{localsports__test_8cpp_a73edc5932f250ea8b2d1299cd49384d8}{00024}}\ \mbox{\hyperlink{localsports__test_8cpp_aa03c9d9d88d35887fe80898cb67fb01e}{TEST\_F}}(\mbox{\hyperlink{class_local_sports_test}{LocalSportsTest}},\ TestSubtract)\ \{}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00025}00025\ \ \ \textcolor{keywordtype}{double}\ result\ =\ LocalSports::subtract(5.0,\ 3.0);}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00026}00026\ \ \ EXPECT\_DOUBLE\_EQ(result,\ 2.0);}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00027}00027\ \}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00029}\mbox{\hyperlink{localsports__test_8cpp_a3ac6db8bffa5deb89afe03dd888025e8}{00029}}\ \mbox{\hyperlink{localsports__test_8cpp_aa03c9d9d88d35887fe80898cb67fb01e}{TEST\_F}}(\mbox{\hyperlink{class_local_sports_test}{LocalSportsTest}},\ TestMultiply)\ \{}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00030}00030\ \ \ \textcolor{keywordtype}{double}\ result\ =\ LocalSports::multiply(5.0,\ 3.0);}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00031}00031\ \ \ EXPECT\_DOUBLE\_EQ(result,\ 15.0);}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00032}00032\ \}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00034}\mbox{\hyperlink{localsports__test_8cpp_aa67ad5fe108ea189b3cb1dc8fdd8fdb8}{00034}}\ \mbox{\hyperlink{localsports__test_8cpp_aa03c9d9d88d35887fe80898cb67fb01e}{TEST\_F}}(\mbox{\hyperlink{class_local_sports_test}{LocalSportsTest}},\ TestDivide)\ \{}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00035}00035\ \ \ \textcolor{keywordtype}{double}\ result\ =\ LocalSports::divide(6.0,\ 3.0);}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00036}00036\ \ \ EXPECT\_DOUBLE\_EQ(result,\ 2.0);}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00037}00037\ \}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00039}\mbox{\hyperlink{localsports__test_8cpp_a8abe62bf8592204a5d5d4cacd8c7f85c}{00039}}\ \mbox{\hyperlink{localsports__test_8cpp_aa03c9d9d88d35887fe80898cb67fb01e}{TEST\_F}}(\mbox{\hyperlink{class_local_sports_test}{LocalSportsTest}},\ TestDivideByZero)\ \{}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00040}00040\ \ \ EXPECT\_THROW(LocalSports::divide(5.0,\ 0.0),\ std::invalid\_argument);}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00041}00041\ \}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00050}\mbox{\hyperlink{localsports__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{00050}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{localsports__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}**\ argv)\ \{}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00051}00051\ \textcolor{preprocessor}{\#ifdef\ ENABLE\_LocalSports\_TEST}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00052}00052\ \ \ ::testing::InitGoogleTest(\&argc,\ argv);}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00053}00053\ \ \ \textcolor{keywordflow}{return}\ RUN\_ALL\_TESTS();}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00054}00054\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00055}00055\ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00056}00056\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{localsports__test_8cpp_source_l00057}00057\ \}}
+
+\end{DoxyCode}

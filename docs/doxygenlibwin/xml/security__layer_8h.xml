@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="security__layer_8h" kind="file" language="C++">
+    <compoundname>security_layer.h</compoundname>
+    <includes local="no">cstddef</includes>
+    <includes local="no">string</includes>
+    <includedby refid="localsports_8cpp" local="yes">src/LocalSports/src/localsports.cpp</includedby>
+    <includedby refid="security__layer_8cpp" local="yes">src/LocalSports/src/security_layer.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/LocalSports/header/security_layer.h</label>
+        <link refid="security__layer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstddef</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>src/LocalSports/header/security_layer.h</label>
+        <link refid="security__layer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/LocalSports/src/localsports.cpp</label>
+        <link refid="localsports_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/LocalSports/src/security_layer.cpp</label>
+        <link refid="security__layer_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classteamcore_1_1_secure_buffer" prot="public">teamcore::SecureBuffer</innerclass>
+    <innernamespace refid="namespaceteamcore">teamcore</innernamespace>
+    <innernamespace refid="namespaceteamcore_1_1crypto">teamcore::crypto</innernamespace>
+    <innernamespace refid="namespaceteamcore_1_1tls">teamcore::tls</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceteamcore_1_1crypto_1aaafb270455cdaf5c51ed9746d0028ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::crypto::DeriveKeyFromPassphrase</definition>
+        <argsstring>(const std::string &amp;passphrase, const unsigned char *salt, std::size_t saltLen, int iterations, unsigned char *outKey32)</argsstring>
+        <name>DeriveKeyFromPassphrase</name>
+        <qualifiedname>teamcore::crypto::DeriveKeyFromPassphrase</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>passphrase</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>salt</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>saltLen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iterations</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>outKey32</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_layer.cpp" line="118" column="14" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="118" bodyend="136" declfile="src/LocalSports/header/security_layer.h" declline="34" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1crypto_1a10a7ec9cb587579f78ae1a692d76c2ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string teamcore::crypto::EncryptForDB</definition>
+        <argsstring>(const std::string &amp;plaintext, const unsigned char *key32, const std::string &amp;aad)</argsstring>
+        <name>EncryptForDB</name>
+        <qualifiedname>teamcore::crypto::EncryptForDB</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>plaintext</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>key32</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_layer.cpp" line="138" column="21" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="138" bodyend="214" declfile="src/LocalSports/header/security_layer.h" declline="40" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1crypto_1a4d9f3d43cf284e430a275cfbf374da89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string teamcore::crypto::DecryptFromDB</definition>
+        <argsstring>(const std::string &amp;sealed, const unsigned char *key32, const std::string &amp;aad)</argsstring>
+        <name>DecryptFromDB</name>
+        <qualifiedname>teamcore::crypto::DecryptFromDB</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sealed</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>key32</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_layer.cpp" line="216" column="21" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="216" bodyend="279" declfile="src/LocalSports/header/security_layer.h" declline="44" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1tls_1a566cba99b03a233b20f0b89139e22a31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * teamcore::tls::MakeTls13ClientCtxWithMTLS</definition>
+        <argsstring>(const char *caPem, const char *certPem, const char *keyPem)</argsstring>
+        <name>MakeTls13ClientCtxWithMTLS</name>
+        <qualifiedname>teamcore::tls::MakeTls13ClientCtxWithMTLS</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>caPem</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>certPem</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>keyPem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="51" column="14" declfile="src/LocalSports/header/security_layer.h" declline="51" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1tls_1a1cb27626c5ace28caefb7f7380288eb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string teamcore::tls::ComputeSpkiSha256B64FromFile</definition>
+        <argsstring>(const std::string &amp;certPemPath)</argsstring>
+        <name>ComputeSpkiSha256B64FromFile</name>
+        <qualifiedname>teamcore::tls::ComputeSpkiSha256B64FromFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>certPemPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="55" column="21" declfile="src/LocalSports/header/security_layer.h" declline="55" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1tls_1af10109327e2bd8ddf5f09ade66e495f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::tls::CheckPinnedSpkiFromFile</definition>
+        <argsstring>(const std::string &amp;certPemPath, const std::string &amp;expectedHash, bool throwOnMismatch)</argsstring>
+        <name>CheckPinnedSpkiFromFile</name>
+        <qualifiedname>teamcore::tls::CheckPinnedSpkiFromFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>certPemPath</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>expectedHash</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>throwOnMismatch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_layer.h" line="57" column="14" declfile="src/LocalSports/header/security_layer.h" declline="57" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1a93c962251af36fbaa80abf0e8b5ba8f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::AppKey_InitFromEnvOrPrompt</definition>
+        <argsstring>()</argsstring>
+        <name>AppKey_InitFromEnvOrPrompt</name>
+        <qualifiedname>teamcore::AppKey_InitFromEnvOrPrompt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_layer.cpp" line="331" column="10" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="331" bodyend="361" declfile="src/LocalSports/header/security_layer.h" declline="63" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1af20ee911948fa779641624875aa3ea57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const SecureBuffer &amp;</type>
+        <definition>const SecureBuffer &amp; teamcore::AppKey_Get</definition>
+        <argsstring>()</argsstring>
+        <name>AppKey_Get</name>
+        <qualifiedname>teamcore::AppKey_Get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_layer.cpp" line="363" column="24" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="363" bodyend="367" declfile="src/LocalSports/header/security_layer.h" declline="64" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1aab0d6b6fe3a3dd4194fe96a5d110659d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::AppKey_IsReady</definition>
+        <argsstring>()</argsstring>
+        <name>AppKey_IsReady</name>
+        <qualifiedname>teamcore::AppKey_IsReady</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_layer.cpp" line="369" column="10" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="369" bodyend="371" declfile="src/LocalSports/header/security_layer.h" declline="65" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1a1d7ee6f2e73ff6cba98568d5c1213eca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string teamcore::read_password_secure</definition>
+        <argsstring>(const std::string &amp;prompt)</argsstring>
+        <name>read_password_secure</name>
+        <qualifiedname>teamcore::read_password_secure</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prompt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_layer.cpp" line="295" column="17" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="295" bodyend="329" declfile="src/LocalSports/header/security_layer.h" declline="68" declcolumn="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceteamcore" kindref="compound">teamcore</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>SecureBuffer<sp/>===================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classteamcore_1_1_secure_buffer" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Dýþarýdan<sp/>da<sp/>kullanýlabilsin<sp/>diye<sp/>public<sp/>yaptýk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classteamcore_1_1_secure_buffer_1a336a0b71b8c24a65895fe9b246f75906" kindref="member">secure_bzero</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ptr,<sp/>std::size_t<sp/>len);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref>(std::size_t<sp/><ref refid="classteamcore_1_1_secure_buffer_1aafc6096600ca854c389d8657995cc16c" kindref="member">size</ref><sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="14" refid="classteamcore_1_1_secure_buffer_1ad0a9a71faa59e928136c7c76e3fa7b84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classteamcore_1_1_secure_buffer_1ad0a9a71faa59e928136c7c76e3fa7b84" kindref="member">SecureBuffer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15" refid="classteamcore_1_1_secure_buffer_1a5d879ea26db10d9b52f99d437218f79b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref>&amp;<sp/><ref refid="classteamcore_1_1_secure_buffer_1a5d879ea26db10d9b52f99d437218f79b" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref>(<ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref>&amp;&amp;<sp/>other)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref>&amp;<sp/><ref refid="classteamcore_1_1_secure_buffer_1a5d879ea26db10d9b52f99d437218f79b" kindref="member">operator=</ref>(<ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref>&amp;&amp;<sp/>other)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classteamcore_1_1_secure_buffer_1a2842cc2dc1200da58a3a06ffa5efe0e9" kindref="member">~SecureBuffer</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classteamcore_1_1_secure_buffer_1a3ce07c6dee8c02bf69e5bcbd5eb985ce" kindref="member">resize</ref>(std::size_t<sp/>newSize);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classteamcore_1_1_secure_buffer_1af1356c1427b9aec94234e26b752c4204" kindref="member">cleanse</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classteamcore_1_1_secure_buffer_1a66ee099f8a381c3734be9675ede9f8cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classteamcore_1_1_secure_buffer_1a66ee099f8a381c3734be9675ede9f8cb" kindref="member">data</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classteamcore_1_1_secure_buffer_1a0bac1998738fc0c9b57718153984aea8" kindref="member">data_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="24" refid="classteamcore_1_1_secure_buffer_1a0259d36795f60424390f8655491bcc3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classteamcore_1_1_secure_buffer_1a0259d36795f60424390f8655491bcc3e" kindref="member">data</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classteamcore_1_1_secure_buffer_1a0bac1998738fc0c9b57718153984aea8" kindref="member">data_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="25" refid="classteamcore_1_1_secure_buffer_1aafc6096600ca854c389d8657995cc16c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/><ref refid="classteamcore_1_1_secure_buffer_1aafc6096600ca854c389d8657995cc16c" kindref="member">size</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classteamcore_1_1_secure_buffer_1ae16e51c9b857eeb8ec769c79dcd4a9f3" kindref="member">size_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28" refid="classteamcore_1_1_secure_buffer_1a0bac1998738fc0c9b57718153984aea8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classteamcore_1_1_secure_buffer_1a0bac1998738fc0c9b57718153984aea8" kindref="member">data_</ref>{<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="29" refid="classteamcore_1_1_secure_buffer_1ae16e51c9b857eeb8ec769c79dcd4a9f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/><ref refid="classteamcore_1_1_secure_buffer_1ae16e51c9b857eeb8ec769c79dcd4a9f3" kindref="member">size_</ref>{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>Crypto<sp/>===================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="namespaceteamcore_1_1crypto" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceteamcore_1_1crypto" kindref="compound">crypto</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1crypto_1aaafb270455cdaf5c51ed9746d0028ce3" kindref="member">DeriveKeyFromPassphrase</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>passphrase,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>salt,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>saltLen,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iterations,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>outKey32);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="namespaceteamcore_1_1crypto_1a10a7ec9cb587579f78ae1a692d76c2ad" kindref="member">EncryptForDB</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>plaintext,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>key32,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aad);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="namespaceteamcore_1_1crypto_1a4d9f3d43cf284e430a275cfbf374da89" kindref="member">DecryptFromDB</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>sealed,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>key32,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aad);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>crypto</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>TLS<sp/>===================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="namespaceteamcore_1_1tls" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tls<sp/>{</highlight></codeline>
+<codeline lineno="51" refid="namespaceteamcore_1_1tls_1a566cba99b03a233b20f0b89139e22a31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespaceteamcore_1_1tls_1a566cba99b03a233b20f0b89139e22a31" kindref="member">MakeTls13ClientCtxWithMTLS</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>caPem,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>certPem,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>keyPem);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="namespaceteamcore_1_1tls_1a1cb27626c5ace28caefb7f7380288eb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="namespaceteamcore_1_1tls_1a1cb27626c5ace28caefb7f7380288eb6" kindref="member">ComputeSpkiSha256B64FromFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>certPemPath);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="namespaceteamcore_1_1tls_1af10109327e2bd8ddf5f09ade66e495f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1tls_1af10109327e2bd8ddf5f09ade66e495f4" kindref="member">CheckPinnedSpkiFromFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>certPemPath,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>expectedHash,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>throwOnMismatch);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>tls</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>AppKey<sp/>(bildirimleri<sp/>ekledik)<sp/>===================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1a93c962251af36fbaa80abf0e8b5ba8f6" kindref="member">AppKey_InitFromEnvOrPrompt</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classteamcore_1_1_secure_buffer" kindref="compound">SecureBuffer</ref>&amp;<sp/><ref refid="namespaceteamcore_1af20ee911948fa779641624875aa3ea57" kindref="member">AppKey_Get</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1aab0d6b6fe3a3dd4194fe96a5d110659d" kindref="member">AppKey_IsReady</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>Güvenli<sp/>parola<sp/>giriþi<sp/>(bildirim)<sp/>===================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="namespaceteamcore_1a1d7ee6f2e73ff6cba98568d5c1213eca" kindref="member">read_password_secure</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>prompt);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>teamcore</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/LocalSports/header/security_layer.h"/>
+  </compounddef>
+</doxygen>

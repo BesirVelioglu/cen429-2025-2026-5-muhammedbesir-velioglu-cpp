@@ -1,0 +1,96 @@
+\doxysection{localsports.\+h}
+\hypertarget{localsports_8h_source}{}\label{localsports_8h_source}\index{src/LocalSports/header/localsports.h@{src/LocalSports/header/localsports.h}}
+\mbox{\hyperlink{localsports_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ header/localsports.h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ LOCALSPORTS\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ LOCALSPORTS\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/\ Binary\ file\ names\ (defined\ in\ .cpp)\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{localsports_8h_ad8d5437bed8662e72cdec2b479cc25d3}{FILE\_PLAYERS}};}
+\DoxyCodeLine{00009\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{localsports_8h_a8e8794db27e1eb1ffa03d07b8ee71a08}{FILE\_GAMES}};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{localsports_8h_a96cb4f3bc0c427a5185a29cb31fa82e7}{FILE\_STATS}};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{localsports_8h_a3b93840b5053aa7d0574cdd98986cf77}{FILE\_MESSAGES}};}
+\DoxyCodeLine{00012\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{localsports_8h_a71a48f6fd8a4047e914be0cc7a74cfad}{FILE\_USERS}};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ Fixed-\/size\ records\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#pragma\ pack(push,\ 1)}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_player}{Player}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{struct_player_a370e8ae6120f85b601d7b0dcc372cdb9}{id}};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_player_aa1b57c638d18ebdc69a09ff873cb6684}{name}}[64];}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_player_a9091b1c10c883cea0c83db80674b2fc5}{position}}[32];}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_player_aea29095afc42b44e9194b4b43eb87557}{phone}}[32];}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_player_a415560bf066e5e1937c850e533a00eed}{email}}[64];}
+\DoxyCodeLine{00022\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{struct_player_aad404d23f26988b43b95e61f28045346}{active}};\ \textcolor{comment}{//\ 1\ =\ active,\ 0\ =\ removed}}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_game}{Game}}\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{struct_game_a2500fd106b61de5e4e66311aea0f1b84}{id}};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_game_afa6ef985be85560f17c1e7cde695cf72}{date}}[11];\ \ \ \textcolor{comment}{//\ "{}YYYY-\/MM-\/DD"{}}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_game_ac908e6efb126ab6638555249259c7916}{time}}[6];\ \ \ \ \textcolor{comment}{//\ "{}HH:MM"{}}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_game_ae0cbf267ad79e3590425d07ef9b91d0c}{opponent}}[64];}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_game_a1bf4a00514ed2ba4ca0d2cd36760c953}{location}}[64];}
+\DoxyCodeLine{00031\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{struct_game_a0383dbecf6a728fe7ca78fd0d39d006c}{played}};\ \ \textcolor{comment}{//\ 1=played}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_game_af80f2c9c9f9e14414ff01d22be822e9f}{result}}[16];\ \textcolor{comment}{//\ e.g.,\ "{}2-\/1\ W"{}}}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_stat}{Stat}}\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{struct_stat_af02a296d1cd4b7a608317b6336217ca1}{id}};}
+\DoxyCodeLine{00037\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{struct_stat_a2a759221669935df31616ca94d6bc0ac}{gameId}};}
+\DoxyCodeLine{00038\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{struct_stat_a33dfd1e728ea3a82e2183b50142327ec}{playerId}};}
+\DoxyCodeLine{00039\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_stat_af825c20300493b9a8099a30b420fcf6a}{goals}};}
+\DoxyCodeLine{00040\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_stat_aefc7fc350d0a3644d857de48d2fa69da}{assists}};}
+\DoxyCodeLine{00041\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_stat_a2a08d02c2fc8f2ad5ab17c80ef950d0b}{saves}};}
+\DoxyCodeLine{00042\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_stat_a46735d3427be98d1fd883dab4767a20c}{yellow}};}
+\DoxyCodeLine{00043\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_stat_a69ab1ac15f9c517185623730b7aefb71}{red}};}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_message}{Message}}\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{struct_message_a4c34674ebe8e9ac6a62a5b7c9c3e4123}{id}};}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_message_af3371a63f2d4057a2c028e090b2784e6}{datetime}}[20];\ \textcolor{comment}{//\ "{}YYYY-\/MM-\/DD\ HH:MM"{}}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_message_a7607d71e48dd1203e6e8ff9fd43e85b0}{text}}[160];}
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_user}{User}}\ \{}
+\DoxyCodeLine{00053\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{struct_user_ae4bd671c6f2b7cc7acf84f5e69ec96b7}{id}};}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_user_a9f83d87e6e823657696f55f42c508bb3}{username}}[32];}
+\DoxyCodeLine{00055\ \ \ \ \ uint64\_t\ \mbox{\hyperlink{struct_user_a035d767aca8d2671a2bbad060e068a80}{passHash}};\ \textcolor{comment}{//\ FNV-\/1a\ 64\ (not\ cryptographic;\ security\ layer\ comes\ later)}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_user_aceff21dbfc8af69c95e8a2ce61890e1c}{role}}[16];\ \ \ \ \ \textcolor{comment}{//\ "{}admin"{}\ /\ "{}member"{}}}
+\DoxyCodeLine{00057\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{struct_user_a8f0249657f76c2a5088dea81db9768cc}{active}};\ \ \ \ \textcolor{comment}{//\ 1=active}}
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#pragma\ pack(pop)}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ Public\ API\ (used\ by\ app)\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00062\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{localsports_8h_aff7350ba4ddaca323e3660f8d4eedb2a}{LS\_Init}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{comment}{//\ Roster}}
+\DoxyCodeLine{00065\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{localsports_8h_a850907ca73190c6841e5204ba07b880a}{LS\_ListPlayersInteractive}}();}
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{localsports_8h_a6941a85dbd59a6326bdaebce0c855cee}{LS\_AddPlayerInteractive}}();}
+\DoxyCodeLine{00067\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{localsports_8h_a150377dbd6fd02d895815280e64b43bd}{LS\_EditPlayerInteractive}}();}
+\DoxyCodeLine{00068\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{localsports_8h_a9af01eaf1cfc99b151a6bd53ec0f47dc}{LS\_RemovePlayerInteractive}}();}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{comment}{//\ Games}}
+\DoxyCodeLine{00071\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{localsports_8h_ac65e0ec07dac8fec7a853d91f790a211}{LS\_ListGamesInteractive}}();}
+\DoxyCodeLine{00072\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{localsports_8h_ad57732a13ddc48c64c6aa545717c72b9}{LS\_AddGameInteractive}}();}
+\DoxyCodeLine{00073\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{localsports_8h_aed2b2fa736d2060bdb8d9bea3821473a}{LS\_RecordResultInteractive}}();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{comment}{//\ Statistics}}
+\DoxyCodeLine{00076\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{localsports_8h_a04c27fb1a31321f28f13772d75046246}{LS\_RecordStatsInteractive}}();}
+\DoxyCodeLine{00077\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{localsports_8h_aaff947fb9d3c2530ca58838200be9110}{LS\_ViewPlayerTotalsInteractive}}();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{comment}{//\ Communications}}
+\DoxyCodeLine{00080\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{localsports_8h_a85337b1fb4b0c0bb2e1ea5eb8b095898}{LS\_ListMessagesInteractive}}();}
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{localsports_8h_a1668116b9386e1dd49cf0fa0ead92778}{LS\_AddMessageInteractive}}();}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{comment}{//\ Authentication}}
+\DoxyCodeLine{00084\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{localsports_8h_ab117fdaf97f25d42c4292e1ae98ed094}{LS\_AuthLoginInteractive}}();}
+\DoxyCodeLine{00085\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{localsports_8h_adbdbe18a3db5835cb46b3d3b6a8dd2a4}{LS\_AuthRegisterInteractive}}();}
+\DoxyCodeLine{00086\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{localsports_8h_af43cfb1a0908a075adc94295e31c28dd}{LS\_AuthLogout}}();}
+\DoxyCodeLine{00087\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{localsports_8h_a1dd63114fbf33716846bf01944427350}{LS\_IsAuthenticated}}();}
+\DoxyCodeLine{00088\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{localsports_8h_abd8904e57f1a157e10414411c1d8ab37}{LS\_CurrentUsername}}();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LOCALSPORTS\_H}}
+
+\end{DoxyCode}

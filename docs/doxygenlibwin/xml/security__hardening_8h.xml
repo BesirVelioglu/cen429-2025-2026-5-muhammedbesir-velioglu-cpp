@@ -1,0 +1,790 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="security__hardening_8h" kind="file" language="C++">
+    <compoundname>security_hardening.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">functional</includes>
+    <includedby refid="localsports_8cpp" local="yes">src/LocalSports/src/localsports.cpp</includedby>
+    <includedby refid="security__hardening_8cpp" local="yes">src/LocalSports/src/security_hardening.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/LocalSports/header/security_hardening.h</label>
+        <link refid="security__hardening_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>src/LocalSports/header/security_hardening.h</label>
+        <link refid="security__hardening_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/LocalSports/src/localsports.cpp</label>
+        <link refid="localsports_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/LocalSports/src/security_hardening.cpp</label>
+        <link refid="security__hardening_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceteamcore">teamcore</innernamespace>
+    <innernamespace refid="namespaceteamcore_1_1hardening">teamcore::hardening</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a4ccea0ed29b104587db03d54bc960bf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::hardening::IsDebuggerPresent</definition>
+        <argsstring>()</argsstring>
+        <name>IsDebuggerPresent</name>
+        <qualifiedname>teamcore::hardening::IsDebuggerPresent</qualifiedname>
+        <briefdescription>
+<para>Debugger tespiti (Windows ve Linux) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true ise debugger algılandı </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="48" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="48" bodyend="125" declfile="src/LocalSports/header/security_hardening.h" declline="15" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1ae209c51a81263aa5bc74da4b642f10b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::hardening::StartAntiDebugMonitor</definition>
+        <argsstring>()</argsstring>
+        <name>StartAntiDebugMonitor</name>
+        <qualifiedname>teamcore::hardening::StartAntiDebugMonitor</qualifiedname>
+        <briefdescription>
+<para>Anti-debug kontrolünü başlat (arka planda izleme thread) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Her 5 saniyede bir debugger kontrolü yapar, tespit ederse uygulamayı sonlandırır </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="127" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="127" bodyend="141" declfile="src/LocalSports/header/security_hardening.h" declline="21" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a37c56ba459b67d0eb1b860d5b6731706" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::hardening::StopAntiDebugMonitor</definition>
+        <argsstring>()</argsstring>
+        <name>StopAntiDebugMonitor</name>
+        <qualifiedname>teamcore::hardening::StopAntiDebugMonitor</qualifiedname>
+        <briefdescription>
+<para>Anti-debug monitoring thread&apos;ini durdur. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="143" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="143" bodyend="148" declfile="src/LocalSports/header/security_hardening.h" declline="26" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a8c5fc8254a61b0540a7dd0d37b83f996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string teamcore::hardening::GetExecutableHash</definition>
+        <argsstring>()</argsstring>
+        <name>GetExecutableHash</name>
+        <qualifiedname>teamcore::hardening::GetExecutableHash</qualifiedname>
+        <briefdescription>
+<para>Executable&apos;ın SHA256 hash değerini hesapla. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Hex string (64 karakter) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="151" column="17" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="151" bodyend="193" declfile="src/LocalSports/header/security_hardening.h" declline="33" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a9847be046f4689a1108adb22ebdb2dd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::hardening::VerifyIntegrity</definition>
+        <argsstring>(const std::string &amp;expectedHash)</argsstring>
+        <name>VerifyIntegrity</name>
+        <qualifiedname>teamcore::hardening::VerifyIntegrity</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>expectedHash</declname>
+        </param>
+        <briefdescription>
+<para>Kodun değiştirilip değiştirilmediğini kontrol et. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expectedHash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bilinen doğru hash (build time&apos;da ayarlanır) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>false ise tamper edilmiş </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="195" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="195" bodyend="202" declfile="src/LocalSports/header/security_hardening.h" declline="40" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1ae3cee1714e401ddec13be459d2d61d32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::hardening::IsRunningInVM</definition>
+        <argsstring>()</argsstring>
+        <name>IsRunningInVM</name>
+        <qualifiedname>teamcore::hardening::IsRunningInVM</qualifiedname>
+        <briefdescription>
+<para>Sanal makina veya emulator tespiti. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true ise VM/emulator algılandı </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="205" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="205" bodyend="285" declfile="src/LocalSports/header/security_hardening.h" declline="47" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1ae4bd5f482bf7729d5e890edca9dde1a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::hardening::IsRootedOrJailbroken</definition>
+        <argsstring>()</argsstring>
+        <name>IsRootedOrJailbroken</name>
+        <qualifiedname>teamcore::hardening::IsRootedOrJailbroken</qualifiedname>
+        <briefdescription>
+<para>Windows: Admin yetkileri kontrolü, Linux: Root user kontrolü </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true ise root/admin yetkisi var </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="288" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="288" bodyend="306" declfile="src/LocalSports/header/security_hardening.h" declline="54" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a06e6d5cbec776da17c8579b240572990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::hardening::PerformSecurityChecks</definition>
+        <argsstring>()</argsstring>
+        <name>PerformSecurityChecks</name>
+        <qualifiedname>teamcore::hardening::PerformSecurityChecks</qualifiedname>
+        <briefdescription>
+<para>Güvenlik ortamı kontrollerini başlat. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Debugger, VM tespitlerini bir arada yapar <simplesect kind="return"><para>true ise tüm kontroller geçti, false ise tehdit var </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="309" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="309" bodyend="327" declfile="src/LocalSports/header/security_hardening.h" declline="62" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a746ff56ebc94e9f1bfcbd31887870cba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::hardening::OpaquePredicateAlwaysTrue</definition>
+        <argsstring>()</argsstring>
+        <name>OpaquePredicateAlwaysTrue</name>
+        <qualifiedname>teamcore::hardening::OpaquePredicateAlwaysTrue</qualifiedname>
+        <briefdescription>
+<para>Opaque predicate (her zaman true dönen karmaşık koşul) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Kontrol akışını karmaşıklaştırmak için kullanılır <simplesect kind="return"><para>Her zaman true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="330" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="330" bodyend="337" declfile="src/LocalSports/header/security_hardening.h" declline="70" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a4b3b5932836fd13c7ac69145c6e7cd78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::hardening::OpaquePredicateAlwaysFalse</definition>
+        <argsstring>()</argsstring>
+        <name>OpaquePredicateAlwaysFalse</name>
+        <qualifiedname>teamcore::hardening::OpaquePredicateAlwaysFalse</qualifiedname>
+        <briefdescription>
+<para>Opaque predicate (her zaman false dönen karmaşık koşul) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Her zaman false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="339" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="339" bodyend="346" declfile="src/LocalSports/header/security_hardening.h" declline="76" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a43750c108316d92f81a039ffd3cd9c1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::hardening::OpaqueMathPredicate</definition>
+        <argsstring>(int x)</argsstring>
+        <name>OpaqueMathPredicate</name>
+        <qualifiedname>teamcore::hardening::OpaqueMathPredicate</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Karmaşık matematiksel opaque predicate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input değeri </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Her zaman true (x*x &gt;= 0) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="348" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="348" bodyend="352" declfile="src/LocalSports/header/security_hardening.h" declline="83" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1aee2e27250f691bc7176519b136fae105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string teamcore::hardening::ObfuscateString</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>ObfuscateString</name>
+        <qualifiedname>teamcore::hardening::ObfuscateString</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Compile-time string obfuscation (XOR ile) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Şifrelenecek string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Obfuscate edilmiş string (runtime&apos;da decode edilir) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="355" column="17" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="355" bodyend="361" declfile="src/LocalSports/header/security_hardening.h" declline="91" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a6df62925f350fd8146306e930b661bfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string teamcore::hardening::DeobfuscateString</definition>
+        <argsstring>(const std::string &amp;obfuscated)</argsstring>
+        <name>DeobfuscateString</name>
+        <qualifiedname>teamcore::hardening::DeobfuscateString</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>obfuscated</declname>
+        </param>
+        <briefdescription>
+<para>Obfuscate edilmiş string&apos;i decode et. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obfuscated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Obfuscate edilmiş string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Orijinal string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="363" column="17" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="363" bodyend="369" declfile="src/LocalSports/header/security_hardening.h" declline="98" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1acb446a1528d7f51891b2da13b22bdf7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t teamcore::hardening::ObfuscateValue</definition>
+        <argsstring>(uint64_t value)</argsstring>
+        <name>ObfuscateValue</name>
+        <qualifiedname>teamcore::hardening::ObfuscateValue</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Magic number obfuscation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Saklanacak değer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Obfuscate edilmiş değer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="371" column="14" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="371" bodyend="373" declfile="src/LocalSports/header/security_hardening.h" declline="105" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1adfa9292737ac992d8f81b45b86520b23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t teamcore::hardening::DeobfuscateValue</definition>
+        <argsstring>(uint64_t obfuscated)</argsstring>
+        <name>DeobfuscateValue</name>
+        <qualifiedname>teamcore::hardening::DeobfuscateValue</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>obfuscated</declname>
+        </param>
+        <briefdescription>
+<para>Obfuscate edilmiş değeri decode et. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obfuscated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Obfuscate edilmiş değer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Orijinal değer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="375" column="14" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="375" bodyend="377" declfile="src/LocalSports/header/security_hardening.h" declline="112" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a4941e511e83aec7e1fc772cb3d845d53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::hardening::OpaqueLoop</definition>
+        <argsstring>(int iterations)</argsstring>
+        <name>OpaqueLoop</name>
+        <qualifiedname>teamcore::hardening::OpaqueLoop</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>iterations</declname>
+        </param>
+        <briefdescription>
+<para>Kontrol akışını karmaşıklaştıran opaque loop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iterations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>İterasyon sayısı</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Dummy hesaplamalar ile kod analizi zorlaştırır </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="380" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="380" bodyend="401" declfile="src/LocalSports/header/security_hardening.h" declline="120" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a88d593c2f98785d64c913d47e781c7ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::hardening::CallObfuscated</definition>
+        <argsstring>(void(*func)())</argsstring>
+        <name>CallObfuscated</name>
+        <qualifiedname>teamcore::hardening::CallObfuscated</qualifiedname>
+        <param>
+          <type>void(*)()</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>İndirect function call (fonksiyon pointer gizleme) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Çağrılacak fonksiyon </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="403" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="403" bodyend="411" declfile="src/LocalSports/header/security_hardening.h" declline="126" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a3238760d705163dba235cf8cf72cca3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::hardening::ObfuscateBooleanCondition</definition>
+        <argsstring>(bool condition)</argsstring>
+        <name>ObfuscateBooleanCondition</name>
+        <qualifiedname>teamcore::hardening::ObfuscateBooleanCondition</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>condition</declname>
+        </param>
+        <briefdescription>
+<para>Boolean değişkenler için obfuscation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>condition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Koşul </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Aynı koşul ama karmaşık hesaplama ile </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="413" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="413" bodyend="420" declfile="src/LocalSports/header/security_hardening.h" declline="133" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1adf6349975e561b1958f1cf8ac269b50a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::hardening::FakeSecurityCheck</definition>
+        <argsstring>()</argsstring>
+        <name>FakeSecurityCheck</name>
+        <qualifiedname>teamcore::hardening::FakeSecurityCheck</qualifiedname>
+        <briefdescription>
+<para>Sahte fonksiyon (reverse engineer&apos;ı yanıltmak için) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gerçekte hiçbir işe yaramaz ama önemli gibi görünür </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="423" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="423" bodyend="442" declfile="src/LocalSports/header/security_hardening.h" declline="140" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a65f152a453d8b0eafeca0c51cdca071e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int teamcore::hardening::ObfuscateAdd</definition>
+        <argsstring>(int a, int b)</argsstring>
+        <name>ObfuscateAdd</name>
+        <qualifiedname>teamcore::hardening::ObfuscateAdd</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Aritmetik işlemleri karmaşıklaştırma. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>İlk değer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>İkinci değer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a + b (ama karmaşık hesaplama ile) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="444" column="9" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="444" bodyend="456" declfile="src/LocalSports/header/security_hardening.h" declline="148" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a918ede4de28911a4c161501433774f44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int teamcore::hardening::ObfuscateMultiply</definition>
+        <argsstring>(int a, int b)</argsstring>
+        <name>ObfuscateMultiply</name>
+        <qualifiedname>teamcore::hardening::ObfuscateMultiply</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Aritmetik işlemleri karmaşıklaştırma (çarpma) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>İlk değer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>İkinci değer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a * b (ama karmaşık hesaplama ile) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="458" column="9" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="458" bodyend="473" declfile="src/LocalSports/header/security_hardening.h" declline="156" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a754b280336bc789a7e1a486ab6c9e197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::hardening::RandomExitPoint</definition>
+        <argsstring>(bool checksPassed)</argsstring>
+        <name>RandomExitPoint</name>
+        <qualifiedname>teamcore::hardening::RandomExitPoint</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>checksPassed</declname>
+        </param>
+        <briefdescription>
+<para>Rastgele çıkış noktaları (kontrol akışını gizleme) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>checksPassed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Güvenlik kontrolleri geçti mi? </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="476" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="476" bodyend="502" declfile="src/LocalSports/header/security_hardening.h" declline="163" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1ad005cebc9299a5eb73e8eb219ab6752b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::hardening::TerminateOnThreat</definition>
+        <argsstring>(const char *reason)</argsstring>
+        <name>TerminateOnThreat</name>
+        <qualifiedname>teamcore::hardening::TerminateOnThreat</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>Güvenlik ihlali durumunda uygulamayı sonlandır. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sonlandırma nedeni </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="505" column="11" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="505" bodyend="521" declfile="src/LocalSports/header/security_hardening.h" declline="170" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a11c0b4e108d9e1d907cf060c6d800bf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::hardening::SecureTerminate</definition>
+        <argsstring>()</argsstring>
+        <name>SecureTerminate</name>
+        <qualifiedname>teamcore::hardening::SecureTerminate</qualifiedname>
+        <briefdescription>
+<para>Belleği temizle ve uygulamayı kapat. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="523" column="11" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="523" bodyend="533" declfile="src/LocalSports/header/security_hardening.h" declline="175" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a17e48f5adaec0be70a63a8c27d15bf93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::hardening::SecureLog</definition>
+        <argsstring>(const std::string &amp;message)</argsstring>
+        <name>SecureLog</name>
+        <qualifiedname>teamcore::hardening::SecureLog</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Release modunda debug loglarını kaldır. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Log mesajı </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="536" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="536" bodyend="544" declfile="src/LocalSports/header/security_hardening.h" declline="182" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a4f2f30369ecf9f3549c4535a07940d7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::hardening::IsDebugBuild</definition>
+        <argsstring>()</argsstring>
+        <name>IsDebugBuild</name>
+        <qualifiedname>teamcore::hardening::IsDebugBuild</qualifiedname>
+        <briefdescription>
+<para>Build configuration kontrolü </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true ise debug build, false ise release build </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/security_hardening.cpp" line="546" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="546" bodyend="552" declfile="src/LocalSports/header/security_hardening.h" declline="188" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespaceteamcore" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceteamcore" kindref="compound">teamcore</ref><sp/>{</highlight></codeline>
+<codeline lineno="8" refid="namespaceteamcore_1_1hardening" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceteamcore_1_1hardening" kindref="compound">hardening</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>Anti-Debug<sp/>===================</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a4ccea0ed29b104587db03d54bc960bf0" kindref="member">IsDebuggerPresent</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1ae209c51a81263aa5bc74da4b642f10b9" kindref="member">StartAntiDebugMonitor</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a37c56ba459b67d0eb1b860d5b6731706" kindref="member">StopAntiDebugMonitor</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>Anti-Tamper<sp/>===================</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="namespaceteamcore_1_1hardening_1a8c5fc8254a61b0540a7dd0d37b83f996" kindref="member">GetExecutableHash</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a9847be046f4689a1108adb22ebdb2dd3" kindref="member">VerifyIntegrity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>expectedHash);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>Emulator/VM<sp/>Detection<sp/>===================</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1ae3cee1714e401ddec13be459d2d61d32" kindref="member">IsRunningInVM</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>Root/Jailbreak<sp/>Detection<sp/>===================</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1ae4bd5f482bf7729d5e890edca9dde1a9" kindref="member">IsRootedOrJailbroken</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>Environment<sp/>Checks<sp/>===================</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a06e6d5cbec776da17c8579b240572990" kindref="member">PerformSecurityChecks</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>Code<sp/>Obfuscation<sp/>-<sp/>Opaque<sp/>Predicates<sp/>===================</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a746ff56ebc94e9f1bfcbd31887870cba" kindref="member">OpaquePredicateAlwaysTrue</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a4b3b5932836fd13c7ac69145c6e7cd78" kindref="member">OpaquePredicateAlwaysFalse</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a43750c108316d92f81a039ffd3cd9c1c" kindref="member">OpaqueMathPredicate</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>String<sp/>Obfuscation<sp/>===================</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="namespaceteamcore_1_1hardening_1aee2e27250f691bc7176519b136fae105" kindref="member">ObfuscateString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="namespaceteamcore_1_1hardening_1a6df62925f350fd8146306e930b661bfd" kindref="member">DeobfuscateString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>obfuscated);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="namespaceteamcore_1_1hardening_1acb446a1528d7f51891b2da13b22bdf7c" kindref="member">ObfuscateValue</ref>(uint64_t<sp/>value);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="namespaceteamcore_1_1hardening_1adfa9292737ac992d8f81b45b86520b23" kindref="member">DeobfuscateValue</ref>(uint64_t<sp/>obfuscated);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>Control<sp/>Flow<sp/>Obfuscation<sp/>===================</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a4941e511e83aec7e1fc772cb3d845d53" kindref="member">OpaqueLoop</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iterations);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a88d593c2f98785d64c913d47e781c7ae" kindref="member">CallObfuscated</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*func)());</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a3238760d705163dba235cf8cf72cca3a" kindref="member">ObfuscateBooleanCondition</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>condition);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>Fake<sp/>Function<sp/>&amp;<sp/>Arithmetic<sp/>Obfuscation<sp/>===================</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1adf6349975e561b1958f1cf8ac269b50a" kindref="member">FakeSecurityCheck</ref>();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a65f152a453d8b0eafeca0c51cdca071e" kindref="member">ObfuscateAdd</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a918ede4de28911a4c161501433774f44" kindref="member">ObfuscateMultiply</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>Random<sp/>Exit<sp/>Points<sp/>===================</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a754b280336bc789a7e1a486ab6c9e197" kindref="member">RandomExitPoint</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checksPassed);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>Fail-Safe<sp/>Actions<sp/>===================</highlight></codeline>
+<codeline lineno="170"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>[[noreturn]]<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1ad005cebc9299a5eb73e8eb219ab6752b" kindref="member">TerminateOnThreat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>reason);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>[[noreturn]]<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a11c0b4e108d9e1d907cf060c6d800bf6" kindref="member">SecureTerminate</ref>();</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>===================<sp/>Debug<sp/>Log<sp/>Obfuscation<sp/>===================</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a17e48f5adaec0be70a63a8c27d15bf93" kindref="member">SecureLog</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>message);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceteamcore_1_1hardening_1a4f2f30369ecf9f3549c4535a07940d7f" kindref="member">IsDebugBuild</ref>();</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>hardening</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>teamcore</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/LocalSports/header/security_hardening.h"/>
+  </compounddef>
+</doxygen>

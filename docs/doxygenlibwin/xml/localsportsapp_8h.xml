@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="localsportsapp_8h" kind="file" language="C++">
+    <compoundname>localsportsapp.h</compoundname>
+    <includedby refid="localsportsapp_8cpp" local="yes">src/LocalSportsapp/src/localsportsapp.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>src/LocalSportsapp/header/localsportsapp.h</label>
+        <link refid="localsportsapp_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/LocalSportsapp/src/localsportsapp.cpp</label>
+        <link refid="localsportsapp_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="localsportsapp_8h_1a97fdd7815bac9ec7765dce579b889bc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LS_AppStart</definition>
+        <argsstring>()</argsstring>
+        <name>LS_AppStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSportsapp/header/localsportsapp.h" line="6" column="6" bodyfile="src/LocalSportsapp/src/localsportsapp.cpp" bodystart="128" bodyend="152" declfile="src/LocalSportsapp/header/localsportsapp.h" declline="6" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>header/localsportsapp.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LOCALSPORTSAPP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOCALSPORTSAPP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Starts<sp/>the<sp/>console<sp/>app<sp/>(auth<sp/>+<sp/>main<sp/>menu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="localsportsapp_8h_1a97fdd7815bac9ec7765dce579b889bc4" kindref="member">LS_AppStart</ref>();</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LOCALSPORTSAPP_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/LocalSportsapp/header/localsportsapp.h"/>
+  </compounddef>
+</doxygen>

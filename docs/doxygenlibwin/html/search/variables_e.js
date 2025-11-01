@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['yellow_0',['yellow',['../struct_stat.html#a46735d3427be98d1fd883dab4767a20c',1,'Stat']]]
+  ['username_0',['username',['../struct_user.html#a9f83d87e6e823657696f55f42c508bb3',1,'User']]]
 ];

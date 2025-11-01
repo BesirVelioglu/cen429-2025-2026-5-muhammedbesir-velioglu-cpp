@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7esecurebuffer_0',['~SecureBuffer',['../classteamcore_1_1_secure_buffer.html#a2842cc2dc1200da58a3a06ffa5efe0e9',1,'teamcore::SecureBuffer']]]
+  ['terminateonthreat_0',['TerminateOnThreat',['../namespaceteamcore_1_1hardening.html#ad005cebc9299a5eb73e8eb219ab6752b',1,'teamcore::hardening']]]
 ];

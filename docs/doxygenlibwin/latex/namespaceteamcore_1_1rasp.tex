@@ -1,0 +1,395 @@
+\doxysection{teamcore\+::rasp Namespace Reference}
+\hypertarget{namespaceteamcore_1_1rasp}{}\label{namespaceteamcore_1_1rasp}\index{teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structteamcore_1_1rasp_1_1_r_a_s_p_config}{RASPConfig}}
+\item 
+struct \mbox{\hyperlink{structteamcore_1_1rasp_1_1_security_event}{Security\+Event}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1rasp_a3fe514c24263c87105082787c7c18dc7}{Detect\+Debugger}} ()
+\begin{DoxyCompactList}\small\item\em Runtime debugger tespiti (Is\+Debugger\+Present API ve ptrace kontrolü) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1rasp_a059c359acf49bf78806c802af513b5f7}{Start\+Debugger\+Monitoring}} (std\+::function$<$ void()$>$ callback, int interval\+Ms=5000)
+\begin{DoxyCompactList}\small\item\em Periyodik debugger izleme başlat (arka plan thread) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1rasp_aaadad552f8192ce7f2605b1168228457}{Stop\+Debugger\+Monitoring}} ()
+\begin{DoxyCompactList}\small\item\em Debugger izlemeyi durdur. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespaceteamcore_1_1rasp_acfffd0beff666d97fce2c9a3d825c6db}{Calculate\+Text\+Section\+Checksum}} ()
+\begin{DoxyCompactList}\small\item\em Executable\textquotesingle{}ın .text bölümünün SHA-\/256 checksum\textquotesingle{}ını hesapla. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1rasp_a901623f332c29fd48aa9a416beb422e5}{Verify\+Text\+Section\+Integrity}} (const std\+::string \&expected\+Checksum)
+\begin{DoxyCompactList}\small\item\em .text bölümünün checksum doğrulaması \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1rasp_a74899448486f554bebb2f44c84658d72}{Boot\+Time\+Integrity\+Check}} (const std\+::string \&expected\+Checksum)
+\begin{DoxyCompactList}\small\item\em Önyükleme sırasında checksum kontrolü yap. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceteamcore_1_1rasp_abc2bfd5fd35be23413c3cd7c91caa020}{Detect\+IATHooks}} ()
+\begin{DoxyCompactList}\small\item\em Import Address Table (Windows) hook tespiti. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceteamcore_1_1rasp_a19e83bdd3db428e5ccb129a78e1205e3}{Detect\+PLTHooks}} ()
+\begin{DoxyCompactList}\small\item\em Procedure Linkage Table (Linux) hook tespiti. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1rasp_afcfa29d7403aa4b2ffca1716832679d4}{Is\+Thunk\+Modified}} (const std\+::string \&function\+Name)
+\begin{DoxyCompactList}\small\item\em Beklenmeyen fonksiyon pointer kontrolü (thunk analizi) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceteamcore_1_1rasp_a807b098c27296fbf981ae7785a51ff1f}{Scan\+Critical\+Functions}} ()
+\begin{DoxyCompactList}\small\item\em Tüm kritik fonksiyonların hook kontrolü \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1rasp_ae52211ed6b1f31d167a1a9edfccaaf47}{Log\+Security\+Event}} (const \mbox{\hyperlink{structteamcore_1_1rasp_1_1_security_event}{Security\+Event}} \&event)
+\begin{DoxyCompactList}\small\item\em Güvenlik olayını kaydet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1rasp_a91ad508756da2b4a880b39e72b8a2071}{Handle\+Critical\+Event}} (const std\+::string \&event\+Type, const std\+::string \&description, bool terminate\+App=true)
+\begin{DoxyCompactList}\small\item\em Kritik güvenlik olayını kaydet ve fail-\/closed davranış göster. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_security_event}{Security\+Event}} $>$ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a9c49a9e1a8cac4189db46585a655b343}{Get\+Security\+Event\+Log}} ()
+\begin{DoxyCompactList}\small\item\em Tüm güvenlik olaylarını getir. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1rasp_a07e65abc82f54ea47b0b9ce8cbf5050c}{Clear\+Security\+Log}} ()
+\begin{DoxyCompactList}\small\item\em Güvenlik log dosyasını temizle. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1rasp_a0293f9b3b50efd7c112cfa2400de65ca}{Verify\+Process\+Isolation}} ()
+\begin{DoxyCompactList}\small\item\em Süreç izolasyonu kontrolü \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1rasp_a17a4eabede4484deea82b9acf7ccff44}{Fail\+Closed\+Shutdown}} (const std\+::string \&reason)
+\begin{DoxyCompactList}\small\item\em Fail-\/closed davranış\+: Güvenlik tehdidi durumunda uygulamayı sonlandır. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1rasp_a097fbdfc036635e67228fcf8c15b099c}{Secure\+Terminate}} ()
+\begin{DoxyCompactList}\small\item\em Güvenli durum kaydı (crash dump olmadan çıkış) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1rasp_acfa334ed52bbd4e42ab7abfad44811ea}{Initialize\+RASP}} (const std\+::string \&expected\+Checksum, bool auto\+Terminate\+On\+Threat=true)
+\begin{DoxyCompactList}\small\item\em RASP sistemini başlat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1rasp_a4b8d4607e2578698d18ef17f51d79628}{Shutdown\+RASP}} ()
+\begin{DoxyCompactList}\small\item\em RASP sistemini durdur. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1rasp_adaafa9c1e483547f753d9aaffb58f38e}{Is\+RASPActive}} ()
+\begin{DoxyCompactList}\small\item\em RASP durumu sorgulama. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1rasp_a2bf6d0cb586da649dab36781003d8067}{Perform\+Security\+Scan}} ()
+\begin{DoxyCompactList}\small\item\em Periyodik güvenlik kontrolü yap. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceteamcore_1_1rasp_aa111f8946bff31b16ecaabbebfef6111}{Configure\+RASP}} (const \mbox{\hyperlink{structteamcore_1_1rasp_1_1_r_a_s_p_config}{RASPConfig}} \&config)
+\begin{DoxyCompactList}\small\item\em RASP yapılandırması ayarla. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structteamcore_1_1rasp_1_1_r_a_s_p_config}{RASPConfig}} \mbox{\hyperlink{namespaceteamcore_1_1rasp_a80257b3b67e746443cf5a3c142987844}{Get\+RASPConfig}} ()
+\begin{DoxyCompactList}\small\item\em Aktif yapılandırmayı getir. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceteamcore_1_1rasp_a74899448486f554bebb2f44c84658d72}\label{namespaceteamcore_1_1rasp_a74899448486f554bebb2f44c84658d72} 
+\index{teamcore::rasp@{teamcore::rasp}!BootTimeIntegrityCheck@{BootTimeIntegrityCheck}}
+\index{BootTimeIntegrityCheck@{BootTimeIntegrityCheck}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{BootTimeIntegrityCheck()}{BootTimeIntegrityCheck()}}
+{\footnotesize\ttfamily bool teamcore\+::rasp\+::\+Boot\+Time\+Integrity\+Check (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{expected\+Checksum }\end{DoxyParamCaption})}
+
+
+
+Önyükleme sırasında checksum kontrolü yap. 
+
+Uygulama başlarken .text bölümünü doğrular 
+\begin{DoxyParams}{Parameters}
+{\em expected\+Checksum} & Bilinen doğru checksum \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false ise uygulama sonlandırılmalı 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1rasp_acfffd0beff666d97fce2c9a3d825c6db}\label{namespaceteamcore_1_1rasp_acfffd0beff666d97fce2c9a3d825c6db} 
+\index{teamcore::rasp@{teamcore::rasp}!CalculateTextSectionChecksum@{CalculateTextSectionChecksum}}
+\index{CalculateTextSectionChecksum@{CalculateTextSectionChecksum}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{CalculateTextSectionChecksum()}{CalculateTextSectionChecksum()}}
+{\footnotesize\ttfamily std\+::string teamcore\+::rasp\+::\+Calculate\+Text\+Section\+Checksum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Executable\textquotesingle{}ın .text bölümünün SHA-\/256 checksum\textquotesingle{}ını hesapla. 
+
+Runtime\textquotesingle{}da kod bölgesinin hash\textquotesingle{}ini alır \begin{DoxyReturn}{Returns}
+SHA-\/256 hash (64 karakter hex string) 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1rasp_a07e65abc82f54ea47b0b9ce8cbf5050c}\label{namespaceteamcore_1_1rasp_a07e65abc82f54ea47b0b9ce8cbf5050c} 
+\index{teamcore::rasp@{teamcore::rasp}!ClearSecurityLog@{ClearSecurityLog}}
+\index{ClearSecurityLog@{ClearSecurityLog}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{ClearSecurityLog()}{ClearSecurityLog()}}
+{\footnotesize\ttfamily void teamcore\+::rasp\+::\+Clear\+Security\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Güvenlik log dosyasını temizle. 
+
+\Hypertarget{namespaceteamcore_1_1rasp_aa111f8946bff31b16ecaabbebfef6111}\label{namespaceteamcore_1_1rasp_aa111f8946bff31b16ecaabbebfef6111} 
+\index{teamcore::rasp@{teamcore::rasp}!ConfigureRASP@{ConfigureRASP}}
+\index{ConfigureRASP@{ConfigureRASP}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{ConfigureRASP()}{ConfigureRASP()}}
+{\footnotesize\ttfamily void teamcore\+::rasp\+::\+Configure\+RASP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structteamcore_1_1rasp_1_1_r_a_s_p_config}{RASPConfig}} \&}]{config }\end{DoxyParamCaption})}
+
+
+
+RASP yapılandırması ayarla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & Yapılandırma parametreleri \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespaceteamcore_1_1rasp_a3fe514c24263c87105082787c7c18dc7}\label{namespaceteamcore_1_1rasp_a3fe514c24263c87105082787c7c18dc7} 
+\index{teamcore::rasp@{teamcore::rasp}!DetectDebugger@{DetectDebugger}}
+\index{DetectDebugger@{DetectDebugger}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{DetectDebugger()}{DetectDebugger()}}
+{\footnotesize\ttfamily bool teamcore\+::rasp\+::\+Detect\+Debugger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Runtime debugger tespiti (Is\+Debugger\+Present API ve ptrace kontrolü) 
+
+Windows\+: Is\+Debugger\+Present() + Nt\+Query\+Information\+Process Linux\+: ptrace(\+PTRACE\+\_\+\+TRACEME) kontrolü \begin{DoxyReturn}{Returns}
+true ise debugger algılandı 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1rasp_abc2bfd5fd35be23413c3cd7c91caa020}\label{namespaceteamcore_1_1rasp_abc2bfd5fd35be23413c3cd7c91caa020} 
+\index{teamcore::rasp@{teamcore::rasp}!DetectIATHooks@{DetectIATHooks}}
+\index{DetectIATHooks@{DetectIATHooks}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{DetectIATHooks()}{DetectIATHooks()}}
+{\footnotesize\ttfamily int teamcore\+::rasp\+::\+Detect\+IATHooks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Import Address Table (Windows) hook tespiti. 
+
+IAT\textquotesingle{}daki fonksiyon pointer\textquotesingle{}larını kontrol eder \begin{DoxyReturn}{Returns}
+Değiştirilen fonksiyon sayısı (0 ise temiz) 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1rasp_a19e83bdd3db428e5ccb129a78e1205e3}\label{namespaceteamcore_1_1rasp_a19e83bdd3db428e5ccb129a78e1205e3} 
+\index{teamcore::rasp@{teamcore::rasp}!DetectPLTHooks@{DetectPLTHooks}}
+\index{DetectPLTHooks@{DetectPLTHooks}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{DetectPLTHooks()}{DetectPLTHooks()}}
+{\footnotesize\ttfamily int teamcore\+::rasp\+::\+Detect\+PLTHooks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Procedure Linkage Table (Linux) hook tespiti. 
+
+PLT/\+GOT tablosundaki pointer\textquotesingle{}ları kontrol eder \begin{DoxyReturn}{Returns}
+Değiştirilen entry sayısı (0 ise temiz) 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1rasp_a17a4eabede4484deea82b9acf7ccff44}\label{namespaceteamcore_1_1rasp_a17a4eabede4484deea82b9acf7ccff44} 
+\index{teamcore::rasp@{teamcore::rasp}!FailClosedShutdown@{FailClosedShutdown}}
+\index{FailClosedShutdown@{FailClosedShutdown}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{FailClosedShutdown()}{FailClosedShutdown()}}
+{\footnotesize\ttfamily void teamcore\+::rasp\+::\+Fail\+Closed\+Shutdown (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{reason }\end{DoxyParamCaption})}
+
+
+
+Fail-\/closed davranış\+: Güvenlik tehdidi durumunda uygulamayı sonlandır. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reason} & Sonlandırma nedeni \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespaceteamcore_1_1rasp_a80257b3b67e746443cf5a3c142987844}\label{namespaceteamcore_1_1rasp_a80257b3b67e746443cf5a3c142987844} 
+\index{teamcore::rasp@{teamcore::rasp}!GetRASPConfig@{GetRASPConfig}}
+\index{GetRASPConfig@{GetRASPConfig}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{GetRASPConfig()}{GetRASPConfig()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structteamcore_1_1rasp_1_1_r_a_s_p_config}{RASPConfig}} teamcore\+::rasp\+::\+Get\+RASPConfig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Aktif yapılandırmayı getir. 
+
+\begin{DoxyReturn}{Returns}
+Mevcut RASP yapılandırması 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1rasp_a9c49a9e1a8cac4189db46585a655b343}\label{namespaceteamcore_1_1rasp_a9c49a9e1a8cac4189db46585a655b343} 
+\index{teamcore::rasp@{teamcore::rasp}!GetSecurityEventLog@{GetSecurityEventLog}}
+\index{GetSecurityEventLog@{GetSecurityEventLog}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{GetSecurityEventLog()}{GetSecurityEventLog()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_security_event}{Security\+Event}} $>$ teamcore\+::rasp\+::\+Get\+Security\+Event\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tüm güvenlik olaylarını getir. 
+
+\begin{DoxyReturn}{Returns}
+Olay listesi 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1rasp_a91ad508756da2b4a880b39e72b8a2071}\label{namespaceteamcore_1_1rasp_a91ad508756da2b4a880b39e72b8a2071} 
+\index{teamcore::rasp@{teamcore::rasp}!HandleCriticalEvent@{HandleCriticalEvent}}
+\index{HandleCriticalEvent@{HandleCriticalEvent}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{HandleCriticalEvent()}{HandleCriticalEvent()}}
+{\footnotesize\ttfamily void teamcore\+::rasp\+::\+Handle\+Critical\+Event (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{event\+Type,  }\item[{const std\+::string \&}]{description,  }\item[{bool}]{terminate\+App = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Kritik güvenlik olayını kaydet ve fail-\/closed davranış göster. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Type} & Olay tipi (örn\+: \"{}\+DEBUGGER\+\_\+\+DETECTED\"{}) \\
+\hline
+{\em description} & Olay açıklaması \\
+\hline
+{\em terminate\+App} & true ise uygulamayı sonlandır \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespaceteamcore_1_1rasp_acfa334ed52bbd4e42ab7abfad44811ea}\label{namespaceteamcore_1_1rasp_acfa334ed52bbd4e42ab7abfad44811ea} 
+\index{teamcore::rasp@{teamcore::rasp}!InitializeRASP@{InitializeRASP}}
+\index{InitializeRASP@{InitializeRASP}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{InitializeRASP()}{InitializeRASP()}}
+{\footnotesize\ttfamily bool teamcore\+::rasp\+::\+Initialize\+RASP (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{expected\+Checksum,  }\item[{bool}]{auto\+Terminate\+On\+Threat = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+RASP sistemini başlat. 
+
+Tüm runtime korumalarını aktive eder\+:
+\begin{DoxyItemize}
+\item Debugger monitoring
+\item Checksum verification
+\item Hook detection
+\item Event logging 
+\begin{DoxyParams}{Parameters}
+{\em expected\+Checksum} & .text bölümünün bilinen checksum\textquotesingle{}ı \\
+\hline
+{\em auto\+Terminate\+On\+Threat} & true ise tehdit algılandığında otomatik sonlanma \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true ise başarılı, false ise başlatma hatası 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\Hypertarget{namespaceteamcore_1_1rasp_adaafa9c1e483547f753d9aaffb58f38e}\label{namespaceteamcore_1_1rasp_adaafa9c1e483547f753d9aaffb58f38e} 
+\index{teamcore::rasp@{teamcore::rasp}!IsRASPActive@{IsRASPActive}}
+\index{IsRASPActive@{IsRASPActive}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{IsRASPActive()}{IsRASPActive()}}
+{\footnotesize\ttfamily bool teamcore\+::rasp\+::\+Is\+RASPActive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+RASP durumu sorgulama. 
+
+\begin{DoxyReturn}{Returns}
+true ise RASP aktif 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1rasp_afcfa29d7403aa4b2ffca1716832679d4}\label{namespaceteamcore_1_1rasp_afcfa29d7403aa4b2ffca1716832679d4} 
+\index{teamcore::rasp@{teamcore::rasp}!IsThunkModified@{IsThunkModified}}
+\index{IsThunkModified@{IsThunkModified}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{IsThunkModified()}{IsThunkModified()}}
+{\footnotesize\ttfamily bool teamcore\+::rasp\+::\+Is\+Thunk\+Modified (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{function\+Name }\end{DoxyParamCaption})}
+
+
+
+Beklenmeyen fonksiyon pointer kontrolü (thunk analizi) 
+
+Kritik fonksiyonların (malloc, strcpy, vb) hook edilip edilmediğini kontrol eder 
+\begin{DoxyParams}{Parameters}
+{\em function\+Name} & Kontrol edilecek fonksiyon adı \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true ise hook tespit edildi 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1rasp_ae52211ed6b1f31d167a1a9edfccaaf47}\label{namespaceteamcore_1_1rasp_ae52211ed6b1f31d167a1a9edfccaaf47} 
+\index{teamcore::rasp@{teamcore::rasp}!LogSecurityEvent@{LogSecurityEvent}}
+\index{LogSecurityEvent@{LogSecurityEvent}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{LogSecurityEvent()}{LogSecurityEvent()}}
+{\footnotesize\ttfamily bool teamcore\+::rasp\+::\+Log\+Security\+Event (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structteamcore_1_1rasp_1_1_security_event}{Security\+Event}} \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Güvenlik olayını kaydet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Olay bilgisi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true ise kayıt başarılı 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1rasp_a2bf6d0cb586da649dab36781003d8067}\label{namespaceteamcore_1_1rasp_a2bf6d0cb586da649dab36781003d8067} 
+\index{teamcore::rasp@{teamcore::rasp}!PerformSecurityScan@{PerformSecurityScan}}
+\index{PerformSecurityScan@{PerformSecurityScan}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{PerformSecurityScan()}{PerformSecurityScan()}}
+{\footnotesize\ttfamily bool teamcore\+::rasp\+::\+Perform\+Security\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Periyodik güvenlik kontrolü yap. 
+
+Debugger, hook, integrity kontrollerini yapar \begin{DoxyReturn}{Returns}
+true ise tüm kontroller başarılı 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1rasp_a807b098c27296fbf981ae7785a51ff1f}\label{namespaceteamcore_1_1rasp_a807b098c27296fbf981ae7785a51ff1f} 
+\index{teamcore::rasp@{teamcore::rasp}!ScanCriticalFunctions@{ScanCriticalFunctions}}
+\index{ScanCriticalFunctions@{ScanCriticalFunctions}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{ScanCriticalFunctions()}{ScanCriticalFunctions()}}
+{\footnotesize\ttfamily int teamcore\+::rasp\+::\+Scan\+Critical\+Functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tüm kritik fonksiyonların hook kontrolü 
+
+Önceden tanımlı kritik fonksiyon listesini tarar \begin{DoxyReturn}{Returns}
+Hook tespit edilen fonksiyon sayısı 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1rasp_a097fbdfc036635e67228fcf8c15b099c}\label{namespaceteamcore_1_1rasp_a097fbdfc036635e67228fcf8c15b099c} 
+\index{teamcore::rasp@{teamcore::rasp}!SecureTerminate@{SecureTerminate}}
+\index{SecureTerminate@{SecureTerminate}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{SecureTerminate()}{SecureTerminate()}}
+{\footnotesize\ttfamily void teamcore\+::rasp\+::\+Secure\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Güvenli durum kaydı (crash dump olmadan çıkış) 
+
+Hassas verileri temizledikten sonra uygulamayı sonlandırır \Hypertarget{namespaceteamcore_1_1rasp_a4b8d4607e2578698d18ef17f51d79628}\label{namespaceteamcore_1_1rasp_a4b8d4607e2578698d18ef17f51d79628} 
+\index{teamcore::rasp@{teamcore::rasp}!ShutdownRASP@{ShutdownRASP}}
+\index{ShutdownRASP@{ShutdownRASP}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{ShutdownRASP()}{ShutdownRASP()}}
+{\footnotesize\ttfamily void teamcore\+::rasp\+::\+Shutdown\+RASP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+RASP sistemini durdur. 
+
+\Hypertarget{namespaceteamcore_1_1rasp_a059c359acf49bf78806c802af513b5f7}\label{namespaceteamcore_1_1rasp_a059c359acf49bf78806c802af513b5f7} 
+\index{teamcore::rasp@{teamcore::rasp}!StartDebuggerMonitoring@{StartDebuggerMonitoring}}
+\index{StartDebuggerMonitoring@{StartDebuggerMonitoring}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{StartDebuggerMonitoring()}{StartDebuggerMonitoring()}}
+{\footnotesize\ttfamily void teamcore\+::rasp\+::\+Start\+Debugger\+Monitoring (\begin{DoxyParamCaption}\item[{std\+::function$<$ void()$>$}]{callback,  }\item[{int}]{interval\+Ms = {\ttfamily 5000} }\end{DoxyParamCaption})}
+
+
+
+Periyodik debugger izleme başlat (arka plan thread) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & Debugger tespit edildiğinde çağrılacak fonksiyon \\
+\hline
+{\em interval\+Ms} & Kontrol aralığı (milisaniye) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespaceteamcore_1_1rasp_aaadad552f8192ce7f2605b1168228457}\label{namespaceteamcore_1_1rasp_aaadad552f8192ce7f2605b1168228457} 
+\index{teamcore::rasp@{teamcore::rasp}!StopDebuggerMonitoring@{StopDebuggerMonitoring}}
+\index{StopDebuggerMonitoring@{StopDebuggerMonitoring}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{StopDebuggerMonitoring()}{StopDebuggerMonitoring()}}
+{\footnotesize\ttfamily void teamcore\+::rasp\+::\+Stop\+Debugger\+Monitoring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Debugger izlemeyi durdur. 
+
+\Hypertarget{namespaceteamcore_1_1rasp_a0293f9b3b50efd7c112cfa2400de65ca}\label{namespaceteamcore_1_1rasp_a0293f9b3b50efd7c112cfa2400de65ca} 
+\index{teamcore::rasp@{teamcore::rasp}!VerifyProcessIsolation@{VerifyProcessIsolation}}
+\index{VerifyProcessIsolation@{VerifyProcessIsolation}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{VerifyProcessIsolation()}{VerifyProcessIsolation()}}
+{\footnotesize\ttfamily bool teamcore\+::rasp\+::\+Verify\+Process\+Isolation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Süreç izolasyonu kontrolü 
+
+Uygulamanın güvenli bir ortamda çalışıp çalışmadığını kontrol eder \begin{DoxyReturn}{Returns}
+true ise izole ortam güvenli 
+\end{DoxyReturn}
+\Hypertarget{namespaceteamcore_1_1rasp_a901623f332c29fd48aa9a416beb422e5}\label{namespaceteamcore_1_1rasp_a901623f332c29fd48aa9a416beb422e5} 
+\index{teamcore::rasp@{teamcore::rasp}!VerifyTextSectionIntegrity@{VerifyTextSectionIntegrity}}
+\index{VerifyTextSectionIntegrity@{VerifyTextSectionIntegrity}!teamcore::rasp@{teamcore::rasp}}
+\doxysubsubsection{\texorpdfstring{VerifyTextSectionIntegrity()}{VerifyTextSectionIntegrity()}}
+{\footnotesize\ttfamily bool teamcore\+::rasp\+::\+Verify\+Text\+Section\+Integrity (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{expected\+Checksum }\end{DoxyParamCaption})}
+
+
+
+.text bölümünün checksum doğrulaması 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expected\+Checksum} & Build-\/time\textquotesingle{}da kaydedilen doğru checksum \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true ise doğrulama başarılı, false ise kod değiştirilmiş 
+\end{DoxyReturn}

@@ -3,6 +3,7 @@
   <compounddef id="dir_f320cfb6b6955889badda3df70c7b51c" kind="dir">
     <compoundname>src/LocalSports/src</compoundname>
     <innerfile refid="localsports_8cpp">localsports.cpp</innerfile>
+    <innerfile refid="rasp_8cpp">rasp.cpp</innerfile>
     <innerfile refid="security__hardening_8cpp">security_hardening.cpp</innerfile>
     <innerfile refid="security__layer_8cpp">security_layer.cpp</innerfile>
     <briefdescription>

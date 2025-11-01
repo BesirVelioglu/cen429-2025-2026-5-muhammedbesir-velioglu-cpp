@@ -1,14 +1,12 @@
 var searchData=
 [
-  ['obfuscateadd_0',['ObfuscateAdd',['../namespaceteamcore_1_1hardening.html#a65f152a453d8b0eafeca0c51cdca071e',1,'teamcore::hardening']]],
-  ['obfuscatebooleancondition_1',['ObfuscateBooleanCondition',['../namespaceteamcore_1_1hardening.html#a3238760d705163dba235cf8cf72cca3a',1,'teamcore::hardening']]],
-  ['obfuscatemultiply_2',['ObfuscateMultiply',['../namespaceteamcore_1_1hardening.html#a918ede4de28911a4c161501433774f44',1,'teamcore::hardening']]],
-  ['obfuscatestring_3',['ObfuscateString',['../namespaceteamcore_1_1hardening.html#aee2e27250f691bc7176519b136fae105',1,'teamcore::hardening']]],
-  ['obfuscatevalue_4',['ObfuscateValue',['../namespaceteamcore_1_1hardening.html#acb446a1528d7f51891b2da13b22bdf7c',1,'teamcore::hardening']]],
-  ['opaqueloop_5',['OpaqueLoop',['../namespaceteamcore_1_1hardening.html#a4941e511e83aec7e1fc772cb3d845d53',1,'teamcore::hardening']]],
-  ['opaquemathpredicate_6',['OpaqueMathPredicate',['../namespaceteamcore_1_1hardening.html#a43750c108316d92f81a039ffd3cd9c1c',1,'teamcore::hardening']]],
-  ['opaquepredicatealwaysfalse_7',['OpaquePredicateAlwaysFalse',['../namespaceteamcore_1_1hardening.html#a4b3b5932836fd13c7ac69145c6e7cd78',1,'teamcore::hardening']]],
-  ['opaquepredicatealwaystrue_8',['OpaquePredicateAlwaysTrue',['../namespaceteamcore_1_1hardening.html#a746ff56ebc94e9f1bfcbd31887870cba',1,'teamcore::hardening']]],
-  ['operator_3d_9',['operator=',['../classteamcore_1_1_secure_buffer.html#a5d879ea26db10d9b52f99d437218f79b',1,'teamcore::SecureBuffer::operator=(const SecureBuffer &amp;)=delete'],['../classteamcore_1_1_secure_buffer.html#a8eccf617f81f19304325a48256f0ccdf',1,'teamcore::SecureBuffer::operator=(SecureBuffer &amp;&amp;other) noexcept']]],
-  ['opponent_10',['opponent',['../struct_game.html#ae0cbf267ad79e3590425d07ef9b91d0c',1,'Game']]]
+  ['main_0',['main',['../localsportsapp_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'localsportsapp.cpp']]],
+  ['maketls13clientctxwithmtls_1',['MakeTls13ClientCtxWithMTLS',['../namespaceteamcore_1_1tls.html#a566cba99b03a233b20f0b89139e22a31',1,'teamcore::tls']]],
+  ['mathutility_2',['MathUtility',['../class_coruh_1_1_utility_1_1_math_utility.html',1,'Coruh::Utility']]],
+  ['mathutility_2ecpp_3',['mathUtility.cpp',['../math_utility_8cpp.html',1,'']]],
+  ['mathutility_2eh_4',['mathUtility.h',['../math_utility_8h.html',1,'']]],
+  ['message_5',['Message',['../struct_message.html',1,'']]],
+  ['minimal_6',['MINIMAL',['../namespaceteamcore_1_1security.html#a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a02f2534ad4997e23ec250e1015eeb929',1,'teamcore::security']]],
+  ['monitoring_5finterval_5fms_7',['MONITORING_INTERVAL_MS',['../namespaceteamcore_1_1security.html#a361c700fb7238a366ef957b65cde15aa',1,'teamcore::security']]],
+  ['monitoringintervalms_8',['monitoringIntervalMs',['../structteamcore_1_1rasp_1_1_r_a_s_p_config.html#abdd6bcb5c60f0cb8a2d14e9ed86eae3a',1,'teamcore::rasp::RASPConfig']]]
 ];

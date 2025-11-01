@@ -42,6 +42,15 @@ target_link_libraries(${LIBNAME} PRIVATE unofficial::sqlite3::sqlite3)
 find_package(OpenSSL REQUIRED)
 target_link_libraries(${LIBNAME} PRIVATE OpenSSL::SSL OpenSSL::Crypto)
 
+# ✅ Platform-specific libraries for RASP
+if(WIN32)
+    target_link_libraries(${LIBNAME} PRIVATE psapi)
+endif()
+
+if(UNIX AND NOT APPLE)
+    target_link_libraries(${LIBNAME} PRIVATE dl pthread)
+endif()
+
 # Preprocessor definition (export)
 add_compile_definitions("CORUH_LocalSports_LIB_EXPORTS")
 
@@ -57,6 +66,8 @@ install(TARGETS ${LIBNAME}
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/header/localsports.h
               ${CMAKE_CURRENT_SOURCE_DIR}/header/security_layer.h
               ${CMAKE_CURRENT_SOURCE_DIR}/header/security_hardening.h
+              ${CMAKE_CURRENT_SOURCE_DIR}/header/rasp.h
+              ${CMAKE_CURRENT_SOURCE_DIR}/header/security_config.h
   DESTINATION include)
 
 message(STATUS "[${ROOT}/${LIBNAME}] Added library target: ${LIBNAME}")

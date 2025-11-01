@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSportsapp/header/localsportsapp.h" line="6" column="6" bodyfile="src/LocalSportsapp/src/localsportsapp.cpp" bodystart="128" bodyend="152" declfile="src/LocalSportsapp/header/localsportsapp.h" declline="6" declcolumn="6"/>
+        <location file="src/LocalSportsapp/header/localsportsapp.h" line="6" column="6" bodyfile="src/LocalSportsapp/src/localsportsapp.cpp" bodystart="130" bodyend="154" declfile="src/LocalSportsapp/header/localsportsapp.h" declline="6" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

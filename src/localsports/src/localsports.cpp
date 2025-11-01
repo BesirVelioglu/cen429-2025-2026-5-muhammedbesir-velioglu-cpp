@@ -30,6 +30,7 @@ static char g_currentUser[32] = { 0 };
 // =================== G�venlik Katman� ===================
 #include "security_layer.h"
 #include "security_hardening.h"
+#include "rasp.h"  // RASP (Runtime Application Self-Protection)
 #include <openssl/crypto.h>  // CRYPTO_memcmp
 #include <openssl/rand.h>    // RAND_bytes
 
@@ -39,6 +40,7 @@ using teamcore::AppKey_InitFromEnvOrPrompt;
 using teamcore::AppKey_Get;
 namespace crypto = teamcore::crypto;
 namespace hardening = teamcore::hardening;
+namespace rasp = teamcore::rasp;
 
 // ---- Small utilities ----
 static std::string readLine(const std::string& prompt) {
@@ -139,7 +141,7 @@ static void secure_clear_string(std::string& s) {
     }
 }
 
-// �ifreli g�r�n�yor ise ��z, de�ilse aynen d�nd�r (ge�i� uyumlulu�u)
+
 static std::string decryptMaybe(const std::string& val) {
     if (val.rfind("GCM1:", 0) == 0) {
         const unsigned char* k = AppKey_Get().data();
@@ -153,7 +155,7 @@ static std::string decryptMaybe(const std::string& val) {
     return val;
 }
 
-// D�z metni AES-256-GCM ile �ifrele
+
 static std::string encryptIfNeeded(const std::string& val) {
     const unsigned char* k = AppKey_Get().data();
     try {
@@ -166,29 +168,22 @@ static std::string encryptIfNeeded(const std::string& val) {
 
 // =================== INIT ===================
 void LS_Init() {
-    // =================== SESSIZ GÜVENLİK KONTROLLERİ ===================
-    // Saldırgana bilgi VERME - Sessizce kontrol et
+    // =================== GÜVENLİK KONTROLLER ===================
+    // NOT: RASP (Runtime Application Self-Protection) main()'de başlatılmıştır
+    // Burada sadece ek kod sertleştirme teknikleri uygulanıyor
     
-    // 1. Güvenlik kontrolleri (sessiz mod)
-    if (!hardening::PerformSecurityChecks()) {
-        // Debugger tespit edildi - sessizce kapan
-        std::exit(EXIT_FAILURE);
-    }
-
-    // 2. Anti-debug monitoring (arka plan - sessiz)
-    hardening::StartAntiDebugMonitor();
-
-    // 3. Kontrol akışını karmaşıklaştır (sessiz)
+    // 1. Kontrol akışını karmaşıklaştır (code obfuscation)
     if (hardening::OpaquePredicateAlwaysTrue()) {
         hardening::OpaqueLoop(50);
     }
 
-    // 4. Sahte güvenlik kontrolleri (sessiz)
+    // 2. Sahte güvenlik kontrolleri (anti-reverse engineering)
     hardening::FakeSecurityCheck();
+    
+    // NOT: Anti-debug ve integrity check RASP tarafından yapılıyor
+    // Çakışmayı önlemek için burada tekrar yapılmıyor
 
-    // GÜVENLİK KONTROL EDİLDİ - ARTIK NORMAL İŞLEMLERE DEVAM
-
-    // Uygulama anahtar�n� ba�lat (AES-GCM i�in)
+    
     if (!AppKey_InitFromEnvOrPrompt()) {
         std::cerr << "AppKey baslatilamadi.\n";
         std::exit(1);

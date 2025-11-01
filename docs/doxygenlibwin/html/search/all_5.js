@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['game_0',['Game',['../struct_game.html',1,'']]],
-  ['gameid_1',['gameId',['../struct_stat.html#a2a759221669935df31616ca94d6bc0ac',1,'Stat']]],
-  ['getexecutablehash_2',['GetExecutableHash',['../namespaceteamcore_1_1hardening.html#a8c5fc8254a61b0540a7dd0d37b83f996',1,'teamcore::hardening']]],
-  ['goals_3',['goals',['../struct_stat.html#af825c20300493b9a8099a30b420fcf6a',1,'Stat']]]
+  ['failclosedshutdown_0',['FailClosedShutdown',['../namespaceteamcore_1_1rasp.html#a17a4eabede4484deea82b9acf7ccff44',1,'teamcore::rasp']]],
+  ['fakesecuritycheck_1',['FakeSecurityCheck',['../namespaceteamcore_1_1hardening.html#adf6349975e561b1958f1cf8ac269b50a',1,'teamcore::hardening']]],
+  ['file_5fgames_2',['FILE_GAMES',['../localsports_8h.html#a8e8794db27e1eb1ffa03d07b8ee71a08',1,'localsports.h']]],
+  ['file_5fmessages_3',['FILE_MESSAGES',['../localsports_8h.html#a3b93840b5053aa7d0574cdd98986cf77',1,'localsports.h']]],
+  ['file_5fplayers_4',['FILE_PLAYERS',['../localsports_8h.html#ad8d5437bed8662e72cdec2b479cc25d3',1,'localsports.h']]],
+  ['file_5fstats_5',['FILE_STATS',['../localsports_8h.html#a96cb4f3bc0c427a5185a29cb31fa82e7',1,'localsports.h']]],
+  ['file_5fusers_6',['FILE_USERS',['../localsports_8h.html#a71a48f6fd8a4047e914be0cc7a74cfad',1,'localsports.h']]]
 ];

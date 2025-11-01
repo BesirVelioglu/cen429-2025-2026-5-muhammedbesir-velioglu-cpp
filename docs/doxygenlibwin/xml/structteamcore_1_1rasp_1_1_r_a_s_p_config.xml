@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structteamcore_1_1rasp_1_1_r_a_s_p_config" kind="struct" language="C++" prot="public">
+    <compoundname>teamcore::rasp::RASPConfig</compoundname>
+    <includes refid="rasp_8h" local="no">rasp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structteamcore_1_1rasp_1_1_r_a_s_p_config_1ad8177351c27e6622c074ec7da887d456" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool teamcore::rasp::RASPConfig::enableDebuggerDetection</definition>
+        <argsstring></argsstring>
+        <name>enableDebuggerDetection</name>
+        <qualifiedname>teamcore::rasp::RASPConfig::enableDebuggerDetection</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/rasp.h" line="176" column="14" bodyfile="src/LocalSports/header/rasp.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structteamcore_1_1rasp_1_1_r_a_s_p_config_1a9768dbe824b445ffe0570eee10945433" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool teamcore::rasp::RASPConfig::enableChecksumVerification</definition>
+        <argsstring></argsstring>
+        <name>enableChecksumVerification</name>
+        <qualifiedname>teamcore::rasp::RASPConfig::enableChecksumVerification</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/rasp.h" line="177" column="14" bodyfile="src/LocalSports/header/rasp.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structteamcore_1_1rasp_1_1_r_a_s_p_config_1a5d8e2f9c7e88afae7dd5b556515b676c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool teamcore::rasp::RASPConfig::enableHookDetection</definition>
+        <argsstring></argsstring>
+        <name>enableHookDetection</name>
+        <qualifiedname>teamcore::rasp::RASPConfig::enableHookDetection</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/rasp.h" line="178" column="14" bodyfile="src/LocalSports/header/rasp.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structteamcore_1_1rasp_1_1_r_a_s_p_config_1aa0e649448d63a2bd83438436549a4ccb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool teamcore::rasp::RASPConfig::autoTerminateOnThreat</definition>
+        <argsstring></argsstring>
+        <name>autoTerminateOnThreat</name>
+        <qualifiedname>teamcore::rasp::RASPConfig::autoTerminateOnThreat</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/rasp.h" line="179" column="14" bodyfile="src/LocalSports/header/rasp.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structteamcore_1_1rasp_1_1_r_a_s_p_config_1abdd6bcb5c60f0cb8a2d14e9ed86eae3a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int teamcore::rasp::RASPConfig::monitoringIntervalMs</definition>
+        <argsstring></argsstring>
+        <name>monitoringIntervalMs</name>
+        <qualifiedname>teamcore::rasp::RASPConfig::monitoringIntervalMs</qualifiedname>
+        <initializer>= 5000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/rasp.h" line="180" column="13" bodyfile="src/LocalSports/header/rasp.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structteamcore_1_1rasp_1_1_r_a_s_p_config_1a1d12e0375b831c64fe6493203a7b1a27" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string teamcore::rasp::RASPConfig::logFilePath</definition>
+        <argsstring></argsstring>
+        <name>logFilePath</name>
+        <qualifiedname>teamcore::rasp::RASPConfig::logFilePath</qualifiedname>
+        <initializer>= &quot;rasp_security.log&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/rasp.h" line="181" column="21" bodyfile="src/LocalSports/header/rasp.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>teamcore::rasp::RASPConfig</label>
+        <link refid="structteamcore_1_1rasp_1_1_r_a_s_p_config"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/LocalSports/header/rasp.h" line="175" column="5" bodyfile="src/LocalSports/header/rasp.h" bodystart="175" bodyend="182"/>
+    <listofallmembers>
+      <member refid="structteamcore_1_1rasp_1_1_r_a_s_p_config_1aa0e649448d63a2bd83438436549a4ccb" prot="public" virt="non-virtual"><scope>teamcore::rasp::RASPConfig</scope><name>autoTerminateOnThreat</name></member>
+      <member refid="structteamcore_1_1rasp_1_1_r_a_s_p_config_1a9768dbe824b445ffe0570eee10945433" prot="public" virt="non-virtual"><scope>teamcore::rasp::RASPConfig</scope><name>enableChecksumVerification</name></member>
+      <member refid="structteamcore_1_1rasp_1_1_r_a_s_p_config_1ad8177351c27e6622c074ec7da887d456" prot="public" virt="non-virtual"><scope>teamcore::rasp::RASPConfig</scope><name>enableDebuggerDetection</name></member>
+      <member refid="structteamcore_1_1rasp_1_1_r_a_s_p_config_1a5d8e2f9c7e88afae7dd5b556515b676c" prot="public" virt="non-virtual"><scope>teamcore::rasp::RASPConfig</scope><name>enableHookDetection</name></member>
+      <member refid="structteamcore_1_1rasp_1_1_r_a_s_p_config_1a1d12e0375b831c64fe6493203a7b1a27" prot="public" virt="non-virtual"><scope>teamcore::rasp::RASPConfig</scope><name>logFilePath</name></member>
+      <member refid="structteamcore_1_1rasp_1_1_r_a_s_p_config_1abdd6bcb5c60f0cb8a2d14e9ed86eae3a" prot="public" virt="non-virtual"><scope>teamcore::rasp::RASPConfig</scope><name>monitoringIntervalMs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

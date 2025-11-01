@@ -1,0 +1,90 @@
+\doxysection{rasp.\+h}
+\hypertarget{rasp_8h_source}{}\label{rasp_8h_source}\index{src/LocalSports/header/rasp.h@{src/LocalSports/header/rasp.h}}
+\mbox{\hyperlink{rasp_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceteamcore}{teamcore}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceteamcore_1_1rasp}{rasp}}\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{//\ ===================\ Runtime\ Security\ Status\ ===================}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structteamcore_1_1rasp_1_1_security_event}{SecurityEvent}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_security_event_a0400a3490b69bb35717d57895f447d9d}{timestamp}};}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_security_event_af051504600f9401729cf433c6fbf55ac}{eventType}};}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_security_event_a63788e2305cc91af38e78453f071ce58}{description}};}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_security_event_afdb9d81297bfdf3be8e2994e1c0b638a}{severity}};\ \textcolor{comment}{//\ 1=info,\ 2=warning,\ 3=critical}}
+\DoxyCodeLine{00017\ \ \ \ \ \};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//\ ===================\ IsDebuggerPresent\ \&\ ptrace\ ===================}}
+\DoxyCodeLine{00026\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a3fe514c24263c87105082787c7c18dc7}{DetectDebugger}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a059c359acf49bf78806c802af513b5f7}{StartDebuggerMonitoring}}(std::function<\textcolor{keywordtype}{void}()>\ callback,\ \textcolor{keywordtype}{int}\ intervalMs\ =\ 5000);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_aaadad552f8192ce7f2605b1168228457}{StopDebuggerMonitoring}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ ===================\ .text\ Section\ Checksum\ Verification\ ===================}}
+\DoxyCodeLine{00046\ \textcolor{comment}{}\ \ \ \ std::string\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_acfffd0beff666d97fce2c9a3d825c6db}{CalculateTextSectionChecksum}}();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a901623f332c29fd48aa9a416beb422e5}{VerifyTextSectionIntegrity}}(\textcolor{keyword}{const}\ std::string\&\ expectedChecksum);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a74899448486f554bebb2f44c84658d72}{BootTimeIntegrityCheck}}(\textcolor{keyword}{const}\ std::string\&\ expectedChecksum);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{//\ ===================\ IAT/PLT\ Hook\ Detection\ ===================}}
+\DoxyCodeLine{00069\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_abc2bfd5fd35be23413c3cd7c91caa020}{DetectIATHooks}}();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a19e83bdd3db428e5ccb129a78e1205e3}{DetectPLTHooks}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_afcfa29d7403aa4b2ffca1716832679d4}{IsThunkModified}}(\textcolor{keyword}{const}\ std::string\&\ functionName);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a807b098c27296fbf981ae7785a51ff1f}{ScanCriticalFunctions}}();}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{comment}{//\ ===================\ Security\ Event\ Logging\ ===================}}
+\DoxyCodeLine{00099\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_ae52211ed6b1f31d167a1a9edfccaaf47}{LogSecurityEvent}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_security_event}{SecurityEvent}}\&\ event);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a91ad508756da2b4a880b39e72b8a2071}{HandleCriticalEvent}}(\textcolor{keyword}{const}\ std::string\&\ eventType,\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ description,}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ terminateApp\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00115\ \ \ \ \ std::vector<SecurityEvent>\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a9c49a9e1a8cac4189db46585a655b343}{GetSecurityEventLog}}();}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a07e65abc82f54ea47b0b9ce8cbf5050c}{ClearSecurityLog}}();}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{comment}{//\ ===================\ Process\ Isolation\ \&\ Fail-\/Closed\ ===================}}
+\DoxyCodeLine{00128\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a0293f9b3b50efd7c112cfa2400de65ca}{VerifyProcessIsolation}}();}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a17a4eabede4484deea82b9acf7ccff44}{FailClosedShutdown}}(\textcolor{keyword}{const}\ std::string\&\ reason);}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a097fbdfc036635e67228fcf8c15b099c}{SecureTerminate}}();}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{comment}{//\ ===================\ Comprehensive\ RASP\ Initialization\ ===================}}
+\DoxyCodeLine{00154\ \textcolor{comment}{}\ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_acfa334ed52bbd4e42ab7abfad44811ea}{InitializeRASP}}(\textcolor{keyword}{const}\ std::string\&\ expectedChecksum,\ \textcolor{keywordtype}{bool}\ autoTerminateOnThreat\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a4b8d4607e2578698d18ef17f51d79628}{ShutdownRASP}}();}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_adaafa9c1e483547f753d9aaffb58f38e}{IsRASPActive}}();}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00172\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a2bf6d0cb586da649dab36781003d8067}{PerformSecurityScan}}();}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{comment}{//\ ===================\ Configuration\ ===================}}
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structteamcore_1_1rasp_1_1_r_a_s_p_config}{RASPConfig}}\ \{}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_r_a_s_p_config_ad8177351c27e6622c074ec7da887d456}{enableDebuggerDetection}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_r_a_s_p_config_a9768dbe824b445ffe0570eee10945433}{enableChecksumVerification}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_r_a_s_p_config_a5d8e2f9c7e88afae7dd5b556515b676c}{enableHookDetection}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_r_a_s_p_config_aa0e649448d63a2bd83438436549a4ccb}{autoTerminateOnThreat}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_r_a_s_p_config_abdd6bcb5c60f0cb8a2d14e9ed86eae3a}{monitoringIntervalMs}}\ =\ 5000;}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_r_a_s_p_config_a1d12e0375b831c64fe6493203a7b1a27}{logFilePath}}\ =\ \textcolor{stringliteral}{"{}rasp\_security.log"{}};}
+\DoxyCodeLine{00182\ \ \ \ \ \};}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00188\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_aa111f8946bff31b16ecaabbebfef6111}{ConfigureRASP}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_r_a_s_p_config}{RASPConfig}}\&\ config);}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00194\ \ \ \ \ \mbox{\hyperlink{structteamcore_1_1rasp_1_1_r_a_s_p_config}{RASPConfig}}\ \mbox{\hyperlink{namespaceteamcore_1_1rasp_a80257b3b67e746443cf5a3c142987844}{GetRASPConfig}}();}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00196\ \}\ \textcolor{comment}{//\ namespace\ rasp}}
+\DoxyCodeLine{00197\ \}\ \textcolor{comment}{//\ namespace\ teamcore}}
+
+\end{DoxyCode}

@@ -962,3 +962,10 @@ coverage*[.json, .xml, .info]
 
 # End of https://www.toptal.com/developers/gitignore/api/c,csharp,vs,visualstudio,visualstudiocode,java,maven,c++,cmake,eclipse,netbeans
 **/desktop.ini 
+
+# Security Configuration (contains sensitive checksum - DO NOT COMMIT)
+src/localsports/header/security_config.h
+
+# Security logs
+rasp_security.log
+*.log

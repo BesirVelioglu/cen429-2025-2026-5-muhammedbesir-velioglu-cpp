@@ -1,0 +1,80 @@
+\doxysection{src/\+Local\+Sports/header/security\+\_\+config.h File Reference}
+\hypertarget{security__config_8h}{}\label{security__config_8h}\index{src/LocalSports/header/security\_config.h@{src/LocalSports/header/security\_config.h}}
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for security\+\_\+config.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{security__config_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{security__config_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceteamcore}{teamcore}}
+\item 
+namespace \mbox{\hyperlink{namespaceteamcore_1_1security}{teamcore\+::security}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{security__config_8h_aca4aadb9e467854157f1b7cdaf13295a}{SECURITY\+\_\+\+CONFIG\+\_\+H}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5}{teamcore\+::security\+::\+Log\+Level}} \{ \newline
+\mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a7e92d833d7720dbe631730a6cea03346}{teamcore\+::security\+::\+SILENT}}
+, \mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a02f2534ad4997e23ec250e1015eeb929}{teamcore\+::security\+::\+MINIMAL}}
+, \mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a1e23852820b9154316c7c06e2b7ba051}{teamcore\+::security\+::\+NORMAL}}
+, \mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5aec1f06e9fb39c4ef0729b3c7c9c8e8cc}{teamcore\+::security\+::\+VERBOSE}}
+, \newline
+\mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5adc30ec20708ef7b0f641ef78b7880a15}{teamcore\+::security\+::\+DEBUG}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{namespaceteamcore_1_1security_a02ba7a78daeb6ad42e7f48a1472367da}{teamcore\+::security\+::\+Get\+Expected\+Checksum}} ()
+\begin{DoxyCompactList}\small\item\em Get the expected checksum value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1security_a9095309789da1a688af218b55794adcb}{teamcore\+::security\+::\+Is\+RASPEnabled}} ()
+\begin{DoxyCompactList}\small\item\em Check if RASP should be enabled. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceteamcore_1_1security_a41ab062dfed2a4b412dbe215942a8292}{teamcore\+::security\+::\+Should\+Log\+To\+Console}} (\mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5}{Log\+Level}} level)
+\begin{DoxyCompactList}\small\item\em Check if console logging is enabled for given level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespaceteamcore_1_1security_a2b28e61dedae3065f32173d322b07477}{teamcore\+::security\+::\+EXPECTED\+\_\+\+TEXT\+\_\+\+CHECKSUM}}
+\item 
+constexpr bool \mbox{\hyperlink{namespaceteamcore_1_1security_aba8e61216f2d48f6924284bc7d39605e}{teamcore\+::security\+::\+ENABLE\+\_\+\+DEBUGGER\+\_\+\+DETECTION}} = true
+\item 
+constexpr bool \mbox{\hyperlink{namespaceteamcore_1_1security_a4b7cf415c91a0d68ebce31e5e4e1cd62}{teamcore\+::security\+::\+ENABLE\+\_\+\+INTEGRITY\+\_\+\+CHECK}} = true
+\item 
+constexpr bool \mbox{\hyperlink{namespaceteamcore_1_1security_aad1b06589d384f829ca9ba7aa25cc227}{teamcore\+::security\+::\+ENABLE\+\_\+\+HOOK\+\_\+\+DETECTION}} = true
+\item 
+constexpr bool \mbox{\hyperlink{namespaceteamcore_1_1security_a8deccd97c4e795531f2a743a433165ed}{teamcore\+::security\+::\+AUTO\+\_\+\+TERMINATE\+\_\+\+ON\+\_\+\+THREAT}} = true
+\item 
+constexpr \mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5}{Log\+Level}} \mbox{\hyperlink{namespaceteamcore_1_1security_a86d17bb38a6252940c800f8bd0ecb9bd}{teamcore\+::security\+::\+RASP\+\_\+\+LOG\+\_\+\+LEVEL}} = \mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a02f2534ad4997e23ec250e1015eeb929}{Log\+Level\+::\+MINIMAL}}
+\item 
+constexpr bool \mbox{\hyperlink{namespaceteamcore_1_1security_ac1a897eadfc2db339342e14ae96176dd}{teamcore\+::security\+::\+ENABLE\+\_\+\+FILE\+\_\+\+LOGGING}} = true
+\item 
+constexpr int \mbox{\hyperlink{namespaceteamcore_1_1security_a361c700fb7238a366ef957b65cde15aa}{teamcore\+::security\+::\+MONITORING\+\_\+\+INTERVAL\+\_\+\+MS}} = 5000
+\item 
+constexpr const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespaceteamcore_1_1security_ad0c20d448e303c47edc01125659b3746}{teamcore\+::security\+::\+SECURITY\+\_\+\+LOG\+\_\+\+FILE}} = \"{}rasp\+\_\+security.\+log\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{security__config_8h_aca4aadb9e467854157f1b7cdaf13295a}\label{security__config_8h_aca4aadb9e467854157f1b7cdaf13295a} 
+\index{security\_config.h@{security\_config.h}!SECURITY\_CONFIG\_H@{SECURITY\_CONFIG\_H}}
+\index{SECURITY\_CONFIG\_H@{SECURITY\_CONFIG\_H}!security\_config.h@{security\_config.h}}
+\doxysubsubsection{\texorpdfstring{SECURITY\_CONFIG\_H}{SECURITY\_CONFIG\_H}}
+{\footnotesize\ttfamily \#define SECURITY\+\_\+\+CONFIG\+\_\+H}
+

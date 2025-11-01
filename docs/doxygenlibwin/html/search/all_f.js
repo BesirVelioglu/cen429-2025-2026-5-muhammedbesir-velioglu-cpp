@@ -1,5 +1,28 @@
 var searchData=
 [
-  ['user_0',['User',['../struct_user.html',1,'']]],
-  ['username_1',['username',['../struct_user.html#a9f83d87e6e823657696f55f42c508bb3',1,'User']]]
+  ['saves_0',['saves',['../struct_stat.html#a2a08d02c2fc8f2ad5ab17c80ef950d0b',1,'Stat']]],
+  ['scancriticalfunctions_1',['ScanCriticalFunctions',['../namespaceteamcore_1_1rasp.html#a807b098c27296fbf981ae7785a51ff1f',1,'teamcore::rasp']]],
+  ['secure_5fbzero_2',['secure_bzero',['../classteamcore_1_1_secure_buffer.html#a336a0b71b8c24a65895fe9b246f75906',1,'teamcore::SecureBuffer']]],
+  ['securebuffer_3',['SecureBuffer',['../classteamcore_1_1_secure_buffer.html#ad64f7dcaa553969828cd694a01699460',1,'teamcore::SecureBuffer::SecureBuffer(SecureBuffer &amp;&amp;other) noexcept'],['../classteamcore_1_1_secure_buffer.html#ad0a9a71faa59e928136c7c76e3fa7b84',1,'teamcore::SecureBuffer::SecureBuffer(const SecureBuffer &amp;)=delete'],['../classteamcore_1_1_secure_buffer.html#a5bd1370b310cb3710e675d4625d127f3',1,'teamcore::SecureBuffer::SecureBuffer(std::size_t size=0)'],['../classteamcore_1_1_secure_buffer.html',1,'teamcore::SecureBuffer']]],
+  ['securelog_4',['SecureLog',['../namespaceteamcore_1_1hardening.html#a17e48f5adaec0be70a63a8c27d15bf93',1,'teamcore::hardening']]],
+  ['secureterminate_5',['SecureTerminate',['../namespaceteamcore_1_1hardening.html#a11c0b4e108d9e1d907cf060c6d800bf6',1,'teamcore::hardening::SecureTerminate()'],['../namespaceteamcore_1_1rasp.html#a097fbdfc036635e67228fcf8c15b099c',1,'teamcore::rasp::SecureTerminate()']]],
+  ['security_5fconfig_2eh_6',['security_config.h',['../security__config_8h.html',1,'']]],
+  ['security_5fconfig_5fh_7',['SECURITY_CONFIG_H',['../security__config_8h.html#aca4aadb9e467854157f1b7cdaf13295a',1,'security_config.h']]],
+  ['security_5fhardening_2ecpp_8',['security_hardening.cpp',['../security__hardening_8cpp.html',1,'']]],
+  ['security_5fhardening_2eh_9',['security_hardening.h',['../security__hardening_8h.html',1,'']]],
+  ['security_5flayer_2ecpp_10',['security_layer.cpp',['../security__layer_8cpp.html',1,'']]],
+  ['security_5flayer_2eh_11',['security_layer.h',['../security__layer_8h.html',1,'']]],
+  ['security_5flog_5ffile_12',['SECURITY_LOG_FILE',['../namespaceteamcore_1_1security.html#ad0c20d448e303c47edc01125659b3746',1,'teamcore::security']]],
+  ['securityevent_13',['SecurityEvent',['../structteamcore_1_1rasp_1_1_security_event.html',1,'teamcore::rasp']]],
+  ['severity_14',['severity',['../structteamcore_1_1rasp_1_1_security_event.html#afdb9d81297bfdf3be8e2994e1c0b638a',1,'teamcore::rasp::SecurityEvent']]],
+  ['shouldlogtoconsole_15',['ShouldLogToConsole',['../namespaceteamcore_1_1security.html#a41ab062dfed2a4b412dbe215942a8292',1,'teamcore::security']]],
+  ['shutdownrasp_16',['ShutdownRASP',['../namespaceteamcore_1_1rasp.html#a4b8d4607e2578698d18ef17f51d79628',1,'teamcore::rasp']]],
+  ['silent_17',['SILENT',['../namespaceteamcore_1_1security.html#a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a7e92d833d7720dbe631730a6cea03346',1,'teamcore::security']]],
+  ['size_18',['size',['../classteamcore_1_1_secure_buffer.html#aafc6096600ca854c389d8657995cc16c',1,'teamcore::SecureBuffer']]],
+  ['size_5f_19',['size_',['../classteamcore_1_1_secure_buffer.html#ae16e51c9b857eeb8ec769c79dcd4a9f3',1,'teamcore::SecureBuffer']]],
+  ['startantidebugmonitor_20',['StartAntiDebugMonitor',['../namespaceteamcore_1_1hardening.html#ae209c51a81263aa5bc74da4b642f10b9',1,'teamcore::hardening']]],
+  ['startdebuggermonitoring_21',['StartDebuggerMonitoring',['../namespaceteamcore_1_1rasp.html#a059c359acf49bf78806c802af513b5f7',1,'teamcore::rasp']]],
+  ['stat_22',['Stat',['../struct_stat.html',1,'']]],
+  ['stopantidebugmonitor_23',['StopAntiDebugMonitor',['../namespaceteamcore_1_1hardening.html#a37c56ba459b67d0eb1b860d5b6731706',1,'teamcore::hardening']]],
+  ['stopdebuggermonitoring_24',['StopDebuggerMonitoring',['../namespaceteamcore_1_1rasp.html#aaadad552f8192ce7f2605b1168228457',1,'teamcore::rasp']]]
 ];

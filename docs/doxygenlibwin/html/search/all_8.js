@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['main_0',['main',['../localsportsapp_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'localsportsapp.cpp']]],
-  ['maketls13clientctxwithmtls_1',['MakeTls13ClientCtxWithMTLS',['../namespaceteamcore_1_1tls.html#a566cba99b03a233b20f0b89139e22a31',1,'teamcore::tls']]],
-  ['mathutility_2',['MathUtility',['../class_coruh_1_1_utility_1_1_math_utility.html',1,'Coruh::Utility']]],
-  ['mathutility_2ecpp_3',['mathUtility.cpp',['../math_utility_8cpp.html',1,'']]],
-  ['mathutility_2eh_4',['mathUtility.h',['../math_utility_8h.html',1,'']]],
-  ['message_5',['Message',['../struct_message.html',1,'']]]
+  ['id_0',['id',['../struct_player.html#a370e8ae6120f85b601d7b0dcc372cdb9',1,'Player::id'],['../struct_game.html#a2500fd106b61de5e4e66311aea0f1b84',1,'Game::id'],['../struct_stat.html#af02a296d1cd4b7a608317b6336217ca1',1,'Stat::id'],['../struct_message.html#a4c34674ebe8e9ac6a62a5b7c9c3e4123',1,'Message::id'],['../struct_user.html#ae4bd671c6f2b7cc7acf84f5e69ec96b7',1,'User::id']]],
+  ['initializerasp_1',['InitializeRASP',['../namespaceteamcore_1_1rasp.html#acfa334ed52bbd4e42ab7abfad44811ea',1,'teamcore::rasp']]],
+  ['isdebugbuild_2',['IsDebugBuild',['../namespaceteamcore_1_1hardening.html#a4f2f30369ecf9f3549c4535a07940d7f',1,'teamcore::hardening']]],
+  ['isdebuggerpresent_3',['IsDebuggerPresent',['../namespaceteamcore_1_1hardening.html#a4ccea0ed29b104587db03d54bc960bf0',1,'teamcore::hardening']]],
+  ['israspactive_4',['IsRASPActive',['../namespaceteamcore_1_1rasp.html#adaafa9c1e483547f753d9aaffb58f38e',1,'teamcore::rasp']]],
+  ['israspenabled_5',['IsRASPEnabled',['../namespaceteamcore_1_1security.html#a9095309789da1a688af218b55794adcb',1,'teamcore::security']]],
+  ['isrootedorjailbroken_6',['IsRootedOrJailbroken',['../namespaceteamcore_1_1hardening.html#ae4bd5f482bf7729d5e890edca9dde1a9',1,'teamcore::hardening']]],
+  ['isrunninginvm_7',['IsRunningInVM',['../namespaceteamcore_1_1hardening.html#ae3cee1714e401ddec13be459d2d61d32',1,'teamcore::hardening']]],
+  ['isthunkmodified_8',['IsThunkModified',['../namespaceteamcore_1_1rasp.html#afcfa29d7403aa4b2ffca1716832679d4',1,'teamcore::rasp']]]
 ];

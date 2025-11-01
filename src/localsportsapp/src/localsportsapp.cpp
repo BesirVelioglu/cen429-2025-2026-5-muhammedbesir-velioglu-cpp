@@ -1,6 +1,8 @@
 // src/localsportsapp.cpp
 #include "localsportsapp.h"
 #include "localsports.h"
+#include "rasp.h"  // RASP Runtime Protection
+#include "security_config.h"  // Security configuration
 
 #include <iostream>
 #include <string>
@@ -152,6 +154,53 @@ void LS_AppStart() {
 }
 
 int main() {
+    using namespace teamcore::security;
+    using namespace teamcore::rasp;
+    
+    // =================== RASP Initialization ===================
+    // Log level kontrolü: VERBOSE ise detaylı, MINIMAL ise sessiz
+    if (ShouldLogToConsole(LogLevel::NORMAL)) {
+        std::cout << "\n[SECURITY] Initializing RASP (Runtime Application Self-Protection)...\n";
+    }
+    
+    // Verbose mode: Show checksum details
+    if (ShouldLogToConsole(LogLevel::VERBOSE)) {
+        std::string expectedChecksum = GetExpectedChecksum();
+        std::cout << "[SECURITY] Expected .text checksum: " << expectedChecksum << "\n";
+        
+        std::string currentChecksum = CalculateTextSectionChecksum();
+        std::cout << "[SECURITY] Current .text checksum:  " << currentChecksum << "\n";
+    }
+    
+    // RASP yapılandırması (security_config.h'den alınıyor)
+    RASPConfig config;
+    config.enableDebuggerDetection = ENABLE_DEBUGGER_DETECTION;
+    config.enableChecksumVerification = ENABLE_INTEGRITY_CHECK;
+    config.enableHookDetection = ENABLE_HOOK_DETECTION;
+    config.autoTerminateOnThreat = AUTO_TERMINATE_ON_THREAT;
+    config.monitoringIntervalMs = MONITORING_INTERVAL_MS;
+    config.logFilePath = SECURITY_LOG_FILE;
+    
+    ConfigureRASP(config);
+    
+    // RASP'ı başlat (stored checksum ile doğrulama yapılacak)
+    if (!InitializeRASP(GetExpectedChecksum(), config.autoTerminateOnThreat)) {
+        std::cerr << "\n[SECURITY] RASP initialization failed! Exiting...\n";
+        return 1;
+    }
+    
+    if (ShouldLogToConsole(LogLevel::NORMAL)) {
+        std::cout << "[SECURITY] RASP is now active and protecting the application.\n\n";
+    }
+    
+    // =================== Application Start ===================
     LS_AppStart();
+    
+    // =================== RASP Shutdown ===================
+    if (ShouldLogToConsole(LogLevel::DEBUG)) {
+        std::cout << "\n[SECURITY] Shutting down RASP...\n";
+    }
+    ShutdownRASP();
+    
     return 0;
 }

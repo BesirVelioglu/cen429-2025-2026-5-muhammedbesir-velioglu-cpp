@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespaceteamcore_1_1security" kind="namespace" language="C++">
+    <compoundname>teamcore::security</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>LogLevel</name>
+        <qualifiedname>teamcore::security::LogLevel</qualifiedname>
+        <enumvalue id="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a7e92d833d7720dbe631730a6cea03346" prot="public">
+          <name>SILENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a02f2534ad4997e23ec250e1015eeb929" prot="public">
+          <name>MINIMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a1e23852820b9154316c7c06e2b7ba051" prot="public">
+          <name>NORMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5aec1f06e9fb39c4ef0729b3c7c9c8e8cc" prot="public">
+          <name>VERBOSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5adc30ec20708ef7b0f641ef78b7880a15" prot="public">
+          <name>DEBUG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_config.h" line="34" column="1" bodyfile="src/LocalSports/header/security_config.h" bodystart="34" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceteamcore_1_1security_1a2b28e61dedae3065f32173d322b07477" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* teamcore::security::EXPECTED_TEXT_CHECKSUM</definition>
+        <argsstring></argsstring>
+        <name>EXPECTED_TEXT_CHECKSUM</name>
+        <qualifiedname>teamcore::security::EXPECTED_TEXT_CHECKSUM</qualifiedname>
+        <initializer>= 
+    &quot;408dcce0e9ee620bb44c0f017883a7cbac8087b1aeccc44196378fceb85f4a15&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_config.h" line="15" column="22" bodyfile="src/LocalSports/header/security_config.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1_1security_1aba8e61216f2d48f6924284bc7d39605e" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool teamcore::security::ENABLE_DEBUGGER_DETECTION</definition>
+        <argsstring></argsstring>
+        <name>ENABLE_DEBUGGER_DETECTION</name>
+        <qualifiedname>teamcore::security::ENABLE_DEBUGGER_DETECTION</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_config.h" line="20" column="16" bodyfile="src/LocalSports/header/security_config.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1_1security_1a4b7cf415c91a0d68ebce31e5e4e1cd62" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool teamcore::security::ENABLE_INTEGRITY_CHECK</definition>
+        <argsstring></argsstring>
+        <name>ENABLE_INTEGRITY_CHECK</name>
+        <qualifiedname>teamcore::security::ENABLE_INTEGRITY_CHECK</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_config.h" line="24" column="16" bodyfile="src/LocalSports/header/security_config.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1_1security_1aad1b06589d384f829ca9ba7aa25cc227" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool teamcore::security::ENABLE_HOOK_DETECTION</definition>
+        <argsstring></argsstring>
+        <name>ENABLE_HOOK_DETECTION</name>
+        <qualifiedname>teamcore::security::ENABLE_HOOK_DETECTION</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_config.h" line="27" column="16" bodyfile="src/LocalSports/header/security_config.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1_1security_1a8deccd97c4e795531f2a743a433165ed" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool teamcore::security::AUTO_TERMINATE_ON_THREAT</definition>
+        <argsstring></argsstring>
+        <name>AUTO_TERMINATE_ON_THREAT</name>
+        <qualifiedname>teamcore::security::AUTO_TERMINATE_ON_THREAT</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_config.h" line="31" column="16" bodyfile="src/LocalSports/header/security_config.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1_1security_1a86d17bb38a6252940c800f8bd0ecb9bd" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr <ref refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5" kindref="member">LogLevel</ref></type>
+        <definition>constexpr LogLevel teamcore::security::RASP_LOG_LEVEL</definition>
+        <argsstring></argsstring>
+        <name>RASP_LOG_LEVEL</name>
+        <qualifiedname>teamcore::security::RASP_LOG_LEVEL</qualifiedname>
+        <initializer>= <ref refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a02f2534ad4997e23ec250e1015eeb929" kindref="member">LogLevel::MINIMAL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_config.h" line="45" column="20" bodyfile="src/LocalSports/header/security_config.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1_1security_1ac1a897eadfc2db339342e14ae96176dd" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool teamcore::security::ENABLE_FILE_LOGGING</definition>
+        <argsstring></argsstring>
+        <name>ENABLE_FILE_LOGGING</name>
+        <qualifiedname>teamcore::security::ENABLE_FILE_LOGGING</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_config.h" line="48" column="16" bodyfile="src/LocalSports/header/security_config.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1_1security_1a361c700fb7238a366ef957b65cde15aa" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int teamcore::security::MONITORING_INTERVAL_MS</definition>
+        <argsstring></argsstring>
+        <name>MONITORING_INTERVAL_MS</name>
+        <qualifiedname>teamcore::security::MONITORING_INTERVAL_MS</qualifiedname>
+        <initializer>= 5000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_config.h" line="52" column="15" bodyfile="src/LocalSports/header/security_config.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1_1security_1ad0c20d448e303c47edc01125659b3746" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* teamcore::security::SECURITY_LOG_FILE</definition>
+        <argsstring></argsstring>
+        <name>SECURITY_LOG_FILE</name>
+        <qualifiedname>teamcore::security::SECURITY_LOG_FILE</qualifiedname>
+        <initializer>= &quot;rasp_security.log&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_config.h" line="55" column="22" bodyfile="src/LocalSports/header/security_config.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceteamcore_1_1security_1a02ba7a78daeb6ad42e7f48a1472367da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string teamcore::security::GetExpectedChecksum</definition>
+        <argsstring>()</argsstring>
+        <name>GetExpectedChecksum</name>
+        <qualifiedname>teamcore::security::GetExpectedChecksum</qualifiedname>
+        <briefdescription>
+<para>Get the expected checksum value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Expected .text section checksum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_config.h" line="62" column="20" bodyfile="src/LocalSports/header/security_config.h" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1security_1a9095309789da1a688af218b55794adcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::security::IsRASPEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsRASPEnabled</name>
+        <qualifiedname>teamcore::security::IsRASPEnabled</qualifiedname>
+        <briefdescription>
+<para>Check if RASP should be enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if any security feature is enabled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_config.h" line="70" column="13" bodyfile="src/LocalSports/header/security_config.h" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1security_1a41ab062dfed2a4b412dbe215942a8292" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::security::ShouldLogToConsole</definition>
+        <argsstring>(LogLevel level)</argsstring>
+        <name>ShouldLogToConsole</name>
+        <qualifiedname>teamcore::security::ShouldLogToConsole</qualifiedname>
+        <param>
+          <type><ref refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5" kindref="member">LogLevel</ref></type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Check if console logging is enabled for given level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum level required for logging </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if should log to console </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/security_config.h" line="81" column="13" bodyfile="src/LocalSports/header/security_config.h" bodystart="81" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/LocalSports/header/security_config.h" line="9" column="1"/>
+  </compounddef>
+</doxygen>

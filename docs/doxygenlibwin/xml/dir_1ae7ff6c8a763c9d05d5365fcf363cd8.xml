@@ -3,6 +3,8 @@
   <compounddef id="dir_1ae7ff6c8a763c9d05d5365fcf363cd8" kind="dir">
     <compoundname>src/LocalSports/header</compoundname>
     <innerfile refid="localsports_8h">localsports.h</innerfile>
+    <innerfile refid="rasp_8h">rasp.h</innerfile>
+    <innerfile refid="security__config_8h">security_config.h</innerfile>
     <innerfile refid="security__hardening_8h">security_hardening.h</innerfile>
     <innerfile refid="security__layer_8h">security_layer.h</innerfile>
     <briefdescription>

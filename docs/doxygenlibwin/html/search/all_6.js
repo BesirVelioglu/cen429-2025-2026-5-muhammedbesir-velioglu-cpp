@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['id_0',['id',['../struct_player.html#a370e8ae6120f85b601d7b0dcc372cdb9',1,'Player::id'],['../struct_game.html#a2500fd106b61de5e4e66311aea0f1b84',1,'Game::id'],['../struct_stat.html#af02a296d1cd4b7a608317b6336217ca1',1,'Stat::id'],['../struct_message.html#a4c34674ebe8e9ac6a62a5b7c9c3e4123',1,'Message::id'],['../struct_user.html#ae4bd671c6f2b7cc7acf84f5e69ec96b7',1,'User::id']]],
-  ['isdebugbuild_1',['IsDebugBuild',['../namespaceteamcore_1_1hardening.html#a4f2f30369ecf9f3549c4535a07940d7f',1,'teamcore::hardening']]],
-  ['isdebuggerpresent_2',['IsDebuggerPresent',['../namespaceteamcore_1_1hardening.html#a4ccea0ed29b104587db03d54bc960bf0',1,'teamcore::hardening']]],
-  ['isrootedorjailbroken_3',['IsRootedOrJailbroken',['../namespaceteamcore_1_1hardening.html#ae4bd5f482bf7729d5e890edca9dde1a9',1,'teamcore::hardening']]],
-  ['isrunninginvm_4',['IsRunningInVM',['../namespaceteamcore_1_1hardening.html#ae3cee1714e401ddec13be459d2d61d32',1,'teamcore::hardening']]]
+  ['game_0',['Game',['../struct_game.html',1,'']]],
+  ['gameid_1',['gameId',['../struct_stat.html#a2a759221669935df31616ca94d6bc0ac',1,'Stat']]],
+  ['getexecutablehash_2',['GetExecutableHash',['../namespaceteamcore_1_1hardening.html#a8c5fc8254a61b0540a7dd0d37b83f996',1,'teamcore::hardening']]],
+  ['getexpectedchecksum_3',['GetExpectedChecksum',['../namespaceteamcore_1_1security.html#a02ba7a78daeb6ad42e7f48a1472367da',1,'teamcore::security']]],
+  ['getraspconfig_4',['GetRASPConfig',['../namespaceteamcore_1_1rasp.html#a80257b3b67e746443cf5a3c142987844',1,'teamcore::rasp']]],
+  ['getsecurityeventlog_5',['GetSecurityEventLog',['../namespaceteamcore_1_1rasp.html#a9c49a9e1a8cac4189db46585a655b343',1,'teamcore::rasp']]],
+  ['goals_6',['goals',['../struct_stat.html#af825c20300493b9a8099a30b420fcf6a',1,'Stat']]]
 ];

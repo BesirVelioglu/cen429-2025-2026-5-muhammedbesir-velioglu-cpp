@@ -28,6 +28,14 @@
     <member refid="struct_player_1a415560bf066e5e1937c850e533a00eed" kind="variable"><name>email</name></member>
     <member refid="struct_player_1aad404d23f26988b43b95e61f28045346" kind="variable"><name>active</name></member>
   </compound>
+  <compound refid="structteamcore_1_1rasp_1_1_r_a_s_p_config" kind="struct"><name>teamcore::rasp::RASPConfig</name>
+    <member refid="structteamcore_1_1rasp_1_1_r_a_s_p_config_1ad8177351c27e6622c074ec7da887d456" kind="variable"><name>enableDebuggerDetection</name></member>
+    <member refid="structteamcore_1_1rasp_1_1_r_a_s_p_config_1a9768dbe824b445ffe0570eee10945433" kind="variable"><name>enableChecksumVerification</name></member>
+    <member refid="structteamcore_1_1rasp_1_1_r_a_s_p_config_1a5d8e2f9c7e88afae7dd5b556515b676c" kind="variable"><name>enableHookDetection</name></member>
+    <member refid="structteamcore_1_1rasp_1_1_r_a_s_p_config_1aa0e649448d63a2bd83438436549a4ccb" kind="variable"><name>autoTerminateOnThreat</name></member>
+    <member refid="structteamcore_1_1rasp_1_1_r_a_s_p_config_1abdd6bcb5c60f0cb8a2d14e9ed86eae3a" kind="variable"><name>monitoringIntervalMs</name></member>
+    <member refid="structteamcore_1_1rasp_1_1_r_a_s_p_config_1a1d12e0375b831c64fe6493203a7b1a27" kind="variable"><name>logFilePath</name></member>
+  </compound>
   <compound refid="classteamcore_1_1_secure_buffer" kind="class"><name>teamcore::SecureBuffer</name>
     <member refid="classteamcore_1_1_secure_buffer_1a0bac1998738fc0c9b57718153984aea8" kind="variable"><name>data_</name></member>
     <member refid="classteamcore_1_1_secure_buffer_1ae16e51c9b857eeb8ec769c79dcd4a9f3" kind="variable"><name>size_</name></member>
@@ -43,6 +51,12 @@
     <member refid="classteamcore_1_1_secure_buffer_1a66ee099f8a381c3734be9675ede9f8cb" kind="function"><name>data</name></member>
     <member refid="classteamcore_1_1_secure_buffer_1a0259d36795f60424390f8655491bcc3e" kind="function"><name>data</name></member>
     <member refid="classteamcore_1_1_secure_buffer_1aafc6096600ca854c389d8657995cc16c" kind="function"><name>size</name></member>
+  </compound>
+  <compound refid="structteamcore_1_1rasp_1_1_security_event" kind="struct"><name>teamcore::rasp::SecurityEvent</name>
+    <member refid="structteamcore_1_1rasp_1_1_security_event_1a0400a3490b69bb35717d57895f447d9d" kind="variable"><name>timestamp</name></member>
+    <member refid="structteamcore_1_1rasp_1_1_security_event_1af051504600f9401729cf433c6fbf55ac" kind="variable"><name>eventType</name></member>
+    <member refid="structteamcore_1_1rasp_1_1_security_event_1a63788e2305cc91af38e78453f071ce58" kind="variable"><name>description</name></member>
+    <member refid="structteamcore_1_1rasp_1_1_security_event_1afdb9d81297bfdf3be8e2994e1c0b638a" kind="variable"><name>severity</name></member>
   </compound>
   <compound refid="struct_stat" kind="struct"><name>Stat</name>
     <member refid="struct_stat_1af02a296d1cd4b7a608317b6336217ca1" kind="variable"><name>id</name></member>
@@ -110,6 +124,62 @@
     <member refid="namespaceteamcore_1_1hardening_1a17e48f5adaec0be70a63a8c27d15bf93" kind="function"><name>SecureLog</name></member>
     <member refid="namespaceteamcore_1_1hardening_1a4f2f30369ecf9f3549c4535a07940d7f" kind="function"><name>IsDebugBuild</name></member>
   </compound>
+  <compound refid="namespaceteamcore_1_1rasp" kind="namespace"><name>teamcore::rasp</name>
+    <member refid="namespaceteamcore_1_1rasp_1a11fdfffc15e147a318d14eb527740a4a" kind="variable"><name>g_raspActive</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1af564135e8f01bfa7f7531b64d656e2a5" kind="variable"><name>g_debuggerMonitorRunning</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1aab08792cc1f19f5db8e0f4c6006e3cf8" kind="variable"><name>g_debuggerMonitorThread</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1ac4292de062d311f607226ce0a74116d0" kind="variable"><name>g_config</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a4b4b998566d585d5a6524faf5d07e2ec" kind="variable"><name>g_eventLog</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a4bc9cf8ad6b0fcbaefd431c82d4d07ee" kind="variable"><name>g_logMutex</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a6217110e3da9d1598e322ef70e769eab" kind="variable"><name>g_expectedChecksum</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a3fe514c24263c87105082787c7c18dc7" kind="function"><name>DetectDebugger</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a059c359acf49bf78806c802af513b5f7" kind="function"><name>StartDebuggerMonitoring</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1aaadad552f8192ce7f2605b1168228457" kind="function"><name>StopDebuggerMonitoring</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1acfffd0beff666d97fce2c9a3d825c6db" kind="function"><name>CalculateTextSectionChecksum</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a901623f332c29fd48aa9a416beb422e5" kind="function"><name>VerifyTextSectionIntegrity</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a74899448486f554bebb2f44c84658d72" kind="function"><name>BootTimeIntegrityCheck</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1abc2bfd5fd35be23413c3cd7c91caa020" kind="function"><name>DetectIATHooks</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a19e83bdd3db428e5ccb129a78e1205e3" kind="function"><name>DetectPLTHooks</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1afcfa29d7403aa4b2ffca1716832679d4" kind="function"><name>IsThunkModified</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a807b098c27296fbf981ae7785a51ff1f" kind="function"><name>ScanCriticalFunctions</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1ae52211ed6b1f31d167a1a9edfccaaf47" kind="function"><name>LogSecurityEvent</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a91ad508756da2b4a880b39e72b8a2071" kind="function"><name>HandleCriticalEvent</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a9c49a9e1a8cac4189db46585a655b343" kind="function"><name>GetSecurityEventLog</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a07e65abc82f54ea47b0b9ce8cbf5050c" kind="function"><name>ClearSecurityLog</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a0293f9b3b50efd7c112cfa2400de65ca" kind="function"><name>VerifyProcessIsolation</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a17a4eabede4484deea82b9acf7ccff44" kind="function"><name>FailClosedShutdown</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a097fbdfc036635e67228fcf8c15b099c" kind="function"><name>SecureTerminate</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1acfa334ed52bbd4e42ab7abfad44811ea" kind="function"><name>InitializeRASP</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a4b8d4607e2578698d18ef17f51d79628" kind="function"><name>ShutdownRASP</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1adaafa9c1e483547f753d9aaffb58f38e" kind="function"><name>IsRASPActive</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a2bf6d0cb586da649dab36781003d8067" kind="function"><name>PerformSecurityScan</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1aa111f8946bff31b16ecaabbebfef6111" kind="function"><name>ConfigureRASP</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a80257b3b67e746443cf5a3c142987844" kind="function"><name>GetRASPConfig</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a0aa59d83c4c95e3518060d9a65c847c3" kind="function"><name>LogToConsole</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1ac1b91508f0faaaf3241acaa9ea9628f2" kind="function"><name>LogErrorToConsole</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a7c4c87f730953c5216b3500ca3046c10" kind="function"><name>GetCurrentTimestamp</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a5a83ad4c3dd84696551246bb4b0e12a3" kind="function"><name>BytesToHex</name></member>
+  </compound>
+  <compound refid="namespaceteamcore_1_1security" kind="namespace"><name>teamcore::security</name>
+    <member refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5" kind="enum"><name>LogLevel</name></member>
+    <member refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a7e92d833d7720dbe631730a6cea03346" kind="enumvalue"><name>SILENT</name></member>
+    <member refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a02f2534ad4997e23ec250e1015eeb929" kind="enumvalue"><name>MINIMAL</name></member>
+    <member refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a1e23852820b9154316c7c06e2b7ba051" kind="enumvalue"><name>NORMAL</name></member>
+    <member refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5aec1f06e9fb39c4ef0729b3c7c9c8e8cc" kind="enumvalue"><name>VERBOSE</name></member>
+    <member refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5adc30ec20708ef7b0f641ef78b7880a15" kind="enumvalue"><name>DEBUG</name></member>
+    <member refid="namespaceteamcore_1_1security_1a2b28e61dedae3065f32173d322b07477" kind="variable"><name>EXPECTED_TEXT_CHECKSUM</name></member>
+    <member refid="namespaceteamcore_1_1security_1aba8e61216f2d48f6924284bc7d39605e" kind="variable"><name>ENABLE_DEBUGGER_DETECTION</name></member>
+    <member refid="namespaceteamcore_1_1security_1a4b7cf415c91a0d68ebce31e5e4e1cd62" kind="variable"><name>ENABLE_INTEGRITY_CHECK</name></member>
+    <member refid="namespaceteamcore_1_1security_1aad1b06589d384f829ca9ba7aa25cc227" kind="variable"><name>ENABLE_HOOK_DETECTION</name></member>
+    <member refid="namespaceteamcore_1_1security_1a8deccd97c4e795531f2a743a433165ed" kind="variable"><name>AUTO_TERMINATE_ON_THREAT</name></member>
+    <member refid="namespaceteamcore_1_1security_1a86d17bb38a6252940c800f8bd0ecb9bd" kind="variable"><name>RASP_LOG_LEVEL</name></member>
+    <member refid="namespaceteamcore_1_1security_1ac1a897eadfc2db339342e14ae96176dd" kind="variable"><name>ENABLE_FILE_LOGGING</name></member>
+    <member refid="namespaceteamcore_1_1security_1a361c700fb7238a366ef957b65cde15aa" kind="variable"><name>MONITORING_INTERVAL_MS</name></member>
+    <member refid="namespaceteamcore_1_1security_1ad0c20d448e303c47edc01125659b3746" kind="variable"><name>SECURITY_LOG_FILE</name></member>
+    <member refid="namespaceteamcore_1_1security_1a02ba7a78daeb6ad42e7f48a1472367da" kind="function"><name>GetExpectedChecksum</name></member>
+    <member refid="namespaceteamcore_1_1security_1a9095309789da1a688af218b55794adcb" kind="function"><name>IsRASPEnabled</name></member>
+    <member refid="namespaceteamcore_1_1security_1a41ab062dfed2a4b412dbe215942a8292" kind="function"><name>ShouldLogToConsole</name></member>
+  </compound>
   <compound refid="namespaceteamcore_1_1tls" kind="namespace"><name>teamcore::tls</name>
     <member refid="namespaceteamcore_1_1tls_1a566cba99b03a233b20f0b89139e22a31" kind="function"><name>MakeTls13ClientCtxWithMTLS</name></member>
     <member refid="namespaceteamcore_1_1tls_1a1cb27626c5ace28caefb7f7380288eb6" kind="function"><name>ComputeSpkiSha256B64FromFile</name></member>
@@ -140,6 +210,52 @@
     <member refid="localsports_8h_1af43cfb1a0908a075adc94295e31c28dd" kind="function"><name>LS_AuthLogout</name></member>
     <member refid="localsports_8h_1a1dd63114fbf33716846bf01944427350" kind="function"><name>LS_IsAuthenticated</name></member>
     <member refid="localsports_8h_1abd8904e57f1a157e10414411c1d8ab37" kind="function"><name>LS_CurrentUsername</name></member>
+  </compound>
+  <compound refid="rasp_8h" kind="file"><name>rasp.h</name>
+    <member refid="namespaceteamcore_1_1rasp_1a3fe514c24263c87105082787c7c18dc7" kind="function"><name>DetectDebugger</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a059c359acf49bf78806c802af513b5f7" kind="function"><name>StartDebuggerMonitoring</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1aaadad552f8192ce7f2605b1168228457" kind="function"><name>StopDebuggerMonitoring</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1acfffd0beff666d97fce2c9a3d825c6db" kind="function"><name>CalculateTextSectionChecksum</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a901623f332c29fd48aa9a416beb422e5" kind="function"><name>VerifyTextSectionIntegrity</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a74899448486f554bebb2f44c84658d72" kind="function"><name>BootTimeIntegrityCheck</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1abc2bfd5fd35be23413c3cd7c91caa020" kind="function"><name>DetectIATHooks</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a19e83bdd3db428e5ccb129a78e1205e3" kind="function"><name>DetectPLTHooks</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1afcfa29d7403aa4b2ffca1716832679d4" kind="function"><name>IsThunkModified</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a807b098c27296fbf981ae7785a51ff1f" kind="function"><name>ScanCriticalFunctions</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1ae52211ed6b1f31d167a1a9edfccaaf47" kind="function"><name>LogSecurityEvent</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a91ad508756da2b4a880b39e72b8a2071" kind="function"><name>HandleCriticalEvent</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a9c49a9e1a8cac4189db46585a655b343" kind="function"><name>GetSecurityEventLog</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a07e65abc82f54ea47b0b9ce8cbf5050c" kind="function"><name>ClearSecurityLog</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a0293f9b3b50efd7c112cfa2400de65ca" kind="function"><name>VerifyProcessIsolation</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a17a4eabede4484deea82b9acf7ccff44" kind="function"><name>FailClosedShutdown</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a097fbdfc036635e67228fcf8c15b099c" kind="function"><name>SecureTerminate</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1acfa334ed52bbd4e42ab7abfad44811ea" kind="function"><name>InitializeRASP</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a4b8d4607e2578698d18ef17f51d79628" kind="function"><name>ShutdownRASP</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1adaafa9c1e483547f753d9aaffb58f38e" kind="function"><name>IsRASPActive</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a2bf6d0cb586da649dab36781003d8067" kind="function"><name>PerformSecurityScan</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1aa111f8946bff31b16ecaabbebfef6111" kind="function"><name>ConfigureRASP</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a80257b3b67e746443cf5a3c142987844" kind="function"><name>GetRASPConfig</name></member>
+  </compound>
+  <compound refid="security__config_8h" kind="file"><name>security_config.h</name>
+    <member refid="security__config_8h_1aca4aadb9e467854157f1b7cdaf13295a" kind="define"><name>SECURITY_CONFIG_H</name></member>
+    <member refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5" kind="enum"><name>LogLevel</name></member>
+    <member refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a7e92d833d7720dbe631730a6cea03346" kind="enumvalue"><name>SILENT</name></member>
+    <member refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a02f2534ad4997e23ec250e1015eeb929" kind="enumvalue"><name>MINIMAL</name></member>
+    <member refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a1e23852820b9154316c7c06e2b7ba051" kind="enumvalue"><name>NORMAL</name></member>
+    <member refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5aec1f06e9fb39c4ef0729b3c7c9c8e8cc" kind="enumvalue"><name>VERBOSE</name></member>
+    <member refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5adc30ec20708ef7b0f641ef78b7880a15" kind="enumvalue"><name>DEBUG</name></member>
+    <member refid="namespaceteamcore_1_1security_1a2b28e61dedae3065f32173d322b07477" kind="variable"><name>EXPECTED_TEXT_CHECKSUM</name></member>
+    <member refid="namespaceteamcore_1_1security_1aba8e61216f2d48f6924284bc7d39605e" kind="variable"><name>ENABLE_DEBUGGER_DETECTION</name></member>
+    <member refid="namespaceteamcore_1_1security_1a4b7cf415c91a0d68ebce31e5e4e1cd62" kind="variable"><name>ENABLE_INTEGRITY_CHECK</name></member>
+    <member refid="namespaceteamcore_1_1security_1aad1b06589d384f829ca9ba7aa25cc227" kind="variable"><name>ENABLE_HOOK_DETECTION</name></member>
+    <member refid="namespaceteamcore_1_1security_1a8deccd97c4e795531f2a743a433165ed" kind="variable"><name>AUTO_TERMINATE_ON_THREAT</name></member>
+    <member refid="namespaceteamcore_1_1security_1a86d17bb38a6252940c800f8bd0ecb9bd" kind="variable"><name>RASP_LOG_LEVEL</name></member>
+    <member refid="namespaceteamcore_1_1security_1ac1a897eadfc2db339342e14ae96176dd" kind="variable"><name>ENABLE_FILE_LOGGING</name></member>
+    <member refid="namespaceteamcore_1_1security_1a361c700fb7238a366ef957b65cde15aa" kind="variable"><name>MONITORING_INTERVAL_MS</name></member>
+    <member refid="namespaceteamcore_1_1security_1ad0c20d448e303c47edc01125659b3746" kind="variable"><name>SECURITY_LOG_FILE</name></member>
+    <member refid="namespaceteamcore_1_1security_1a02ba7a78daeb6ad42e7f48a1472367da" kind="function"><name>GetExpectedChecksum</name></member>
+    <member refid="namespaceteamcore_1_1security_1a9095309789da1a688af218b55794adcb" kind="function"><name>IsRASPEnabled</name></member>
+    <member refid="namespaceteamcore_1_1security_1a41ab062dfed2a4b412dbe215942a8292" kind="function"><name>ShouldLogToConsole</name></member>
   </compound>
   <compound refid="security__hardening_8h" kind="file"><name>security_hardening.h</name>
     <member refid="namespaceteamcore_1_1hardening_1a4ccea0ed29b104587db03d54bc960bf0" kind="function"><name>IsDebuggerPresent</name></member>
@@ -215,6 +331,42 @@
     <member refid="localsports_8cpp_1aaff947fb9d3c2530ca58838200be9110" kind="function"><name>LS_ViewPlayerTotalsInteractive</name></member>
     <member refid="localsports_8cpp_1a85337b1fb4b0c0bb2e1ea5eb8b095898" kind="function"><name>LS_ListMessagesInteractive</name></member>
     <member refid="localsports_8cpp_1a1668116b9386e1dd49cf0fa0ead92778" kind="function"><name>LS_AddMessageInteractive</name></member>
+  </compound>
+  <compound refid="rasp_8cpp" kind="file"><name>rasp.cpp</name>
+    <member refid="namespaceteamcore_1_1rasp_1a11fdfffc15e147a318d14eb527740a4a" kind="variable"><name>g_raspActive</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1af564135e8f01bfa7f7531b64d656e2a5" kind="variable"><name>g_debuggerMonitorRunning</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1aab08792cc1f19f5db8e0f4c6006e3cf8" kind="variable"><name>g_debuggerMonitorThread</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1ac4292de062d311f607226ce0a74116d0" kind="variable"><name>g_config</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a4b4b998566d585d5a6524faf5d07e2ec" kind="variable"><name>g_eventLog</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a4bc9cf8ad6b0fcbaefd431c82d4d07ee" kind="variable"><name>g_logMutex</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a6217110e3da9d1598e322ef70e769eab" kind="variable"><name>g_expectedChecksum</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a0aa59d83c4c95e3518060d9a65c847c3" kind="function"><name>LogToConsole</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1ac1b91508f0faaaf3241acaa9ea9628f2" kind="function"><name>LogErrorToConsole</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a7c4c87f730953c5216b3500ca3046c10" kind="function"><name>GetCurrentTimestamp</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a5a83ad4c3dd84696551246bb4b0e12a3" kind="function"><name>BytesToHex</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a3fe514c24263c87105082787c7c18dc7" kind="function"><name>DetectDebugger</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a059c359acf49bf78806c802af513b5f7" kind="function"><name>StartDebuggerMonitoring</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1aaadad552f8192ce7f2605b1168228457" kind="function"><name>StopDebuggerMonitoring</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1acfffd0beff666d97fce2c9a3d825c6db" kind="function"><name>CalculateTextSectionChecksum</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a901623f332c29fd48aa9a416beb422e5" kind="function"><name>VerifyTextSectionIntegrity</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a74899448486f554bebb2f44c84658d72" kind="function"><name>BootTimeIntegrityCheck</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1abc2bfd5fd35be23413c3cd7c91caa020" kind="function"><name>DetectIATHooks</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a19e83bdd3db428e5ccb129a78e1205e3" kind="function"><name>DetectPLTHooks</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1afcfa29d7403aa4b2ffca1716832679d4" kind="function"><name>IsThunkModified</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a807b098c27296fbf981ae7785a51ff1f" kind="function"><name>ScanCriticalFunctions</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1ae52211ed6b1f31d167a1a9edfccaaf47" kind="function"><name>LogSecurityEvent</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a91ad508756da2b4a880b39e72b8a2071" kind="function"><name>HandleCriticalEvent</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a9c49a9e1a8cac4189db46585a655b343" kind="function"><name>GetSecurityEventLog</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a07e65abc82f54ea47b0b9ce8cbf5050c" kind="function"><name>ClearSecurityLog</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a0293f9b3b50efd7c112cfa2400de65ca" kind="function"><name>VerifyProcessIsolation</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a17a4eabede4484deea82b9acf7ccff44" kind="function"><name>FailClosedShutdown</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a097fbdfc036635e67228fcf8c15b099c" kind="function"><name>SecureTerminate</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1acfa334ed52bbd4e42ab7abfad44811ea" kind="function"><name>InitializeRASP</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a4b8d4607e2578698d18ef17f51d79628" kind="function"><name>ShutdownRASP</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1adaafa9c1e483547f753d9aaffb58f38e" kind="function"><name>IsRASPActive</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a2bf6d0cb586da649dab36781003d8067" kind="function"><name>PerformSecurityScan</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1aa111f8946bff31b16ecaabbebfef6111" kind="function"><name>ConfigureRASP</name></member>
+    <member refid="namespaceteamcore_1_1rasp_1a80257b3b67e746443cf5a3c142987844" kind="function"><name>GetRASPConfig</name></member>
   </compound>
   <compound refid="security__hardening_8cpp" kind="file"><name>security_hardening.cpp</name>
     <member refid="namespaceteamcore_1_1hardening_1a8699c2d622188c683dc2ee8bc0cd2f9f" kind="variable"><name>g_antiDebugRunning</name></member>

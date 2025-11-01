@@ -1,0 +1,82 @@
+\doxysection{security\+\_\+config.\+h}
+\hypertarget{security__config_8h_source}{}\label{security__config_8h_source}\index{src/LocalSports/header/security\_config.h@{src/LocalSports/header/security\_config.h}}
+\mbox{\hyperlink{security__config_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifndef\ SECURITY\_CONFIG\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ SECURITY\_CONFIG\_H}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceteamcore}{teamcore}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }security\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ ===================\ RASP\ Configuration\ ===================}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ IMPORTANT:\ This\ checksum\ should\ be\ updated\ after\ each\ build}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ Current\ .text\ section\ checksum\ (SHA-\/256)}}
+\DoxyCodeLine{00014\ \textcolor{comment}{//\ Generated\ during\ build:\ 2025-\/11-\/01\ 15:31\ (UPDATED\ after\ log\ level\ implementation)}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{namespaceteamcore_1_1security_a2b28e61dedae3065f32173d322b07477}{EXPECTED\_TEXT\_CHECKSUM}}\ =\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{stringliteral}{"{}408dcce0e9ee620bb44c0f017883a7cbac8087b1aeccc44196378fceb85f4a15"{}};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ ===================\ Security\ Flags\ ===================}}
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ Enable\ runtime\ debugger\ monitoring\ (checks\ every\ 5\ seconds)}}
+\DoxyCodeLine{00020\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1security_aba8e61216f2d48f6924284bc7d39605e}{ENABLE\_DEBUGGER\_DETECTION}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{comment}{//\ Enable\ .text\ section\ integrity\ verification}}
+\DoxyCodeLine{00023\ \textcolor{comment}{//\ NOW\ SET\ TO\ TRUE\ -\/\ Checksum\ has\ been\ captured!}}
+\DoxyCodeLine{00024\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1security_a4b7cf415c91a0d68ebce31e5e4e1cd62}{ENABLE\_INTEGRITY\_CHECK}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ Enable\ IAT/PLT\ hook\ detection}}
+\DoxyCodeLine{00027\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1security_aad1b06589d384f829ca9ba7aa25cc227}{ENABLE\_HOOK\_DETECTION}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{comment}{//\ Auto-\/terminate\ application\ when\ threat\ is\ detected}}
+\DoxyCodeLine{00030\ \textcolor{comment}{//\ NOW\ SET\ TO\ TRUE\ -\/\ Production\ ready!}}
+\DoxyCodeLine{00031\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1security_a8deccd97c4e795531f2a743a433165ed}{AUTO\_TERMINATE\_ON\_THREAT}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{comment}{//\ ===================\ Logging\ Settings\ ===================}}
+\DoxyCodeLine{00034\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5}{LogLevel}}\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a7e92d833d7720dbe631730a6cea03346}{SILENT}},\ \ \ \ \ \ \textcolor{comment}{//\ No\ console\ output\ (only\ log\ file)}}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a02f2534ad4997e23ec250e1015eeb929}{MINIMAL}},\ \ \ \ \ \textcolor{comment}{//\ Only\ critical\ errors}}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a1e23852820b9154316c7c06e2b7ba051}{NORMAL}},\ \ \ \ \ \ \textcolor{comment}{//\ Important\ events}}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5aec1f06e9fb39c4ef0729b3c7c9c8e8cc}{VERBOSE}},\ \ \ \ \ \textcolor{comment}{//\ All\ security\ events\ (development)}}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5adc30ec20708ef7b0f641ef78b7880a15}{DEBUG}}\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Everything\ including\ debug\ info}}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{comment}{//\ CHANGE\ THIS\ FOR\ PRODUCTION!}}
+\DoxyCodeLine{00043\ \textcolor{comment}{//\ VERBOSE\ =\ Development\ (shows\ all\ details)}}
+\DoxyCodeLine{00044\ \textcolor{comment}{//\ MINIMAL\ =\ Production\ (only\ critical\ errors,\ silent\ background\ operation)}}
+\DoxyCodeLine{00045\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5}{LogLevel}}\ \mbox{\hyperlink{namespaceteamcore_1_1security_a86d17bb38a6252940c800f8bd0ecb9bd}{RASP\_LOG\_LEVEL}}\ =\ \mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5a02f2534ad4997e23ec250e1015eeb929}{LogLevel::MINIMAL}};\ \textcolor{comment}{//\ Production:\ show\ only\ critical\ errors}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{comment}{//\ Enable\ file\ logging\ even\ in\ SILENT\ mode}}
+\DoxyCodeLine{00048\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1security_ac1a897eadfc2db339342e14ae96176dd}{ENABLE\_FILE\_LOGGING}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{comment}{//\ ===================\ Monitoring\ Settings\ ===================}}
+\DoxyCodeLine{00051\ \textcolor{comment}{//\ Debugger\ check\ interval\ (milliseconds)}}
+\DoxyCodeLine{00052\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespaceteamcore_1_1security_a361c700fb7238a366ef957b65cde15aa}{MONITORING\_INTERVAL\_MS}}\ =\ 5000;\ \ \textcolor{comment}{//\ 5\ seconds}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{comment}{//\ Security\ log\ file\ path}}
+\DoxyCodeLine{00055\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{namespaceteamcore_1_1security_ad0c20d448e303c47edc01125659b3746}{SECURITY\_LOG\_FILE}}\ =\ \textcolor{stringliteral}{"{}rasp\_security.log"{}};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{comment}{//\ ===================\ Helper\ Functions\ ===================}}
+\DoxyCodeLine{00062\ \textcolor{comment}{}\textcolor{keyword}{inline}\ std::string\ \mbox{\hyperlink{namespaceteamcore_1_1security_a02ba7a78daeb6ad42e7f48a1472367da}{GetExpectedChecksum}}()\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordflow}{return}\ std::string(\mbox{\hyperlink{namespaceteamcore_1_1security_a2b28e61dedae3065f32173d322b07477}{EXPECTED\_TEXT\_CHECKSUM}});}
+\DoxyCodeLine{00064\ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1security_a9095309789da1a688af218b55794adcb}{IsRASPEnabled}}()\ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespaceteamcore_1_1security_aba8e61216f2d48f6924284bc7d39605e}{ENABLE\_DEBUGGER\_DETECTION}}\ ||\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceteamcore_1_1security_a4b7cf415c91a0d68ebce31e5e4e1cd62}{ENABLE\_INTEGRITY\_CHECK}}\ ||\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceteamcore_1_1security_aad1b06589d384f829ca9ba7aa25cc227}{ENABLE\_HOOK\_DETECTION}};}
+\DoxyCodeLine{00074\ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00081\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceteamcore_1_1security_a41ab062dfed2a4b412dbe215942a8292}{ShouldLogToConsole}}(\mbox{\hyperlink{namespaceteamcore_1_1security_a737a9b38bcf0a7bcdd1eff9eb9d8d1c5}{LogLevel}}\ level)\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{namespaceteamcore_1_1security_a86d17bb38a6252940c800f8bd0ecb9bd}{RASP\_LOG\_LEVEL}})\ >=\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(level);}
+\DoxyCodeLine{00083\ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \}\ \textcolor{comment}{//\ namespace\ security}}
+\DoxyCodeLine{00086\ \}\ \textcolor{comment}{//\ namespace\ teamcore}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SECURITY\_CONFIG\_H}}
+\DoxyCodeLine{00089\ }
+
+\end{DoxyCode}

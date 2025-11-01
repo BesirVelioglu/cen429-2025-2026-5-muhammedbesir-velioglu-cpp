@@ -1,0 +1,766 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespaceteamcore_1_1rasp" kind="namespace" language="C++">
+    <compoundname>teamcore::rasp</compoundname>
+    <innerclass refid="structteamcore_1_1rasp_1_1_r_a_s_p_config" prot="public">teamcore::rasp::RASPConfig</innerclass>
+    <innerclass refid="structteamcore_1_1rasp_1_1_security_event" prot="public">teamcore::rasp::SecurityEvent</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceteamcore_1_1rasp_1a11fdfffc15e147a318d14eb527740a4a" prot="public" static="yes" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; teamcore::rasp::g_raspActive</definition>
+        <argsstring></argsstring>
+        <name>g_raspActive</name>
+        <qualifiedname>teamcore::rasp::g_raspActive</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="47" column="24" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1_1rasp_1af564135e8f01bfa7f7531b64d656e2a5" prot="public" static="yes" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; teamcore::rasp::g_debuggerMonitorRunning</definition>
+        <argsstring></argsstring>
+        <name>g_debuggerMonitorRunning</name>
+        <qualifiedname>teamcore::rasp::g_debuggerMonitorRunning</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="48" column="24" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1_1rasp_1aab08792cc1f19f5db8e0f4c6006e3cf8" prot="public" static="yes" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread teamcore::rasp::g_debuggerMonitorThread</definition>
+        <argsstring></argsstring>
+        <name>g_debuggerMonitorThread</name>
+        <qualifiedname>teamcore::rasp::g_debuggerMonitorThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="49" column="24" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1_1rasp_1ac4292de062d311f607226ce0a74116d0" prot="public" static="yes" mutable="no">
+        <type><ref refid="structteamcore_1_1rasp_1_1_r_a_s_p_config" kindref="compound">RASPConfig</ref></type>
+        <definition>RASPConfig teamcore::rasp::g_config</definition>
+        <argsstring></argsstring>
+        <name>g_config</name>
+        <qualifiedname>teamcore::rasp::g_config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="50" column="23" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1_1rasp_1a4b4b998566d585d5a6524faf5d07e2ec" prot="public" static="yes" mutable="no">
+        <type>std::vector&lt; <ref refid="structteamcore_1_1rasp_1_1_security_event" kindref="compound">SecurityEvent</ref> &gt;</type>
+        <definition>std::vector&lt;SecurityEvent&gt; teamcore::rasp::g_eventLog</definition>
+        <argsstring></argsstring>
+        <name>g_eventLog</name>
+        <qualifiedname>teamcore::rasp::g_eventLog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="51" column="24" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1_1rasp_1a4bc9cf8ad6b0fcbaefd431c82d4d07ee" prot="public" static="yes" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex teamcore::rasp::g_logMutex</definition>
+        <argsstring></argsstring>
+        <name>g_logMutex</name>
+        <qualifiedname>teamcore::rasp::g_logMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="52" column="23" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteamcore_1_1rasp_1a6217110e3da9d1598e322ef70e769eab" prot="public" static="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string teamcore::rasp::g_expectedChecksum</definition>
+        <argsstring></argsstring>
+        <name>g_expectedChecksum</name>
+        <qualifiedname>teamcore::rasp::g_expectedChecksum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="53" column="24" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a3fe514c24263c87105082787c7c18dc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::rasp::DetectDebugger</definition>
+        <argsstring>()</argsstring>
+        <name>DetectDebugger</name>
+        <qualifiedname>teamcore::rasp::DetectDebugger</qualifiedname>
+        <briefdescription>
+<para>Runtime debugger tespiti (IsDebuggerPresent API ve ptrace kontrolü) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Windows: IsDebuggerPresent() + NtQueryInformationProcess Linux: ptrace(PTRACE_TRACEME) kontrolü <simplesect kind="return"><para>true ise debugger algılandı </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="93" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="93" bodyend="173" declfile="src/LocalSports/header/rasp.h" declline="26" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a059c359acf49bf78806c802af513b5f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::rasp::StartDebuggerMonitoring</definition>
+        <argsstring>(std::function&lt; void()&gt; callback, int intervalMs=5000)</argsstring>
+        <name>StartDebuggerMonitoring</name>
+        <qualifiedname>teamcore::rasp::StartDebuggerMonitoring</qualifiedname>
+        <param>
+          <type>std::function&lt; void()&gt;</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>intervalMs</declname>
+          <defval>5000</defval>
+        </param>
+        <briefdescription>
+<para>Periyodik debugger izleme başlat (arka plan thread) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Debugger tespit edildiğinde çağrılacak fonksiyon </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intervalMs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Kontrol aralığı (milisaniye) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="175" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="175" bodyend="204" declfile="src/LocalSports/header/rasp.h" declline="33" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1aaadad552f8192ce7f2605b1168228457" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::rasp::StopDebuggerMonitoring</definition>
+        <argsstring>()</argsstring>
+        <name>StopDebuggerMonitoring</name>
+        <qualifiedname>teamcore::rasp::StopDebuggerMonitoring</qualifiedname>
+        <briefdescription>
+<para>Debugger izlemeyi durdur. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="206" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="206" bodyend="213" declfile="src/LocalSports/header/rasp.h" declline="38" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1acfffd0beff666d97fce2c9a3d825c6db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string teamcore::rasp::CalculateTextSectionChecksum</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateTextSectionChecksum</name>
+        <qualifiedname>teamcore::rasp::CalculateTextSectionChecksum</qualifiedname>
+        <briefdescription>
+<para>Executable&apos;ın .text bölümünün SHA-256 checksum&apos;ını hesapla. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Runtime&apos;da kod bölgesinin hash&apos;ini alır <simplesect kind="return"><para>SHA-256 hash (64 karakter hex string) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="255" column="17" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="255" bodyend="296" declfile="src/LocalSports/header/rasp.h" declline="46" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a901623f332c29fd48aa9a416beb422e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::rasp::VerifyTextSectionIntegrity</definition>
+        <argsstring>(const std::string &amp;expectedChecksum)</argsstring>
+        <name>VerifyTextSectionIntegrity</name>
+        <qualifiedname>teamcore::rasp::VerifyTextSectionIntegrity</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>expectedChecksum</declname>
+        </param>
+        <briefdescription>
+<para>.text bölümünün checksum doğrulaması </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expectedChecksum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Build-time&apos;da kaydedilen doğru checksum </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true ise doğrulama başarılı, false ise kod değiştirilmiş </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="299" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="299" bodyend="367" declfile="src/LocalSports/header/rasp.h" declline="53" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a74899448486f554bebb2f44c84658d72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::rasp::BootTimeIntegrityCheck</definition>
+        <argsstring>(const std::string &amp;expectedChecksum)</argsstring>
+        <name>BootTimeIntegrityCheck</name>
+        <qualifiedname>teamcore::rasp::BootTimeIntegrityCheck</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>expectedChecksum</declname>
+        </param>
+        <briefdescription>
+<para>Önyükleme sırasında checksum kontrolü yap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uygulama başlarken .text bölümünü doğrular <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expectedChecksum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bilinen doğru checksum </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>false ise uygulama sonlandırılmalı </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="369" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="369" bodyend="380" declfile="src/LocalSports/header/rasp.h" declline="61" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1abc2bfd5fd35be23413c3cd7c91caa020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int teamcore::rasp::DetectIATHooks</definition>
+        <argsstring>()</argsstring>
+        <name>DetectIATHooks</name>
+        <qualifiedname>teamcore::rasp::DetectIATHooks</qualifiedname>
+        <briefdescription>
+<para>Import Address Table (Windows) hook tespiti. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>IAT&apos;daki fonksiyon pointer&apos;larını kontrol eder <simplesect kind="return"><para>Değiştirilen fonksiyon sayısı (0 ise temiz) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="428" column="9" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="428" bodyend="431" declfile="src/LocalSports/header/rasp.h" declline="69" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a19e83bdd3db428e5ccb129a78e1205e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int teamcore::rasp::DetectPLTHooks</definition>
+        <argsstring>()</argsstring>
+        <name>DetectPLTHooks</name>
+        <qualifiedname>teamcore::rasp::DetectPLTHooks</qualifiedname>
+        <briefdescription>
+<para>Procedure Linkage Table (Linux) hook tespiti. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>PLT/GOT tablosundaki pointer&apos;ları kontrol eder <simplesect kind="return"><para>Değiştirilen entry sayısı (0 ise temiz) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="435" column="9" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="435" bodyend="463" declfile="src/LocalSports/header/rasp.h" declline="76" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1afcfa29d7403aa4b2ffca1716832679d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::rasp::IsThunkModified</definition>
+        <argsstring>(const std::string &amp;functionName)</argsstring>
+        <name>IsThunkModified</name>
+        <qualifiedname>teamcore::rasp::IsThunkModified</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>functionName</declname>
+        </param>
+        <briefdescription>
+<para>Beklenmeyen fonksiyon pointer kontrolü (thunk analizi) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Kritik fonksiyonların (malloc, strcpy, vb) hook edilip edilmediğini kontrol eder <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functionName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Kontrol edilecek fonksiyon adı </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true ise hook tespit edildi </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="471" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="471" bodyend="490" declfile="src/LocalSports/header/rasp.h" declline="84" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a807b098c27296fbf981ae7785a51ff1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int teamcore::rasp::ScanCriticalFunctions</definition>
+        <argsstring>()</argsstring>
+        <name>ScanCriticalFunctions</name>
+        <qualifiedname>teamcore::rasp::ScanCriticalFunctions</qualifiedname>
+        <briefdescription>
+<para>Tüm kritik fonksiyonların hook kontrolü </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Önceden tanımlı kritik fonksiyon listesini tarar <simplesect kind="return"><para>Hook tespit edilen fonksiyon sayısı </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="492" column="9" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="492" bodyend="505" declfile="src/LocalSports/header/rasp.h" declline="91" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1ae52211ed6b1f31d167a1a9edfccaaf47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::rasp::LogSecurityEvent</definition>
+        <argsstring>(const SecurityEvent &amp;event)</argsstring>
+        <name>LogSecurityEvent</name>
+        <qualifiedname>teamcore::rasp::LogSecurityEvent</qualifiedname>
+        <param>
+          <type>const <ref refid="structteamcore_1_1rasp_1_1_security_event" kindref="compound">SecurityEvent</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Güvenlik olayını kaydet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Olay bilgisi </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true ise kayıt başarılı </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="508" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="508" bodyend="526" declfile="src/LocalSports/header/rasp.h" declline="99" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a91ad508756da2b4a880b39e72b8a2071" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::rasp::HandleCriticalEvent</definition>
+        <argsstring>(const std::string &amp;eventType, const std::string &amp;description, bool terminateApp=true)</argsstring>
+        <name>HandleCriticalEvent</name>
+        <qualifiedname>teamcore::rasp::HandleCriticalEvent</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>description</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>terminateApp</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Kritik güvenlik olayını kaydet ve fail-closed davranış göster. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eventType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Olay tipi (örn: &quot;DEBUGGER_DETECTED&quot;) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Olay açıklaması </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>terminateApp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true ise uygulamayı sonlandır </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="528" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="528" bodyend="547" declfile="src/LocalSports/header/rasp.h" declline="107" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a9c49a9e1a8cac4189db46585a655b343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structteamcore_1_1rasp_1_1_security_event" kindref="compound">SecurityEvent</ref> &gt;</type>
+        <definition>std::vector&lt; SecurityEvent &gt; teamcore::rasp::GetSecurityEventLog</definition>
+        <argsstring>()</argsstring>
+        <name>GetSecurityEventLog</name>
+        <qualifiedname>teamcore::rasp::GetSecurityEventLog</qualifiedname>
+        <briefdescription>
+<para>Tüm güvenlik olaylarını getir. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Olay listesi </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="549" column="17" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="549" bodyend="552" declfile="src/LocalSports/header/rasp.h" declline="115" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a07e65abc82f54ea47b0b9ce8cbf5050c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::rasp::ClearSecurityLog</definition>
+        <argsstring>()</argsstring>
+        <name>ClearSecurityLog</name>
+        <qualifiedname>teamcore::rasp::ClearSecurityLog</qualifiedname>
+        <briefdescription>
+<para>Güvenlik log dosyasını temizle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="554" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="554" bodyend="560" declfile="src/LocalSports/header/rasp.h" declline="120" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a0293f9b3b50efd7c112cfa2400de65ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::rasp::VerifyProcessIsolation</definition>
+        <argsstring>()</argsstring>
+        <name>VerifyProcessIsolation</name>
+        <qualifiedname>teamcore::rasp::VerifyProcessIsolation</qualifiedname>
+        <briefdescription>
+<para>Süreç izolasyonu kontrolü </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uygulamanın güvenli bir ortamda çalışıp çalışmadığını kontrol eder <simplesect kind="return"><para>true ise izole ortam güvenli </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="563" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="563" bodyend="591" declfile="src/LocalSports/header/rasp.h" declline="128" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a17a4eabede4484deea82b9acf7ccff44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::rasp::FailClosedShutdown</definition>
+        <argsstring>(const std::string &amp;reason)</argsstring>
+        <name>FailClosedShutdown</name>
+        <qualifiedname>teamcore::rasp::FailClosedShutdown</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>Fail-closed davranış: Güvenlik tehdidi durumunda uygulamayı sonlandır. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sonlandırma nedeni </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="593" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="593" bodyend="609" declfile="src/LocalSports/header/rasp.h" declline="134" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a097fbdfc036635e67228fcf8c15b099c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::rasp::SecureTerminate</definition>
+        <argsstring>()</argsstring>
+        <name>SecureTerminate</name>
+        <qualifiedname>teamcore::rasp::SecureTerminate</qualifiedname>
+        <briefdescription>
+<para>Güvenli durum kaydı (crash dump olmadan çıkış) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Hassas verileri temizledikten sonra uygulamayı sonlandırır </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="611" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="611" bodyend="621" declfile="src/LocalSports/header/rasp.h" declline="140" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1acfa334ed52bbd4e42ab7abfad44811ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::rasp::InitializeRASP</definition>
+        <argsstring>(const std::string &amp;expectedChecksum, bool autoTerminateOnThreat=true)</argsstring>
+        <name>InitializeRASP</name>
+        <qualifiedname>teamcore::rasp::InitializeRASP</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>expectedChecksum</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>autoTerminateOnThreat</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>RASP sistemini başlat. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Tüm runtime korumalarını aktive eder:<itemizedlist>
+<listitem><para>Debugger monitoring</para>
+</listitem><listitem><para>Checksum verification</para>
+</listitem><listitem><para>Hook detection</para>
+</listitem><listitem><para>Event logging <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expectedChecksum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.text bölümünün bilinen checksum&apos;ı </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>autoTerminateOnThreat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true ise tehdit algılandığında otomatik sonlanma </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true ise başarılı, false ise başlatma hatası </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="624" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="624" bodyend="679" declfile="src/LocalSports/header/rasp.h" declline="154" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a4b8d4607e2578698d18ef17f51d79628" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::rasp::ShutdownRASP</definition>
+        <argsstring>()</argsstring>
+        <name>ShutdownRASP</name>
+        <qualifiedname>teamcore::rasp::ShutdownRASP</qualifiedname>
+        <briefdescription>
+<para>RASP sistemini durdur. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="681" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="681" bodyend="692" declfile="src/LocalSports/header/rasp.h" declline="159" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1adaafa9c1e483547f753d9aaffb58f38e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::rasp::IsRASPActive</definition>
+        <argsstring>()</argsstring>
+        <name>IsRASPActive</name>
+        <qualifiedname>teamcore::rasp::IsRASPActive</qualifiedname>
+        <briefdescription>
+<para>RASP durumu sorgulama. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true ise RASP aktif </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="694" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="694" bodyend="696" declfile="src/LocalSports/header/rasp.h" declline="165" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a2bf6d0cb586da649dab36781003d8067" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool teamcore::rasp::PerformSecurityScan</definition>
+        <argsstring>()</argsstring>
+        <name>PerformSecurityScan</name>
+        <qualifiedname>teamcore::rasp::PerformSecurityScan</qualifiedname>
+        <briefdescription>
+<para>Periyodik güvenlik kontrolü yap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Debugger, hook, integrity kontrollerini yapar <simplesect kind="return"><para>true ise tüm kontroller başarılı </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="698" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="698" bodyend="731" declfile="src/LocalSports/header/rasp.h" declline="172" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1aa111f8946bff31b16ecaabbebfef6111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void teamcore::rasp::ConfigureRASP</definition>
+        <argsstring>(const RASPConfig &amp;config)</argsstring>
+        <name>ConfigureRASP</name>
+        <qualifiedname>teamcore::rasp::ConfigureRASP</qualifiedname>
+        <param>
+          <type>const <ref refid="structteamcore_1_1rasp_1_1_r_a_s_p_config" kindref="compound">RASPConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>RASP yapılandırması ayarla. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Yapılandırma parametreleri </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="734" column="10" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="734" bodyend="736" declfile="src/LocalSports/header/rasp.h" declline="188" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a80257b3b67e746443cf5a3c142987844" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structteamcore_1_1rasp_1_1_r_a_s_p_config" kindref="compound">RASPConfig</ref></type>
+        <definition>RASPConfig teamcore::rasp::GetRASPConfig</definition>
+        <argsstring>()</argsstring>
+        <name>GetRASPConfig</name>
+        <qualifiedname>teamcore::rasp::GetRASPConfig</qualifiedname>
+        <briefdescription>
+<para>Aktif yapılandırmayı getir. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Mevcut RASP yapılandırması </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="738" column="16" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="738" bodyend="740" declfile="src/LocalSports/header/rasp.h" declline="194" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a0aa59d83c4c95e3518060d9a65c847c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void teamcore::rasp::LogToConsole</definition>
+        <argsstring>(security::LogLevel level, const std::string &amp;message)</argsstring>
+        <name>LogToConsole</name>
+        <qualifiedname>teamcore::rasp::LogToConsole</qualifiedname>
+        <param>
+          <type><ref refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5" kindref="member">security::LogLevel</ref></type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="57" column="17" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="57" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1ac1b91508f0faaaf3241acaa9ea9628f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void teamcore::rasp::LogErrorToConsole</definition>
+        <argsstring>(security::LogLevel level, const std::string &amp;message)</argsstring>
+        <name>LogErrorToConsole</name>
+        <qualifiedname>teamcore::rasp::LogErrorToConsole</qualifiedname>
+        <param>
+          <type><ref refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5" kindref="member">security::LogLevel</ref></type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="63" column="17" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a7c4c87f730953c5216b3500ca3046c10" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string teamcore::rasp::GetCurrentTimestamp</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentTimestamp</name>
+        <qualifiedname>teamcore::rasp::GetCurrentTimestamp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="69" column="24" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="69" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteamcore_1_1rasp_1a5a83ad4c3dd84696551246bb4b0e12a3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string teamcore::rasp::BytesToHex</definition>
+        <argsstring>(const uint8_t *data, size_t len)</argsstring>
+        <name>BytesToHex</name>
+        <qualifiedname>teamcore::rasp::BytesToHex</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/src/rasp.cpp" line="83" column="24" bodyfile="src/LocalSports/src/rasp.cpp" bodystart="83" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/LocalSports/header/rasp.h" line="9" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structteamcore_1_1rasp_1_1_security_event" kind="struct" language="C++" prot="public">
+    <compoundname>teamcore::rasp::SecurityEvent</compoundname>
+    <includes refid="rasp_8h" local="no">rasp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structteamcore_1_1rasp_1_1_security_event_1a0400a3490b69bb35717d57895f447d9d" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string teamcore::rasp::SecurityEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <qualifiedname>teamcore::rasp::SecurityEvent::timestamp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/rasp.h" line="13" column="21" bodyfile="src/LocalSports/header/rasp.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structteamcore_1_1rasp_1_1_security_event_1af051504600f9401729cf433c6fbf55ac" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string teamcore::rasp::SecurityEvent::eventType</definition>
+        <argsstring></argsstring>
+        <name>eventType</name>
+        <qualifiedname>teamcore::rasp::SecurityEvent::eventType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/rasp.h" line="14" column="21" bodyfile="src/LocalSports/header/rasp.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structteamcore_1_1rasp_1_1_security_event_1a63788e2305cc91af38e78453f071ce58" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string teamcore::rasp::SecurityEvent::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <qualifiedname>teamcore::rasp::SecurityEvent::description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/rasp.h" line="15" column="21" bodyfile="src/LocalSports/header/rasp.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structteamcore_1_1rasp_1_1_security_event_1afdb9d81297bfdf3be8e2994e1c0b638a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int teamcore::rasp::SecurityEvent::severity</definition>
+        <argsstring></argsstring>
+        <name>severity</name>
+        <qualifiedname>teamcore::rasp::SecurityEvent::severity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/LocalSports/header/rasp.h" line="16" column="13" bodyfile="src/LocalSports/header/rasp.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>teamcore::rasp::SecurityEvent</label>
+        <link refid="structteamcore_1_1rasp_1_1_security_event"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/LocalSports/header/rasp.h" line="12" column="5" bodyfile="src/LocalSports/header/rasp.h" bodystart="12" bodyend="17"/>
+    <listofallmembers>
+      <member refid="structteamcore_1_1rasp_1_1_security_event_1a63788e2305cc91af38e78453f071ce58" prot="public" virt="non-virtual"><scope>teamcore::rasp::SecurityEvent</scope><name>description</name></member>
+      <member refid="structteamcore_1_1rasp_1_1_security_event_1af051504600f9401729cf433c6fbf55ac" prot="public" virt="non-virtual"><scope>teamcore::rasp::SecurityEvent</scope><name>eventType</name></member>
+      <member refid="structteamcore_1_1rasp_1_1_security_event_1afdb9d81297bfdf3be8e2994e1c0b638a" prot="public" virt="non-virtual"><scope>teamcore::rasp::SecurityEvent</scope><name>severity</name></member>
+      <member refid="structteamcore_1_1rasp_1_1_security_event_1a0400a3490b69bb35717d57895f447d9d" prot="public" virt="non-virtual"><scope>teamcore::rasp::SecurityEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

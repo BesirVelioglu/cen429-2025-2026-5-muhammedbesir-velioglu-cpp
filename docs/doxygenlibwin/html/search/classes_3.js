@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['securebuffer_0',['SecureBuffer',['../classteamcore_1_1_secure_buffer.html',1,'teamcore']]],
-  ['stat_1',['Stat',['../struct_stat.html',1,'']]]
+  ['raspconfig_0',['RASPConfig',['../structteamcore_1_1rasp_1_1_r_a_s_p_config.html',1,'teamcore::rasp']]]
 ];

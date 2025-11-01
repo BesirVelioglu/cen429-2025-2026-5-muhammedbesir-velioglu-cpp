@@ -1,4 +1,30 @@
 var searchData=
 [
-  ['name_0',['name',['../struct_player.html#aa1b57c638d18ebdc69a09ff873cb6684',1,'Player']]]
+  ['localsports_20project_20library_20generation_20and_20testing_20template_0',['LocalSports Project Library Generation and Testing Template',['../index.html',1,'']]],
+  ['localsports_2ecpp_1',['localsports.cpp',['../localsports_8cpp.html',1,'']]],
+  ['localsports_2eh_2',['localsports.h',['../localsports_8h.html',1,'']]],
+  ['localsportsapp_2ecpp_3',['localsportsapp.cpp',['../localsportsapp_8cpp.html',1,'']]],
+  ['localsportsapp_2eh_4',['localsportsapp.h',['../localsportsapp_8h.html',1,'']]],
+  ['location_5',['location',['../struct_game.html#a1bf4a00514ed2ba4ca0d2cd36760c953',1,'Game']]],
+  ['logfilepath_6',['logFilePath',['../structteamcore_1_1rasp_1_1_r_a_s_p_config.html#a1d12e0375b831c64fe6493203a7b1a27',1,'teamcore::rasp::RASPConfig']]],
+  ['loglevel_7',['LogLevel',['../namespaceteamcore_1_1security.html#a737a9b38bcf0a7bcdd1eff9eb9d8d1c5',1,'teamcore::security']]],
+  ['logsecurityevent_8',['LogSecurityEvent',['../namespaceteamcore_1_1rasp.html#ae52211ed6b1f31d167a1a9edfccaaf47',1,'teamcore::rasp']]],
+  ['ls_5faddgameinteractive_9',['LS_AddGameInteractive',['../localsports_8h.html#ad57732a13ddc48c64c6aa545717c72b9',1,'LS_AddGameInteractive():&#160;localsports.cpp'],['../localsports_8cpp.html#ad57732a13ddc48c64c6aa545717c72b9',1,'LS_AddGameInteractive():&#160;localsports.cpp']]],
+  ['ls_5faddmessageinteractive_10',['LS_AddMessageInteractive',['../localsports_8cpp.html#a1668116b9386e1dd49cf0fa0ead92778',1,'LS_AddMessageInteractive():&#160;localsports.cpp'],['../localsports_8h.html#a1668116b9386e1dd49cf0fa0ead92778',1,'LS_AddMessageInteractive():&#160;localsports.cpp']]],
+  ['ls_5faddplayerinteractive_11',['LS_AddPlayerInteractive',['../localsports_8cpp.html#a6941a85dbd59a6326bdaebce0c855cee',1,'LS_AddPlayerInteractive():&#160;localsports.cpp'],['../localsports_8h.html#a6941a85dbd59a6326bdaebce0c855cee',1,'LS_AddPlayerInteractive():&#160;localsports.cpp']]],
+  ['ls_5fappstart_12',['LS_AppStart',['../localsportsapp_8cpp.html#a97fdd7815bac9ec7765dce579b889bc4',1,'LS_AppStart():&#160;localsportsapp.cpp'],['../localsportsapp_8h.html#a97fdd7815bac9ec7765dce579b889bc4',1,'LS_AppStart():&#160;localsportsapp.cpp']]],
+  ['ls_5fauthlogininteractive_13',['LS_AuthLoginInteractive',['../localsports_8cpp.html#ab117fdaf97f25d42c4292e1ae98ed094',1,'LS_AuthLoginInteractive():&#160;localsports.cpp'],['../localsports_8h.html#ab117fdaf97f25d42c4292e1ae98ed094',1,'LS_AuthLoginInteractive():&#160;localsports.cpp']]],
+  ['ls_5fauthlogout_14',['LS_AuthLogout',['../localsports_8cpp.html#af43cfb1a0908a075adc94295e31c28dd',1,'LS_AuthLogout():&#160;localsports.cpp'],['../localsports_8h.html#af43cfb1a0908a075adc94295e31c28dd',1,'LS_AuthLogout():&#160;localsports.cpp']]],
+  ['ls_5fauthregisterinteractive_15',['LS_AuthRegisterInteractive',['../localsports_8cpp.html#adbdbe18a3db5835cb46b3d3b6a8dd2a4',1,'LS_AuthRegisterInteractive():&#160;localsports.cpp'],['../localsports_8h.html#adbdbe18a3db5835cb46b3d3b6a8dd2a4',1,'LS_AuthRegisterInteractive():&#160;localsports.cpp']]],
+  ['ls_5fcurrentusername_16',['LS_CurrentUsername',['../localsports_8h.html#abd8904e57f1a157e10414411c1d8ab37',1,'LS_CurrentUsername():&#160;localsports.cpp'],['../localsports_8cpp.html#abd8904e57f1a157e10414411c1d8ab37',1,'LS_CurrentUsername():&#160;localsports.cpp']]],
+  ['ls_5feditplayerinteractive_17',['LS_EditPlayerInteractive',['../localsports_8cpp.html#a150377dbd6fd02d895815280e64b43bd',1,'LS_EditPlayerInteractive():&#160;localsports.cpp'],['../localsports_8h.html#a150377dbd6fd02d895815280e64b43bd',1,'LS_EditPlayerInteractive():&#160;localsports.cpp']]],
+  ['ls_5finit_18',['LS_Init',['../localsports_8h.html#aff7350ba4ddaca323e3660f8d4eedb2a',1,'LS_Init():&#160;localsports.cpp'],['../localsports_8cpp.html#aff7350ba4ddaca323e3660f8d4eedb2a',1,'LS_Init():&#160;localsports.cpp']]],
+  ['ls_5fisauthenticated_19',['LS_IsAuthenticated',['../localsports_8cpp.html#a1dd63114fbf33716846bf01944427350',1,'LS_IsAuthenticated():&#160;localsports.cpp'],['../localsports_8h.html#a1dd63114fbf33716846bf01944427350',1,'LS_IsAuthenticated():&#160;localsports.cpp']]],
+  ['ls_5flistgamesinteractive_20',['LS_ListGamesInteractive',['../localsports_8h.html#ac65e0ec07dac8fec7a853d91f790a211',1,'LS_ListGamesInteractive():&#160;localsports.cpp'],['../localsports_8cpp.html#ac65e0ec07dac8fec7a853d91f790a211',1,'LS_ListGamesInteractive():&#160;localsports.cpp']]],
+  ['ls_5flistmessagesinteractive_21',['LS_ListMessagesInteractive',['../localsports_8h.html#a85337b1fb4b0c0bb2e1ea5eb8b095898',1,'LS_ListMessagesInteractive():&#160;localsports.cpp'],['../localsports_8cpp.html#a85337b1fb4b0c0bb2e1ea5eb8b095898',1,'LS_ListMessagesInteractive():&#160;localsports.cpp']]],
+  ['ls_5flistplayersinteractive_22',['LS_ListPlayersInteractive',['../localsports_8h.html#a850907ca73190c6841e5204ba07b880a',1,'LS_ListPlayersInteractive():&#160;localsports.cpp'],['../localsports_8cpp.html#a850907ca73190c6841e5204ba07b880a',1,'LS_ListPlayersInteractive():&#160;localsports.cpp']]],
+  ['ls_5frecordresultinteractive_23',['LS_RecordResultInteractive',['../localsports_8cpp.html#aed2b2fa736d2060bdb8d9bea3821473a',1,'LS_RecordResultInteractive():&#160;localsports.cpp'],['../localsports_8h.html#aed2b2fa736d2060bdb8d9bea3821473a',1,'LS_RecordResultInteractive():&#160;localsports.cpp']]],
+  ['ls_5frecordstatsinteractive_24',['LS_RecordStatsInteractive',['../localsports_8h.html#a04c27fb1a31321f28f13772d75046246',1,'LS_RecordStatsInteractive():&#160;localsports.cpp'],['../localsports_8cpp.html#a04c27fb1a31321f28f13772d75046246',1,'LS_RecordStatsInteractive():&#160;localsports.cpp']]],
+  ['ls_5fremoveplayerinteractive_25',['LS_RemovePlayerInteractive',['../localsports_8h.html#a9af01eaf1cfc99b151a6bd53ec0f47dc',1,'LS_RemovePlayerInteractive():&#160;localsports.cpp'],['../localsports_8cpp.html#a9af01eaf1cfc99b151a6bd53ec0f47dc',1,'LS_RemovePlayerInteractive():&#160;localsports.cpp']]],
+  ['ls_5fviewplayertotalsinteractive_26',['LS_ViewPlayerTotalsInteractive',['../localsports_8h.html#aaff947fb9d3c2530ca58838200be9110',1,'LS_ViewPlayerTotalsInteractive():&#160;localsports.cpp'],['../localsports_8cpp.html#aaff947fb9d3c2530ca58838200be9110',1,'LS_ViewPlayerTotalsInteractive():&#160;localsports.cpp']]]
 ];

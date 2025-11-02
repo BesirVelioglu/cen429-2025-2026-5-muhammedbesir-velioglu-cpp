@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setup_0',['SetUp',['../class_local_sports_test.html#aeae2f6f9c7af18a72cd4e01218b6d15d',1,'LocalSportsTest::SetUp()'],['../class_math_utility_test.html#ac05460de2c43e3005d1e4db0d530f58c',1,'MathUtilityTest::SetUp()']]]
+  ['getoutput_0',['getOutput',['../class_local_sports_test.html#a34802027649f3c94d0a567f572235771',1,'LocalSportsTest']]]
 ];

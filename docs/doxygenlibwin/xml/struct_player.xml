@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/localsports.h" line="17" column="14" bodyfile="src/LocalSports/header/localsports.h" bodystart="17" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/localsports.h" line="17" column="14" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/localsports.h" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_player_1aa1b57c638d18ebdc69a09ff873cb6684" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/localsports.h" line="18" column="10" bodyfile="src/LocalSports/header/localsports.h" bodystart="18" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/localsports.h" line="18" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/localsports.h" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_player_1a9091b1c10c883cea0c83db80674b2fc5" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/localsports.h" line="19" column="10" bodyfile="src/LocalSports/header/localsports.h" bodystart="19" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/localsports.h" line="19" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/localsports.h" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_player_1aea29095afc42b44e9194b4b43eb87557" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/localsports.h" line="20" column="10" bodyfile="src/LocalSports/header/localsports.h" bodystart="20" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/localsports.h" line="20" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/localsports.h" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_player_1a415560bf066e5e1937c850e533a00eed" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/localsports.h" line="21" column="10" bodyfile="src/LocalSports/header/localsports.h" bodystart="21" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/localsports.h" line="21" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/localsports.h" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_player_1aad404d23f26988b43b95e61f28045346" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/localsports.h" line="22" column="13" bodyfile="src/LocalSports/header/localsports.h" bodystart="22" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/localsports.h" line="22" column="13" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/localsports.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -99,7 +99,7 @@
         <link refid="struct_player"/>
       </node>
     </collaborationgraph>
-    <location file="src/LocalSports/header/localsports.h" line="16" column="1" bodyfile="src/LocalSports/header/localsports.h" bodystart="16" bodyend="23"/>
+    <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/localsports.h" line="16" column="1" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/localsports.h" bodystart="16" bodyend="23"/>
     <listofallmembers>
       <member refid="struct_player_1aad404d23f26988b43b95e61f28045346" prot="public" virt="non-virtual"><scope>Player</scope><name>active</name></member>
       <member refid="struct_player_1a415560bf066e5e1937c850e533a00eed" prot="public" virt="non-virtual"><scope>Player</scope><name>email</name></member>

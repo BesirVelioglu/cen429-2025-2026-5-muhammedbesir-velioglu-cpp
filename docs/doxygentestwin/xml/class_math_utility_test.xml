@@ -13,10 +13,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Test integer variable </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/tests/utility/utility_test.cpp" line="21" column="7" bodyfile="src/tests/utility/utility_test.cpp" bodystart="21" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/utility/utility_test.cpp" line="53" column="7" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/utility/utility_test.cpp" bodystart="53" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -27,12 +28,14 @@
         <name>SetUp</name>
         <qualifiedname>MathUtilityTest::SetUp</qualifiedname>
         <briefdescription>
+<para>Set up test environment before each test case. </para>
         </briefdescription>
         <detaileddescription>
+<para>Initializes test data for each test </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/tests/utility/utility_test.cpp" line="23" column="8" bodyfile="src/tests/utility/utility_test.cpp" bodystart="23" bodyend="25"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/utility/utility_test.cpp" line="59" column="8" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/utility/utility_test.cpp" bodystart="59" bodyend="61"/>
       </memberdef>
       <memberdef kind="function" id="class_math_utility_test_1a560c5797ed1c41f18332585712abc46e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -41,17 +44,21 @@
         <name>TearDown</name>
         <qualifiedname>MathUtilityTest::TearDown</qualifiedname>
         <briefdescription>
+<para>Clean up test environment after each test case. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cleans up test data after each test </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/tests/utility/utility_test.cpp" line="27" column="8" bodyfile="src/tests/utility/utility_test.cpp" bodystart="27" bodyend="29"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/utility/utility_test.cpp" line="67" column="8" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/utility/utility_test.cpp" bodystart="67" bodyend="69"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Test fixture for MathUtility unit tests. </para>
     </briefdescription>
     <detaileddescription>
+<para>Provides setup and teardown functionality for all test cases. Manages test data initialization and cleanup. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="1">
@@ -75,7 +82,7 @@
         <label>testing::Test</label>
       </node>
     </collaborationgraph>
-    <location file="src/tests/utility/utility_test.cpp" line="19" column="1" bodyfile="src/tests/utility/utility_test.cpp" bodystart="19" bodyend="30"/>
+    <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/utility/utility_test.cpp" line="51" column="1" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/utility/utility_test.cpp" bodystart="51" bodyend="70"/>
     <listofallmembers>
       <member refid="class_math_utility_test_1a8b5b3648bdf4b4b0870d968347186b26" prot="public" virt="non-virtual"><scope>MathUtilityTest</scope><name>a</name></member>
       <member refid="class_math_utility_test_1ac05460de2c43e3005d1e4db0d530f58c" prot="protected" virt="non-virtual"><scope>MathUtilityTest</scope><name>SetUp</name></member>

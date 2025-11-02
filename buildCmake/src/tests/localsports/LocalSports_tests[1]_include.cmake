@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake/src/tests/localsports/LocalSports_tests[1]_tests.cmake")
+  include("C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake/src/tests/localsports/LocalSports_tests[1]_tests.cmake")
+else()
+  add_test(LocalSports_tests_NOT_BUILT LocalSports_tests_NOT_BUILT)
+endif()

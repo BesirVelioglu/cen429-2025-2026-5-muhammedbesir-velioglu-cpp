@@ -1,34 +1,342 @@
-\doxysection{src/tests/\+Local\+Sports/localsports\+\_\+test.cpp File Reference}
-\hypertarget{localsports__test_8cpp}{}\label{localsports__test_8cpp}\index{src/tests/LocalSports/localsports\_test.cpp@{src/tests/LocalSports/localsports\_test.cpp}}
+\doxysection{ Ahmed/\+Desktop/cen429-\/2025-\/2026-\/5-\/muhammedbesir-\/velioglu-\/cpp/src/tests/\+Local\+Sports/localsports\+\_\+test.cpp File Reference}
+\hypertarget{localsports__test_8cpp}{}\label{localsports__test_8cpp}\index{ Ahmed/Desktop/cen429-\/2025-\/2026-\/5-\/muhammedbesir-\/velioglu-\/cpp/src/tests/LocalSports/localsports\_test.cpp@{ Ahmed/Desktop/cen429-\/2025-\/2026-\/5-\/muhammedbesir-\/velioglu-\/cpp/src/tests/LocalSports/localsports\_test.cpp}}
+
+
+Comprehensive unit tests for Local\+Sports library.  
+
+
 {\ttfamily \#include \"{}gtest/gtest.\+h\"{}}\newline
-{\ttfamily \#include \"{}../../\+Local\+Sports/header/\+Local\+Sports.\+h\"{}}\newline
+{\ttfamily \#include \"{}../../localsports/header/localsports.\+h\"{}}\newline
+{\ttfamily \#include \"{}../../localsportsapp/header/localsportsapp.\+h\"{}}\newline
+{\ttfamily \#include \"{}../../localsports/header/security\+\_\+layer.\+h\"{}}\newline
+{\ttfamily \#include \"{}../../localsports/header/security\+\_\+hardening.\+h\"{}}\newline
+{\ttfamily \#include \"{}../../localsports/header/rasp.\+h\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
 Include dependency graph for localsports\+\_\+test.\+cpp\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=288pt]{localsports__test_8cpp__incl}
+\includegraphics[width=350pt]{localsports__test_8cpp__incl}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}
+\begin{DoxyCompactList}\small\item\em Test fixture for Local\+Sports library unit tests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{localsports__test_8cpp_a46a06f391f96e5bcd8a80760946bfeaa}{ENABLE\+\_\+\+Local\+Sports\+\_\+\+TEST}}
+\item 
+\#define \mbox{\hyperlink{localsports__test_8cpp_ab9959e75e26bc66b3733ddc04de6b4cf}{REMOVE}}~remove
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{localsports__test_8cpp_aa03c9d9d88d35887fe80898cb67fb01e}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Test\+Add)
-\item 
-\mbox{\hyperlink{localsports__test_8cpp_a73edc5932f250ea8b2d1299cd49384d8}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Test\+Subtract)
-\item 
-\mbox{\hyperlink{localsports__test_8cpp_a3ac6db8bffa5deb89afe03dd888025e8}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Test\+Multiply)
-\item 
-\mbox{\hyperlink{localsports__test_8cpp_aa67ad5fe108ea189b3cb1dc8fdd8fdb8}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Test\+Divide)
-\item 
-\mbox{\hyperlink{localsports__test_8cpp_a8abe62bf8592204a5d5d4cacd8c7f85c}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Test\+Divide\+By\+Zero)
-\item 
+\mbox{\hyperlink{localsports__test_8cpp_a1942beb4c99f4077d3ecfdeefe4e4f3e}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Init\+Creates\+Database)
+\begin{DoxyCompactList}\small\item\em Test that LS\+\_\+\+Init() creates the database file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a1a661498febbfc9ac376ea03bc72bc76}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Init\+Creates\+Default\+Admin)
+\begin{DoxyCompactList}\small\item\em Test that LS\+\_\+\+Init() creates default admin user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ad2474200ea606bfc9d46ac0a91460379}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Logout\+Without\+Login)
+\begin{DoxyCompactList}\small\item\em Test logout functionality when not logged in. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a4262b04b5888dae4d1b1e532078c316b}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Is\+Authenticated\+Initial\+State)
+\begin{DoxyCompactList}\small\item\em Test initial authentication state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a0c0c0d4a092228c058851827332900aa}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Current\+Username\+When\+Not\+Authenticated)
+\begin{DoxyCompactList}\small\item\em Test current username when not authenticated. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a88c7421670d4856b5cdf59f51a0708d2}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Auth\+Logout\+Clears\+Session)
+\begin{DoxyCompactList}\small\item\em Test that logout clears authentication session. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_adf11bcfdef8944a0bc1feea03fce7fb0}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, List\+Players\+When\+Empty)
+\begin{DoxyCompactList}\small\item\em Test listing players when database is empty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a44b61c1543e565dc349abcb3a51a8b5b}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Player\+Operations\+Structure)
+\begin{DoxyCompactList}\small\item\em Test structure size validation for all data structures. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a28c25def17efb334d47efa6d8177f31e}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, List\+Games\+When\+Empty)
+\begin{DoxyCompactList}\small\item\em Test listing games when database is empty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ae1ccce82f369f5198deaf30f925c8696}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, View\+Player\+Totals\+When\+Empty)
+\begin{DoxyCompactList}\small\item\em Test viewing player totals when database is empty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a70849af5b4d8163d7dc6448534ca74db}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, List\+Messages\+When\+Empty)
+\begin{DoxyCompactList}\small\item\em Test listing messages when database is empty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a1e162a29774e3cf93b4bfa76e99f49a0}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Database\+File\+Names)
+\begin{DoxyCompactList}\small\item\em Test that database file name constants are defined. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a4080525b95b7b1e067c2d8f3df31fe1c}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Multiple\+Init\+Calls)
+\begin{DoxyCompactList}\small\item\em Test multiple initialization calls. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a7d3f6c52cdc87221a05ca4e46cb39f82}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Operations\+Before\+Init)
+\begin{DoxyCompactList}\small\item\em Test operations before initialization. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_aa2e5bcd114b12af1f6e7a3153835a772}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Full\+Workflow)
+\begin{DoxyCompactList}\small\item\em Test complete workflow integration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_afe18f3d98d30a8bfca78839a02e18899}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Current\+Username\+Memory\+Safety)
+\begin{DoxyCompactList}\small\item\em Test memory safety of Current\+Username function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ae951fdde1197d8f6c2d050794784a30b}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Is\+Authenticated\+Consistency)
+\begin{DoxyCompactList}\small\item\em Test consistency of Is\+Authenticated function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_adacd42dc1f22618719f1ae0290b5d234}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Player\+Struct\+Fields)
+\begin{DoxyCompactList}\small\item\em Test Player struct field assignments and retrieval. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a6c65112b665a350411ccd1276c75704a}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Game\+Struct\+Fields)
+\begin{DoxyCompactList}\small\item\em Test Game struct field assignments and retrieval. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_af6e3988950757106bf574fbe3883d644}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Stat\+Struct\+Fields)
+\begin{DoxyCompactList}\small\item\em Test Stat struct field assignments and retrieval. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_abb98f240b976ced50484528423eb3a40}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Message\+Struct\+Fields)
+\begin{DoxyCompactList}\small\item\em Test Message struct field assignments and retrieval. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a4250c108dd3e8856e9fe20a686fe6326}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, User\+Struct\+Fields)
+\begin{DoxyCompactList}\small\item\em Test User struct field assignments and retrieval. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ae797d523e6a2d607c17d0b281f723d05}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Add\+Player\+Interactive\+Basic)
+\begin{DoxyCompactList}\small\item\em Test LS\+\_\+\+Add\+Player\+Interactive function with mock input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a8db5b401594d9f7af55c70b1125074e8}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Edit\+Player\+Interactive\+Basic)
+\begin{DoxyCompactList}\small\item\em Test LS\+\_\+\+Edit\+Player\+Interactive function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_afa9f7d361576ac2daebdf8e4be61566e}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Remove\+Player\+Interactive\+Basic)
+\begin{DoxyCompactList}\small\item\em Test LS\+\_\+\+Remove\+Player\+Interactive function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a5f53f0cd030473ec18b30c664819b4e4}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Add\+Game\+Interactive\+Basic)
+\begin{DoxyCompactList}\small\item\em Test LS\+\_\+\+Add\+Game\+Interactive function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a1baf403bb3815873f038ed7263bcaf1d}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Record\+Result\+Interactive\+Basic)
+\begin{DoxyCompactList}\small\item\em Test LS\+\_\+\+Record\+Result\+Interactive function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ad9ae92c12ad9a9d2e31d288c3c666ec2}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Record\+Stats\+Interactive\+Basic)
+\begin{DoxyCompactList}\small\item\em Test LS\+\_\+\+Record\+Stats\+Interactive function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a362c2974488ace602007454b1eaeb43e}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Add\+Message\+Interactive\+Basic)
+\begin{DoxyCompactList}\small\item\em Test LS\+\_\+\+Add\+Message\+Interactive function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_adfabfaf8af1b50a694a31aa362678557}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Auth\+Login\+Interactive\+Basic)
+\begin{DoxyCompactList}\small\item\em Test LS\+\_\+\+Auth\+Login\+Interactive function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_aed135dc2369b88f55985a826f06325ca}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Auth\+Register\+Interactive\+Basic)
+\begin{DoxyCompactList}\small\item\em Test LS\+\_\+\+Auth\+Register\+Interactive function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ad97e713a2ee1eb18bf1e901637dd4747}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Current\+Username\+Pointer\+Stability)
+\begin{DoxyCompactList}\small\item\em Test Current\+Username function returns consistent pointer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_aea64b4f79548f276ed4c4e8b8c2f0fc3}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Multiple\+Auth\+State\+Checks)
+\begin{DoxyCompactList}\small\item\em Test multiple authentication state checks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a1be67184910a3075a24f99d46f1e429f}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Database\+Reinitialization)
+\begin{DoxyCompactList}\small\item\em Test database reinitialization. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a8b2ff5b00f86b25ce9528233976d3352}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, App\+Start\+Initialization)
+\begin{DoxyCompactList}\small\item\em Test LS\+\_\+\+App\+Start function initialization. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_abe2b83bf2d191d453e1085935c0fbe7b}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, App\+Initialization\+Sequence)
+\begin{DoxyCompactList}\small\item\em Test application initialization sequence. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ae7b41d7890af02a2f5581689b481e8ba}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Secure\+Buffer\+Default\+Construction)
+\begin{DoxyCompactList}\small\item\em Test Secure\+Buffer default construction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a8fb19176cc78d66ab754d63220cdc3a5}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Secure\+Buffer\+Sized\+Construction)
+\begin{DoxyCompactList}\small\item\em Test Secure\+Buffer construction with size. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a9ec365cda67a2e0140753dc2711c3566}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Secure\+Buffer\+Resize)
+\begin{DoxyCompactList}\small\item\em Test Secure\+Buffer resize functionality. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a74bd3607ee202b0d5d806014c405a5e7}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Secure\+Buffer\+Cleanse)
+\begin{DoxyCompactList}\small\item\em Test Secure\+Buffer cleanse functionality. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_affbf8e6ff2b5a5826d5fd4b09ed70dec}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Secure\+Buffer\+Move\+Construction)
+\begin{DoxyCompactList}\small\item\em Test Secure\+Buffer move construction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a9fa9a91b9510cf574c802c714b4c54f5}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Secure\+Bzero\+Function)
+\begin{DoxyCompactList}\small\item\em Test secure\+\_\+bzero static function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a64f97a06c3207a975b4007e98bca499d}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Crypto\+Derive\+Key\+From\+Passphrase)
+\begin{DoxyCompactList}\small\item\em Test crypto\+::\+Derive\+Key\+From\+Passphrase. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a5d6c3237a2478f7ddf847b1acddf3b97}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Crypto\+Encrypt\+For\+DB)
+\begin{DoxyCompactList}\small\item\em Test crypto\+::\+Encrypt\+For\+DB. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a7bbd49debc765f3a9df8d35597b1e517}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Crypto\+Decrypt\+From\+DB)
+\begin{DoxyCompactList}\small\item\em Test crypto\+::\+Decrypt\+From\+DB. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ae12e316ab0d04a5589e91ec416200463}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Read\+Password\+Secure)
+\begin{DoxyCompactList}\small\item\em Test read\+\_\+password\+\_\+secure function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a357345d589c133d1129aa4b44e043208}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, App\+Key\+Init\+From\+Env\+Or\+Prompt)
+\begin{DoxyCompactList}\small\item\em Test App\+Key\+\_\+\+Init\+From\+Env\+Or\+Prompt. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_adc8959d91209339608bda7671bd4ff6f}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, App\+Key\+Get)
+\begin{DoxyCompactList}\small\item\em Test App\+Key\+\_\+\+Get function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a1196aa5e4909b2870c72212e47c4dbb6}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, App\+Key\+Is\+Ready)
+\begin{DoxyCompactList}\small\item\em Test App\+Key\+\_\+\+Is\+Ready function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_af5b988d22515624139c399abf323f596}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Is\+Debugger\+Present)
+\begin{DoxyCompactList}\small\item\em Test Is\+Debugger\+Present function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_aa8dacc85e752af2800ae5e5ea2085b50}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Start\+Anti\+Debug\+Monitor)
+\begin{DoxyCompactList}\small\item\em Test Start\+Anti\+Debug\+Monitor function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a7d716507dbf3e6abbb1575334b952abf}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Stop\+Anti\+Debug\+Monitor)
+\begin{DoxyCompactList}\small\item\em Test Stop\+Anti\+Debug\+Monitor function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ad0c3e0ffe3e909805f84107459f26d55}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Get\+Executable\+Hash)
+\begin{DoxyCompactList}\small\item\em Test Get\+Executable\+Hash function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a86d4ae388fd1691ee22c8cd50acbd713}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Verify\+Integrity)
+\begin{DoxyCompactList}\small\item\em Test Verify\+Integrity function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a803651e0d82feb70feba2bad09512a30}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Is\+Running\+In\+VM)
+\begin{DoxyCompactList}\small\item\em Test Is\+Running\+In\+VM function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a7c08ba229b804e7de435a349498e6d84}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Is\+Rooted\+Or\+Jailbroken)
+\begin{DoxyCompactList}\small\item\em Test Is\+Rooted\+Or\+Jailbroken function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a5a4f41d18ca629b074c23cad9b963db4}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Perform\+Security\+Checks)
+\begin{DoxyCompactList}\small\item\em Test Perform\+Security\+Checks function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_aabbc9ba1f7fb44223c77a0a91c91482f}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Opaque\+Predicate\+Always\+True)
+\begin{DoxyCompactList}\small\item\em Test Opaque\+Predicate\+Always\+True function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a07c0c4ac8e675d5ed19de5e1c3437d34}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Opaque\+Predicate\+Always\+False)
+\begin{DoxyCompactList}\small\item\em Test Opaque\+Predicate\+Always\+False function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a59f2f3b3678a236991af5d5cb0bd22ad}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Opaque\+Math\+Predicate)
+\begin{DoxyCompactList}\small\item\em Test Opaque\+Math\+Predicate function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ab650615bf1c51c814cbd7aab6c50d5ce}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Obfuscate\+String)
+\begin{DoxyCompactList}\small\item\em Test Obfuscate\+String function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a398f49b19d2336fa1b5c94b890e5aa7c}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Deobfuscate\+String)
+\begin{DoxyCompactList}\small\item\em Test Deobfuscate\+String function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a1c34d09955dc4ed58c637ff23390e5e1}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Obfuscate\+Value)
+\begin{DoxyCompactList}\small\item\em Test Obfuscate\+Value function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a7e405c61a875e852937469d43d8e3f4a}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Deobfuscate\+Value)
+\begin{DoxyCompactList}\small\item\em Test Deobfuscate\+Value function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_aae2576164e63c0ac6673511e88456018}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Opaque\+Loop)
+\begin{DoxyCompactList}\small\item\em Test Opaque\+Loop function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_aff0af190e77dc1cc1f41ac47487df16a}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Obfuscate\+Boolean\+Condition)
+\begin{DoxyCompactList}\small\item\em Test Obfuscate\+Boolean\+Condition function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ae70cca1bf71ae701e03762425373cb88}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Obfuscate\+Add)
+\begin{DoxyCompactList}\small\item\em Test Obfuscate\+Add function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_acd6edb64c644cc5bc8e47a04fa23203f}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Obfuscate\+Multiply)
+\begin{DoxyCompactList}\small\item\em Test Obfuscate\+Multiply function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a41b71255ab626d0da97249045ca8641c}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Is\+Debug\+Build)
+\begin{DoxyCompactList}\small\item\em Test Is\+Debug\+Build function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a8619eaac9074859f2738827319db67d5}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPDetect\+Debugger)
+\begin{DoxyCompactList}\small\item\em Test Detect\+Debugger function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a66bd2b87443089feb725d23bee282dee}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPStart\+Debugger\+Monitoring)
+\begin{DoxyCompactList}\small\item\em Test Start\+Debugger\+Monitoring function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ab86516d6e1e9dd6535cd679ad456ff1c}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPStop\+Debugger\+Monitoring)
+\begin{DoxyCompactList}\small\item\em Test Stop\+Debugger\+Monitoring function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_add3b3ab07c53980e465a31c63121d6d2}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPCalculate\+Text\+Section\+Checksum)
+\begin{DoxyCompactList}\small\item\em Test Calculate\+Text\+Section\+Checksum function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a593109b9ff5e236d061fa9e9bc76c5fa}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPVerify\+Text\+Section\+Integrity)
+\begin{DoxyCompactList}\small\item\em Test Verify\+Text\+Section\+Integrity function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a86d09f10828936b8ef5ff6dc784ff2c3}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPBoot\+Time\+Integrity\+Check)
+\begin{DoxyCompactList}\small\item\em Test Boot\+Time\+Integrity\+Check function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ad470321c59677470ebdd0a47d427f5ec}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPDetect\+IATHooks)
+\begin{DoxyCompactList}\small\item\em Test Detect\+IATHooks function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a0f84b6c4440ce0d37bc858e428c923dc}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPDetect\+PLTHooks)
+\begin{DoxyCompactList}\small\item\em Test Detect\+PLTHooks function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a521f08d90dfe96ad941d95ecedb83419}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPIs\+Thunk\+Modified)
+\begin{DoxyCompactList}\small\item\em Test Is\+Thunk\+Modified function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a045271184fe048d645170594012c9068}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPScan\+Critical\+Functions)
+\begin{DoxyCompactList}\small\item\em Test Scan\+Critical\+Functions function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_af1380b08563b4e689e458fcad1ad6c46}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPLog\+Security\+Event)
+\begin{DoxyCompactList}\small\item\em Test Log\+Security\+Event function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a87bfff49502ee57792dff4a1b7b806c1}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPGet\+Security\+Event\+Log)
+\begin{DoxyCompactList}\small\item\em Test Get\+Security\+Event\+Log function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a76698294030ec079bceb11efaa3f3799}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPClear\+Security\+Log)
+\begin{DoxyCompactList}\small\item\em Test Clear\+Security\+Log function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a54fe7b9bc835333c514f4e82541c3c97}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPVerify\+Process\+Isolation)
+\begin{DoxyCompactList}\small\item\em Test Verify\+Process\+Isolation function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a14b8f743dce0b42fc696014807bc2bcf}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPIs\+RASPActive)
+\begin{DoxyCompactList}\small\item\em Test Is\+RASPActive function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_aea00e9e8da6ce2e0b799ee960e162d1a}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPPerform\+Security\+Scan)
+\begin{DoxyCompactList}\small\item\em Test Perform\+Security\+Scan function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ab8036f956f7352ac18136a09b4ac8250}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPConfigure\+RASP)
+\begin{DoxyCompactList}\small\item\em Test Configure\+RASP function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a3111b3a2437d58ad3bc80abab8cdca36}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPGet\+RASPConfig)
+\begin{DoxyCompactList}\small\item\em Test Get\+RASPConfig function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a62c08dabeed6f89b17fec5e8a5db5486}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPInitialize\+RASP)
+\begin{DoxyCompactList}\small\item\em Test Initialize\+RASP function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ae27ac0fa996e04ff3c9725cf91c14388}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPShutdown\+RASP)
+\begin{DoxyCompactList}\small\item\em Test Shutdown\+RASP function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a0973931069f84afdbf7263adb9407677}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, RASPHandle\+Critical\+Event)
+\begin{DoxyCompactList}\small\item\em Test Handle\+Critical\+Event function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_afe2ccfc17db703e2381d1fffcb61e25f}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Init\+Edge\+Case\+Database)
+\begin{DoxyCompactList}\small\item\em Test LS\+\_\+\+Init with edge case database path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a92797d8915573daa1e1bdbf60f35906c}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Player\+Operations\+Empty\+Strings)
+\begin{DoxyCompactList}\small\item\em Test player operations with empty strings. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a22ced2c8459469074345afb3e008471a}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Game\+Operations\+Invalid\+Date)
+\begin{DoxyCompactList}\small\item\em Test game operations with invalid date format. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_af8f50a803867ea33fc2a541f3ce80c38}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Stats\+Operations\+Boundary\+Values)
+\begin{DoxyCompactList}\small\item\em Test statistics operations with boundary values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_affa5c25e2e8572ab0ed4e99b83504e9a}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Message\+Operations\+Long\+Text)
+\begin{DoxyCompactList}\small\item\em Test message operations with long text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ad186cd2305a629f3f2c9c8a9c083f7d4}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Auth\+Special\+Characters)
+\begin{DoxyCompactList}\small\item\em Test authentication with special characters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ac64bd095079a7ac99f3050c06cf806ee}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Complete\+Player\+Lifecycle)
+\begin{DoxyCompactList}\small\item\em Test complete player lifecycle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ae2b02d060efb2f0214d23ed2386bb650}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Complete\+Game\+Lifecycle)
+\begin{DoxyCompactList}\small\item\em Test complete game lifecycle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a232f74cf9206f3e7cd85cf50d83b5b98}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Concurrent\+Operations)
+\begin{DoxyCompactList}\small\item\em Test concurrent operations. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a8fa84302e05431eba3694e93996f4ca3}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, App\+Banner\+Function)
+\begin{DoxyCompactList}\small\item\em Test banner function output. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a06c4cb8f447a800b50cf8178f0a09201}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, App\+Menu\+Structure)
+\begin{DoxyCompactList}\small\item\em Test application menu structure. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_afc2df91a756423f1d623f131031027ec}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Secure\+Buffer\+Move\+Assignment)
+\begin{DoxyCompactList}\small\item\em Test Secure\+Buffer move assignment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ada4871f53b10262f7f3c6f7002d91417}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Secure\+Buffer\+Resize\+To\+Zero)
+\begin{DoxyCompactList}\small\item\em Test Secure\+Buffer with zero size resize. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a0ec6a16dcab2c1684f4143088b5a22fd}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Secure\+Buffer\+Large\+Size)
+\begin{DoxyCompactList}\small\item\em Test Secure\+Buffer with large size. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a577225af8278e9421ddbdc856f8095b6}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Crypto\+Empty\+Input)
+\begin{DoxyCompactList}\small\item\em Test crypto operations with empty input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_aaf3b75a37c80b5f1c3f9d8f00f1f24f4}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Crypto\+Large\+Input)
+\begin{DoxyCompactList}\small\item\em Test crypto operations with large input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a81f25bc7ff660bc131785e95a9936410}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Crypto\+Key\+Derivation\+Iterations)
+\begin{DoxyCompactList}\small\item\em Test crypto key derivation with various iterations. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_abb028d391f864b804f402629960a515d}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Call\+Obfuscated)
+\begin{DoxyCompactList}\small\item\em Test Call\+Obfuscated function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_af9c57631cc26f358e64dc68d39ec92d1}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Fake\+Security\+Check)
+\begin{DoxyCompactList}\small\item\em Test Fake\+Security\+Check function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a679e2ef4981cedec938f895af0ded1ac}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Secure\+Log)
+\begin{DoxyCompactList}\small\item\em Test Secure\+Log function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_ab4e1bbc52de3b2cec4673df65c56140b}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Opaque\+Loop\+Variations)
+\begin{DoxyCompactList}\small\item\em Test Opaque\+Loop with various iteration counts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{localsports__test_8cpp_a30472eeb19f75df945c0563b4610fd76}{TEST\+\_\+F}} (\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}, Hardening\+Obfuscation\+Round\+Trip)
+\begin{DoxyCompactList}\small\item\em Test obfuscation round-\/trip with various values. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{localsports__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
 \begin{DoxyCompactList}\small\item\em The main function of the test program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Comprehensive unit tests for Local\+Sports library. 
+
+\begin{DoxyAuthor}{Author}
+Test Suite Author 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+This test file provides comprehensive unit test coverage for the Local\+Sports library. It includes tests for database operations, authentication, CRUD operations, and data structure validation.\hypertarget{utility__test_8cpp_test_categories}{}\doxysubsection{\texorpdfstring{Test Categories}{Test Categories}}\label{utility__test_8cpp_test_categories}
+
+\begin{DoxyItemize}
+\item Database initialization and setup
+\item Authentication (login, logout, register)
+\item Player management (CRUD operations)
+\item Game management (CRUD operations)
+\item Statistics tracking and aggregation
+\item Message handling and communication
+\item Data structure validation
+\item Memory safety and consistency
+\item Edge cases and error handling
+\item Integration workflows
+\end{DoxyItemize}\hypertarget{utility__test_8cpp_usage}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{utility__test_8cpp_usage}
+Run tests using Google\+Test framework\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./LocalSports\_tests}
+
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+Some interactive functions require I/O mocking for complete testing 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+localsports.\+h for API documentation 
+\end{DoxySeeAlso}
+
+
+Definition in file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{localsports__test_8cpp_a46a06f391f96e5bcd8a80760946bfeaa}\label{localsports__test_8cpp_a46a06f391f96e5bcd8a80760946bfeaa} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!ENABLE\_LocalSports\_TEST@{ENABLE\_LocalSports\_TEST}}
+\index{ENABLE\_LocalSports\_TEST@{ENABLE\_LocalSports\_TEST}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{ENABLE\_LocalSports\_TEST}{ENABLE\_LocalSports\_TEST}}
+{\footnotesize\ttfamily \#define ENABLE\+\_\+\+Local\+Sports\+\_\+\+TEST}
+
+
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ab9959e75e26bc66b3733ddc04de6b4cf}\label{localsports__test_8cpp_ab9959e75e26bc66b3733ddc04de6b4cf} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!REMOVE@{REMOVE}}
+\index{REMOVE@{REMOVE}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{REMOVE}{REMOVE}}
+{\footnotesize\ttfamily \#define REMOVE~remove}
+
+
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00060}{60}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
 
 
 \doxysubsection{Function Documentation}
@@ -52,57 +360,2936 @@ The main function of the test program.
 \begin{DoxyReturn}{Returns}
 int The exit status of the program. 
 \end{DoxyReturn}
+\texorpdfstring{$<$}{<} Initialize Google Test framework
 
+\texorpdfstring{$<$}{<} Run all test cases and return exit status
 
-Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00050}{50}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01936}{1936}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
 
-\Hypertarget{localsports__test_8cpp_aa03c9d9d88d35887fe80898cb67fb01e}\label{localsports__test_8cpp_aa03c9d9d88d35887fe80898cb67fb01e} 
+\Hypertarget{localsports__test_8cpp_a5f53f0cd030473ec18b30c664819b4e4}\label{localsports__test_8cpp_a5f53f0cd030473ec18b30c664819b4e4} 
 \index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
 \index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
-{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Test\+Add}]{ }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [1/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Add\+Game\+Interactive\+Basic}]{ }\end{DoxyParamCaption})}
 
 
 
-Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+Test LS\+\_\+\+Add\+Game\+Interactive function. 
 
-\Hypertarget{localsports__test_8cpp_aa67ad5fe108ea189b3cb1dc8fdd8fdb8}\label{localsports__test_8cpp_aa67ad5fe108ea189b3cb1dc8fdd8fdb8} 
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000026}{Test}}]Verifies game addition functionality \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Add\+Game\+Interactive -\/ Basic functionality
+
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Clear output buffer
+
+\texorpdfstring{$<$}{<} Provide input\+: date, time, opponent, location
+
+\texorpdfstring{$<$}{<} Call add game function
+
+\texorpdfstring{$<$}{<} Get function output
+
+\texorpdfstring{$<$}{<} Verify function produces output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00700}{700}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a362c2974488ace602007454b1eaeb43e}\label{localsports__test_8cpp_a362c2974488ace602007454b1eaeb43e} 
 \index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
 \index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
-{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Test\+Divide}]{ }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [2/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Add\+Message\+Interactive\+Basic}]{ }\end{DoxyParamCaption})}
 
 
 
-Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+Test LS\+\_\+\+Add\+Message\+Interactive function. 
 
-\Hypertarget{localsports__test_8cpp_a8abe62bf8592204a5d5d4cacd8c7f85c}\label{localsports__test_8cpp_a8abe62bf8592204a5d5d4cacd8c7f85c} 
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000029}{Test}}]Verifies message addition functionality \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Add\+Message\+Interactive -\/ Basic functionality
+
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Clear output buffer
+
+\texorpdfstring{$<$}{<} Provide message text
+
+\texorpdfstring{$<$}{<} Call add message function
+
+\texorpdfstring{$<$}{<} Get function output
+
+\texorpdfstring{$<$}{<} Verify function produces output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00748}{748}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ae797d523e6a2d607c17d0b281f723d05}\label{localsports__test_8cpp_ae797d523e6a2d607c17d0b281f723d05} 
 \index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
 \index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
-{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Test\+Divide\+By\+Zero}]{ }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [3/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Add\+Player\+Interactive\+Basic}]{ }\end{DoxyParamCaption})}
 
 
 
-Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+Test LS\+\_\+\+Add\+Player\+Interactive function with mock input. 
 
-\Hypertarget{localsports__test_8cpp_a3ac6db8bffa5deb89afe03dd888025e8}\label{localsports__test_8cpp_a3ac6db8bffa5deb89afe03dd888025e8} 
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000023}{Test}}]Verifies player addition functionality \end{DoxyRefDesc}
+
+
+Tests adding a player through interactive function \texorpdfstring{$<$}{<} Test\+: Add\+Player\+Interactive -\/ Basic functionality
+
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Clear output buffer
+
+\texorpdfstring{$<$}{<} Provide input\+: name, position, phone, email
+
+\texorpdfstring{$<$}{<} Call add player function
+
+\texorpdfstring{$<$}{<} Get function output
+
+\texorpdfstring{$<$}{<} Verify output is not empty
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00646}{646}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a8fa84302e05431eba3694e93996f4ca3}\label{localsports__test_8cpp_a8fa84302e05431eba3694e93996f4ca3} 
 \index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
 \index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
-{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Test\+Multiply}]{ }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [4/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{App\+Banner\+Function}]{ }\end{DoxyParamCaption})}
 
 
 
-Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+Test banner function output. 
 
-\Hypertarget{localsports__test_8cpp_a73edc5932f250ea8b2d1299cd49384d8}\label{localsports__test_8cpp_a73edc5932f250ea8b2d1299cd49384d8} 
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000108}{Test}}]Verifies banner displays correctly \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Banner function
+
+\texorpdfstring{$<$}{<} Initialize system
+
+\texorpdfstring{$<$}{<} Clear output
+
+\texorpdfstring{$<$}{<} Should not be authenticated
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01726}{1726}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_abe2b83bf2d191d453e1085935c0fbe7b}\label{localsports__test_8cpp_abe2b83bf2d191d453e1085935c0fbe7b} 
 \index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
 \index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
-{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Test\+Subtract}]{ }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [5/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{App\+Initialization\+Sequence}]{ }\end{DoxyParamCaption})}
 
 
 
-Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+Test application initialization sequence. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000036}{Test}}]Verifies initialization order doesn\textquotesingle{}t cause issues \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Application initialization sequence
+
+\texorpdfstring{$<$}{<} Initialize system
+
+\texorpdfstring{$<$}{<} Not authenticated
+
+\texorpdfstring{$<$}{<} No username
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00879}{879}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_adc8959d91209339608bda7671bd4ff6f}\label{localsports__test_8cpp_adc8959d91209339608bda7671bd4ff6f} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [6/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{App\+Key\+Get}]{ }\end{DoxyParamCaption})}
+
+
+
+Test App\+Key\+\_\+\+Get function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000048}{Test}}]Verifies application key retrieval \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: App\+Key\+\_\+\+Get
+
+\texorpdfstring{$<$}{<} Get app key
+
+\texorpdfstring{$<$}{<} Get key size
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01055}{1055}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a357345d589c133d1129aa4b44e043208}\label{localsports__test_8cpp_a357345d589c133d1129aa4b44e043208} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [7/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{App\+Key\+Init\+From\+Env\+Or\+Prompt}]{ }\end{DoxyParamCaption})}
+
+
+
+Test App\+Key\+\_\+\+Init\+From\+Env\+Or\+Prompt. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000047}{Test}}]Verifies application key initialization \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: App\+Key\+\_\+\+Init\+From\+Env\+Or\+Prompt
+
+\texorpdfstring{$<$}{<} Clear output
+
+\texorpdfstring{$<$}{<} Provide key input
+
+\texorpdfstring{$<$}{<} Initialize app key
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01040}{1040}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a1196aa5e4909b2870c72212e47c4dbb6}\label{localsports__test_8cpp_a1196aa5e4909b2870c72212e47c4dbb6} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [8/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{App\+Key\+Is\+Ready}]{ }\end{DoxyParamCaption})}
+
+
+
+Test App\+Key\+\_\+\+Is\+Ready function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000049}{Test}}]Verifies application key readiness check \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: App\+Key\+\_\+\+Is\+Ready
+
+\texorpdfstring{$<$}{<} Check if key is ready
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01068}{1068}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a06c4cb8f447a800b50cf8178f0a09201}\label{localsports__test_8cpp_a06c4cb8f447a800b50cf8178f0a09201} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [9/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{App\+Menu\+Structure}]{ }\end{DoxyParamCaption})}
+
+
+
+Test application menu structure. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000109}{Test}}]Verifies menu structure is accessible \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Application menu structure
+
+\texorpdfstring{$<$}{<} Initialize system
+
+\texorpdfstring{$<$}{<} Should not be authenticated initially
+
+\texorpdfstring{$<$}{<} No username initially
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01739}{1739}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a8b2ff5b00f86b25ce9528233976d3352}\label{localsports__test_8cpp_a8b2ff5b00f86b25ce9528233976d3352} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [10/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{App\+Start\+Initialization}]{ }\end{DoxyParamCaption})}
+
+
+
+Test LS\+\_\+\+App\+Start function initialization. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000035}{Test}}]Verifies application startup doesn\textquotesingle{}t crash immediately \end{DoxyRefDesc}
+
+
+Tests the main application entry point \begin{DoxyNote}{Note}
+This is a smoke test -\/ full testing requires interactive input 
+\end{DoxyNote}
+\texorpdfstring{$<$}{<} Test\+: LS\+\_\+\+App\+Start -\/ Initialization
+
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system first
+
+\texorpdfstring{$<$}{<} Clear output buffer
+
+\texorpdfstring{$<$}{<} Should not be authenticated initially
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00863}{863}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_adfabfaf8af1b50a694a31aa362678557}\label{localsports__test_8cpp_adfabfaf8af1b50a694a31aa362678557} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [11/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Auth\+Login\+Interactive\+Basic}]{ }\end{DoxyParamCaption})}
+
+
+
+Test LS\+\_\+\+Auth\+Login\+Interactive function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000030}{Test}}]Verifies interactive login functionality \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Auth\+Login\+Interactive -\/ Basic functionality
+
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Clear output buffer
+
+\texorpdfstring{$<$}{<} Provide input\+: username, password
+
+\texorpdfstring{$<$}{<} Call login function
+
+\texorpdfstring{$<$}{<} Suppress unused variable warning
+
+\texorpdfstring{$<$}{<} Get function output
+
+\texorpdfstring{$<$}{<} Verify function produces output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00764}{764}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a88c7421670d4856b5cdf59f51a0708d2}\label{localsports__test_8cpp_a88c7421670d4856b5cdf59f51a0708d2} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [12/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Auth\+Logout\+Clears\+Session}]{ }\end{DoxyParamCaption})}
+
+
+
+Test that logout clears authentication session. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000006}{Test}}]Verifies session state is cleared after logout \end{DoxyRefDesc}
+
+
+Tests authentication state and username after logout operation \texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Perform logout operation
+
+\texorpdfstring{$<$}{<} Verify authentication is cleared
+
+\texorpdfstring{$<$}{<} Verify username is cleared
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00266}{266}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_aed135dc2369b88f55985a826f06325ca}\label{localsports__test_8cpp_aed135dc2369b88f55985a826f06325ca} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [13/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Auth\+Register\+Interactive\+Basic}]{ }\end{DoxyParamCaption})}
+
+
+
+Test LS\+\_\+\+Auth\+Register\+Interactive function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000031}{Test}}]Verifies interactive registration functionality \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Auth\+Register\+Interactive -\/ Basic functionality
+
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Clear output buffer
+
+\texorpdfstring{$<$}{<} Provide input\+: username, password, role
+
+\texorpdfstring{$<$}{<} Call register function
+
+\texorpdfstring{$<$}{<} Get function output
+
+\texorpdfstring{$<$}{<} Verify function produces output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00783}{783}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ad186cd2305a629f3f2c9c8a9c083f7d4}\label{localsports__test_8cpp_ad186cd2305a629f3f2c9c8a9c083f7d4} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [14/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Auth\+Special\+Characters}]{ }\end{DoxyParamCaption})}
+
+
+
+Test authentication with special characters. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000104}{Test}}]Verifies handling of special characters \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Authentication -\/ Special characters
+
+\texorpdfstring{$<$}{<} Initialize system
+
+\texorpdfstring{$<$}{<} Clear output
+
+\texorpdfstring{$<$}{<} Provide special char username
+
+\texorpdfstring{$<$}{<} Call register
+
+\texorpdfstring{$<$}{<} Get output
+
+\texorpdfstring{$<$}{<} Should produce output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01636}{1636}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ae2b02d060efb2f0214d23ed2386bb650}\label{localsports__test_8cpp_ae2b02d060efb2f0214d23ed2386bb650} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [15/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Complete\+Game\+Lifecycle}]{ }\end{DoxyParamCaption})}
+
+
+
+Test complete game lifecycle. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000106}{Test}}]Verifies full game CRUD cycle \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Complete game lifecycle
+
+\texorpdfstring{$<$}{<} Initialize system
+
+\texorpdfstring{$<$}{<} Clear output
+
+\texorpdfstring{$<$}{<} Provide game data
+
+\texorpdfstring{$<$}{<} Add game
+
+\texorpdfstring{$<$}{<} Clear output
+
+\texorpdfstring{$<$}{<} Provide result
+
+\texorpdfstring{$<$}{<} Record result
+
+\texorpdfstring{$<$}{<} Get output
+
+\texorpdfstring{$<$}{<} Should produce output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01678}{1678}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ac64bd095079a7ac99f3050c06cf806ee}\label{localsports__test_8cpp_ac64bd095079a7ac99f3050c06cf806ee} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [16/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Complete\+Player\+Lifecycle}]{ }\end{DoxyParamCaption})}
+
+
+
+Test complete player lifecycle. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000105}{Test}}]Verifies full player CRUD cycle \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Complete player lifecycle
+
+\texorpdfstring{$<$}{<} Initialize system
+
+\texorpdfstring{$<$}{<} Clear output
+
+\texorpdfstring{$<$}{<} Provide player data
+
+\texorpdfstring{$<$}{<} Add player
+
+\texorpdfstring{$<$}{<} Clear output
+
+\texorpdfstring{$<$}{<} Provide edit data
+
+\texorpdfstring{$<$}{<} Edit player
+
+\texorpdfstring{$<$}{<} Clear output
+
+\texorpdfstring{$<$}{<} Provide player ID
+
+\texorpdfstring{$<$}{<} Remove player
+
+\texorpdfstring{$<$}{<} Get output
+
+\texorpdfstring{$<$}{<} Should produce output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01652}{1652}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a232f74cf9206f3e7cd85cf50d83b5b98}\label{localsports__test_8cpp_a232f74cf9206f3e7cd85cf50d83b5b98} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [17/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Concurrent\+Operations}]{ }\end{DoxyParamCaption})}
+
+
+
+Test concurrent operations. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000107}{Test}}]Verifies system handles concurrent calls \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Concurrent operations
+
+\texorpdfstring{$<$}{<} Initialize system
+
+\texorpdfstring{$<$}{<} First check
+
+\texorpdfstring{$<$}{<} Second check
+
+\texorpdfstring{$<$}{<} First username
+
+\texorpdfstring{$<$}{<} Second username
+
+\texorpdfstring{$<$}{<} Auth states should match
+
+\texorpdfstring{$<$}{<} If first is null
+
+\texorpdfstring{$<$}{<} Second should also be null
+
+\texorpdfstring{$<$}{<} If first is not null
+
+\texorpdfstring{$<$}{<} Both should be same
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01699}{1699}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a7bbd49debc765f3a9df8d35597b1e517}\label{localsports__test_8cpp_a7bbd49debc765f3a9df8d35597b1e517} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [18/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Crypto\+Decrypt\+From\+DB}]{ }\end{DoxyParamCaption})}
+
+
+
+Test crypto\+::\+Decrypt\+From\+DB. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000045}{Test}}]Verifies decryption from database storage \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: crypto\+::\+Decrypt\+From\+DB
+
+\texorpdfstring{$<$}{<} Test plaintext
+
+\texorpdfstring{$<$}{<} Test key
+
+\texorpdfstring{$<$}{<} Additional authenticated data
+
+\texorpdfstring{$<$}{<} Encrypt
+
+\texorpdfstring{$<$}{<} Decrypt
+
+\texorpdfstring{$<$}{<} Decrypted should match original
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01005}{1005}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a64f97a06c3207a975b4007e98bca499d}\label{localsports__test_8cpp_a64f97a06c3207a975b4007e98bca499d} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [19/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Crypto\+Derive\+Key\+From\+Passphrase}]{ }\end{DoxyParamCaption})}
+
+
+
+Test crypto\+::\+Derive\+Key\+From\+Passphrase. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000043}{Test}}]Verifies key derivation from passphrase \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: crypto\+::\+Derive\+Key\+From\+Passphrase
+
+\texorpdfstring{$<$}{<} Test passphrase
+
+\texorpdfstring{$<$}{<} Test salt
+
+\texorpdfstring{$<$}{<} Output key buffer
+
+\texorpdfstring{$<$}{<} Derive key
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00977}{977}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a577225af8278e9421ddbdc856f8095b6}\label{localsports__test_8cpp_a577225af8278e9421ddbdc856f8095b6} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [20/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Crypto\+Empty\+Input}]{ }\end{DoxyParamCaption})}
+
+
+
+Test crypto operations with empty input. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000113}{Test}}]Verifies handling of empty input \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Crypto -\/ Empty input
+
+\texorpdfstring{$<$}{<} Empty plaintext
+
+\texorpdfstring{$<$}{<} Test key
+
+\texorpdfstring{$<$}{<} Empty AAD
+
+\texorpdfstring{$<$}{<} Encrypt empty
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01791}{1791}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a5d6c3237a2478f7ddf847b1acddf3b97}\label{localsports__test_8cpp_a5d6c3237a2478f7ddf847b1acddf3b97} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [21/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Crypto\+Encrypt\+For\+DB}]{ }\end{DoxyParamCaption})}
+
+
+
+Test crypto\+::\+Encrypt\+For\+DB. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000044}{Test}}]Verifies encryption for database storage \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: crypto\+::\+Encrypt\+For\+DB
+
+\texorpdfstring{$<$}{<} Test plaintext
+
+\texorpdfstring{$<$}{<} Test key (all zeros for test)
+
+\texorpdfstring{$<$}{<} Additional authenticated data
+
+\texorpdfstring{$<$}{<} Encrypt
+
+\texorpdfstring{$<$}{<} Encrypted should differ from plaintext
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00991}{991}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a81f25bc7ff660bc131785e95a9936410}\label{localsports__test_8cpp_a81f25bc7ff660bc131785e95a9936410} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [22/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Crypto\+Key\+Derivation\+Iterations}]{ }\end{DoxyParamCaption})}
+
+
+
+Test crypto key derivation with various iterations. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000115}{Test}}]Verifies key derivation with different iteration counts \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Crypto -\/ Key derivation iterations
+
+\texorpdfstring{$<$}{<} Test passphrase
+
+\texorpdfstring{$<$}{<} Test salt
+
+\texorpdfstring{$<$}{<} Output key 1
+
+\texorpdfstring{$<$}{<} Output key 2
+
+\texorpdfstring{$<$}{<} Derive with 1000 iterations
+
+\texorpdfstring{$<$}{<} Derive with 10000 iterations
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01821}{1821}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_aaf3b75a37c80b5f1c3f9d8f00f1f24f4}\label{localsports__test_8cpp_aaf3b75a37c80b5f1c3f9d8f00f1f24f4} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [23/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Crypto\+Large\+Input}]{ }\end{DoxyParamCaption})}
+
+
+
+Test crypto operations with large input. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000114}{Test}}]Verifies handling of large input \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Crypto -\/ Large input
+
+\texorpdfstring{$<$}{<} Large plaintext (10KB)
+
+\texorpdfstring{$<$}{<} Test key
+
+\texorpdfstring{$<$}{<} Test AAD
+
+\texorpdfstring{$<$}{<} Encrypt large
+
+\texorpdfstring{$<$}{<} Encrypted should differ
+
+\texorpdfstring{$<$}{<} Decrypt
+
+\texorpdfstring{$<$}{<} Should match original
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01805}{1805}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_afe18f3d98d30a8bfca78839a02e18899}\label{localsports__test_8cpp_afe18f3d98d30a8bfca78839a02e18899} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [24/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Current\+Username\+Memory\+Safety}]{ }\end{DoxyParamCaption})}
+
+
+
+Test memory safety of Current\+Username function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000016}{Test}}]Verifies consistent return values from multiple calls \end{DoxyRefDesc}
+
+
+Ensures no memory corruption or inconsistent behavior 
+\begin{DoxyParams}{Parameters}
+{\em user1} & First call to LS\+\_\+\+Current\+Username() \\
+\hline
+{\em user2} & Second call to LS\+\_\+\+Current\+Username() \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} First call to get username
+
+\texorpdfstring{$<$}{<} Second call to get username
+
+\texorpdfstring{$<$}{<} If first call returns nullptr
+
+\texorpdfstring{$<$}{<} Second call should also return nullptr
+
+\texorpdfstring{$<$}{<} If first call returns valid pointer
+
+\texorpdfstring{$<$}{<} Both calls should return same value
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00482}{482}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ad97e713a2ee1eb18bf1e901637dd4747}\label{localsports__test_8cpp_ad97e713a2ee1eb18bf1e901637dd4747} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [25/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Current\+Username\+Pointer\+Stability}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Current\+Username function returns consistent pointer. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000032}{Test}}]Verifies LS\+\_\+\+Current\+Username pointer stability \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Current\+Username -\/ Pointer stability
+
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} First call
+
+\texorpdfstring{$<$}{<} Second call
+
+\texorpdfstring{$<$}{<} If first is null
+
+\texorpdfstring{$<$}{<} Second should also be null
+
+\texorpdfstring{$<$}{<} If first is not null
+
+\texorpdfstring{$<$}{<} Both should point to same location
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00799}{799}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a0c0c0d4a092228c058851827332900aa}\label{localsports__test_8cpp_a0c0c0d4a092228c058851827332900aa} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [26/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Current\+Username\+When\+Not\+Authenticated}]{ }\end{DoxyParamCaption})}
+
+
+
+Test current username when not authenticated. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000005}{Test}}]Verifies that Current\+Username returns nullptr when not logged in \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+Expected\+: nullptr (no username available) 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Get current username
+
+\texorpdfstring{$<$}{<} Verify username is nullptr when not authenticated
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00253}{253}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a1e162a29774e3cf93b4bfa76e99f49a0}\label{localsports__test_8cpp_a1e162a29774e3cf93b4bfa76e99f49a0} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [27/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Database\+File\+Names}]{ }\end{DoxyParamCaption})}
+
+
+
+Test that database file name constants are defined. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000012}{Test}}]Verifies all FILE\+\_\+\texorpdfstring{$\ast$}{*} constants are non-\/null \end{DoxyRefDesc}
+
+
+Tests FILE\+\_\+\+PLAYERS, FILE\+\_\+\+GAMES, FILE\+\_\+\+STATS, FILE\+\_\+\+MESSAGES, FILE\+\_\+\+USERS \texorpdfstring{$<$}{<} Verify FILE\+\_\+\+PLAYERS constant is defined
+
+\texorpdfstring{$<$}{<} Verify FILE\+\_\+\+GAMES constant is defined
+
+\texorpdfstring{$<$}{<} Verify FILE\+\_\+\+STATS constant is defined
+
+\texorpdfstring{$<$}{<} Verify FILE\+\_\+\+MESSAGES constant is defined
+
+\texorpdfstring{$<$}{<} Verify FILE\+\_\+\+USERS constant is defined
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00401}{401}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a1be67184910a3075a24f99d46f1e429f}\label{localsports__test_8cpp_a1be67184910a3075a24f99d46f1e429f} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [28/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Database\+Reinitialization}]{ }\end{DoxyParamCaption})}
+
+
+
+Test database reinitialization. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000034}{Test}}]Verifies database can be reinitialized \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Database reinitialization
+
+\texorpdfstring{$<$}{<} First initialization
+
+\texorpdfstring{$<$}{<} Check auth state
+
+\texorpdfstring{$<$}{<} Second initialization
+
+\texorpdfstring{$<$}{<} Check auth state again
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+\texorpdfstring{$<$}{<} Verify no exception
+
+\texorpdfstring{$<$}{<} Third initialization
+
+\texorpdfstring{$<$}{<} Fourth initialization
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00833}{833}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a8db5b401594d9f7af55c70b1125074e8}\label{localsports__test_8cpp_a8db5b401594d9f7af55c70b1125074e8} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [29/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Edit\+Player\+Interactive\+Basic}]{ }\end{DoxyParamCaption})}
+
+
+
+Test LS\+\_\+\+Edit\+Player\+Interactive function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000024}{Test}}]Verifies player editing functionality \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Edit\+Player\+Interactive -\/ Basic functionality
+
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Clear output buffer
+
+\texorpdfstring{$<$}{<} Add player input
+
+\texorpdfstring{$<$}{<} Add player
+
+\texorpdfstring{$<$}{<} Clear output
+
+\texorpdfstring{$<$}{<} Edit input\+: ID, new name, empty for others
+
+\texorpdfstring{$<$}{<} Call edit player function
+
+\texorpdfstring{$<$}{<} Get function output
+
+\texorpdfstring{$<$}{<} Verify function produces output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00663}{663}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_aa2e5bcd114b12af1f6e7a3153835a772}\label{localsports__test_8cpp_aa2e5bcd114b12af1f6e7a3153835a772} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [30/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Full\+Workflow}]{ }\end{DoxyParamCaption})}
+
+
+
+Test complete workflow integration. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000015}{Test}}]Verifies full application workflow without crashes \end{DoxyRefDesc}
+
+
+Tests multiple operations together\+: logout, list operations, authentication checks \begin{DoxyNote}{Note}
+Some operations require I/O mocking for full testing 
+\end{DoxyNote}
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Verify complete workflow does not throw
+
+\texorpdfstring{$<$}{<} Test logout operation
+
+\texorpdfstring{$<$}{<} Test list players
+
+\texorpdfstring{$<$}{<} Test list games
+
+\texorpdfstring{$<$}{<} Test list messages
+
+\texorpdfstring{$<$}{<} Test view player totals
+
+\texorpdfstring{$<$}{<} Verify authentication state
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00454}{454}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a22ced2c8459469074345afb3e008471a}\label{localsports__test_8cpp_a22ced2c8459469074345afb3e008471a} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [31/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Game\+Operations\+Invalid\+Date}]{ }\end{DoxyParamCaption})}
+
+
+
+Test game operations with invalid date format. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000101}{Test}}]Verifies handling of invalid date \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Game operations -\/ Invalid date
+
+\texorpdfstring{$<$}{<} Initialize system
+
+\texorpdfstring{$<$}{<} Clear output
+
+\texorpdfstring{$<$}{<} Provide invalid date
+
+\texorpdfstring{$<$}{<} Call add game
+
+\texorpdfstring{$<$}{<} Get output
+
+\texorpdfstring{$<$}{<} Should produce output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01587}{1587}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a6c65112b665a350411ccd1276c75704a}\label{localsports__test_8cpp_a6c65112b665a350411ccd1276c75704a} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [32/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Game\+Struct\+Fields}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Game struct field assignments and retrieval. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000019}{Test}}]Verifies all Game struct fields can be set and retrieved correctly \end{DoxyRefDesc}
+
+
+Tests id, date, time, opponent, location, played, and result fields 
+\begin{DoxyParams}{Parameters}
+{\em g} & Game struct instance to test \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Initialize Game struct
+
+\texorpdfstring{$<$}{<} Set game ID
+
+\texorpdfstring{$<$}{<} Set game date
+
+\texorpdfstring{$<$}{<} Set game time
+
+\texorpdfstring{$<$}{<} Set opponent team
+
+\texorpdfstring{$<$}{<} Set game location
+
+\texorpdfstring{$<$}{<} Set game played status
+
+\texorpdfstring{$<$}{<} Set game result
+
+\texorpdfstring{$<$}{<} Verify game ID
+
+\texorpdfstring{$<$}{<} Verify game date
+
+\texorpdfstring{$<$}{<} Verify game time
+
+\texorpdfstring{$<$}{<} Verify opponent team
+
+\texorpdfstring{$<$}{<} Verify game location
+
+\texorpdfstring{$<$}{<} Verify game played status
+
+\texorpdfstring{$<$}{<} Verify game result
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00549}{549}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_abb028d391f864b804f402629960a515d}\label{localsports__test_8cpp_abb028d391f864b804f402629960a515d} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [33/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Call\+Obfuscated}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Call\+Obfuscated function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000116}{Test}}]Verifies obfuscated function calling \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Call\+Obfuscated
+
+\texorpdfstring{$<$}{<} Static test variable
+
+\texorpdfstring{$<$}{<} Test function
+
+\texorpdfstring{$<$}{<} Reset test variable
+
+\texorpdfstring{$<$}{<} Verify no exception
+
+\texorpdfstring{$<$}{<} Call obfuscated function
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01845}{1845}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a398f49b19d2336fa1b5c94b890e5aa7c}\label{localsports__test_8cpp_a398f49b19d2336fa1b5c94b890e5aa7c} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [34/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Deobfuscate\+String}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Deobfuscate\+String function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000066}{Test}}]Verifies string deobfuscation \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Deobfuscate\+String
+
+\texorpdfstring{$<$}{<} Original string
+
+\texorpdfstring{$<$}{<} Obfuscate
+
+\texorpdfstring{$<$}{<} Deobfuscate
+
+\texorpdfstring{$<$}{<} Deobfuscated should match original
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01216}{1216}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a7e405c61a875e852937469d43d8e3f4a}\label{localsports__test_8cpp_a7e405c61a875e852937469d43d8e3f4a} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [35/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Deobfuscate\+Value}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Deobfuscate\+Value function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000069}{Test}}]Verifies value deobfuscation \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Deobfuscate\+Value
+
+\texorpdfstring{$<$}{<} Original value
+
+\texorpdfstring{$<$}{<} Obfuscate
+
+\texorpdfstring{$<$}{<} Deobfuscate
+
+\texorpdfstring{$<$}{<} Deobfuscated should match original
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01241}{1241}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_af9c57631cc26f358e64dc68d39ec92d1}\label{localsports__test_8cpp_af9c57631cc26f358e64dc68d39ec92d1} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [36/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Fake\+Security\+Check}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Fake\+Security\+Check function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000117}{Test}}]Verifies fake security check doesn\textquotesingle{}t crash \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Fake\+Security\+Check
+
+\texorpdfstring{$<$}{<} Verify no exception
+
+\texorpdfstring{$<$}{<} Call fake security check
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01866}{1866}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ad0c3e0ffe3e909805f84107459f26d55}\label{localsports__test_8cpp_ad0c3e0ffe3e909805f84107459f26d55} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [37/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Get\+Executable\+Hash}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Get\+Executable\+Hash function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000053}{Test}}]Verifies executable hash calculation \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Get\+Executable\+Hash
+
+\texorpdfstring{$<$}{<} Get executable hash
+
+\texorpdfstring{$<$}{<} Hash should have content
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01117}{1117}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a41b71255ab626d0da97249045ca8641c}\label{localsports__test_8cpp_a41b71255ab626d0da97249045ca8641c} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [38/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Is\+Debug\+Build}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Is\+Debug\+Build function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000077}{Test}}]Verifies debug build detection \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Is\+Debug\+Build
+
+\texorpdfstring{$<$}{<} Check if debug build
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01296}{1296}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_af5b988d22515624139c399abf323f596}\label{localsports__test_8cpp_af5b988d22515624139c399abf323f596} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [39/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Is\+Debugger\+Present}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Is\+Debugger\+Present function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000050}{Test}}]Verifies debugger detection functionality \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Is\+Debugger\+Present
+
+\texorpdfstring{$<$}{<} Check for debugger
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01085}{1085}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a7c08ba229b804e7de435a349498e6d84}\label{localsports__test_8cpp_a7c08ba229b804e7de435a349498e6d84} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [40/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Is\+Rooted\+Or\+Jailbroken}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Is\+Rooted\+Or\+Jailbroken function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000057}{Test}}]Verifies root/jailbreak detection \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Is\+Rooted\+Or\+Jailbroken
+
+\texorpdfstring{$<$}{<} Check if rooted
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01151}{1151}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a803651e0d82feb70feba2bad09512a30}\label{localsports__test_8cpp_a803651e0d82feb70feba2bad09512a30} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [41/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Is\+Running\+In\+VM}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Is\+Running\+In\+VM function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000055}{Test}}]Verifies VM detection functionality \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Is\+Running\+In\+VM
+
+\texorpdfstring{$<$}{<} Check if running in VM
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01141}{1141}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ae70cca1bf71ae701e03762425373cb88}\label{localsports__test_8cpp_ae70cca1bf71ae701e03762425373cb88} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [42/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Obfuscate\+Add}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Obfuscate\+Add function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000074}{Test}}]Verifies addition obfuscation \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Obfuscate\+Add
+
+\texorpdfstring{$<$}{<} Obfuscated addition
+
+\texorpdfstring{$<$}{<} Should equal 10 + 20
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01278}{1278}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_aff0af190e77dc1cc1f41ac47487df16a}\label{localsports__test_8cpp_aff0af190e77dc1cc1f41ac47487df16a} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [43/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Obfuscate\+Boolean\+Condition}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Obfuscate\+Boolean\+Condition function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000073}{Test}}]Verifies boolean condition obfuscation \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Obfuscate\+Boolean\+Condition
+
+\texorpdfstring{$<$}{<} Test with true
+
+\texorpdfstring{$<$}{<} Test with false
+
+\texorpdfstring{$<$}{<} True input should give true output
+
+\texorpdfstring{$<$}{<} False input should give false output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01265}{1265}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_acd6edb64c644cc5bc8e47a04fa23203f}\label{localsports__test_8cpp_acd6edb64c644cc5bc8e47a04fa23203f} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [44/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Obfuscate\+Multiply}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Obfuscate\+Multiply function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000076}{Test}}]Verifies multiplication obfuscation \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Obfuscate\+Multiply
+
+\texorpdfstring{$<$}{<} Obfuscated multiplication
+
+\texorpdfstring{$<$}{<} Should equal 5 \texorpdfstring{$\ast$}{*} 6
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01287}{1287}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ab650615bf1c51c814cbd7aab6c50d5ce}\label{localsports__test_8cpp_ab650615bf1c51c814cbd7aab6c50d5ce} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [45/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Obfuscate\+String}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Obfuscate\+String function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000064}{Test}}]Verifies string obfuscation \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Obfuscate\+String
+
+\texorpdfstring{$<$}{<} Original string
+
+\texorpdfstring{$<$}{<} Obfuscate string
+
+\texorpdfstring{$<$}{<} Obfuscated should differ
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01204}{1204}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a1c34d09955dc4ed58c637ff23390e5e1}\label{localsports__test_8cpp_a1c34d09955dc4ed58c637ff23390e5e1} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [46/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Obfuscate\+Value}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Obfuscate\+Value function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000068}{Test}}]Verifies value obfuscation \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Obfuscate\+Value
+
+\texorpdfstring{$<$}{<} Original value
+
+\texorpdfstring{$<$}{<} Obfuscate value
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01229}{1229}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a30472eeb19f75df945c0563b4610fd76}\label{localsports__test_8cpp_a30472eeb19f75df945c0563b4610fd76} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [47/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Obfuscation\+Round\+Trip}]{ }\end{DoxyParamCaption})}
+
+
+
+Test obfuscation round-\/trip with various values. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000120}{Test}}]Verifies obfuscation works for various inputs \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Hardening obfuscation round-\/trip
+
+\texorpdfstring{$<$}{<} Test strings
+
+\texorpdfstring{$<$}{<} Test string 1
+
+\texorpdfstring{$<$}{<} Test string 2
+
+\texorpdfstring{$<$}{<} Test string 3
+
+\texorpdfstring{$<$}{<} Empty string
+
+\texorpdfstring{$<$}{<} Loop through test strings
+
+\texorpdfstring{$<$}{<} Obfuscate
+
+\texorpdfstring{$<$}{<} Deobfuscate
+
+\texorpdfstring{$<$}{<} Should match original
+
+\texorpdfstring{$<$}{<} Test values
+
+\texorpdfstring{$<$}{<} Loop through test values
+
+\texorpdfstring{$<$}{<} Obfuscate
+
+\texorpdfstring{$<$}{<} Deobfuscate
+
+\texorpdfstring{$<$}{<} Should match original
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01903}{1903}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_aae2576164e63c0ac6673511e88456018}\label{localsports__test_8cpp_aae2576164e63c0ac6673511e88456018} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [48/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Opaque\+Loop}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Opaque\+Loop function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000071}{Test}}]Verifies opaque loop functionality \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Opaque\+Loop
+
+\texorpdfstring{$<$}{<} Verify no exception
+
+\texorpdfstring{$<$}{<} Call opaque loop with 10 iterations
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01254}{1254}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ab4e1bbc52de3b2cec4673df65c56140b}\label{localsports__test_8cpp_ab4e1bbc52de3b2cec4673df65c56140b} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [49/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Opaque\+Loop\+Variations}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Opaque\+Loop with various iteration counts. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000119}{Test}}]Verifies opaque loop with different counts \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Opaque\+Loop -\/ Variations
+
+\texorpdfstring{$<$}{<} Verify no exception
+
+\texorpdfstring{$<$}{<} 1 iteration
+
+\texorpdfstring{$<$}{<} 10 iterations
+
+\texorpdfstring{$<$}{<} 100 iterations
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01890}{1890}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a59f2f3b3678a236991af5d5cb0bd22ad}\label{localsports__test_8cpp_a59f2f3b3678a236991af5d5cb0bd22ad} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [50/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Opaque\+Math\+Predicate}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Opaque\+Math\+Predicate function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000063}{Test}}]Verifies opaque math predicate \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Opaque\+Math\+Predicate
+
+\texorpdfstring{$<$}{<} Test with positive value
+
+\texorpdfstring{$<$}{<} Test with negative value
+
+\texorpdfstring{$<$}{<} Test with zero
+
+\texorpdfstring{$<$}{<} Positive value should return true
+
+\texorpdfstring{$<$}{<} Negative value should return true
+
+\texorpdfstring{$<$}{<} Zero should return true
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01189}{1189}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a07c0c4ac8e675d5ed19de5e1c3437d34}\label{localsports__test_8cpp_a07c0c4ac8e675d5ed19de5e1c3437d34} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [51/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Opaque\+Predicate\+Always\+False}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Opaque\+Predicate\+Always\+False function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000061}{Test}}]Verifies opaque predicate always returns false \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Opaque\+Predicate\+Always\+False
+
+\texorpdfstring{$<$}{<} Call opaque predicate
+
+\texorpdfstring{$<$}{<} Should always return false
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01180}{1180}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_aabbc9ba1f7fb44223c77a0a91c91482f}\label{localsports__test_8cpp_aabbc9ba1f7fb44223c77a0a91c91482f} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [52/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Opaque\+Predicate\+Always\+True}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Opaque\+Predicate\+Always\+True function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000060}{Test}}]Verifies opaque predicate always returns true \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Opaque\+Predicate\+Always\+True
+
+\texorpdfstring{$<$}{<} Call opaque predicate
+
+\texorpdfstring{$<$}{<} Should always return true
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01171}{1171}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a5a4f41d18ca629b074c23cad9b963db4}\label{localsports__test_8cpp_a5a4f41d18ca629b074c23cad9b963db4} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [53/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Perform\+Security\+Checks}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Perform\+Security\+Checks function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000058}{Test}}]Verifies comprehensive security checks \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Perform\+Security\+Checks
+
+\texorpdfstring{$<$}{<} Perform security checks
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01161}{1161}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a679e2ef4981cedec938f895af0ded1ac}\label{localsports__test_8cpp_a679e2ef4981cedec938f895af0ded1ac} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [54/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Secure\+Log}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Secure\+Log function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000118}{Test}}]Verifies secure logging \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Secure\+Log
+
+\texorpdfstring{$<$}{<} Test message
+
+\texorpdfstring{$<$}{<} Verify no exception
+
+\texorpdfstring{$<$}{<} Log message
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01877}{1877}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_aa8dacc85e752af2800ae5e5ea2085b50}\label{localsports__test_8cpp_aa8dacc85e752af2800ae5e5ea2085b50} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [55/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Start\+Anti\+Debug\+Monitor}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Start\+Anti\+Debug\+Monitor function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000051}{Test}}]Verifies anti-\/debug monitor can be started \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Start\+Anti\+Debug\+Monitor
+
+\texorpdfstring{$<$}{<} Start monitor
+
+\texorpdfstring{$<$}{<} Stop monitor
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01095}{1095}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a7d716507dbf3e6abbb1575334b952abf}\label{localsports__test_8cpp_a7d716507dbf3e6abbb1575334b952abf} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [56/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Stop\+Anti\+Debug\+Monitor}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Stop\+Anti\+Debug\+Monitor function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000052}{Test}}]Verifies anti-\/debug monitor can be stopped \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Stop\+Anti\+Debug\+Monitor
+
+\texorpdfstring{$<$}{<} Stop monitor
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01107}{1107}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a86d4ae388fd1691ee22c8cd50acbd713}\label{localsports__test_8cpp_a86d4ae388fd1691ee22c8cd50acbd713} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [57/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Hardening\+Verify\+Integrity}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Verify\+Integrity function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000054}{Test}}]Verifies integrity verification functionality \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: hardening\+::\+Verify\+Integrity
+
+\texorpdfstring{$<$}{<} Get current hash
+
+\texorpdfstring{$<$}{<} Verify with correct hash
+
+\texorpdfstring{$<$}{<} Should be valid
+
+\texorpdfstring{$<$}{<} Verify with wrong hash
+
+\texorpdfstring{$<$}{<} Should be invalid
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01127}{1127}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a1942beb4c99f4077d3ecfdeefe4e4f3e}\label{localsports__test_8cpp_a1942beb4c99f4077d3ecfdeefe4e4f3e} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [58/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Init\+Creates\+Database}]{ }\end{DoxyParamCaption})}
+
+
+
+Test that LS\+\_\+\+Init() creates the database file. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000001}{Test}}]Verifies database file creation and initial authentication state \end{DoxyRefDesc}
+
+
+Tests that initialization creates localsports.\+db and sets initial state correctly \texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Check database file existence
+
+\texorpdfstring{$<$}{<} Assert database file exists
+
+\texorpdfstring{$<$}{<} Error message for assertion
+
+\texorpdfstring{$<$}{<} If file exists, close it
+
+\texorpdfstring{$<$}{<} Close database file stream
+
+\texorpdfstring{$<$}{<} Verify user is not authenticated initially
+
+\texorpdfstring{$<$}{<} Error message for assertion
+
+\texorpdfstring{$<$}{<} Verify username is nullptr when not authenticated
+
+\texorpdfstring{$<$}{<} Error message for assertion
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00178}{178}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a1a661498febbfc9ac376ea03bc72bc76}\label{localsports__test_8cpp_a1a661498febbfc9ac376ea03bc72bc76} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [59/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Init\+Creates\+Default\+Admin}]{ }\end{DoxyParamCaption})}
+
+
+
+Test that LS\+\_\+\+Init() creates default admin user. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000002}{Test}}]Verifies database structure creation after initialization \end{DoxyRefDesc}
+\begin{DoxyNote}{Note}
+Currently verifies database file creation, full admin test requires password mocking 
+\end{DoxyNote}
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Check database file existence
+
+\texorpdfstring{$<$}{<} Verify database file was created
+
+\texorpdfstring{$<$}{<} If file exists, close it
+
+\texorpdfstring{$<$}{<} Close database file stream
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00203}{203}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_afe2ccfc17db703e2381d1fffcb61e25f}\label{localsports__test_8cpp_afe2ccfc17db703e2381d1fffcb61e25f} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [60/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Init\+Edge\+Case\+Database}]{ }\end{DoxyParamCaption})}
+
+
+
+Test LS\+\_\+\+Init with edge case database path. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000099}{Test}}]Verifies initialization handles edge cases \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: LS\+\_\+\+Init -\/ Edge case database
+
+\texorpdfstring{$<$}{<} Verify no exception
+
+\texorpdfstring{$<$}{<} Loop 5 times
+
+\texorpdfstring{$<$}{<} Initialize system
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01558}{1558}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ae951fdde1197d8f6c2d050794784a30b}\label{localsports__test_8cpp_ae951fdde1197d8f6c2d050794784a30b} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [61/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Is\+Authenticated\+Consistency}]{ }\end{DoxyParamCaption})}
+
+
+
+Test consistency of Is\+Authenticated function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000017}{Test}}]Verifies consistent return values from multiple calls \end{DoxyRefDesc}
+
+
+Tests authentication state consistency before and after logout \texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} First authentication check
+
+\texorpdfstring{$<$}{<} Second authentication check
+
+\texorpdfstring{$<$}{<} Verify both calls return same value
+
+\texorpdfstring{$<$}{<} Perform logout operation
+
+\texorpdfstring{$<$}{<} Third authentication check after logout
+
+\texorpdfstring{$<$}{<} Verify authentication is false after logout
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00502}{502}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a4262b04b5888dae4d1b1e532078c316b}\label{localsports__test_8cpp_a4262b04b5888dae4d1b1e532078c316b} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [62/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Is\+Authenticated\+Initial\+State}]{ }\end{DoxyParamCaption})}
+
+
+
+Test initial authentication state. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000004}{Test}}]Verifies that initially no user is authenticated \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+Expected\+: false (not authenticated) 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Verify initial authentication state is false
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00241}{241}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a28c25def17efb334d47efa6d8177f31e}\label{localsports__test_8cpp_a28c25def17efb334d47efa6d8177f31e} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [63/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{List\+Games\+When\+Empty}]{ }\end{DoxyParamCaption})}
+
+
+
+Test listing games when database is empty. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000009}{Test}}]Verifies that List\+Games\+Interactive works with empty database \end{DoxyRefDesc}
+
+
+Ensures function does not crash and produces some output \texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Clear output buffer before test
+
+\texorpdfstring{$<$}{<} Call list games function
+
+\texorpdfstring{$<$}{<} Get function output
+
+\texorpdfstring{$<$}{<} Verify function produces output
+
+\texorpdfstring{$<$}{<} Error message for assertion
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00335}{335}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a70849af5b4d8163d7dc6448534ca74db}\label{localsports__test_8cpp_a70849af5b4d8163d7dc6448534ca74db} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [64/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{List\+Messages\+When\+Empty}]{ }\end{DoxyParamCaption})}
+
+
+
+Test listing messages when database is empty. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000011}{Test}}]Verifies that List\+Messages\+Interactive works with empty database \end{DoxyRefDesc}
+
+
+Ensures function does not crash and produces some output \texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Clear output buffer before test
+
+\texorpdfstring{$<$}{<} Call list messages function
+
+\texorpdfstring{$<$}{<} Get function output
+
+\texorpdfstring{$<$}{<} Verify function produces output
+
+\texorpdfstring{$<$}{<} Error message for assertion
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00379}{379}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_adf11bcfdef8944a0bc1feea03fce7fb0}\label{localsports__test_8cpp_adf11bcfdef8944a0bc1feea03fce7fb0} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [65/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{List\+Players\+When\+Empty}]{ }\end{DoxyParamCaption})}
+
+
+
+Test listing players when database is empty. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000007}{Test}}]Verifies that List\+Players\+Interactive works with empty database \end{DoxyRefDesc}
+
+
+Ensures function does not crash and produces some output \texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Clear output buffer before test
+
+\texorpdfstring{$<$}{<} Call list players function
+
+\texorpdfstring{$<$}{<} Get function output
+
+\texorpdfstring{$<$}{<} Verify function produces output
+
+\texorpdfstring{$<$}{<} Error message for assertion
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00283}{283}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ad2474200ea606bfc9d46ac0a91460379}\label{localsports__test_8cpp_ad2474200ea606bfc9d46ac0a91460379} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [66/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Logout\+Without\+Login}]{ }\end{DoxyParamCaption})}
+
+
+
+Test logout functionality when not logged in. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000003}{Test}}]Verifies that logout does not crash when called without login \end{DoxyRefDesc}
+
+
+Ensures graceful handling of logout in unauthenticated state \texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Verify logout does not throw exception
+
+\texorpdfstring{$<$}{<} Attempt logout without login
+
+\texorpdfstring{$<$}{<} Verify authentication state is false
+
+\texorpdfstring{$<$}{<} Verify username is nullptr
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00224}{224}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_affa5c25e2e8572ab0ed4e99b83504e9a}\label{localsports__test_8cpp_affa5c25e2e8572ab0ed4e99b83504e9a} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [67/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Message\+Operations\+Long\+Text}]{ }\end{DoxyParamCaption})}
+
+
+
+Test message operations with long text. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000103}{Test}}]Verifies handling of long messages \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Message operations -\/ Long text
+
+\texorpdfstring{$<$}{<} Initialize system
+
+\texorpdfstring{$<$}{<} Clear output
+
+\texorpdfstring{$<$}{<} Create 150 character message
+
+\texorpdfstring{$<$}{<} Provide long message
+
+\texorpdfstring{$<$}{<} Call add message
+
+\texorpdfstring{$<$}{<} Get output
+
+\texorpdfstring{$<$}{<} Should produce output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01619}{1619}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_abb98f240b976ced50484528423eb3a40}\label{localsports__test_8cpp_abb98f240b976ced50484528423eb3a40} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [68/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Message\+Struct\+Fields}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Message struct field assignments and retrieval. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000021}{Test}}]Verifies all Message struct fields can be set and retrieved correctly \end{DoxyRefDesc}
+
+
+Tests id, datetime, and text fields 
+\begin{DoxyParams}{Parameters}
+{\em m} & Message struct instance to test \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Initialize Message struct
+
+\texorpdfstring{$<$}{<} Set message ID
+
+\texorpdfstring{$<$}{<} Set message datetime
+
+\texorpdfstring{$<$}{<} Set message text
+
+\texorpdfstring{$<$}{<} Verify message ID
+
+\texorpdfstring{$<$}{<} Verify message datetime
+
+\texorpdfstring{$<$}{<} Verify message text
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00601}{601}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_aea64b4f79548f276ed4c4e8b8c2f0fc3}\label{localsports__test_8cpp_aea64b4f79548f276ed4c4e8b8c2f0fc3} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [69/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Multiple\+Auth\+State\+Checks}]{ }\end{DoxyParamCaption})}
+
+
+
+Test multiple authentication state checks. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000033}{Test}}]Verifies consistent authentication state \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Multiple authentication state checks
+
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} First check
+
+\texorpdfstring{$<$}{<} Second check
+
+\texorpdfstring{$<$}{<} Third check
+
+\texorpdfstring{$<$}{<} First and second match
+
+\texorpdfstring{$<$}{<} Second and third match
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00817}{817}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a4080525b95b7b1e067c2d8f3df31fe1c}\label{localsports__test_8cpp_a4080525b95b7b1e067c2d8f3df31fe1c} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [70/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Multiple\+Init\+Calls}]{ }\end{DoxyParamCaption})}
+
+
+
+Test multiple initialization calls. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000013}{Test}}]Verifies that multiple LS\+\_\+\+Init() calls do not crash \end{DoxyRefDesc}
+
+
+Ensures idempotent initialization behavior \texorpdfstring{$<$}{<} Verify multiple init calls do not throw
+
+\texorpdfstring{$<$}{<} First initialization call
+
+\texorpdfstring{$<$}{<} Second initialization call
+
+\texorpdfstring{$<$}{<} Third initialization call
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00417}{417}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a7d3f6c52cdc87221a05ca4e46cb39f82}\label{localsports__test_8cpp_a7d3f6c52cdc87221a05ca4e46cb39f82} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [71/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Operations\+Before\+Init}]{ }\end{DoxyParamCaption})}
+
+
+
+Test operations before initialization. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000014}{Test}}]Verifies graceful handling of API calls before LS\+\_\+\+Init() \end{DoxyRefDesc}
+
+
+Ensures functions do not crash when called before initialization \texorpdfstring{$<$}{<} Verify operations before init do not throw
+
+\texorpdfstring{$<$}{<} Test logout before init
+
+\texorpdfstring{$<$}{<} Test authentication check before init
+
+\texorpdfstring{$<$}{<} Test username retrieval before init
+
+\texorpdfstring{$<$}{<} Suppress unused variable warning
+
+\texorpdfstring{$<$}{<} Suppress unused variable warning
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00433}{433}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a92797d8915573daa1e1bdbf60f35906c}\label{localsports__test_8cpp_a92797d8915573daa1e1bdbf60f35906c} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [72/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Player\+Operations\+Empty\+Strings}]{ }\end{DoxyParamCaption})}
+
+
+
+Test player operations with empty strings. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000100}{Test}}]Verifies handling of empty input \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Player operations -\/ Empty strings
+
+\texorpdfstring{$<$}{<} Initialize system
+
+\texorpdfstring{$<$}{<} Clear output
+
+\texorpdfstring{$<$}{<} Provide empty input
+
+\texorpdfstring{$<$}{<} Call add player
+
+\texorpdfstring{$<$}{<} Get output
+
+\texorpdfstring{$<$}{<} Should produce output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01571}{1571}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a44b61c1543e565dc349abcb3a51a8b5b}\label{localsports__test_8cpp_a44b61c1543e565dc349abcb3a51a8b5b} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [73/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Player\+Operations\+Structure}]{ }\end{DoxyParamCaption})}
+
+
+
+Test structure size validation for all data structures. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000008}{Test}}]Verifies packed structure sizes match expected values \end{DoxyRefDesc}
+
+
+Tests Player, Game, Stat, Message, and User struct sizes \texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Verify Player struct size matches expected packed size
+
+\texorpdfstring{$<$}{<} Verify Game struct size matches expected packed size
+
+\texorpdfstring{$<$}{<} Verify Stat struct size matches expected packed size
+
+\texorpdfstring{$<$}{<} Verify Message struct size matches expected packed size
+
+\texorpdfstring{$<$}{<} Verify User struct size matches expected packed size
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00304}{304}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_adacd42dc1f22618719f1ae0290b5d234}\label{localsports__test_8cpp_adacd42dc1f22618719f1ae0290b5d234} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [74/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Player\+Struct\+Fields}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Player struct field assignments and retrieval. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000018}{Test}}]Verifies all Player struct fields can be set and retrieved correctly \end{DoxyRefDesc}
+
+
+Tests id, name, position, phone, email, and active fields 
+\begin{DoxyParams}{Parameters}
+{\em p} & Player struct instance to test \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Initialize Player struct
+
+\texorpdfstring{$<$}{<} Set player ID
+
+\texorpdfstring{$<$}{<} Set player name
+
+\texorpdfstring{$<$}{<} Set player position
+
+\texorpdfstring{$<$}{<} Set player phone
+
+\texorpdfstring{$<$}{<} Set player email
+
+\texorpdfstring{$<$}{<} Set player active status
+
+\texorpdfstring{$<$}{<} Verify player ID
+
+\texorpdfstring{$<$}{<} Verify player name
+
+\texorpdfstring{$<$}{<} Verify player position
+
+\texorpdfstring{$<$}{<} Verify player phone
+
+\texorpdfstring{$<$}{<} Verify player email
+
+\texorpdfstring{$<$}{<} Verify player active status
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00526}{526}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a86d09f10828936b8ef5ff6dc784ff2c3}\label{localsports__test_8cpp_a86d09f10828936b8ef5ff6dc784ff2c3} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [75/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPBoot\+Time\+Integrity\+Check}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Boot\+Time\+Integrity\+Check function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000083}{Test}}]Verifies boot-\/time integrity check \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Boot\+Time\+Integrity\+Check
+
+\texorpdfstring{$<$}{<} Get current checksum
+
+\texorpdfstring{$<$}{<} Boot-\/time check
+
+\texorpdfstring{$<$}{<} Should pass with correct checksum
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01377}{1377}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_add3b3ab07c53980e465a31c63121d6d2}\label{localsports__test_8cpp_add3b3ab07c53980e465a31c63121d6d2} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [76/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPCalculate\+Text\+Section\+Checksum}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Calculate\+Text\+Section\+Checksum function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000081}{Test}}]Verifies text section checksum calculation \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Calculate\+Text\+Section\+Checksum
+
+\texorpdfstring{$<$}{<} Calculate checksum
+
+\texorpdfstring{$<$}{<} Should be 64 characters
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01353}{1353}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a76698294030ec079bceb11efaa3f3799}\label{localsports__test_8cpp_a76698294030ec079bceb11efaa3f3799} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [77/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPClear\+Security\+Log}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Clear\+Security\+Log function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000090}{Test}}]Verifies security log clearing \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Clear\+Security\+Log
+
+\texorpdfstring{$<$}{<} Clear security log
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01453}{1453}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ab8036f956f7352ac18136a09b4ac8250}\label{localsports__test_8cpp_ab8036f956f7352ac18136a09b4ac8250} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [78/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPConfigure\+RASP}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Configure\+RASP function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000094}{Test}}]Verifies RASP configuration \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Configure\+RASP
+
+\texorpdfstring{$<$}{<} Create RASP config
+
+\texorpdfstring{$<$}{<} Enable debugger detection
+
+\texorpdfstring{$<$}{<} Enable checksum verification
+
+\texorpdfstring{$<$}{<} Enable hook detection
+
+\texorpdfstring{$<$}{<} Disable auto-\/terminate for testing
+
+\texorpdfstring{$<$}{<} Set monitoring interval
+
+\texorpdfstring{$<$}{<} Set log file path
+
+\texorpdfstring{$<$}{<} Configure RASP
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01492}{1492}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a8619eaac9074859f2738827319db67d5}\label{localsports__test_8cpp_a8619eaac9074859f2738827319db67d5} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [79/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPDetect\+Debugger}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Detect\+Debugger function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000078}{Test}}]Verifies RASP debugger detection \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Detect\+Debugger
+
+\texorpdfstring{$<$}{<} Detect debugger
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01313}{1313}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ad470321c59677470ebdd0a47d427f5ec}\label{localsports__test_8cpp_ad470321c59677470ebdd0a47d427f5ec} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [80/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPDetect\+IATHooks}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Detect\+IATHooks function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000084}{Test}}]Verifies IAT hook detection \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Detect\+IATHooks
+
+\texorpdfstring{$<$}{<} Detect IAT hooks
+
+\texorpdfstring{$<$}{<} Should be non-\/negative
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01387}{1387}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a0f84b6c4440ce0d37bc858e428c923dc}\label{localsports__test_8cpp_a0f84b6c4440ce0d37bc858e428c923dc} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [81/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPDetect\+PLTHooks}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Detect\+PLTHooks function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000085}{Test}}]Verifies PLT hook detection \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Detect\+PLTHooks
+
+\texorpdfstring{$<$}{<} Detect PLT hooks
+
+\texorpdfstring{$<$}{<} Should be non-\/negative
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01397}{1397}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a3111b3a2437d58ad3bc80abab8cdca36}\label{localsports__test_8cpp_a3111b3a2437d58ad3bc80abab8cdca36} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [82/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPGet\+RASPConfig}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Get\+RASPConfig function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000095}{Test}}]Verifies RASP configuration retrieval \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Get\+RASPConfig
+
+\texorpdfstring{$<$}{<} Get RASP config
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01509}{1509}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a87bfff49502ee57792dff4a1b7b806c1}\label{localsports__test_8cpp_a87bfff49502ee57792dff4a1b7b806c1} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [83/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPGet\+Security\+Event\+Log}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Get\+Security\+Event\+Log function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000089}{Test}}]Verifies security event log retrieval \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Get\+Security\+Event\+Log
+
+\texorpdfstring{$<$}{<} Get event log
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01443}{1443}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a0973931069f84afdbf7263adb9407677}\label{localsports__test_8cpp_a0973931069f84afdbf7263adb9407677} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [84/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPHandle\+Critical\+Event}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Handle\+Critical\+Event function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000098}{Test}}]Verifies critical event handling \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Handle\+Critical\+Event
+
+\texorpdfstring{$<$}{<} Handle event without termination
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01543}{1543}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a62c08dabeed6f89b17fec5e8a5db5486}\label{localsports__test_8cpp_a62c08dabeed6f89b17fec5e8a5db5486} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [85/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPInitialize\+RASP}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Initialize\+RASP function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000096}{Test}}]Verifies RASP initialization \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Initialize\+RASP
+
+\texorpdfstring{$<$}{<} Get current checksum
+
+\texorpdfstring{$<$}{<} Initialize RASP without auto-\/terminate
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+\texorpdfstring{$<$}{<} Shutdown RASP
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01519}{1519}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a14b8f743dce0b42fc696014807bc2bcf}\label{localsports__test_8cpp_a14b8f743dce0b42fc696014807bc2bcf} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [86/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPIs\+RASPActive}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Is\+RASPActive function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000092}{Test}}]Verifies RASP active status check \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Is\+RASPActive
+
+\texorpdfstring{$<$}{<} Check if RASP is active
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01472}{1472}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a521f08d90dfe96ad941d95ecedb83419}\label{localsports__test_8cpp_a521f08d90dfe96ad941d95ecedb83419} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [87/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPIs\+Thunk\+Modified}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Is\+Thunk\+Modified function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000086}{Test}}]Verifies thunk modification detection \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Is\+Thunk\+Modified
+
+\texorpdfstring{$<$}{<} Check malloc thunk
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01407}{1407}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_af1380b08563b4e689e458fcad1ad6c46}\label{localsports__test_8cpp_af1380b08563b4e689e458fcad1ad6c46} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [88/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPLog\+Security\+Event}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Log\+Security\+Event function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000088}{Test}}]Verifies security event logging \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Log\+Security\+Event
+
+\texorpdfstring{$<$}{<} Create security event
+
+\texorpdfstring{$<$}{<} Set timestamp
+
+\texorpdfstring{$<$}{<} Set event type
+
+\texorpdfstring{$<$}{<} Set description
+
+\texorpdfstring{$<$}{<} Set severity (info)
+
+\texorpdfstring{$<$}{<} Log event
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01427}{1427}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_aea00e9e8da6ce2e0b799ee960e162d1a}\label{localsports__test_8cpp_aea00e9e8da6ce2e0b799ee960e162d1a} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [89/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPPerform\+Security\+Scan}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Perform\+Security\+Scan function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000093}{Test}}]Verifies comprehensive security scanning \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Perform\+Security\+Scan
+
+\texorpdfstring{$<$}{<} Perform security scan
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01482}{1482}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a045271184fe048d645170594012c9068}\label{localsports__test_8cpp_a045271184fe048d645170594012c9068} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [90/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPScan\+Critical\+Functions}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Scan\+Critical\+Functions function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000087}{Test}}]Verifies critical function scanning \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Scan\+Critical\+Functions
+
+\texorpdfstring{$<$}{<} Scan critical functions
+
+\texorpdfstring{$<$}{<} Should be non-\/negative
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01417}{1417}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ae27ac0fa996e04ff3c9725cf91c14388}\label{localsports__test_8cpp_ae27ac0fa996e04ff3c9725cf91c14388} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [91/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPShutdown\+RASP}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Shutdown\+RASP function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000097}{Test}}]Verifies RASP shutdown \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Shutdown\+RASP
+
+\texorpdfstring{$<$}{<} Shutdown RASP
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01533}{1533}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a66bd2b87443089feb725d23bee282dee}\label{localsports__test_8cpp_a66bd2b87443089feb725d23bee282dee} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [92/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPStart\+Debugger\+Monitoring}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Start\+Debugger\+Monitoring function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000079}{Test}}]Verifies debugger monitoring can be started \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Start\+Debugger\+Monitoring
+
+\texorpdfstring{$<$}{<} Callback flag
+
+\texorpdfstring{$<$}{<} Test callback
+
+\texorpdfstring{$<$}{<} Start monitoring
+
+\texorpdfstring{$<$}{<} Sleep 500ms
+
+\texorpdfstring{$<$}{<} Stop debugger monitoring
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01323}{1323}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ab86516d6e1e9dd6535cd679ad456ff1c}\label{localsports__test_8cpp_ab86516d6e1e9dd6535cd679ad456ff1c} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [93/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPStop\+Debugger\+Monitoring}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Stop\+Debugger\+Monitoring function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000080}{Test}}]Verifies debugger monitoring can be stopped \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Stop\+Debugger\+Monitoring
+
+\texorpdfstring{$<$}{<} Stop monitoring
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01343}{1343}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a54fe7b9bc835333c514f4e82541c3c97}\label{localsports__test_8cpp_a54fe7b9bc835333c514f4e82541c3c97} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [94/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPVerify\+Process\+Isolation}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Verify\+Process\+Isolation function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000091}{Test}}]Verifies process isolation verification \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Verify\+Process\+Isolation
+
+\texorpdfstring{$<$}{<} Verify process isolation
+
+\texorpdfstring{$<$}{<} Suppress unused variable
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01462}{1462}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a593109b9ff5e236d061fa9e9bc76c5fa}\label{localsports__test_8cpp_a593109b9ff5e236d061fa9e9bc76c5fa} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [95/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{RASPVerify\+Text\+Section\+Integrity}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Verify\+Text\+Section\+Integrity function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000082}{Test}}]Verifies text section integrity verification \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: rasp\+::\+Verify\+Text\+Section\+Integrity
+
+\texorpdfstring{$<$}{<} Get current checksum
+
+\texorpdfstring{$<$}{<} Verify with correct checksum
+
+\texorpdfstring{$<$}{<} Should be valid
+
+\texorpdfstring{$<$}{<} Verify with wrong checksum
+
+\texorpdfstring{$<$}{<} Should be invalid
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01363}{1363}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ae12e316ab0d04a5589e91ec416200463}\label{localsports__test_8cpp_ae12e316ab0d04a5589e91ec416200463} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [96/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Read\+Password\+Secure}]{ }\end{DoxyParamCaption})}
+
+
+
+Test read\+\_\+password\+\_\+secure function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000046}{Test}}]Verifies secure password reading \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: read\+\_\+password\+\_\+secure
+
+\texorpdfstring{$<$}{<} Clear output
+
+\texorpdfstring{$<$}{<} Provide password input
+
+\texorpdfstring{$<$}{<} Read password
+
+\texorpdfstring{$<$}{<} Password should not be empty
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01024}{1024}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a1baf403bb3815873f038ed7263bcaf1d}\label{localsports__test_8cpp_a1baf403bb3815873f038ed7263bcaf1d} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [97/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Record\+Result\+Interactive\+Basic}]{ }\end{DoxyParamCaption})}
+
+
+
+Test LS\+\_\+\+Record\+Result\+Interactive function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000027}{Test}}]Verifies game result recording functionality \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Record\+Result\+Interactive -\/ Basic functionality
+
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Clear output buffer
+
+\texorpdfstring{$<$}{<} Provide input\+: game ID, result
+
+\texorpdfstring{$<$}{<} Call record result function
+
+\texorpdfstring{$<$}{<} Get function output
+
+\texorpdfstring{$<$}{<} Verify function produces output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00716}{716}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ad9ae92c12ad9a9d2e31d288c3c666ec2}\label{localsports__test_8cpp_ad9ae92c12ad9a9d2e31d288c3c666ec2} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [98/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Record\+Stats\+Interactive\+Basic}]{ }\end{DoxyParamCaption})}
+
+
+
+Test LS\+\_\+\+Record\+Stats\+Interactive function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000028}{Test}}]Verifies statistics recording functionality \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Record\+Stats\+Interactive -\/ Basic functionality
+
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Clear output buffer
+
+\texorpdfstring{$<$}{<} Provide input\+: game ID, player ID, goals, assists, saves, yellow, red
+
+\texorpdfstring{$<$}{<} Call record stats function
+
+\texorpdfstring{$<$}{<} Get function output
+
+\texorpdfstring{$<$}{<} Verify function produces output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00732}{732}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_afa9f7d361576ac2daebdf8e4be61566e}\label{localsports__test_8cpp_afa9f7d361576ac2daebdf8e4be61566e} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [99/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Remove\+Player\+Interactive\+Basic}]{ }\end{DoxyParamCaption})}
+
+
+
+Test LS\+\_\+\+Remove\+Player\+Interactive function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000025}{Test}}]Verifies player removal functionality \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Remove\+Player\+Interactive -\/ Basic functionality
+
+\texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Clear output buffer
+
+\texorpdfstring{$<$}{<} Provide player ID to remove
+
+\texorpdfstring{$<$}{<} Call remove player function
+
+\texorpdfstring{$<$}{<} Get function output
+
+\texorpdfstring{$<$}{<} Verify function produces output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00684}{684}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a74bd3607ee202b0d5d806014c405a5e7}\label{localsports__test_8cpp_a74bd3607ee202b0d5d806014c405a5e7} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [100/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Secure\+Buffer\+Cleanse}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Secure\+Buffer cleanse functionality. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000040}{Test}}]Verifies Secure\+Buffer can cleanse its memory \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Secure\+Buffer -\/ Cleanse
+
+\texorpdfstring{$<$}{<} Create buffer
+
+\texorpdfstring{$<$}{<} Get data pointer
+
+\texorpdfstring{$<$}{<} Fill buffer
+
+\texorpdfstring{$<$}{<} Fill with test pattern
+
+\texorpdfstring{$<$}{<} Cleanse memory
+
+\texorpdfstring{$<$}{<} Size should remain same
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00932}{932}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ae7b41d7890af02a2f5581689b481e8ba}\label{localsports__test_8cpp_ae7b41d7890af02a2f5581689b481e8ba} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [101/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Secure\+Buffer\+Default\+Construction}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Secure\+Buffer default construction. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000037}{Test}}]Verifies Secure\+Buffer can be created with default size \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Secure\+Buffer -\/ Default construction
+
+\texorpdfstring{$<$}{<} Create default Secure\+Buffer
+
+\texorpdfstring{$<$}{<} Size should be 0
+
+\texorpdfstring{$<$}{<} Data should be null
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00899}{899}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a0ec6a16dcab2c1684f4143088b5a22fd}\label{localsports__test_8cpp_a0ec6a16dcab2c1684f4143088b5a22fd} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [102/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Secure\+Buffer\+Large\+Size}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Secure\+Buffer with large size. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000112}{Test}}]Verifies handling of large buffers \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Secure\+Buffer -\/ Large size
+
+\texorpdfstring{$<$}{<} Create 1MB buffer
+
+\texorpdfstring{$<$}{<} Size should be 1MB
+
+\texorpdfstring{$<$}{<} Data should not be null
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01781}{1781}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_afc2df91a756423f1d623f131031027ec}\label{localsports__test_8cpp_afc2df91a756423f1d623f131031027ec} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [103/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Secure\+Buffer\+Move\+Assignment}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Secure\+Buffer move assignment. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000110}{Test}}]Verifies Secure\+Buffer move assignment operator \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Secure\+Buffer -\/ Move assignment
+
+\texorpdfstring{$<$}{<} Create source buffer
+
+\texorpdfstring{$<$}{<} Get source size
+
+\texorpdfstring{$<$}{<} Create destination buffer
+
+\texorpdfstring{$<$}{<} Move assign
+
+\texorpdfstring{$<$}{<} Destination should have source size
+
+\texorpdfstring{$<$}{<} Source should be empty
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01756}{1756}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_affbf8e6ff2b5a5826d5fd4b09ed70dec}\label{localsports__test_8cpp_affbf8e6ff2b5a5826d5fd4b09ed70dec} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [104/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Secure\+Buffer\+Move\+Construction}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Secure\+Buffer move construction. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000041}{Test}}]Verifies Secure\+Buffer move semantics work \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Secure\+Buffer -\/ Move construction
+
+\texorpdfstring{$<$}{<} Create source buffer
+
+\texorpdfstring{$<$}{<} Get source size
+
+\texorpdfstring{$<$}{<} Move construct
+
+\texorpdfstring{$<$}{<} Moved buffer should have same size
+
+\texorpdfstring{$<$}{<} Source should be empty
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00950}{950}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a9ec365cda67a2e0140753dc2711c3566}\label{localsports__test_8cpp_a9ec365cda67a2e0140753dc2711c3566} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [105/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Secure\+Buffer\+Resize}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Secure\+Buffer resize functionality. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000039}{Test}}]Verifies Secure\+Buffer can be resized \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Secure\+Buffer -\/ Resize
+
+\texorpdfstring{$<$}{<} Create buffer with size 32
+
+\texorpdfstring{$<$}{<} Initial size should be 32
+
+\texorpdfstring{$<$}{<} Resize to 128
+
+\texorpdfstring{$<$}{<} New size should be 128
+
+\texorpdfstring{$<$}{<} Data should not be null
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00919}{919}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ada4871f53b10262f7f3c6f7002d91417}\label{localsports__test_8cpp_ada4871f53b10262f7f3c6f7002d91417} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [106/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Secure\+Buffer\+Resize\+To\+Zero}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Secure\+Buffer with zero size resize. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000111}{Test}}]Verifies resizing to zero \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Secure\+Buffer -\/ Resize to zero
+
+\texorpdfstring{$<$}{<} Create buffer
+
+\texorpdfstring{$<$}{<} Resize to zero
+
+\texorpdfstring{$<$}{<} Size should be zero
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01771}{1771}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a8fb19176cc78d66ab754d63220cdc3a5}\label{localsports__test_8cpp_a8fb19176cc78d66ab754d63220cdc3a5} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [107/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Secure\+Buffer\+Sized\+Construction}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Secure\+Buffer construction with size. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000038}{Test}}]Verifies Secure\+Buffer can be created with specific size \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Secure\+Buffer -\/ Sized construction
+
+\texorpdfstring{$<$}{<} Create Secure\+Buffer with size 64
+
+\texorpdfstring{$<$}{<} Size should be 64
+
+\texorpdfstring{$<$}{<} Data should not be null
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00909}{909}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a9fa9a91b9510cf574c802c714b4c54f5}\label{localsports__test_8cpp_a9fa9a91b9510cf574c802c714b4c54f5} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [108/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Secure\+Bzero\+Function}]{ }\end{DoxyParamCaption})}
+
+
+
+Test secure\+\_\+bzero static function. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000042}{Test}}]Verifies secure\+\_\+bzero can zero memory \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: secure\+\_\+bzero -\/ Static function
+
+\texorpdfstring{$<$}{<} Test data array
+
+\texorpdfstring{$<$}{<} Fill with test pattern
+
+\texorpdfstring{$<$}{<} Fill with 0x\+FF
+
+\texorpdfstring{$<$}{<} Zero the memory
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00963}{963}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_af8f50a803867ea33fc2a541f3ce80c38}\label{localsports__test_8cpp_af8f50a803867ea33fc2a541f3ce80c38} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [109/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Stats\+Operations\+Boundary\+Values}]{ }\end{DoxyParamCaption})}
+
+
+
+Test statistics operations with boundary values. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000102}{Test}}]Verifies handling of boundary values \end{DoxyRefDesc}
+\texorpdfstring{$<$}{<} Test\+: Stats operations -\/ Boundary values
+
+\texorpdfstring{$<$}{<} Initialize system
+
+\texorpdfstring{$<$}{<} Clear output
+
+\texorpdfstring{$<$}{<} Provide max boundary values
+
+\texorpdfstring{$<$}{<} Call record stats
+
+\texorpdfstring{$<$}{<} Get output
+
+\texorpdfstring{$<$}{<} Should produce output
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l01603}{1603}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_af6e3988950757106bf574fbe3883d644}\label{localsports__test_8cpp_af6e3988950757106bf574fbe3883d644} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [110/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{Stat\+Struct\+Fields}]{ }\end{DoxyParamCaption})}
+
+
+
+Test Stat struct field assignments and retrieval. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000020}{Test}}]Verifies all Stat struct fields can be set and retrieved correctly \end{DoxyRefDesc}
+
+
+Tests id, game\+Id, player\+Id, goals, assists, saves, yellow, and red fields 
+\begin{DoxyParams}{Parameters}
+{\em s} & Stat struct instance to test \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Initialize Stat struct
+
+\texorpdfstring{$<$}{<} Set stat ID
+
+\texorpdfstring{$<$}{<} Set game ID
+
+\texorpdfstring{$<$}{<} Set player ID
+
+\texorpdfstring{$<$}{<} Set goals count
+
+\texorpdfstring{$<$}{<} Set assists count
+
+\texorpdfstring{$<$}{<} Set saves count
+
+\texorpdfstring{$<$}{<} Set yellow cards count
+
+\texorpdfstring{$<$}{<} Set red cards count
+
+\texorpdfstring{$<$}{<} Verify stat ID
+
+\texorpdfstring{$<$}{<} Verify game ID
+
+\texorpdfstring{$<$}{<} Verify player ID
+
+\texorpdfstring{$<$}{<} Verify goals count
+
+\texorpdfstring{$<$}{<} Verify assists count
+
+\texorpdfstring{$<$}{<} Verify saves count
+
+\texorpdfstring{$<$}{<} Verify yellow cards count
+
+\texorpdfstring{$<$}{<} Verify red cards count
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00574}{574}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_a4250c108dd3e8856e9fe20a686fe6326}\label{localsports__test_8cpp_a4250c108dd3e8856e9fe20a686fe6326} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [111/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{User\+Struct\+Fields}]{ }\end{DoxyParamCaption})}
+
+
+
+Test User struct field assignments and retrieval. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000022}{Test}}]Verifies all User struct fields can be set and retrieved correctly \end{DoxyRefDesc}
+
+
+Tests id, username, pass\+Hash, role, and active fields 
+\begin{DoxyParams}{Parameters}
+{\em u} & User struct instance to test \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Initialize User struct
+
+\texorpdfstring{$<$}{<} Set user ID
+
+\texorpdfstring{$<$}{<} Set username
+
+\texorpdfstring{$<$}{<} Set password hash
+
+\texorpdfstring{$<$}{<} Set user role
+
+\texorpdfstring{$<$}{<} Set user active status
+
+\texorpdfstring{$<$}{<} Verify user ID
+
+\texorpdfstring{$<$}{<} Verify username
+
+\texorpdfstring{$<$}{<} Verify password hash
+
+\texorpdfstring{$<$}{<} Verify user role
+
+\texorpdfstring{$<$}{<} Verify user active status
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00618}{618}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
+
+\Hypertarget{localsports__test_8cpp_ae1ccce82f369f5198deaf30f925c8696}\label{localsports__test_8cpp_ae1ccce82f369f5198deaf30f925c8696} 
+\index{localsports\_test.cpp@{localsports\_test.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!localsports\_test.cpp@{localsports\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [112/112]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_local_sports_test}{Local\+Sports\+Test}}}]{,  }\item[{View\+Player\+Totals\+When\+Empty}]{ }\end{DoxyParamCaption})}
+
+
+
+Test viewing player totals when database is empty. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000010}{Test}}]Verifies that View\+Player\+Totals\+Interactive works with no data \end{DoxyRefDesc}
+
+
+Ensures function handles empty statistics gracefully \texorpdfstring{$<$}{<} Initialize Local\+Sports system
+
+\texorpdfstring{$<$}{<} Clear output buffer before test
+
+\texorpdfstring{$<$}{<} Call view player totals function
+
+\texorpdfstring{$<$}{<} Get function output
+
+\texorpdfstring{$<$}{<} Verify function produces output
+
+\texorpdfstring{$<$}{<} Error message for assertion
+
+Definition at line \mbox{\hyperlink{localsports__test_8cpp_source_l00357}{357}} of file \mbox{\hyperlink{localsports__test_8cpp_source}{localsports\+\_\+test.\+cpp}}.
 

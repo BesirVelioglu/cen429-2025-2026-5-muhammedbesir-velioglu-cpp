@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_dc98adc217ee19282a14a7b9565ae7d4" kind="dir">
+    <compoundname> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src</compoundname>
+    <innerfile refid="localsports_8cpp">localsports.cpp</innerfile>
+    <innerfile refid="rasp_8cpp">rasp.cpp</innerfile>
+    <innerfile refid="security__hardening_8cpp">security_hardening.cpp</innerfile>
+    <innerfile refid="security__layer_8cpp">security_layer.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/"/>
+  </compounddef>
+</doxygen>

@@ -29,7 +29,8 @@
   <option  id='INLINE_INHERITED_MEMB' default='yes' type='bool'><value>NO</value></option>
   <option  id='FULL_PATH_NAMES' default='yes' type='bool'><value>YES</value></option>
   <option  id='STRIP_FROM_PATH' default='no' type='stringlist'>
-    <value><![CDATA[C:\cen429-2025-2026-5-muhammedbesir-velioglu-cpp]]></value>
+    <value><![CDATA[C:\Users\Can]]></value>
+    <value><![CDATA[Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp]]></value>
   </option>
   <option  id='STRIP_FROM_INC_PATH' default='yes' type='stringlist'>
   </option>

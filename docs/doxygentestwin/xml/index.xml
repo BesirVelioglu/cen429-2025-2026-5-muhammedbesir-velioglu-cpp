@@ -1,15 +1,22 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
   <compound refid="class_local_sports_test" kind="class"><name>LocalSportsTest</name>
+    <member refid="class_local_sports_test_1a28293ad402ccd030971f67efa42b005b" kind="variable"><name>testDbPath</name></member>
+    <member refid="class_local_sports_test_1a488a63c8200509d895ba4ce0db2da932" kind="variable"><name>cinBuffer</name></member>
+    <member refid="class_local_sports_test_1af1ddcc323bbf8fdcea80d79090bf992f" kind="variable"><name>coutBuffer</name></member>
+    <member refid="class_local_sports_test_1ab09a2203b13d35a57d935f6d6aede1fa" kind="variable"><name>originalCin</name></member>
+    <member refid="class_local_sports_test_1a2afa2ad5dbc5f337a6d99669f311fd5b" kind="variable"><name>originalCout</name></member>
     <member refid="class_local_sports_test_1aeae2f6f9c7af18a72cd4e01218b6d15d" kind="function"><name>SetUp</name></member>
     <member refid="class_local_sports_test_1a57a48519a121a6e273ce849cb1126e11" kind="function"><name>TearDown</name></member>
+    <member refid="class_local_sports_test_1a4590bb0a039e4023bb617b021fb1d0cd" kind="function"><name>setInput</name></member>
+    <member refid="class_local_sports_test_1a0949ec2b9f7d39a3bd6064afd3fd92ba" kind="function"><name>provideInput</name></member>
+    <member refid="class_local_sports_test_1a34802027649f3c94d0a567f572235771" kind="function"><name>getOutput</name></member>
+    <member refid="class_local_sports_test_1a3c6d34a153cea64e9fb7d12601367846" kind="function"><name>clearOutput</name></member>
   </compound>
   <compound refid="class_math_utility_test" kind="class"><name>MathUtilityTest</name>
     <member refid="class_math_utility_test_1a8b5b3648bdf4b4b0870d968347186b26" kind="variable"><name>a</name></member>
     <member refid="class_math_utility_test_1ac05460de2c43e3005d1e4db0d530f58c" kind="function"><name>SetUp</name></member>
     <member refid="class_math_utility_test_1a560c5797ed1c41f18332585712abc46e" kind="function"><name>TearDown</name></member>
-  </compound>
-  <compound refid="namespace_coruh_1_1_local_sports" kind="namespace"><name>Coruh::LocalSports</name>
   </compound>
   <compound refid="namespace_coruh_1_1_utility" kind="namespace"><name>Coruh::Utility</name>
   </compound>
@@ -18,11 +25,120 @@
   <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
   </compound>
   <compound refid="localsports__test_8cpp" kind="file"><name>localsports_test.cpp</name>
-    <member refid="localsports__test_8cpp_1aa03c9d9d88d35887fe80898cb67fb01e" kind="function"><name>TEST_F</name></member>
-    <member refid="localsports__test_8cpp_1a73edc5932f250ea8b2d1299cd49384d8" kind="function"><name>TEST_F</name></member>
-    <member refid="localsports__test_8cpp_1a3ac6db8bffa5deb89afe03dd888025e8" kind="function"><name>TEST_F</name></member>
-    <member refid="localsports__test_8cpp_1aa67ad5fe108ea189b3cb1dc8fdd8fdb8" kind="function"><name>TEST_F</name></member>
-    <member refid="localsports__test_8cpp_1a8abe62bf8592204a5d5d4cacd8c7f85c" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a46a06f391f96e5bcd8a80760946bfeaa" kind="define"><name>ENABLE_LocalSports_TEST</name></member>
+    <member refid="localsports__test_8cpp_1ab9959e75e26bc66b3733ddc04de6b4cf" kind="define"><name>REMOVE</name></member>
+    <member refid="localsports__test_8cpp_1a1942beb4c99f4077d3ecfdeefe4e4f3e" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a1a661498febbfc9ac376ea03bc72bc76" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ad2474200ea606bfc9d46ac0a91460379" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a4262b04b5888dae4d1b1e532078c316b" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a0c0c0d4a092228c058851827332900aa" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a88c7421670d4856b5cdf59f51a0708d2" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1adf11bcfdef8944a0bc1feea03fce7fb0" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a44b61c1543e565dc349abcb3a51a8b5b" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a28c25def17efb334d47efa6d8177f31e" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ae1ccce82f369f5198deaf30f925c8696" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a70849af5b4d8163d7dc6448534ca74db" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a1e162a29774e3cf93b4bfa76e99f49a0" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a4080525b95b7b1e067c2d8f3df31fe1c" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a7d3f6c52cdc87221a05ca4e46cb39f82" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1aa2e5bcd114b12af1f6e7a3153835a772" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1afe18f3d98d30a8bfca78839a02e18899" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ae951fdde1197d8f6c2d050794784a30b" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1adacd42dc1f22618719f1ae0290b5d234" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a6c65112b665a350411ccd1276c75704a" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1af6e3988950757106bf574fbe3883d644" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1abb98f240b976ced50484528423eb3a40" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a4250c108dd3e8856e9fe20a686fe6326" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ae797d523e6a2d607c17d0b281f723d05" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a8db5b401594d9f7af55c70b1125074e8" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1afa9f7d361576ac2daebdf8e4be61566e" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a5f53f0cd030473ec18b30c664819b4e4" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a1baf403bb3815873f038ed7263bcaf1d" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ad9ae92c12ad9a9d2e31d288c3c666ec2" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a362c2974488ace602007454b1eaeb43e" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1adfabfaf8af1b50a694a31aa362678557" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1aed135dc2369b88f55985a826f06325ca" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ad97e713a2ee1eb18bf1e901637dd4747" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1aea64b4f79548f276ed4c4e8b8c2f0fc3" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a1be67184910a3075a24f99d46f1e429f" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a8b2ff5b00f86b25ce9528233976d3352" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1abe2b83bf2d191d453e1085935c0fbe7b" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ae7b41d7890af02a2f5581689b481e8ba" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a8fb19176cc78d66ab754d63220cdc3a5" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a9ec365cda67a2e0140753dc2711c3566" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a74bd3607ee202b0d5d806014c405a5e7" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1affbf8e6ff2b5a5826d5fd4b09ed70dec" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a9fa9a91b9510cf574c802c714b4c54f5" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a64f97a06c3207a975b4007e98bca499d" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a5d6c3237a2478f7ddf847b1acddf3b97" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a7bbd49debc765f3a9df8d35597b1e517" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ae12e316ab0d04a5589e91ec416200463" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a357345d589c133d1129aa4b44e043208" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1adc8959d91209339608bda7671bd4ff6f" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a1196aa5e4909b2870c72212e47c4dbb6" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1af5b988d22515624139c399abf323f596" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1aa8dacc85e752af2800ae5e5ea2085b50" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a7d716507dbf3e6abbb1575334b952abf" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ad0c3e0ffe3e909805f84107459f26d55" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a86d4ae388fd1691ee22c8cd50acbd713" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a803651e0d82feb70feba2bad09512a30" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a7c08ba229b804e7de435a349498e6d84" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a5a4f41d18ca629b074c23cad9b963db4" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1aabbc9ba1f7fb44223c77a0a91c91482f" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a07c0c4ac8e675d5ed19de5e1c3437d34" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a59f2f3b3678a236991af5d5cb0bd22ad" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ab650615bf1c51c814cbd7aab6c50d5ce" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a398f49b19d2336fa1b5c94b890e5aa7c" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a1c34d09955dc4ed58c637ff23390e5e1" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a7e405c61a875e852937469d43d8e3f4a" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1aae2576164e63c0ac6673511e88456018" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1aff0af190e77dc1cc1f41ac47487df16a" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ae70cca1bf71ae701e03762425373cb88" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1acd6edb64c644cc5bc8e47a04fa23203f" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a41b71255ab626d0da97249045ca8641c" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a8619eaac9074859f2738827319db67d5" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a66bd2b87443089feb725d23bee282dee" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ab86516d6e1e9dd6535cd679ad456ff1c" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1add3b3ab07c53980e465a31c63121d6d2" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a593109b9ff5e236d061fa9e9bc76c5fa" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a86d09f10828936b8ef5ff6dc784ff2c3" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ad470321c59677470ebdd0a47d427f5ec" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a0f84b6c4440ce0d37bc858e428c923dc" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a521f08d90dfe96ad941d95ecedb83419" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a045271184fe048d645170594012c9068" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1af1380b08563b4e689e458fcad1ad6c46" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a87bfff49502ee57792dff4a1b7b806c1" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a76698294030ec079bceb11efaa3f3799" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a54fe7b9bc835333c514f4e82541c3c97" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a14b8f743dce0b42fc696014807bc2bcf" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1aea00e9e8da6ce2e0b799ee960e162d1a" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ab8036f956f7352ac18136a09b4ac8250" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a3111b3a2437d58ad3bc80abab8cdca36" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a62c08dabeed6f89b17fec5e8a5db5486" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ae27ac0fa996e04ff3c9725cf91c14388" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a0973931069f84afdbf7263adb9407677" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1afe2ccfc17db703e2381d1fffcb61e25f" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a92797d8915573daa1e1bdbf60f35906c" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a22ced2c8459469074345afb3e008471a" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1af8f50a803867ea33fc2a541f3ce80c38" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1affa5c25e2e8572ab0ed4e99b83504e9a" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ad186cd2305a629f3f2c9c8a9c083f7d4" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ac64bd095079a7ac99f3050c06cf806ee" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ae2b02d060efb2f0214d23ed2386bb650" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a232f74cf9206f3e7cd85cf50d83b5b98" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a8fa84302e05431eba3694e93996f4ca3" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a06c4cb8f447a800b50cf8178f0a09201" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1afc2df91a756423f1d623f131031027ec" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ada4871f53b10262f7f3c6f7002d91417" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a0ec6a16dcab2c1684f4143088b5a22fd" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a577225af8278e9421ddbdc856f8095b6" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1aaf3b75a37c80b5f1c3f9d8f00f1f24f4" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a81f25bc7ff660bc131785e95a9936410" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1abb028d391f864b804f402629960a515d" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1af9c57631cc26f358e64dc68d39ec92d1" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a679e2ef4981cedec938f895af0ded1ac" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1ab4e1bbc52de3b2cec4673df65c56140b" kind="function"><name>TEST_F</name></member>
+    <member refid="localsports__test_8cpp_1a30472eeb19f75df945c0563b4610fd76" kind="function"><name>TEST_F</name></member>
     <member refid="localsports__test_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
   </compound>
   <compound refid="utility__test_8cpp" kind="file"><name>utility_test.cpp</name>
@@ -36,13 +152,21 @@
     <member refid="utility__test_8cpp_1a75ca2c83dbb6c84cf11d97d45877aae1" kind="function"><name>TEST_F</name></member>
     <member refid="utility__test_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
   </compound>
-  <compound refid="dir_dade3276c45f5b3b5924ef6d84828165" kind="dir"><name>src/tests/LocalSports</name>
+  <compound refid="test" kind="page"><name>test</name>
   </compound>
-  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  <compound refid="dir_909f2d8eced2fc0f95c4e73b28a8363b" kind="dir"><name> Ahmed</name>
   </compound>
-  <compound refid="dir_d93a1d4020dea85bb71b237545b5e722" kind="dir"><name>src/tests</name>
+  <compound refid="dir_2cc88161db9dbbd14779a7b712899698" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp</name>
   </compound>
-  <compound refid="dir_5f7dbe22ab4663025932929c1a2221ac" kind="dir"><name>src/tests/utility</name>
+  <compound refid="dir_1cc440524e7f7fca440a2bd4029a9680" kind="dir"><name> Ahmed/Desktop</name>
+  </compound>
+  <compound refid="dir_652d6789416bf620469b6db8dc01bec0" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/LocalSports</name>
+  </compound>
+  <compound refid="dir_74ef3ad7abb25953fbdb01c44c0cc43c" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src</name>
+  </compound>
+  <compound refid="dir_5e8fbc19255108ff22a17ce3b8eb0ad7" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests</name>
+  </compound>
+  <compound refid="dir_e21aa99db65b45a779fe9b46e2ddd537" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/utility</name>
   </compound>
   <compound refid="indexpage" kind="page"><name>index</name>
   </compound>

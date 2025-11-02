@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\src\localsports.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\src\rasp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\src\security_hardening.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\src\security_layer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\header\localsports.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\header\rasp.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\header\security_config.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\header\security_hardening.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\header\security_layer.h">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{A2F770AC-36F9-3226-8FBA-FD5E59998584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{90E4B30F-2A1F-3E40-8E3A-5D8001CC37AD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

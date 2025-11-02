@@ -298,6 +298,11 @@
     <member refid="namespaceteamcore_1a1d7ee6f2e73ff6cba98568d5c1213eca" kind="function"><name>read_password_secure</name></member>
   </compound>
   <compound refid="localsports_8cpp" kind="file"><name>localsports.cpp</name>
+    <member refid="localsports_8cpp_1ad8d5437bed8662e72cdec2b479cc25d3" kind="variable"><name>FILE_PLAYERS</name></member>
+    <member refid="localsports_8cpp_1a8e8794db27e1eb1ffa03d07b8ee71a08" kind="variable"><name>FILE_GAMES</name></member>
+    <member refid="localsports_8cpp_1a96cb4f3bc0c427a5185a29cb31fa82e7" kind="variable"><name>FILE_STATS</name></member>
+    <member refid="localsports_8cpp_1a3b93840b5053aa7d0574cdd98986cf77" kind="variable"><name>FILE_MESSAGES</name></member>
+    <member refid="localsports_8cpp_1a71a48f6fd8a4047e914be0cc7a74cfad" kind="variable"><name>FILE_USERS</name></member>
     <member refid="localsports_8cpp_1a452fb05e95ce282242760ef11bba7295" kind="variable"><name>g_db</name></member>
     <member refid="localsports_8cpp_1ad8d5b35f272e2aaa60507fffd3290a4a" kind="variable"><name>DB_PATH</name></member>
     <member refid="localsports_8cpp_1affc283dee3200558a6e551504f75709a" kind="variable"><name>g_isAuthed</name></member>
@@ -441,25 +446,31 @@
   </compound>
   <compound refid="math_utility_8cpp" kind="file"><name>mathUtility.cpp</name>
   </compound>
-  <compound refid="dir_1ae7ff6c8a763c9d05d5365fcf363cd8" kind="dir"><name>src/LocalSports/header</name>
+  <compound refid="dir_909f2d8eced2fc0f95c4e73b28a8363b" kind="dir"><name> Ahmed</name>
   </compound>
-  <compound refid="dir_eeb2f57f068ff009d14363346e85d73c" kind="dir"><name>src/LocalSportsapp/header</name>
+  <compound refid="dir_2cc88161db9dbbd14779a7b712899698" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp</name>
   </compound>
-  <compound refid="dir_1a3b8499b331fe4e1564b1eb295a0893" kind="dir"><name>src/utility/header</name>
+  <compound refid="dir_1cc440524e7f7fca440a2bd4029a9680" kind="dir"><name> Ahmed/Desktop</name>
   </compound>
-  <compound refid="dir_991e0a5c7a2b28a83e935c9c0ca3828a" kind="dir"><name>src/LocalSports</name>
+  <compound refid="dir_a580983669229df6886ba2c29fa3c304" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header</name>
   </compound>
-  <compound refid="dir_b994550562b4ecbede8b48d55a19e91b" kind="dir"><name>src/LocalSportsapp</name>
+  <compound refid="dir_18135739faa5b0f5ea4b5e3e85553449" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSportsapp/header</name>
   </compound>
-  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  <compound refid="dir_f8429dca68db8df5001581445eb6bca5" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility/header</name>
   </compound>
-  <compound refid="dir_f320cfb6b6955889badda3df70c7b51c" kind="dir"><name>src/LocalSports/src</name>
+  <compound refid="dir_fd9a55ef5c1e199687d13b69c163dd65" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports</name>
   </compound>
-  <compound refid="dir_a210ec4a9d6cdb1157380a0902d2cf9a" kind="dir"><name>src/LocalSportsapp/src</name>
+  <compound refid="dir_a7645d034d684ea8c369521daded10a6" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSportsapp</name>
   </compound>
-  <compound refid="dir_e82d5b00f3064e3249317b7e44769fc6" kind="dir"><name>src/utility/src</name>
+  <compound refid="dir_74ef3ad7abb25953fbdb01c44c0cc43c" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src</name>
   </compound>
-  <compound refid="dir_0619a8f54b4fad7043a6de45be8fde0b" kind="dir"><name>src/utility</name>
+  <compound refid="dir_dc98adc217ee19282a14a7b9565ae7d4" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src</name>
+  </compound>
+  <compound refid="dir_81f4a376f8ee5ff6eae40fcb61af90dc" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSportsapp/src</name>
+  </compound>
+  <compound refid="dir_aac5eefc7e4da618c53c2b3988d33e20" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility/src</name>
+  </compound>
+  <compound refid="dir_9ac4e1a5fc676289bc00e513a8202608" kind="dir"><name> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility</name>
   </compound>
   <compound refid="indexpage" kind="page"><name>index</name>
   </compound>

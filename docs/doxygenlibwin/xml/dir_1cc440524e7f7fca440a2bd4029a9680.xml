@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_1cc440524e7f7fca440a2bd4029a9680" kind="dir">
+    <compoundname> Ahmed/Desktop</compoundname>
+    <innerdir refid="dir_2cc88161db9dbbd14779a7b712899698"> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file=" Ahmed/Desktop/"/>
+  </compounddef>
+</doxygen>

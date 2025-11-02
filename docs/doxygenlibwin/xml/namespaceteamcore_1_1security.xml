@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_config.h" line="34" column="1" bodyfile="src/LocalSports/header/security_config.h" bodystart="34" bodyend="40"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" line="34" column="1" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" bodystart="34" bodyend="40"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -59,14 +59,14 @@
         <name>EXPECTED_TEXT_CHECKSUM</name>
         <qualifiedname>teamcore::security::EXPECTED_TEXT_CHECKSUM</qualifiedname>
         <initializer>= 
-    &quot;d1918388fdfcb2ed043d5b4af528d156d84442e47a4c004cfb9ab091b30d6012&quot;</initializer>
+    &quot;7eb6b201aef0400fdbadc70f05139c967641fa01444c1365e22ccbfb360154ea&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_config.h" line="15" column="22" bodyfile="src/LocalSports/header/security_config.h" bodystart="15" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" line="15" column="22" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceteamcore_1_1security_1aba8e61216f2d48f6924284bc7d39605e" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr bool</type>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_config.h" line="20" column="16" bodyfile="src/LocalSports/header/security_config.h" bodystart="20" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" line="20" column="16" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceteamcore_1_1security_1a4b7cf415c91a0d68ebce31e5e4e1cd62" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr bool</type>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_config.h" line="24" column="16" bodyfile="src/LocalSports/header/security_config.h" bodystart="24" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" line="24" column="16" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceteamcore_1_1security_1aad1b06589d384f829ca9ba7aa25cc227" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr bool</type>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_config.h" line="27" column="16" bodyfile="src/LocalSports/header/security_config.h" bodystart="27" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" line="27" column="16" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceteamcore_1_1security_1a8deccd97c4e795531f2a743a433165ed" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr bool</type>
@@ -126,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_config.h" line="31" column="16" bodyfile="src/LocalSports/header/security_config.h" bodystart="31" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" line="31" column="16" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceteamcore_1_1security_1a86d17bb38a6252940c800f8bd0ecb9bd" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr <ref refid="namespaceteamcore_1_1security_1a737a9b38bcf0a7bcdd1eff9eb9d8d1c5" kindref="member">LogLevel</ref></type>
@@ -141,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_config.h" line="45" column="20" bodyfile="src/LocalSports/header/security_config.h" bodystart="45" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" line="45" column="20" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceteamcore_1_1security_1ac1a897eadfc2db339342e14ae96176dd" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr bool</type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_config.h" line="48" column="16" bodyfile="src/LocalSports/header/security_config.h" bodystart="48" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" line="48" column="16" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceteamcore_1_1security_1a361c700fb7238a366ef957b65cde15aa" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr int</type>
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_config.h" line="52" column="15" bodyfile="src/LocalSports/header/security_config.h" bodystart="52" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" line="52" column="15" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceteamcore_1_1security_1ad0c20d448e303c47edc01125659b3746" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr const char *</type>
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_config.h" line="55" column="22" bodyfile="src/LocalSports/header/security_config.h" bodystart="55" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" line="55" column="22" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -206,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_config.h" line="62" column="20" bodyfile="src/LocalSports/header/security_config.h" bodystart="62" bodyend="64"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" line="62" column="20" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" bodystart="62" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1security_1a9095309789da1a688af218b55794adcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -224,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_config.h" line="70" column="13" bodyfile="src/LocalSports/header/security_config.h" bodystart="70" bodyend="74"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" line="70" column="13" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" bodystart="70" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1security_1a41ab062dfed2a4b412dbe215942a8292" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -255,13 +255,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_config.h" line="81" column="13" bodyfile="src/LocalSports/header/security_config.h" bodystart="81" bodyend="83"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" line="81" column="13" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" bodystart="81" bodyend="83"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/LocalSports/header/security_config.h" line="9" column="1"/>
+    <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_config.h" line="9" column="1"/>
   </compounddef>
 </doxygen>

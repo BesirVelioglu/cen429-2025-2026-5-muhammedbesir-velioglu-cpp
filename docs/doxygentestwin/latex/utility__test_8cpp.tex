@@ -1,5 +1,10 @@
-\doxysection{src/tests/utility/utility\+\_\+test.cpp File Reference}
-\hypertarget{utility__test_8cpp}{}\label{utility__test_8cpp}\index{src/tests/utility/utility\_test.cpp@{src/tests/utility/utility\_test.cpp}}
+\doxysection{ Ahmed/\+Desktop/cen429-\/2025-\/2026-\/5-\/muhammedbesir-\/velioglu-\/cpp/src/tests/utility/utility\+\_\+test.cpp File Reference}
+\hypertarget{utility__test_8cpp}{}\label{utility__test_8cpp}\index{ Ahmed/Desktop/cen429-\/2025-\/2026-\/5-\/muhammedbesir-\/velioglu-\/cpp/src/tests/utility/utility\_test.cpp@{ Ahmed/Desktop/cen429-\/2025-\/2026-\/5-\/muhammedbesir-\/velioglu-\/cpp/src/tests/utility/utility\_test.cpp}}
+
+
+Comprehensive unit tests for Utility library (Math\+Utility class)  
+
+
 {\ttfamily \#include \"{}gtest/gtest.\+h\"{}}\newline
 {\ttfamily \#include \"{}../../utility/header/common\+Types.\+h\"{}}\newline
 {\ttfamily \#include \"{}../../utility/header/math\+Utility.\+h\"{}}\newline
@@ -17,28 +22,67 @@ Include dependency graph for utility\+\_\+test.\+cpp\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{class_math_utility_test}{Math\+Utility\+Test}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Test fixture for Math\+Utility unit tests. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{utility__test_8cpp_a1a32a39867f3edfaa2b66659f6a5f56e}{TEST\+\_\+F}} (\mbox{\hyperlink{class_math_utility_test}{Math\+Utility\+Test}}, Calculate\+Mean)
-\item 
+\begin{DoxyCompactList}\small\item\em Test mean calculation with positive numbers. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{utility__test_8cpp_a605cb3e19c672b332b4c1d7921a42b5b}{TEST\+\_\+F}} (\mbox{\hyperlink{class_math_utility_test}{Math\+Utility\+Test}}, Calculate\+Median\+Odd)
-\item 
+\begin{DoxyCompactList}\small\item\em Test median calculation with odd number of elements. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{utility__test_8cpp_a1ad95925afbf048289b545eb09c30b07}{TEST\+\_\+F}} (\mbox{\hyperlink{class_math_utility_test}{Math\+Utility\+Test}}, Calculate\+Median\+Even)
-\item 
+\begin{DoxyCompactList}\small\item\em Test median calculation with even number of elements. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{utility__test_8cpp_af0df38eee307773917515593c89960fd}{TEST\+\_\+F}} (\mbox{\hyperlink{class_math_utility_test}{Math\+Utility\+Test}}, Compare\+Double\+Less\+Test)
-\item 
+\begin{DoxyCompactList}\small\item\em Test double comparison when first value is less than second. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{utility__test_8cpp_ad25e15111202b3f7f4e51d6f25cb5094}{TEST\+\_\+F}} (\mbox{\hyperlink{class_math_utility_test}{Math\+Utility\+Test}}, Compare\+Double\+Greater\+Test)
-\item 
+\begin{DoxyCompactList}\small\item\em Test double comparison when first value is greater than second. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{utility__test_8cpp_a66e890cc5d1a82f9a432efb5a64222d0}{TEST\+\_\+F}} (\mbox{\hyperlink{class_math_utility_test}{Math\+Utility\+Test}}, Compare\+Double\+Equal\+Test)
-\item 
+\begin{DoxyCompactList}\small\item\em Test double comparison when values are equal. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{utility__test_8cpp_afa0b74e33e6004da7134ebf0c6c93849}{TEST\+\_\+F}} (\mbox{\hyperlink{class_math_utility_test}{Math\+Utility\+Test}}, Calculate\+Min\+Max\+Test\+\_\+1)
-\item 
+\begin{DoxyCompactList}\small\item\em Test min/max calculation with positive sorted array. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{utility__test_8cpp_a75ca2c83dbb6c84cf11d97d45877aae1}{TEST\+\_\+F}} (\mbox{\hyperlink{class_math_utility_test}{Math\+Utility\+Test}}, Calculate\+Min\+Max\+Test\+\_\+2)
-\item 
+\begin{DoxyCompactList}\small\item\em Test min/max calculation with unsorted array including negative values. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{utility__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
 \begin{DoxyCompactList}\small\item\em The main function of the test program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Comprehensive unit tests for Utility library (Math\+Utility class) 
+
+\begin{DoxyAuthor}{Author}
+Test Suite Author 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+This test file provides comprehensive unit test coverage for the Utility library, specifically focusing on the Math\+Utility class functionality. It includes tests for mathematical operations like mean, median, min/max calculations, and comparison functions.\hypertarget{utility__test_8cpp_test_categories}{}\doxysubsection{\texorpdfstring{Test Categories}{Test Categories}}\label{utility__test_8cpp_test_categories}
+
+\begin{DoxyItemize}
+\item Mean calculation tests
+\item Median calculation tests (odd and even number of elements)
+\item Double comparison tests (less, greater, equal)
+\item Min/\+Max calculation tests
+\end{DoxyItemize}\hypertarget{utility__test_8cpp_usage}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{utility__test_8cpp_usage}
+Run tests using Google\+Test framework\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./utility\_tests}
+
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+Uncomment ENABLE\+\_\+\+UTILITY\+\_\+\+TEST to enable tests 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+math\+Utility.\+h for API documentation 
+\end{DoxySeeAlso}
+
+
+Definition in file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
+
 
 
 \doxysubsection{Function Documentation}
@@ -62,9 +106,13 @@ The main function of the test program.
 \begin{DoxyReturn}{Returns}
 int The exit status of the program. 
 \end{DoxyReturn}
+\texorpdfstring{$<$}{<} Suppress unused parameter warning
 
+\texorpdfstring{$<$}{<} Suppress unused parameter warning
 
-Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00127}{127}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
+\texorpdfstring{$<$}{<} Return success if tests are disabled
+
+Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00235}{235}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
 
 \Hypertarget{utility__test_8cpp_a1a32a39867f3edfaa2b66659f6a5f56e}\label{utility__test_8cpp_a1a32a39867f3edfaa2b66659f6a5f56e} 
 \index{utility\_test.cpp@{utility\_test.cpp}!TEST\_F@{TEST\_F}}
@@ -74,7 +122,33 @@ Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00127}{127}} of f
 
 
 
-Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
+Test mean calculation with positive numbers. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000056}{Test}}]Verifies that calculate\+Mean correctly calculates the average of an array \end{DoxyRefDesc}
+
+
+Tests mean calculation with array \mbox{[}1.\+0, 2.\+0, 3.\+0, 4.\+0, 5.\+0\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em data} & Array of test data values \\
+\hline
+{\em datalen} & Length of the data array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expected result\+: 3.\+0 (average of 1+2+3+4+5 = 15/5) 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Local test variable
+
+\texorpdfstring{$<$}{<} Array of test values for mean calculation
+
+\texorpdfstring{$<$}{<} Length of the data array
+
+\texorpdfstring{$<$}{<} Calculated mean value
+
+\texorpdfstring{$<$}{<} Verify mean equals expected value
+
+Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00082}{82}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
 
 \Hypertarget{utility__test_8cpp_a1ad95925afbf048289b545eb09c30b07}\label{utility__test_8cpp_a1ad95925afbf048289b545eb09c30b07} 
 \index{utility\_test.cpp@{utility\_test.cpp}!TEST\_F@{TEST\_F}}
@@ -84,7 +158,31 @@ Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00034}{34}} of fi
 
 
 
-Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00056}{56}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
+Test median calculation with even number of elements. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000062}{Test}}]Verifies that calculate\+Median correctly calculates the median for even-\/length arrays \end{DoxyRefDesc}
+
+
+Tests median calculation with array \mbox{[}1.\+0, 2.\+0, 3.\+0, 4.\+0\mbox{]} (4 elements) 
+\begin{DoxyParams}{Parameters}
+{\em data} & Array of test data values \\
+\hline
+{\em datalen} & Length of the data array (even number) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expected result\+: 2.\+5 (average of middle two elements\+: (2.\+0+3.\+0)/2) 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Array of 4 values (even number) for median calculation
+
+\texorpdfstring{$<$}{<} Length of the data array (4 elements)
+
+\texorpdfstring{$<$}{<} Calculated median value
+
+\texorpdfstring{$<$}{<} Verify median equals expected average of middle two values
+
+Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00120}{120}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
 
 \Hypertarget{utility__test_8cpp_a605cb3e19c672b332b4c1d7921a42b5b}\label{utility__test_8cpp_a605cb3e19c672b332b4c1d7921a42b5b} 
 \index{utility\_test.cpp@{utility\_test.cpp}!TEST\_F@{TEST\_F}}
@@ -94,7 +192,31 @@ Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00056}{56}} of fi
 
 
 
-Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00046}{46}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
+Test median calculation with odd number of elements. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000059}{Test}}]Verifies that calculate\+Median correctly calculates the median for odd-\/length arrays \end{DoxyRefDesc}
+
+
+Tests median calculation with array \mbox{[}1.\+0, 2.\+0, 3.\+0, 4.\+0, 5.\+0\mbox{]} (5 elements) 
+\begin{DoxyParams}{Parameters}
+{\em data} & Array of test data values \\
+\hline
+{\em datalen} & Length of the data array (odd number) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expected result\+: 3.\+0 (middle element) 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Array of 5 values (odd number) for median calculation
+
+\texorpdfstring{$<$}{<} Length of the data array (5 elements)
+
+\texorpdfstring{$<$}{<} Calculated median value
+
+\texorpdfstring{$<$}{<} Verify median equals expected middle value
+
+Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00102}{102}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
 
 \Hypertarget{utility__test_8cpp_afa0b74e33e6004da7134ebf0c6c93849}\label{utility__test_8cpp_afa0b74e33e6004da7134ebf0c6c93849} 
 \index{utility\_test.cpp@{utility\_test.cpp}!TEST\_F@{TEST\_F}}
@@ -104,7 +226,39 @@ Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00046}{46}} of fi
 
 
 
-Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00096}{96}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
+Test min/max calculation with positive sorted array. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000072}{Test}}]Verifies that calculate\+Min\+Max correctly finds minimum and maximum values \end{DoxyRefDesc}
+
+
+Tests min/max calculation with array \mbox{[}1.\+0, 2.\+0, 3.\+0, 4.\+0, 5.\+0\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em data} & Array of test data values (sorted) \\
+\hline
+{\em datalen} & Length of the data array \\
+\hline
+{\em min} & Output parameter for minimum value \\
+\hline
+{\em max} & Output parameter for maximum value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expected\+: min=1.\+0, max=5.\+0 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Sorted array of positive values
+
+\texorpdfstring{$<$}{<} Length of the data array
+
+\texorpdfstring{$<$}{<} Output variables for minimum and maximum values
+
+\texorpdfstring{$<$}{<} Calculate min and max values
+
+\texorpdfstring{$<$}{<} Verify minimum value is 1.\+0
+
+\texorpdfstring{$<$}{<} Verify maximum value is 5.\+0
+
+Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00194}{194}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
 
 \Hypertarget{utility__test_8cpp_a75ca2c83dbb6c84cf11d97d45877aae1}\label{utility__test_8cpp_a75ca2c83dbb6c84cf11d97d45877aae1} 
 \index{utility\_test.cpp@{utility\_test.cpp}!TEST\_F@{TEST\_F}}
@@ -114,7 +268,37 @@ Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00096}{96}} of fi
 
 
 
-Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00108}{108}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
+Test min/max calculation with unsorted array including negative values. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000075}{Test}}]Verifies that calculate\+Min\+Max correctly finds minimum and maximum in unsorted array \end{DoxyRefDesc}
+
+
+Tests min/max calculation with array \mbox{[}3.\+14, 1.\+0, -\/2.\+5, 7.\+2, -\/5.\+0\mbox{]} (unsorted, with negatives) 
+\begin{DoxyParams}{Parameters}
+{\em data} & Array of test data values (unsorted with negative values) \\
+\hline
+{\em datalen} & Length of the data array \\
+\hline
+{\em min} & Output parameter for minimum value \\
+\hline
+{\em max} & Output parameter for maximum value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expected\+: min=-\/5.\+0, max=7.\+2 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Unsorted array with negative values
+
+\texorpdfstring{$<$}{<} Output variables for minimum and maximum values
+
+\texorpdfstring{$<$}{<} Calculate min and max values
+
+\texorpdfstring{$<$}{<} Verify minimum value is -\/5.\+0
+
+\texorpdfstring{$<$}{<} Verify maximum value is 7.\+2
+
+Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00216}{216}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
 
 \Hypertarget{utility__test_8cpp_a66e890cc5d1a82f9a432efb5a64222d0}\label{utility__test_8cpp_a66e890cc5d1a82f9a432efb5a64222d0} 
 \index{utility\_test.cpp@{utility\_test.cpp}!TEST\_F@{TEST\_F}}
@@ -124,7 +308,31 @@ Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00108}{108}} of f
 
 
 
-Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00086}{86}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
+Test double comparison when values are equal. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000070}{Test}}]Verifies that compare\+Double returns 0 when val1 == val2 \end{DoxyRefDesc}
+
+
+Tests comparison function with val1=3.\+0, val2=3.\+0 
+\begin{DoxyParams}{Parameters}
+{\em val1} & First double value (3.\+0) \\
+\hline
+{\em val2} & Second double value (3.\+0) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expected result\+: 0 (val1 == val2) 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} First value
+
+\texorpdfstring{$<$}{<} Second value (equal to first)
+
+\texorpdfstring{$<$}{<} Comparison result
+
+\texorpdfstring{$<$}{<} Verify result is 0 (val1 == val2)
+
+Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00174}{174}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
 
 \Hypertarget{utility__test_8cpp_ad25e15111202b3f7f4e51d6f25cb5094}\label{utility__test_8cpp_ad25e15111202b3f7f4e51d6f25cb5094} 
 \index{utility\_test.cpp@{utility\_test.cpp}!TEST\_F@{TEST\_F}}
@@ -134,7 +342,31 @@ Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00086}{86}} of fi
 
 
 
-Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00076}{76}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
+Test double comparison when first value is greater than second. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000067}{Test}}]Verifies that compare\+Double returns 1 when val1 \texorpdfstring{$>$}{>} val2 \end{DoxyRefDesc}
+
+
+Tests comparison function with val1=4.\+0, val2=2.\+0 
+\begin{DoxyParams}{Parameters}
+{\em val1} & First double value (4.\+0) \\
+\hline
+{\em val2} & Second double value (2.\+0) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expected result\+: 1 (val1 \texorpdfstring{$>$}{>} val2) 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} First value (larger)
+
+\texorpdfstring{$<$}{<} Second value (smaller)
+
+\texorpdfstring{$<$}{<} Comparison result
+
+\texorpdfstring{$<$}{<} Verify result is 1 (val1 \texorpdfstring{$>$}{>} val2)
+
+Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00156}{156}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
 
 \Hypertarget{utility__test_8cpp_af0df38eee307773917515593c89960fd}\label{utility__test_8cpp_af0df38eee307773917515593c89960fd} 
 \index{utility\_test.cpp@{utility\_test.cpp}!TEST\_F@{TEST\_F}}
@@ -144,5 +376,29 @@ Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00076}{76}} of fi
 
 
 
-Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00066}{66}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
+Test double comparison when first value is less than second. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000065}{Test}}]Verifies that compare\+Double returns -\/1 when val1 \texorpdfstring{$<$}{<} val2 \end{DoxyRefDesc}
+
+
+Tests comparison function with val1=2.\+0, val2=4.\+0 
+\begin{DoxyParams}{Parameters}
+{\em val1} & First double value (2.\+0) \\
+\hline
+{\em val2} & Second double value (4.\+0) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expected result\+: -\/1 (val1 \texorpdfstring{$<$}{<} val2) 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} First value (smaller)
+
+\texorpdfstring{$<$}{<} Second value (larger)
+
+\texorpdfstring{$<$}{<} Comparison result
+
+\texorpdfstring{$<$}{<} Verify result is -\/1 (val1 \texorpdfstring{$<$}{<} val2)
+
+Definition at line \mbox{\hyperlink{utility__test_8cpp_source_l00138}{138}} of file \mbox{\hyperlink{utility__test_8cpp_source}{utility\+\_\+test.\+cpp}}.
 

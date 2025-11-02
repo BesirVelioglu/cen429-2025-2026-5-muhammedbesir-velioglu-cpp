@@ -26,7 +26,7 @@ add_executable(${EXENAME} ${LIB_HEADERS} ${LIB_SOURCES})
 # Add included headers
 target_include_directories(${EXENAME} PUBLIC
 						   ${CMAKE_CURRENT_SOURCE_DIR}/../../utility/header
-						   ${CMAKE_CURRENT_SOURCE_DIR}/../../LocalSports/header
+						   ${CMAKE_CURRENT_SOURCE_DIR}/../../localsports/header
 						   ${CMAKE_CURRENT_SOURCE_DIR})
 
 # Add any dependencies or compile options specific to aka5g tests

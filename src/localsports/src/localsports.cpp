@@ -16,6 +16,13 @@
 #pragma warning(disable : 4996)
 #endif
 
+// =================== Binary File Names ===================
+const char* FILE_PLAYERS = "players.bin";
+const char* FILE_GAMES = "games.bin";
+const char* FILE_STATS = "stats.bin";
+const char* FILE_MESSAGES = "messages.bin";
+const char* FILE_USERS = "users.bin";
+
 // =================== SQLite ===================
 #include <sqlite3.h>
 static sqlite3* g_db = nullptr;

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['setup_0',['SetUp',['../class_local_sports_test.html#aeae2f6f9c7af18a72cd4e01218b6d15d',1,'LocalSportsTest::SetUp()'],['../class_math_utility_test.html#ac05460de2c43e3005d1e4db0d530f58c',1,'MathUtilityTest::SetUp()']]]
+  ['localsports_20project_20library_20generation_20and_20testing_20template_0',['LocalSports Project Library Generation and Testing Template',['../index.html',1,'']]],
+  ['localsports_5ftest_2ecpp_1',['localsports_test.cpp',['../localsports__test_8cpp.html',1,'']]],
+  ['localsportstest_2',['LocalSportsTest',['../class_local_sports_test.html',1,'']]]
 ];

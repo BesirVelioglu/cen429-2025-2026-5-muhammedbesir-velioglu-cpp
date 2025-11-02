@@ -18,7 +18,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>src/utility/src/mathUtility.cpp</label>
+        <label> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility/src/mathUtility.cpp</label>
         <link refid="math_utility_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -105,6 +105,6 @@
 <codeline lineno="70"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="src/utility/src/mathUtility.cpp"/>
+    <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility/src/mathUtility.cpp"/>
   </compounddef>
 </doxygen>

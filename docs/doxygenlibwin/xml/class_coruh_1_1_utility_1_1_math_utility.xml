@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/utility/header/mathUtility.h" line="30" column="17" bodyfile="src/utility/src/mathUtility.cpp" bodystart="14" bodyend="22"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility/header/mathUtility.h" line="30" column="17" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility/src/mathUtility.cpp" bodystart="14" bodyend="22"/>
       </memberdef>
       <memberdef kind="function" id="class_coruh_1_1_utility_1_1_math_utility_1aa5888ea1bef95e477a66c2dd8517b885" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/utility/header/mathUtility.h" line="42" column="17" bodyfile="src/utility/src/mathUtility.cpp" bodystart="24" bodyend="42"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility/header/mathUtility.h" line="42" column="17" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility/src/mathUtility.cpp" bodystart="24" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="class_coruh_1_1_utility_1_1_math_utility_1a8a30d3bb9945b043c861257596f17c30" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -141,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/utility/header/mathUtility.h" line="56" column="14" bodyfile="src/utility/src/mathUtility.cpp" bodystart="44" bodyend="55"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility/header/mathUtility.h" line="56" column="14" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility/src/mathUtility.cpp" bodystart="44" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="class_coruh_1_1_utility_1_1_math_utility_1ac66a656b821b690761a1db545359508d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -208,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/utility/header/mathUtility.h" line="69" column="15" bodyfile="src/utility/src/mathUtility.cpp" bodystart="57" bodyend="70"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility/header/mathUtility.h" line="69" column="15" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility/src/mathUtility.cpp" bodystart="57" bodyend="70"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -222,7 +222,7 @@
         <link refid="class_coruh_1_1_utility_1_1_math_utility"/>
       </node>
     </collaborationgraph>
-    <location file="src/utility/header/mathUtility.h" line="18" column="1" bodyfile="src/utility/header/mathUtility.h" bodystart="18" bodyend="71"/>
+    <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility/header/mathUtility.h" line="18" column="1" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/utility/header/mathUtility.h" bodystart="18" bodyend="71"/>
     <listofallmembers>
       <member refid="class_coruh_1_1_utility_1_1_math_utility_1abe3d63ed2737ae3c006bcc5732a3d01f" prot="public" virt="non-virtual"><scope>Coruh::Utility::MathUtility</scope><name>calculateMean</name></member>
       <member refid="class_coruh_1_1_utility_1_1_math_utility_1aa5888ea1bef95e477a66c2dd8517b885" prot="public" virt="non-virtual"><scope>Coruh::Utility::MathUtility</scope><name>calculateMedian</name></member>

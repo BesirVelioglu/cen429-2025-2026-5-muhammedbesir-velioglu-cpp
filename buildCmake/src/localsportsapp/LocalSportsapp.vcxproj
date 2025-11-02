@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FB55F1DA-B5A5-3671-BD16-C98E895FBDB9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>LocalSportsapp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\buildCmake\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LocalSportsapp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LocalSportsapp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake/build/Debug</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\buildCmake\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LocalSportsapp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LocalSportsapp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake/build/Release</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\..\utility\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\..\LocalSports\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\..\utility\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ENABLE_UTILITY_TEST;ENABLE_LocalSports_TEST;ENABLE_UTILITY_LOGGER;ENABLE_LocalSports_LOGGER;MSVC_ENV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ENABLE_UTILITY_TEST;ENABLE_LocalSports_TEST;ENABLE_UTILITY_LOGGER;ENABLE_LocalSports_LOGGER;MSVC_ENV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\..\utility\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\..\LocalSports\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\..\utility\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;C:\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\..\utility\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\..\LocalSports\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\..\utility\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;C:\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	Copying sqlite3.dll (debug) next to executable</Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake/build/Debug/LocalSportsapp.exe" -installedDir C:/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Strawberry\c\bin\cmake.exe -E copy_if_different C:/vcpkg/installed/x64-windows/debug/bin/sqlite3.dll "C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake/build/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\localsports\Debug\LocalSports.lib;..\utility\Debug\utility.lib;C:\vcpkg\installed\x64-windows\debug\lib\sqlite3.lib;C:\vcpkg\installed\x64-windows\debug\lib\sqlite3.lib;C:\vcpkg\installed\x64-windows\debug\lib\libssl.lib;C:\vcpkg\installed\x64-windows\debug\lib\libcrypto.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake/src/localsportsapp/Debug/LocalSportsapp.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake/build/Debug/LocalSportsapp.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\..\utility\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\..\LocalSports\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\..\utility\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ENABLE_UTILITY_TEST;ENABLE_LocalSports_TEST;ENABLE_UTILITY_LOGGER;ENABLE_LocalSports_LOGGER;MSVC_ENV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ENABLE_UTILITY_TEST;ENABLE_LocalSports_TEST;ENABLE_UTILITY_LOGGER;ENABLE_LocalSports_LOGGER;MSVC_ENV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\..\utility\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\..\LocalSports\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\..\utility\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;C:\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\..\utility\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\..\LocalSports\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\..\utility\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsports\header;C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\utility\header;C:\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	Copying sqlite3.dll (debug) next to executable</Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake/build/Release/LocalSportsapp.exe" -installedDir C:/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\Strawberry\c\bin\cmake.exe -E copy_if_different C:/vcpkg/installed/x64-windows/debug/bin/sqlite3.dll "C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake/build/Release"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\localsports\Release\LocalSports.lib;..\utility\Release\utility.lib;C:\vcpkg\installed\x64-windows\lib\sqlite3.lib;C:\vcpkg\installed\x64-windows\lib\sqlite3.lib;C:\vcpkg\installed\x64-windows\lib\libssl.lib;C:\vcpkg\installed\x64-windows\lib\libcrypto.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake/src/localsportsapp/Release/LocalSportsapp.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake/build/Release/LocalSportsapp.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/localsportsapp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Strawberry\c\bin\cmake.exe "-SC:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp" "-BC:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake" --check-stamp-file "C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake/src/localsportsapp/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Strawberry\c\share\cmake-3.26\Modules\CMakeFindDependencyMacro.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-config.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\buildCmake\src\localsportsapp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/localsportsapp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Strawberry\c\bin\cmake.exe "-SC:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp" "-BC:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake" --check-stamp-file "C:/Users/Can Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/buildCmake/src/localsportsapp/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Strawberry\c\share\cmake-3.26\Modules\CMakeFindDependencyMacro.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-config.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\unofficial-sqlite3\unofficial-sqlite3-targets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\buildCmake\src\localsportsapp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\header\localsportsapp.h" />
+    <ClCompile Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\src\localsportsapp\src\localsportsapp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\buildCmake\ZERO_CHECK.vcxproj">
+      <Project>{40DB2D86-596C-3ED7-B83F-C9F99007C1B1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\buildCmake\src\localsports\LocalSports.vcxproj">
+      <Project>{A4EF26D6-A505-316E-B349-C555AC0E4129}</Project>
+      <Name>LocalSports</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Can Ahmed\Desktop\cen429-2025-2026-5-muhammedbesir-velioglu-cpp\buildCmake\src\utility\utility.vcxproj">
+      <Project>{9656089C-4D2A-3D0E-89DB-0A40A9B202E5}</Project>
+      <Name>utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

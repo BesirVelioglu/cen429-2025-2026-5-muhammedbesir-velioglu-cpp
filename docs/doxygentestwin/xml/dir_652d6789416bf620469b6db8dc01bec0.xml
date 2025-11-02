@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_652d6789416bf620469b6db8dc01bec0" kind="dir">
+    <compoundname> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/LocalSports</compoundname>
+    <innerfile refid="localsports__test_8cpp">localsports_test.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/tests/LocalSports/"/>
+  </compounddef>
+</doxygen>

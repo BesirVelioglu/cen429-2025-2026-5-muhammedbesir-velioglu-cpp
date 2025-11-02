@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_layer.cpp" line="118" column="14" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="118" bodyend="136" declfile="src/LocalSports/header/security_layer.h" declline="34" declcolumn="14"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_layer.cpp" line="118" column="14" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_layer.cpp" bodystart="118" bodyend="136" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_layer.h" declline="34" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1crypto_1a10a7ec9cb587579f78ae1a692d76c2ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_layer.cpp" line="138" column="21" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="138" bodyend="214" declfile="src/LocalSports/header/security_layer.h" declline="40" declcolumn="21"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_layer.cpp" line="138" column="21" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_layer.cpp" bodystart="138" bodyend="214" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_layer.h" declline="40" declcolumn="21"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1crypto_1a4d9f3d43cf284e430a275cfbf374da89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -87,13 +87,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_layer.cpp" line="216" column="21" bodyfile="src/LocalSports/src/security_layer.cpp" bodystart="216" bodyend="279" declfile="src/LocalSports/header/security_layer.h" declline="44" declcolumn="21"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_layer.cpp" line="216" column="21" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_layer.cpp" bodystart="216" bodyend="279" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_layer.h" declline="44" declcolumn="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/LocalSports/header/security_layer.h" line="33" column="5"/>
+    <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_layer.h" line="33" column="5"/>
   </compounddef>
 </doxygen>

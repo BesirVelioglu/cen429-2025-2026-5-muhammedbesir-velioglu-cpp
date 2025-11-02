@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_layer.h" line="51" column="14" declfile="src/LocalSports/header/security_layer.h" declline="51" declcolumn="14"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_layer.h" line="51" column="14" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_layer.h" declline="51" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1tls_1a1cb27626c5ace28caefb7f7380288eb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_layer.h" line="55" column="21" declfile="src/LocalSports/header/security_layer.h" declline="55" declcolumn="21"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_layer.h" line="55" column="21" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_layer.h" declline="55" declcolumn="21"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1tls_1af10109327e2bd8ddf5f09ade66e495f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -71,13 +71,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/header/security_layer.h" line="57" column="14" declfile="src/LocalSports/header/security_layer.h" declline="57" declcolumn="14"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_layer.h" line="57" column="14" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_layer.h" declline="57" declcolumn="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/LocalSports/header/security_layer.h" line="50" column="5"/>
+    <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_layer.h" line="50" column="5"/>
   </compounddef>
 </doxygen>

@@ -32,7 +32,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>src/LocalSports/src/security_hardening.cpp</label>
+        <label> Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp</label>
         <link refid="security__hardening_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="40" column="24" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="40" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="40" column="24" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceteamcore_1_1hardening_1a910bfbebd4d79552ad42b152fa13461d" prot="public" static="yes" mutable="no">
         <type>std::thread</type>
@@ -162,7 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="41" column="24" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="41" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="41" column="24" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceteamcore_1_1hardening_1a229f8e65681df8c7b9b5c593f8530a68" prot="public" static="yes" constexpr="yes" mutable="no">
         <type>constexpr uint8_t</type>
@@ -177,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="44" column="30" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="44" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="44" column="30" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceteamcore_1_1hardening_1a1d2c32a89d050feed96f11d448298e95" prot="public" static="yes" constexpr="yes" mutable="no">
         <type>constexpr uint64_t</type>
@@ -192,7 +192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="45" column="31" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="45" bodyend="-1"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="45" column="31" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -212,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="48" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="48" bodyend="125" declfile="src/LocalSports/header/security_hardening.h" declline="15" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="48" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="48" bodyend="125" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="15" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1ae209c51a81263aa5bc74da4b642f10b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -228,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="127" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="127" bodyend="141" declfile="src/LocalSports/header/security_hardening.h" declline="21" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="127" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="127" bodyend="141" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="21" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a37c56ba459b67d0eb1b860d5b6731706" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -243,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="143" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="143" bodyend="148" declfile="src/LocalSports/header/security_hardening.h" declline="26" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="143" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="143" bodyend="148" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="26" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a8c5fc8254a61b0540a7dd0d37b83f996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -261,7 +261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="151" column="17" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="151" bodyend="193" declfile="src/LocalSports/header/security_hardening.h" declline="33" declcolumn="17"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="151" column="17" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="151" bodyend="193" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="33" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a9847be046f4689a1108adb22ebdb2dd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -292,7 +292,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="195" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="195" bodyend="202" declfile="src/LocalSports/header/security_hardening.h" declline="40" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="195" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="195" bodyend="202" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="40" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1ae3cee1714e401ddec13be459d2d61d32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -310,7 +310,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="205" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="205" bodyend="285" declfile="src/LocalSports/header/security_hardening.h" declline="47" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="205" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="205" bodyend="285" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="47" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1ae4bd5f482bf7729d5e890edca9dde1a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -328,7 +328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="288" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="288" bodyend="306" declfile="src/LocalSports/header/security_hardening.h" declline="54" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="288" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="288" bodyend="306" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="54" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a06e6d5cbec776da17c8579b240572990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -346,7 +346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="309" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="309" bodyend="327" declfile="src/LocalSports/header/security_hardening.h" declline="62" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="309" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="309" bodyend="327" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="62" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a746ff56ebc94e9f1bfcbd31887870cba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -364,7 +364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="330" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="330" bodyend="337" declfile="src/LocalSports/header/security_hardening.h" declline="70" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="330" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="330" bodyend="337" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="70" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a4b3b5932836fd13c7ac69145c6e7cd78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -382,7 +382,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="339" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="339" bodyend="346" declfile="src/LocalSports/header/security_hardening.h" declline="76" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="339" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="339" bodyend="346" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="76" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a43750c108316d92f81a039ffd3cd9c1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -413,7 +413,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="348" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="348" bodyend="352" declfile="src/LocalSports/header/security_hardening.h" declline="83" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="348" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="348" bodyend="352" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="83" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1aee2e27250f691bc7176519b136fae105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -444,7 +444,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="355" column="17" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="355" bodyend="361" declfile="src/LocalSports/header/security_hardening.h" declline="91" declcolumn="17"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="355" column="17" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="355" bodyend="361" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="91" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a6df62925f350fd8146306e930b661bfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -475,7 +475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="363" column="17" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="363" bodyend="369" declfile="src/LocalSports/header/security_hardening.h" declline="98" declcolumn="17"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="363" column="17" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="363" bodyend="369" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="98" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1acb446a1528d7f51891b2da13b22bdf7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -506,7 +506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="371" column="14" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="371" bodyend="373" declfile="src/LocalSports/header/security_hardening.h" declline="105" declcolumn="14"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="371" column="14" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="371" bodyend="373" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="105" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1adfa9292737ac992d8f81b45b86520b23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -537,7 +537,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="375" column="14" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="375" bodyend="377" declfile="src/LocalSports/header/security_hardening.h" declline="112" declcolumn="14"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="375" column="14" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="375" bodyend="377" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="112" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a4941e511e83aec7e1fc772cb3d845d53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -566,7 +566,7 @@ Dummy hesaplamalar ile kod analizi zorlaştırır </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="380" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="380" bodyend="401" declfile="src/LocalSports/header/security_hardening.h" declline="120" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="380" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="380" bodyend="401" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="120" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a88d593c2f98785d64c913d47e781c7ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -595,7 +595,7 @@ Dummy hesaplamalar ile kod analizi zorlaştırır </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="403" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="403" bodyend="411" declfile="src/LocalSports/header/security_hardening.h" declline="126" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="403" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="403" bodyend="411" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="126" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a3238760d705163dba235cf8cf72cca3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -626,7 +626,7 @@ Dummy hesaplamalar ile kod analizi zorlaştırır </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="413" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="413" bodyend="420" declfile="src/LocalSports/header/security_hardening.h" declline="133" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="413" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="413" bodyend="420" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="133" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1adf6349975e561b1958f1cf8ac269b50a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -642,7 +642,7 @@ Dummy hesaplamalar ile kod analizi zorlaştırır </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="423" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="423" bodyend="442" declfile="src/LocalSports/header/security_hardening.h" declline="140" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="423" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="423" bodyend="442" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="140" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a65f152a453d8b0eafeca0c51cdca071e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -685,7 +685,7 @@ Dummy hesaplamalar ile kod analizi zorlaştırır </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="444" column="9" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="444" bodyend="456" declfile="src/LocalSports/header/security_hardening.h" declline="148" declcolumn="9"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="444" column="9" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="444" bodyend="456" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="148" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a918ede4de28911a4c161501433774f44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -728,7 +728,7 @@ Dummy hesaplamalar ile kod analizi zorlaştırır </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="458" column="9" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="458" bodyend="473" declfile="src/LocalSports/header/security_hardening.h" declline="156" declcolumn="9"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="458" column="9" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="458" bodyend="473" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="156" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a754b280336bc789a7e1a486ab6c9e197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -757,7 +757,7 @@ Dummy hesaplamalar ile kod analizi zorlaştırır </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="476" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="476" bodyend="502" declfile="src/LocalSports/header/security_hardening.h" declline="163" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="476" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="476" bodyend="502" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="163" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1ad005cebc9299a5eb73e8eb219ab6752b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -786,7 +786,7 @@ Dummy hesaplamalar ile kod analizi zorlaştırır </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="505" column="11" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="505" bodyend="521" declfile="src/LocalSports/header/security_hardening.h" declline="170" declcolumn="11"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="505" column="11" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="505" bodyend="521" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="170" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a11c0b4e108d9e1d907cf060c6d800bf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -801,7 +801,7 @@ Dummy hesaplamalar ile kod analizi zorlaştırır </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="523" column="11" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="523" bodyend="533" declfile="src/LocalSports/header/security_hardening.h" declline="175" declcolumn="11"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="523" column="11" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="523" bodyend="533" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="175" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a17e48f5adaec0be70a63a8c27d15bf93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -830,7 +830,7 @@ Dummy hesaplamalar ile kod analizi zorlaştırır </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="536" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="536" bodyend="544" declfile="src/LocalSports/header/security_hardening.h" declline="182" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="536" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="536" bodyend="544" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="182" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespaceteamcore_1_1hardening_1a4f2f30369ecf9f3549c4535a07940d7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -848,7 +848,7 @@ Dummy hesaplamalar ile kod analizi zorlaştırır </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/LocalSports/src/security_hardening.cpp" line="546" column="10" bodyfile="src/LocalSports/src/security_hardening.cpp" bodystart="546" bodyend="552" declfile="src/LocalSports/header/security_hardening.h" declline="188" declcolumn="10"/>
+        <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" line="546" column="10" bodyfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp" bodystart="546" bodyend="552" declfile=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/header/security_hardening.h" declline="188" declcolumn="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1412,6 +1412,6 @@ Dummy hesaplamalar ile kod analizi zorlaştırır </para>
 <codeline lineno="554"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>hardening</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="555"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>teamcore</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="src/LocalSports/src/security_hardening.cpp"/>
+    <location file=" Ahmed/Desktop/cen429-2025-2026-5-muhammedbesir-velioglu-cpp/src/LocalSports/src/security_hardening.cpp"/>
   </compounddef>
 </doxygen>

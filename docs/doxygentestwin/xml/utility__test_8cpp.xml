@@ -62,7 +62,7 @@
 <para>Test mean calculation with positive numbers. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000056"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that calculateMean correctly calculates the average of an array </para>
+<para><xrefsect id="test_1_test000001"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that calculateMean correctly calculates the average of an array </para>
 </xrefdescription></xrefsect></para>
 <para>Tests mean calculation with array [1.0, 2.0, 3.0, 4.0, 5.0] <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -109,7 +109,7 @@
 <para>Test median calculation with odd number of elements. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000059"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that calculateMedian correctly calculates the median for odd-length arrays </para>
+<para><xrefsect id="test_1_test000002"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that calculateMedian correctly calculates the median for odd-length arrays </para>
 </xrefdescription></xrefsect></para>
 <para>Tests median calculation with array [1.0, 2.0, 3.0, 4.0, 5.0] (5 elements) <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -155,7 +155,7 @@
 <para>Test median calculation with even number of elements. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000062"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that calculateMedian correctly calculates the median for even-length arrays </para>
+<para><xrefsect id="test_1_test000003"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that calculateMedian correctly calculates the median for even-length arrays </para>
 </xrefdescription></xrefsect></para>
 <para>Tests median calculation with array [1.0, 2.0, 3.0, 4.0] (4 elements) <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -201,7 +201,7 @@
 <para>Test double comparison when first value is less than second. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000065"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that compareDouble returns -1 when val1 &lt; val2 </para>
+<para><xrefsect id="test_1_test000004"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that compareDouble returns -1 when val1 &lt; val2 </para>
 </xrefdescription></xrefsect></para>
 <para>Tests comparison function with val1=2.0, val2=4.0 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -247,7 +247,7 @@
 <para>Test double comparison when first value is greater than second. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000067"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that compareDouble returns 1 when val1 &gt; val2 </para>
+<para><xrefsect id="test_1_test000005"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that compareDouble returns 1 when val1 &gt; val2 </para>
 </xrefdescription></xrefsect></para>
 <para>Tests comparison function with val1=4.0, val2=2.0 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -293,7 +293,7 @@
 <para>Test double comparison when values are equal. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000070"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that compareDouble returns 0 when val1 == val2 </para>
+<para><xrefsect id="test_1_test000006"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that compareDouble returns 0 when val1 == val2 </para>
 </xrefdescription></xrefsect></para>
 <para>Tests comparison function with val1=3.0, val2=3.0 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -339,7 +339,7 @@
 <para>Test min/max calculation with positive sorted array. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000072"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that calculateMinMax correctly finds minimum and maximum values </para>
+<para><xrefsect id="test_1_test000007"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that calculateMinMax correctly finds minimum and maximum values </para>
 </xrefdescription></xrefsect></para>
 <para>Tests min/max calculation with array [1.0, 2.0, 3.0, 4.0, 5.0] <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -403,7 +403,7 @@
 <para>Test min/max calculation with unsorted array including negative values. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000075"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that calculateMinMax correctly finds minimum and maximum in unsorted array </para>
+<para><xrefsect id="test_1_test000008"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that calculateMinMax correctly finds minimum and maximum in unsorted array </para>
 </xrefdescription></xrefsect></para>
 <para>Tests min/max calculation with array [3.14, 1.0, -2.5, 7.2, -5.0] (unsorted, with negatives) <parameterlist kind="param"><parameteritem>
 <parameternamelist>

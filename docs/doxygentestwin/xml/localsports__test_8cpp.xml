@@ -144,7 +144,7 @@
 <para>Test that LS_Init() creates the database file. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000001"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies database file creation and initial authentication state </para>
+<para><xrefsect id="test_1_test000009"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies database file creation and initial authentication state </para>
 </xrefdescription></xrefsect></para>
 <para>Tests that initialization creates localsports.db and sets initial state correctly </para>
         </detaileddescription>
@@ -177,7 +177,7 @@
 <para>Test that LS_Init() creates default admin user. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000002"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies database structure creation after initialization </para>
+<para><xrefsect id="test_1_test000010"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies database structure creation after initialization </para>
 </xrefdescription></xrefsect><simplesect kind="note"><para>Currently verifies database file creation, full admin test requires password mocking </para>
 </simplesect>
 </para>
@@ -206,7 +206,7 @@
 <para>Test logout functionality when not logged in. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000003"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that logout does not crash when called without login </para>
+<para><xrefsect id="test_1_test000011"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that logout does not crash when called without login </para>
 </xrefdescription></xrefsect></para>
 <para>Ensures graceful handling of logout in unauthenticated state </para>
         </detaileddescription>
@@ -234,7 +234,7 @@
 <para>Test initial authentication state. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000004"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that initially no user is authenticated </para>
+<para><xrefsect id="test_1_test000012"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that initially no user is authenticated </para>
 </xrefdescription></xrefsect><simplesect kind="return"><para>Expected: false (not authenticated) </para>
 </simplesect>
 </para>
@@ -260,7 +260,7 @@
 <para>Test current username when not authenticated. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000005"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that CurrentUsername returns nullptr when not logged in </para>
+<para><xrefsect id="test_1_test000013"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that CurrentUsername returns nullptr when not logged in </para>
 </xrefdescription></xrefsect><simplesect kind="return"><para>Expected: nullptr (no username available) </para>
 </simplesect>
 </para>
@@ -287,7 +287,7 @@
 <para>Test that logout clears authentication session. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000006"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies session state is cleared after logout </para>
+<para><xrefsect id="test_1_test000014"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies session state is cleared after logout </para>
 </xrefdescription></xrefsect></para>
 <para>Tests authentication state and username after logout operation </para>
         </detaileddescription>
@@ -314,7 +314,7 @@
 <para>Test listing players when database is empty. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000007"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that ListPlayersInteractive works with empty database </para>
+<para><xrefsect id="test_1_test000015"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that ListPlayersInteractive works with empty database </para>
 </xrefdescription></xrefsect></para>
 <para>Ensures function does not crash and produces some output </para>
         </detaileddescription>
@@ -343,7 +343,7 @@
 <para>Test structure size validation for all data structures. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000008"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies packed structure sizes match expected values </para>
+<para><xrefsect id="test_1_test000016"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies packed structure sizes match expected values </para>
 </xrefdescription></xrefsect></para>
 <para>Tests Player, Game, Stat, Message, and User struct sizes </para>
         </detaileddescription>
@@ -372,7 +372,7 @@
 <para>Test listing games when database is empty. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000009"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that ListGamesInteractive works with empty database </para>
+<para><xrefsect id="test_1_test000017"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that ListGamesInteractive works with empty database </para>
 </xrefdescription></xrefsect></para>
 <para>Ensures function does not crash and produces some output </para>
         </detaileddescription>
@@ -401,7 +401,7 @@
 <para>Test viewing player totals when database is empty. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000010"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that ViewPlayerTotalsInteractive works with no data </para>
+<para><xrefsect id="test_1_test000018"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that ViewPlayerTotalsInteractive works with no data </para>
 </xrefdescription></xrefsect></para>
 <para>Ensures function handles empty statistics gracefully </para>
         </detaileddescription>
@@ -430,7 +430,7 @@
 <para>Test listing messages when database is empty. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000011"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that ListMessagesInteractive works with empty database </para>
+<para><xrefsect id="test_1_test000019"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that ListMessagesInteractive works with empty database </para>
 </xrefdescription></xrefsect></para>
 <para>Ensures function does not crash and produces some output </para>
         </detaileddescription>
@@ -459,7 +459,7 @@
 <para>Test that database file name constants are defined. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000012"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies all FILE_* constants are non-null </para>
+<para><xrefsect id="test_1_test000020"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies all FILE_* constants are non-null </para>
 </xrefdescription></xrefsect></para>
 <para>Tests FILE_PLAYERS, FILE_GAMES, FILE_STATS, FILE_MESSAGES, FILE_USERS </para>
         </detaileddescription>
@@ -487,7 +487,7 @@
 <para>Test multiple initialization calls. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000013"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that multiple LS_Init() calls do not crash </para>
+<para><xrefsect id="test_1_test000021"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies that multiple LS_Init() calls do not crash </para>
 </xrefdescription></xrefsect></para>
 <para>Ensures idempotent initialization behavior </para>
         </detaileddescription>
@@ -514,7 +514,7 @@
 <para>Test operations before initialization. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000014"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies graceful handling of API calls before LS_Init() </para>
+<para><xrefsect id="test_1_test000022"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies graceful handling of API calls before LS_Init() </para>
 </xrefdescription></xrefsect></para>
 <para>Ensures functions do not crash when called before initialization </para>
         </detaileddescription>
@@ -543,7 +543,7 @@
 <para>Test complete workflow integration. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000015"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies full application workflow without crashes </para>
+<para><xrefsect id="test_1_test000023"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies full application workflow without crashes </para>
 </xrefdescription></xrefsect></para>
 <para>Tests multiple operations together: logout, list operations, authentication checks <simplesect kind="note"><para>Some operations require I/O mocking for full testing </para>
 </simplesect>
@@ -576,7 +576,7 @@
 <para>Test memory safety of CurrentUsername function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000016"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies consistent return values from multiple calls </para>
+<para><xrefsect id="test_1_test000024"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies consistent return values from multiple calls </para>
 </xrefdescription></xrefsect></para>
 <para>Ensures no memory corruption or inconsistent behavior <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -623,7 +623,7 @@
 <para>Test consistency of IsAuthenticated function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000017"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies consistent return values from multiple calls </para>
+<para><xrefsect id="test_1_test000025"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies consistent return values from multiple calls </para>
 </xrefdescription></xrefsect></para>
 <para>Tests authentication state consistency before and after logout </para>
         </detaileddescription>
@@ -653,7 +653,7 @@
 <para>Test Player struct field assignments and retrieval. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000018"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies all Player struct fields can be set and retrieved correctly </para>
+<para><xrefsect id="test_1_test000026"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies all Player struct fields can be set and retrieved correctly </para>
 </xrefdescription></xrefsect></para>
 <para>Tests id, name, position, phone, email, and active fields <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -698,7 +698,7 @@
 <para>Test Game struct field assignments and retrieval. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000019"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies all Game struct fields can be set and retrieved correctly </para>
+<para><xrefsect id="test_1_test000027"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies all Game struct fields can be set and retrieved correctly </para>
 </xrefdescription></xrefsect></para>
 <para>Tests id, date, time, opponent, location, played, and result fields <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -745,7 +745,7 @@
 <para>Test Stat struct field assignments and retrieval. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000020"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies all Stat struct fields can be set and retrieved correctly </para>
+<para><xrefsect id="test_1_test000028"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies all Stat struct fields can be set and retrieved correctly </para>
 </xrefdescription></xrefsect></para>
 <para>Tests id, gameId, playerId, goals, assists, saves, yellow, and red fields <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -794,7 +794,7 @@
 <para>Test Message struct field assignments and retrieval. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000021"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies all Message struct fields can be set and retrieved correctly </para>
+<para><xrefsect id="test_1_test000029"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies all Message struct fields can be set and retrieved correctly </para>
 </xrefdescription></xrefsect></para>
 <para>Tests id, datetime, and text fields <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -833,7 +833,7 @@
 <para>Test User struct field assignments and retrieval. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000022"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies all User struct fields can be set and retrieved correctly </para>
+<para><xrefsect id="test_1_test000030"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies all User struct fields can be set and retrieved correctly </para>
 </xrefdescription></xrefsect></para>
 <para>Tests id, username, passHash, role, and active fields <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -876,7 +876,7 @@
 <para>Test LS_AddPlayerInteractive function with mock input. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000023"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies player addition functionality </para>
+<para><xrefsect id="test_1_test000031"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies player addition functionality </para>
 </xrefdescription></xrefsect></para>
 <para>Tests adding a player through interactive function </para>
         </detaileddescription>
@@ -906,7 +906,7 @@
 <para>Test LS_EditPlayerInteractive function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000024"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies player editing functionality </para>
+<para><xrefsect id="test_1_test000032"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies player editing functionality </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -938,7 +938,7 @@
 <para>Test LS_RemovePlayerInteractive function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000025"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies player removal functionality </para>
+<para><xrefsect id="test_1_test000033"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies player removal functionality </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -967,7 +967,7 @@
 <para>Test LS_AddGameInteractive function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000026"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies game addition functionality </para>
+<para><xrefsect id="test_1_test000034"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies game addition functionality </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -996,7 +996,7 @@
 <para>Test LS_RecordResultInteractive function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000027"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies game result recording functionality </para>
+<para><xrefsect id="test_1_test000035"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies game result recording functionality </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1025,7 +1025,7 @@
 <para>Test LS_RecordStatsInteractive function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000028"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies statistics recording functionality </para>
+<para><xrefsect id="test_1_test000036"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies statistics recording functionality </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1054,7 +1054,7 @@
 <para>Test LS_AddMessageInteractive function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000029"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies message addition functionality </para>
+<para><xrefsect id="test_1_test000037"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies message addition functionality </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1083,7 +1083,7 @@
 <para>Test LS_AuthLoginInteractive function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000030"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies interactive login functionality </para>
+<para><xrefsect id="test_1_test000038"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies interactive login functionality </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1113,7 +1113,7 @@
 <para>Test LS_AuthRegisterInteractive function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000031"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies interactive registration functionality </para>
+<para><xrefsect id="test_1_test000039"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies interactive registration functionality </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1142,7 +1142,7 @@
 <para>Test CurrentUsername function returns consistent pointer. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000032"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies LS_CurrentUsername pointer stability </para>
+<para><xrefsect id="test_1_test000040"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies LS_CurrentUsername pointer stability </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1172,7 +1172,7 @@
 <para>Test multiple authentication state checks. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000033"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies consistent authentication state </para>
+<para><xrefsect id="test_1_test000041"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies consistent authentication state </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1201,7 +1201,7 @@
 <para>Test database reinitialization. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000034"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies database can be reinitialized </para>
+<para><xrefsect id="test_1_test000042"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies database can be reinitialized </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1233,7 +1233,7 @@
 <para>Test LS_AppStart function initialization. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000035"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies application startup doesn&apos;t crash immediately </para>
+<para><xrefsect id="test_1_test000043"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies application startup doesn&apos;t crash immediately </para>
 </xrefdescription></xrefsect></para>
 <para>Tests the main application entry point <simplesect kind="note"><para>This is a smoke test - full testing requires interactive input </para>
 </simplesect>
@@ -1262,7 +1262,7 @@
 <para>Test application initialization sequence. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000036"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies initialization order doesn&apos;t cause issues </para>
+<para><xrefsect id="test_1_test000044"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies initialization order doesn&apos;t cause issues </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1288,7 +1288,7 @@
 <para>Test SecureBuffer default construction. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000037"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies SecureBuffer can be created with default size </para>
+<para><xrefsect id="test_1_test000045"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies SecureBuffer can be created with default size </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1314,7 +1314,7 @@
 <para>Test SecureBuffer construction with size. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000038"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies SecureBuffer can be created with specific size </para>
+<para><xrefsect id="test_1_test000046"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies SecureBuffer can be created with specific size </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1340,7 +1340,7 @@
 <para>Test SecureBuffer resize functionality. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000039"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies SecureBuffer can be resized </para>
+<para><xrefsect id="test_1_test000047"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies SecureBuffer can be resized </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1368,7 +1368,7 @@
 <para>Test SecureBuffer cleanse functionality. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000040"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies SecureBuffer can cleanse its memory </para>
+<para><xrefsect id="test_1_test000048"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies SecureBuffer can cleanse its memory </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1397,7 +1397,7 @@
 <para>Test SecureBuffer move construction. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000041"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies SecureBuffer move semantics work </para>
+<para><xrefsect id="test_1_test000049"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies SecureBuffer move semantics work </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1425,7 +1425,7 @@
 <para>Test secure_bzero static function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000042"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies secure_bzero can zero memory </para>
+<para><xrefsect id="test_1_test000050"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies secure_bzero can zero memory </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1452,7 +1452,7 @@
 <para>Test crypto::DeriveKeyFromPassphrase. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000043"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies key derivation from passphrase </para>
+<para><xrefsect id="test_1_test000051"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies key derivation from passphrase </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1480,7 +1480,7 @@
 <para>Test crypto::EncryptForDB. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000044"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies encryption for database storage </para>
+<para><xrefsect id="test_1_test000052"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies encryption for database storage </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1508,7 +1508,7 @@
 <para>Test crypto::DecryptFromDB. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000045"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies decryption from database storage </para>
+<para><xrefsect id="test_1_test000053"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies decryption from database storage </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1537,7 +1537,7 @@
 <para>Test read_password_secure function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000046"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies secure password reading </para>
+<para><xrefsect id="test_1_test000054"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies secure password reading </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1564,7 +1564,7 @@
 <para>Test AppKey_InitFromEnvOrPrompt. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000047"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies application key initialization </para>
+<para><xrefsect id="test_1_test000055"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies application key initialization </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1591,7 +1591,7 @@
 <para>Test AppKey_Get function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000048"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies application key retrieval </para>
+<para><xrefsect id="test_1_test000056"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies application key retrieval </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1617,7 +1617,7 @@
 <para>Test AppKey_IsReady function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000049"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies application key readiness check </para>
+<para><xrefsect id="test_1_test000057"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies application key readiness check </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1642,7 +1642,7 @@
 <para>Test IsDebuggerPresent function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000050"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies debugger detection functionality </para>
+<para><xrefsect id="test_1_test000058"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies debugger detection functionality </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1667,7 +1667,7 @@
 <para>Test StartAntiDebugMonitor function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000051"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies anti-debug monitor can be started </para>
+<para><xrefsect id="test_1_test000059"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies anti-debug monitor can be started </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1692,7 +1692,7 @@
 <para>Test StopAntiDebugMonitor function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000052"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies anti-debug monitor can be stopped </para>
+<para><xrefsect id="test_1_test000060"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies anti-debug monitor can be stopped </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1716,7 +1716,7 @@
 <para>Test GetExecutableHash function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000053"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies executable hash calculation </para>
+<para><xrefsect id="test_1_test000061"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies executable hash calculation </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1741,7 +1741,7 @@
 <para>Test VerifyIntegrity function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000054"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies integrity verification functionality </para>
+<para><xrefsect id="test_1_test000062"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies integrity verification functionality </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1769,7 +1769,7 @@
 <para>Test IsRunningInVM function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000055"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies VM detection functionality </para>
+<para><xrefsect id="test_1_test000063"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies VM detection functionality </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1794,7 +1794,7 @@
 <para>Test IsRootedOrJailbroken function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000057"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies root/jailbreak detection </para>
+<para><xrefsect id="test_1_test000064"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies root/jailbreak detection </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1819,7 +1819,7 @@
 <para>Test PerformSecurityChecks function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000058"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies comprehensive security checks </para>
+<para><xrefsect id="test_1_test000065"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies comprehensive security checks </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1844,7 +1844,7 @@
 <para>Test OpaquePredicateAlwaysTrue function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000060"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies opaque predicate always returns true </para>
+<para><xrefsect id="test_1_test000066"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies opaque predicate always returns true </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1869,7 +1869,7 @@
 <para>Test OpaquePredicateAlwaysFalse function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000061"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies opaque predicate always returns false </para>
+<para><xrefsect id="test_1_test000067"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies opaque predicate always returns false </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1894,7 +1894,7 @@
 <para>Test OpaqueMathPredicate function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000063"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies opaque math predicate </para>
+<para><xrefsect id="test_1_test000068"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies opaque math predicate </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1923,7 +1923,7 @@
 <para>Test ObfuscateString function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000064"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies string obfuscation </para>
+<para><xrefsect id="test_1_test000069"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies string obfuscation </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1949,7 +1949,7 @@
 <para>Test DeobfuscateString function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000066"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies string deobfuscation </para>
+<para><xrefsect id="test_1_test000070"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies string deobfuscation </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1976,7 +1976,7 @@
 <para>Test ObfuscateValue function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000068"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies value obfuscation </para>
+<para><xrefsect id="test_1_test000071"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies value obfuscation </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -2002,7 +2002,7 @@
 <para>Test DeobfuscateValue function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000069"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies value deobfuscation </para>
+<para><xrefsect id="test_1_test000072"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies value deobfuscation </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -2029,7 +2029,7 @@
 <para>Test OpaqueLoop function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000071"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies opaque loop functionality </para>
+<para><xrefsect id="test_1_test000073"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies opaque loop functionality </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -2054,7 +2054,7 @@
 <para>Test ObfuscateBooleanCondition function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000073"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies boolean condition obfuscation </para>
+<para><xrefsect id="test_1_test000074"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies boolean condition obfuscation </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -2081,7 +2081,7 @@
 <para>Test ObfuscateAdd function. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="test_1_test000074"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies addition obfuscation </para>
+<para><xrefsect id="test_1_test000075"><xreftitle>Test</xreftitle><xrefdescription><para>Verifies addition obfuscation </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>

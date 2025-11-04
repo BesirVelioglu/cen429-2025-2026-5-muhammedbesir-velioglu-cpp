@@ -55,47 +55,47 @@
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a54fe7b9bc835333c514f4e82541c3c97" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, RASPVerifyProcessIsolation)</term></varlistentry>
 <listitem><para><anchor id="test_1_test000091"/>Verifies process isolation verification  </para>
 </listitem>
-<varlistentry><term>Member <ref refid="utility__test_8cpp_1a75ca2c83dbb6c84cf11d97d45877aae1" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CalculateMinMaxTest_2)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000075"/>Verifies that calculateMinMax correctly finds minimum and maximum in unsorted array  </para>
-</listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1ae70cca1bf71ae701e03762425373cb88" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningObfuscateAdd)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000074"/>Verifies addition obfuscation  </para>
+<listitem><para><anchor id="test_1_test000075"/>Verifies addition obfuscation  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1aff0af190e77dc1cc1f41ac47487df16a" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningObfuscateBooleanCondition)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000073"/>Verifies boolean condition obfuscation  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="utility__test_8cpp_1afa0b74e33e6004da7134ebf0c6c93849" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CalculateMinMaxTest_1)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000072"/>Verifies that calculateMinMax correctly finds minimum and maximum values  </para>
+<listitem><para><anchor id="test_1_test000074"/>Verifies boolean condition obfuscation  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1aae2576164e63c0ac6673511e88456018" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningOpaqueLoop)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000071"/>Verifies opaque loop functionality  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="utility__test_8cpp_1a66e890cc5d1a82f9a432efb5a64222d0" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CompareDoubleEqualTest)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000070"/>Verifies that compareDouble returns 0 when val1 == val2  </para>
+<listitem><para><anchor id="test_1_test000073"/>Verifies opaque loop functionality  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a7e405c61a875e852937469d43d8e3f4a" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningDeobfuscateValue)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000069"/>Verifies value deobfuscation  </para>
+<listitem><para><anchor id="test_1_test000072"/>Verifies value deobfuscation  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a1c34d09955dc4ed58c637ff23390e5e1" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningObfuscateValue)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000068"/>Verifies value obfuscation  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="utility__test_8cpp_1ad25e15111202b3f7f4e51d6f25cb5094" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CompareDoubleGreaterTest)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000067"/>Verifies that compareDouble returns 1 when val1 &gt; val2  </para>
+<listitem><para><anchor id="test_1_test000071"/>Verifies value obfuscation  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a398f49b19d2336fa1b5c94b890e5aa7c" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningDeobfuscateString)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000066"/>Verifies string deobfuscation  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="utility__test_8cpp_1af0df38eee307773917515593c89960fd" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CompareDoubleLessTest)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000065"/>Verifies that compareDouble returns -1 when val1 &lt; val2  </para>
+<listitem><para><anchor id="test_1_test000070"/>Verifies string deobfuscation  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1ab650615bf1c51c814cbd7aab6c50d5ce" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningObfuscateString)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000064"/>Verifies string obfuscation  </para>
+<listitem><para><anchor id="test_1_test000069"/>Verifies string obfuscation  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a59f2f3b3678a236991af5d5cb0bd22ad" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningOpaqueMathPredicate)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000063"/>Verifies opaque math predicate  </para>
+<listitem><para><anchor id="test_1_test000068"/>Verifies opaque math predicate  </para>
 </listitem>
-<varlistentry><term>Member <ref refid="utility__test_8cpp_1a1ad95925afbf048289b545eb09c30b07" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CalculateMedianEven)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000062"/>Verifies that calculateMedian correctly calculates the median for even-length arrays  </para>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a07c0c4ac8e675d5ed19de5e1c3437d34" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningOpaquePredicateAlwaysFalse)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000067"/>Verifies opaque predicate always returns false  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1aabbc9ba1f7fb44223c77a0a91c91482f" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningOpaquePredicateAlwaysTrue)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000066"/>Verifies opaque predicate always returns true  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a5a4f41d18ca629b074c23cad9b963db4" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningPerformSecurityChecks)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000065"/>Verifies comprehensive security checks  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a7c08ba229b804e7de435a349498e6d84" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningIsRootedOrJailbroken)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000064"/>Verifies root/jailbreak detection  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a803651e0d82feb70feba2bad09512a30" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningIsRunningInVM)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000063"/>Verifies VM detection functionality  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a86d4ae388fd1691ee22c8cd50acbd713" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningVerifyIntegrity)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000062"/>Verifies integrity verification functionality  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1ae2b02d060efb2f0214d23ed2386bb650" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, CompleteGameLifecycle)</term></varlistentry>
 <listitem><para><anchor id="test_1_test000106"/>Verifies full game CRUD cycle  </para>
@@ -142,8 +142,8 @@
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a232f74cf9206f3e7cd85cf50d83b5b98" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, ConcurrentOperations)</term></varlistentry>
 <listitem><para><anchor id="test_1_test000107"/>Verifies system handles concurrent calls  </para>
 </listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a07c0c4ac8e675d5ed19de5e1c3437d34" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningOpaquePredicateAlwaysFalse)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000061"/>Verifies opaque predicate always returns false  </para>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1ad0c3e0ffe3e909805f84107459f26d55" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningGetExecutableHash)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000061"/>Verifies executable hash calculation  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1ac64bd095079a7ac99f3050c06cf806ee" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, CompletePlayerLifecycle)</term></varlistentry>
 <listitem><para><anchor id="test_1_test000105"/>Verifies full player CRUD cycle  </para>
@@ -187,185 +187,185 @@
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a14b8f743dce0b42fc696014807bc2bcf" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, RASPIsRASPActive)</term></varlistentry>
 <listitem><para><anchor id="test_1_test000092"/>Verifies RASP active status check  </para>
 </listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1afe18f3d98d30a8bfca78839a02e18899" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, CurrentUsernameMemorySafety)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000016"/>Verifies consistent return values from multiple calls  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1adfabfaf8af1b50a694a31aa362678557" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AuthLoginInteractiveBasic)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000030"/>Verifies interactive login functionality  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a362c2974488ace602007454b1eaeb43e" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AddMessageInteractiveBasic)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000029"/>Verifies message addition functionality  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1ad9ae92c12ad9a9d2e31d288c3c666ec2" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, RecordStatsInteractiveBasic)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000028"/>Verifies statistics recording functionality  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a1baf403bb3815873f038ed7263bcaf1d" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, RecordResultInteractiveBasic)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000027"/>Verifies game result recording functionality  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a5f53f0cd030473ec18b30c664819b4e4" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AddGameInteractiveBasic)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000026"/>Verifies game addition functionality  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1afa9f7d361576ac2daebdf8e4be61566e" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, RemovePlayerInteractiveBasic)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000025"/>Verifies player removal functionality  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a8db5b401594d9f7af55c70b1125074e8" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, EditPlayerInteractiveBasic)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000024"/>Verifies player editing functionality  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1ae797d523e6a2d607c17d0b281f723d05" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AddPlayerInteractiveBasic)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000023"/>Verifies player addition functionality  </para>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a44b61c1543e565dc349abcb3a51a8b5b" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, PlayerOperationsStructure)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000016"/>Verifies packed structure sizes match expected values  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a4250c108dd3e8856e9fe20a686fe6326" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, UserStructFields)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000022"/>Verifies all User struct fields can be set and retrieved correctly  </para>
+<listitem><para><anchor id="test_1_test000030"/>Verifies all User struct fields can be set and retrieved correctly  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1abb98f240b976ced50484528423eb3a40" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, MessageStructFields)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000021"/>Verifies all Message struct fields can be set and retrieved correctly  </para>
+<listitem><para><anchor id="test_1_test000029"/>Verifies all Message struct fields can be set and retrieved correctly  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1af6e3988950757106bf574fbe3883d644" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, StatStructFields)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000020"/>Verifies all Stat struct fields can be set and retrieved correctly  </para>
+<listitem><para><anchor id="test_1_test000028"/>Verifies all Stat struct fields can be set and retrieved correctly  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a6c65112b665a350411ccd1276c75704a" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, GameStructFields)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000019"/>Verifies all Game struct fields can be set and retrieved correctly  </para>
+<listitem><para><anchor id="test_1_test000027"/>Verifies all Game struct fields can be set and retrieved correctly  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1adacd42dc1f22618719f1ae0290b5d234" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, PlayerStructFields)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000018"/>Verifies all Player struct fields can be set and retrieved correctly  </para>
+<listitem><para><anchor id="test_1_test000026"/>Verifies all Player struct fields can be set and retrieved correctly  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1ae951fdde1197d8f6c2d050794784a30b" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, IsAuthenticatedConsistency)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000017"/>Verifies consistent return values from multiple calls  </para>
+<listitem><para><anchor id="test_1_test000025"/>Verifies consistent return values from multiple calls  </para>
 </listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1aed135dc2369b88f55985a826f06325ca" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AuthRegisterInteractiveBasic)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000031"/>Verifies interactive registration functionality  </para>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1afe18f3d98d30a8bfca78839a02e18899" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, CurrentUsernameMemorySafety)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000024"/>Verifies consistent return values from multiple calls  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1aa2e5bcd114b12af1f6e7a3153835a772" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, FullWorkflow)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000015"/>Verifies full application workflow without crashes  </para>
+<listitem><para><anchor id="test_1_test000023"/>Verifies full application workflow without crashes  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a7d3f6c52cdc87221a05ca4e46cb39f82" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, OperationsBeforeInit)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000014"/>Verifies graceful handling of API calls before LS_Init()  </para>
+<listitem><para><anchor id="test_1_test000022"/>Verifies graceful handling of API calls before LS_Init()  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a4080525b95b7b1e067c2d8f3df31fe1c" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, MultipleInitCalls)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000013"/>Verifies that multiple LS_Init() calls do not crash  </para>
+<listitem><para><anchor id="test_1_test000021"/>Verifies that multiple LS_Init() calls do not crash  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a1e162a29774e3cf93b4bfa76e99f49a0" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, DatabaseFileNames)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000012"/>Verifies all FILE_* constants are non-null  </para>
+<listitem><para><anchor id="test_1_test000020"/>Verifies all FILE_* constants are non-null  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a70849af5b4d8163d7dc6448534ca74db" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, ListMessagesWhenEmpty)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000011"/>Verifies that ListMessagesInteractive works with empty database  </para>
+<listitem><para><anchor id="test_1_test000019"/>Verifies that ListMessagesInteractive works with empty database  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1ae1ccce82f369f5198deaf30f925c8696" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, ViewPlayerTotalsWhenEmpty)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000010"/>Verifies that ViewPlayerTotalsInteractive works with no data  </para>
+<listitem><para><anchor id="test_1_test000018"/>Verifies that ViewPlayerTotalsInteractive works with no data  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a28c25def17efb334d47efa6d8177f31e" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, ListGamesWhenEmpty)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000009"/>Verifies that ListGamesInteractive works with empty database  </para>
+<listitem><para><anchor id="test_1_test000017"/>Verifies that ListGamesInteractive works with empty database  </para>
 </listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a44b61c1543e565dc349abcb3a51a8b5b" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, PlayerOperationsStructure)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000008"/>Verifies packed structure sizes match expected values  </para>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1ae797d523e6a2d607c17d0b281f723d05" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AddPlayerInteractiveBasic)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000031"/>Verifies player addition functionality  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1adf11bcfdef8944a0bc1feea03fce7fb0" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, ListPlayersWhenEmpty)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000007"/>Verifies that ListPlayersInteractive works with empty database  </para>
+<listitem><para><anchor id="test_1_test000015"/>Verifies that ListPlayersInteractive works with empty database  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a88c7421670d4856b5cdf59f51a0708d2" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AuthLogoutClearsSession)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000006"/>Verifies session state is cleared after logout  </para>
+<listitem><para><anchor id="test_1_test000014"/>Verifies session state is cleared after logout  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a0c0c0d4a092228c058851827332900aa" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, CurrentUsernameWhenNotAuthenticated)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000005"/>Verifies that CurrentUsername returns nullptr when not logged in  </para>
+<listitem><para><anchor id="test_1_test000013"/>Verifies that CurrentUsername returns nullptr when not logged in  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a4262b04b5888dae4d1b1e532078c316b" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, IsAuthenticatedInitialState)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000004"/>Verifies that initially no user is authenticated  </para>
+<listitem><para><anchor id="test_1_test000012"/>Verifies that initially no user is authenticated  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1ad2474200ea606bfc9d46ac0a91460379" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, LogoutWithoutLogin)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000003"/>Verifies that logout does not crash when called without login  </para>
+<listitem><para><anchor id="test_1_test000011"/>Verifies that logout does not crash when called without login  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a1a661498febbfc9ac376ea03bc72bc76" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, InitCreatesDefaultAdmin)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000002"/>Verifies database structure creation after initialization  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1ae12e316ab0d04a5589e91ec416200463" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, ReadPasswordSecure)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000046"/>Verifies secure password reading  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1aabbc9ba1f7fb44223c77a0a91c91482f" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningOpaquePredicateAlwaysTrue)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000060"/>Verifies opaque predicate always returns true  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="utility__test_8cpp_1a605cb3e19c672b332b4c1d7921a42b5b" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CalculateMedianOdd)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000059"/>Verifies that calculateMedian correctly calculates the median for odd-length arrays  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a5a4f41d18ca629b074c23cad9b963db4" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningPerformSecurityChecks)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000058"/>Verifies comprehensive security checks  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a7c08ba229b804e7de435a349498e6d84" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningIsRootedOrJailbroken)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000057"/>Verifies root/jailbreak detection  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="utility__test_8cpp_1a1a32a39867f3edfaa2b66659f6a5f56e" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CalculateMean)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000056"/>Verifies that calculateMean correctly calculates the average of an array  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a803651e0d82feb70feba2bad09512a30" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningIsRunningInVM)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000055"/>Verifies VM detection functionality  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a86d4ae388fd1691ee22c8cd50acbd713" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningVerifyIntegrity)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000054"/>Verifies integrity verification functionality  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1ad0c3e0ffe3e909805f84107459f26d55" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningGetExecutableHash)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000053"/>Verifies executable hash calculation  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a7d716507dbf3e6abbb1575334b952abf" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningStopAntiDebugMonitor)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000052"/>Verifies anti-debug monitor can be stopped  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1aa8dacc85e752af2800ae5e5ea2085b50" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningStartAntiDebugMonitor)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000051"/>Verifies anti-debug monitor can be started  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1af5b988d22515624139c399abf323f596" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningIsDebuggerPresent)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000050"/>Verifies debugger detection functionality  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a1196aa5e4909b2870c72212e47c4dbb6" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AppKeyIsReady)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000049"/>Verifies application key readiness check  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1adc8959d91209339608bda7671bd4ff6f" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AppKeyGet)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000048"/>Verifies application key retrieval  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a357345d589c133d1129aa4b44e043208" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AppKeyInitFromEnvOrPrompt)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000047"/>Verifies application key initialization  </para>
+<listitem><para><anchor id="test_1_test000010"/>Verifies database structure creation after initialization  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a1942beb4c99f4077d3ecfdeefe4e4f3e" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, InitCreatesDatabase)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000001"/>Verifies database file creation and initial authentication state  </para>
+<listitem><para><anchor id="test_1_test000009"/>Verifies database file creation and initial authentication state  </para>
 </listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a7bbd49debc765f3a9df8d35597b1e517" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, CryptoDecryptFromDB)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000045"/>Verifies decryption from database storage  </para>
+<varlistentry><term>Member <ref refid="utility__test_8cpp_1a75ca2c83dbb6c84cf11d97d45877aae1" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CalculateMinMaxTest_2)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000008"/>Verifies that calculateMinMax correctly finds minimum and maximum in unsorted array  </para>
 </listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a5d6c3237a2478f7ddf847b1acddf3b97" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, CryptoEncryptForDB)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000044"/>Verifies encryption for database storage  </para>
+<varlistentry><term>Member <ref refid="utility__test_8cpp_1afa0b74e33e6004da7134ebf0c6c93849" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CalculateMinMaxTest_1)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000007"/>Verifies that calculateMinMax correctly finds minimum and maximum values  </para>
 </listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a64f97a06c3207a975b4007e98bca499d" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, CryptoDeriveKeyFromPassphrase)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000043"/>Verifies key derivation from passphrase  </para>
+<varlistentry><term>Member <ref refid="utility__test_8cpp_1a66e890cc5d1a82f9a432efb5a64222d0" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CompareDoubleEqualTest)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000006"/>Verifies that compareDouble returns 0 when val1 == val2  </para>
 </listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a9fa9a91b9510cf574c802c714b4c54f5" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, SecureBzeroFunction)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000042"/>Verifies secure_bzero can zero memory  </para>
+<varlistentry><term>Member <ref refid="utility__test_8cpp_1ad25e15111202b3f7f4e51d6f25cb5094" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CompareDoubleGreaterTest)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000005"/>Verifies that compareDouble returns 1 when val1 &gt; val2  </para>
 </listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1affbf8e6ff2b5a5826d5fd4b09ed70dec" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, SecureBufferMoveConstruction)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000041"/>Verifies SecureBuffer move semantics work  </para>
+<varlistentry><term>Member <ref refid="utility__test_8cpp_1af0df38eee307773917515593c89960fd" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CompareDoubleLessTest)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000004"/>Verifies that compareDouble returns -1 when val1 &lt; val2  </para>
 </listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a74bd3607ee202b0d5d806014c405a5e7" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, SecureBufferCleanse)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000040"/>Verifies SecureBuffer can cleanse its memory  </para>
+<varlistentry><term>Member <ref refid="utility__test_8cpp_1a1ad95925afbf048289b545eb09c30b07" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CalculateMedianEven)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000003"/>Verifies that calculateMedian correctly calculates the median for even-length arrays  </para>
 </listitem>
-<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a9ec365cda67a2e0140753dc2711c3566" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, SecureBufferResize)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000039"/>Verifies SecureBuffer can be resized  </para>
+<varlistentry><term>Member <ref refid="utility__test_8cpp_1a605cb3e19c672b332b4c1d7921a42b5b" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CalculateMedianOdd)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000002"/>Verifies that calculateMedian correctly calculates the median for odd-length arrays  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a8fb19176cc78d66ab754d63220cdc3a5" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, SecureBufferSizedConstruction)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000038"/>Verifies SecureBuffer can be created with specific size  </para>
+<listitem><para><anchor id="test_1_test000046"/>Verifies SecureBuffer can be created with specific size  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a7d716507dbf3e6abbb1575334b952abf" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningStopAntiDebugMonitor)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000060"/>Verifies anti-debug monitor can be stopped  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1aa8dacc85e752af2800ae5e5ea2085b50" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningStartAntiDebugMonitor)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000059"/>Verifies anti-debug monitor can be started  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1af5b988d22515624139c399abf323f596" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, HardeningIsDebuggerPresent)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000058"/>Verifies debugger detection functionality  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a1196aa5e4909b2870c72212e47c4dbb6" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AppKeyIsReady)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000057"/>Verifies application key readiness check  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1adc8959d91209339608bda7671bd4ff6f" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AppKeyGet)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000056"/>Verifies application key retrieval  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a357345d589c133d1129aa4b44e043208" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AppKeyInitFromEnvOrPrompt)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000055"/>Verifies application key initialization  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1ae12e316ab0d04a5589e91ec416200463" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, ReadPasswordSecure)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000054"/>Verifies secure password reading  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a7bbd49debc765f3a9df8d35597b1e517" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, CryptoDecryptFromDB)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000053"/>Verifies decryption from database storage  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a5d6c3237a2478f7ddf847b1acddf3b97" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, CryptoEncryptForDB)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000052"/>Verifies encryption for database storage  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a64f97a06c3207a975b4007e98bca499d" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, CryptoDeriveKeyFromPassphrase)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000051"/>Verifies key derivation from passphrase  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a9fa9a91b9510cf574c802c714b4c54f5" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, SecureBzeroFunction)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000050"/>Verifies secure_bzero can zero memory  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1affbf8e6ff2b5a5826d5fd4b09ed70dec" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, SecureBufferMoveConstruction)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000049"/>Verifies SecureBuffer move semantics work  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a74bd3607ee202b0d5d806014c405a5e7" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, SecureBufferCleanse)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000048"/>Verifies SecureBuffer can cleanse its memory  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a9ec365cda67a2e0140753dc2711c3566" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, SecureBufferResize)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000047"/>Verifies SecureBuffer can be resized  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="utility__test_8cpp_1a1a32a39867f3edfaa2b66659f6a5f56e" kindref="member">TEST_F</ref>  (<ref refid="class_math_utility_test" kindref="compound">MathUtilityTest</ref>, CalculateMean)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000001"/>Verifies that calculateMean correctly calculates the average of an array  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1ae7b41d7890af02a2f5581689b481e8ba" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, SecureBufferDefaultConstruction)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000037"/>Verifies SecureBuffer can be created with default size  </para>
+<listitem><para><anchor id="test_1_test000045"/>Verifies SecureBuffer can be created with default size  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1abe2b83bf2d191d453e1085935c0fbe7b" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AppInitializationSequence)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000036"/>Verifies initialization order doesn&apos;t cause issues  </para>
+<listitem><para><anchor id="test_1_test000044"/>Verifies initialization order doesn&apos;t cause issues  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a8b2ff5b00f86b25ce9528233976d3352" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AppStartInitialization)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000035"/>Verifies application startup doesn&apos;t crash immediately  </para>
+<listitem><para><anchor id="test_1_test000043"/>Verifies application startup doesn&apos;t crash immediately  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1a1be67184910a3075a24f99d46f1e429f" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, DatabaseReinitialization)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000034"/>Verifies database can be reinitialized  </para>
+<listitem><para><anchor id="test_1_test000042"/>Verifies database can be reinitialized  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1aea64b4f79548f276ed4c4e8b8c2f0fc3" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, MultipleAuthStateChecks)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000033"/>Verifies consistent authentication state  </para>
+<listitem><para><anchor id="test_1_test000041"/>Verifies consistent authentication state  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="localsports__test_8cpp_1ad97e713a2ee1eb18bf1e901637dd4747" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, CurrentUsernamePointerStability)</term></varlistentry>
-<listitem><para><anchor id="test_1_test000032"/>Verifies LS_CurrentUsername pointer stability </para>
+<listitem><para><anchor id="test_1_test000040"/>Verifies LS_CurrentUsername pointer stability  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1aed135dc2369b88f55985a826f06325ca" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AuthRegisterInteractiveBasic)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000039"/>Verifies interactive registration functionality  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1adfabfaf8af1b50a694a31aa362678557" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AuthLoginInteractiveBasic)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000038"/>Verifies interactive login functionality  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a362c2974488ace602007454b1eaeb43e" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AddMessageInteractiveBasic)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000037"/>Verifies message addition functionality  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1ad9ae92c12ad9a9d2e31d288c3c666ec2" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, RecordStatsInteractiveBasic)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000036"/>Verifies statistics recording functionality  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a1baf403bb3815873f038ed7263bcaf1d" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, RecordResultInteractiveBasic)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000035"/>Verifies game result recording functionality  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a5f53f0cd030473ec18b30c664819b4e4" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, AddGameInteractiveBasic)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000034"/>Verifies game addition functionality  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1afa9f7d361576ac2daebdf8e4be61566e" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, RemovePlayerInteractiveBasic)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000033"/>Verifies player removal functionality  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="localsports__test_8cpp_1a8db5b401594d9f7af55c70b1125074e8" kindref="member">TEST_F</ref>  (<ref refid="class_local_sports_test" kindref="compound">LocalSportsTest</ref>, EditPlayerInteractiveBasic)</term></varlistentry>
+<listitem><para><anchor id="test_1_test000032"/>Verifies player editing functionality </para>
 </listitem>
 </variablelist>
 </para>
